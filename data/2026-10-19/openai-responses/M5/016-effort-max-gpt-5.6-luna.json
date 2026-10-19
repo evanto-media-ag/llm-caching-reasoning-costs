@@ -1,0 +1,159 @@
+{
+  "ts": "2026-10-19T08:12:02+00:00",
+  "target": "openai-responses",
+  "model": "gpt-5.6-luna",
+  "measurement": "M5",
+  "step": "effort-max",
+  "run_id": "9f557df6",
+  "url": "https://api.openai.com/v1/responses",
+  "request_body": {
+    "model": "gpt-5.6-luna",
+    "instructions": "You are a careful assistant.",
+    "input": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only.",
+    "max_output_tokens": 2048,
+    "store": false,
+    "reasoning": {
+      "effort": "max"
+    }
+  },
+  "status": 200,
+  "response_body": {
+    "id": "resp_0a277decd7782c3c016ad5d0d0f97887d2a06ce8569e52ffe6",
+    "object": "response",
+    "created_at": 1792397521,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792397522,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": "You are a careful assistant.",
+    "max_output_tokens": 2048,
+    "max_tool_calls": null,
+    "model": "gpt-5.6-luna",
+    "moderation": null,
+    "output": [
+      {
+        "id": "rs_0a277decd7782c3c016ad5d0d1ae8487d2bc866505ebf16d42",
+        "type": "reasoning",
+        "content": [],
+        "encrypted_content": "gAAAAABq1dDS5ca_AlAlfSdDk9vFZx-4b0uKqksw0g_vqOruYke2Z-BAe5puQVsxj_hi2TR5sOEEAMM_g0i8JPKPJi2-oOoeacnA-Mi6w13P5TrEn7P8N6awLEByYtn6UTaKv4TIfOogTFgndKlTPot3I9DNeoe_AzB1hVzYKKtVDIpRV3Agq71icWfEuE3ju5eWZloCkASJ-u8nbzlJU0GTOcqUtf3MKSPg1norWxdlfTv3yfG0sijG-mUSXNdzvc6o-p98HfvcGoIikc5DLhnB9HeQHNlXtnIL3vORdA1nfjhEbGcfKqJ8Fwa21Io5cxmR1pgEG03iDr2K1aPzSHvcceO_kqKFqnrg661ArlE8OM-ngxfEgtw_cWsiAnxKEAB4qvNGpGTf-LN4vxqG8MbOPRxFMieUAhMlCqAyGVOzV8cefWa3c2vCbdBsfora9vZybDAtbGvbVLwgxLE5xhtMNQAtj_QBo6xNy-9sHCV5CSz2pIiNVzTcfu5_FKsgLRxA-x19wxfbfOrLlLC2Js1q8fqSKxeTWsfuH5AvGNAw0RAb1wK8E2yvEU53XXshqwR_DDDHGaJeAZ0NiGwVGYWVWuY5p5vCIoZBSy--pMI8fzCKj4Nr2kfCVInA3Hrj4GcvBh_kfKCi-GXfj2loExPFANL-B3b9NCRqZcPofznIOdfHXCZzhp0UahHC6dlWW8jmJVUmORYQLOznIyi2eKmtQOoT2g5DKTo4UtMG4qiTKx_UNuBRyQFkNlJHyl-F6hREbUzmCWqzNxzdcXhTMnLDIeWkTbkqqQkcW4ttZ1WYBqDFbVVke0juj3QcAYJ9pG4cRrMo7OjWn4CFB0wrPYbOrdp4yOhT0_c9Y-S0zKMkkOtTzqxSz_v5Ylzd8MEVwdME1XK10sbg1u4H0yyoPbmLPsPP__LRdcJwPvlDlneMd-CJEXlq9SXEXH2fYXphvFBpVgLCO2zzjznHEeTX7_leQEyEFzvHvU4S07ZplFmXR-olx7NMBOAMXhXQJSVrDWg4Lh7kW35sonJGWr6uCSjXn2Jd_fQ60PvrHEotKcS1KwsU5_1gRmJyUfyzasP4ozry-xlQPp9RZ0DECTwSc_TJ4XYkisfCnlcDDdCL8kz1AlnD51DwYKGKEYHKo3yGniomjbZO-vQ5EdyAW_2jOhVKX5rGJjp8q39aIAc8-oGw9A2U4tLtmaVA0knbpGmcPuALvNip2eVOBY69XQN54PkZ0gDwRxyZN4jgkK_mY4bhRxaOqbEx9rBv8RklZtfai7RTzhhhldKxsPYBf_O89Yz6NT2ZlMlrsvbb4L5EYfHcvWKn_-XuZLpFlrLbB6GMwYTgAmH8nSTT-xSwYjBERs9Z3F-OG9hMvT8ZJ1kHxjK4Jzg0I03rTVRsUTQoua69F0tm__WA9n2DzfrzppYoT8ChgGdgC06QzvjqYdUTNUMdHHo1Ghll7dAqFyEpE_nZPm2yeEmzV_4S-3mehNnny63EOMi2hPWGy2IMtIfzh96d3Qq08M6WGFu0dBk83SlrEfLC3j1aZmDYGOn_3cntdbrSia4B0UXUA2LZtPc25ADXcpnjBNx30tnZwUrFuInni57jLVXU6YpWwDwoF4KAH_LXGNZjD5VdZ7iUrk_ZcwAe2WOIDe-CkndW72hQot69Jjv8eqrHWSrnFTc6V-4M-Ufl_SZw1L5mA-udRQooPODOqP8837H6kW5W2AF8ffyM3ay3F4WRyYWVKXkcwRsraK1q26b_3ftZhxSkR10cDccDHla3BgR0Ufcv6COYjrpdOgPWOD4rxPDfJfrt31MTsXrEF9eVJdU70tXUzIbakz0XKyyRHQqG4CF9wZbg23svoFYoWbkXmPQIIkqcPWLKDcA9vadYrR6g9XJRTx0ykzoEldx9CTwYgqXSEC5s616PL2F0siQ8rGcO",
+        "summary": []
+      },
+      {
+        "id": "msg_0a277decd7782c3c016ad5d0d2338487d2ae1de015b51aae08",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "€0.05"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "all_turns",
+      "effort": "max",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": false,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 56,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 55,
+      "output_tokens_details": {
+        "reasoning_tokens": 45
+      },
+      "total_tokens": 111
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "response_headers": {
+    "openai-processing-ms": "1599",
+    "x-ratelimit-limit-requests": "5000",
+    "x-ratelimit-limit-tokens": "2000000",
+    "x-ratelimit-remaining-requests": "4998",
+    "x-ratelimit-remaining-tokens": "2000000",
+    "x-ratelimit-reset-requests": "24ms",
+    "x-ratelimit-reset-tokens": "0s",
+    "x-request-id": "req_d705aa562f87401e9c8459dd0af8bb88"
+  },
+  "response_header_names": [
+    "access-control-expose-headers",
+    "alt-svc",
+    "cf-cache-status",
+    "cf-ray",
+    "connection",
+    "content-length",
+    "content-type",
+    "date",
+    "openai-organization",
+    "openai-processing-ms",
+    "openai-project",
+    "openai-version",
+    "server",
+    "set-cookie",
+    "strict-transport-security",
+    "x-content-type-options",
+    "x-ratelimit-limit-requests",
+    "x-ratelimit-limit-tokens",
+    "x-ratelimit-remaining-requests",
+    "x-ratelimit-remaining-tokens",
+    "x-ratelimit-reset-requests",
+    "x-ratelimit-reset-tokens",
+    "x-request-id"
+  ],
+  "duration_ms": 1799,
+  "note": "angenommen"
+}

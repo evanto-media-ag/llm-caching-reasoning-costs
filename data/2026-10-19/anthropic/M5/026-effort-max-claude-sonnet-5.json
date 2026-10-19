@@ -1,0 +1,101 @@
+{
+  "ts": "2026-10-19T08:11:41+00:00",
+  "target": "anthropic",
+  "model": "claude-sonnet-5",
+  "measurement": "M5",
+  "step": "effort-max",
+  "run_id": "a58ece10",
+  "url": "https://api.anthropic.com/v1/messages",
+  "request_body": {
+    "model": "claude-sonnet-5",
+    "max_tokens": 2048,
+    "system": [
+      {
+        "type": "text",
+        "text": "You are a careful assistant."
+      }
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "output_config": {
+      "effort": "max"
+    }
+  },
+  "status": 200,
+  "response_body": {
+    "model": "claude-sonnet-5",
+    "id": "msg_011CgBFwDphM1e8BThd8jS4j",
+    "type": "message",
+    "role": "assistant",
+    "content": [
+      {
+        "type": "thinking",
+        "thinking": "",
+        "signature": "EqwECscCCBIYAipAczdg+azwEhwf1TDJTQry0VE8xCMhc7eEvZ7qurG9YwCn00FDOcmONORD/PDouRncDKZ/IvMWtBLBhGUIESXxWTIPY2xhdWRlLXNvbm5ldC01OABCCHRoaW5raW5nWiRhMjgxMGRlNS1mZDgzLTQ1YmYtODQ0ZC0yYTBlYzc5ZGMwM2OaAREKD2NsYXVkZS1zb25uZXQtNagBvaHX1gbCAT0IBRAAGg8BMUIC2ooDTzcFKqYEJq0gAjIEEnHPJToEXXFH40IEODMjikoEODMjilAAWgTZBeFWYAJoAXAB2gFgChZwcmVmaXhfYmVmb3JlX2Jsb2NrX3YxEiCzhY8TunMVNxT5/MwulYIdx3si/z87C6ZbXJdmzwgjvyIAMiDCwBPIapyS4i+Wbz2GF3aPi3pEyQKtzAl7+h4JivtOH0gDEgyqAC3dlAQKUtFsuioaDHDjlj3Ak7/GQpK4eSIwO2FATEzOkGAlwjd7CCALXpCuMgVwFnQrPYv3qD/gbrQfrgdje9wp4BjlhlKpwbEjKpEBqZxLVv5i22w7Yq3guQIzwzJR18KM3Oi+sJTJxwESGWZiY1r9y68bs8MAkRaEMtREzY9IxnqhQBo0R5bPPvri4x+gMVCtmLNOm/yHL8ORKP1nlS60D4F3amGMwJq8lEuXOOXVVkZJ/l3jx/URsAsl5ZJuQFk+V+p6YGw1fzrQeUBcx/Umc/46+gSPQ69bVYKeaxgB"
+      },
+      {
+        "type": "text",
+        "text": "0.05 EUR"
+      }
+    ],
+    "container": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "stop_details": null,
+    "usage": {
+      "input_tokens": 73,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "output_tokens": 88,
+      "output_tokens_details": {
+        "thinking_tokens": 78
+      },
+      "service_tier": "standard",
+      "inference_geo": "global",
+      "speed": "standard"
+    },
+    "diagnostics": null
+  },
+  "response_headers": {
+    "request-id": "req_011CgBFwDVLyC95UvQczTRyZ"
+  },
+  "response_header_names": [
+    "anthropic-organization-id",
+    "anthropic-ratelimit-input-tokens-limit",
+    "anthropic-ratelimit-input-tokens-remaining",
+    "anthropic-ratelimit-input-tokens-reset",
+    "anthropic-ratelimit-output-tokens-limit",
+    "anthropic-ratelimit-output-tokens-remaining",
+    "anthropic-ratelimit-output-tokens-reset",
+    "anthropic-ratelimit-requests-limit",
+    "anthropic-ratelimit-requests-remaining",
+    "anthropic-ratelimit-requests-reset",
+    "anthropic-ratelimit-tokens-limit",
+    "anthropic-ratelimit-tokens-remaining",
+    "anthropic-ratelimit-tokens-reset",
+    "anthropic-workspace-id",
+    "cf-cache-status",
+    "cf-ray",
+    "connection",
+    "content-security-policy",
+    "content-type",
+    "date",
+    "request-id",
+    "server",
+    "strict-transport-security",
+    "traceresponse",
+    "transfer-encoding",
+    "vary",
+    "x-robots-tag"
+  ],
+  "duration_ms": 1307,
+  "note": "angenommen"
+}

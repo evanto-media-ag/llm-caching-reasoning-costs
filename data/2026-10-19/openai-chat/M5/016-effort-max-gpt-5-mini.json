@@ -1,0 +1,71 @@
+{
+  "ts": "2026-10-19T08:12:31+00:00",
+  "target": "openai-chat",
+  "model": "gpt-5-mini",
+  "measurement": "M5",
+  "step": "effort-max",
+  "run_id": "d3061dad",
+  "url": "https://api.openai.com/v1/chat/completions",
+  "request_body": {
+    "model": "gpt-5-mini",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful assistant."
+      },
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "max_completion_tokens": 2048,
+    "reasoning_effort": "max"
+  },
+  "status": 400,
+  "response_body": {
+    "error": {
+      "message": "Unsupported value: 'reasoning_effort' does not support 'max' with this model. Supported values are: 'minimal', 'low', 'medium', and 'high'.",
+      "type": "invalid_request_error",
+      "param": "reasoning_effort",
+      "code": "unsupported_value"
+    }
+  },
+  "response_headers": {
+    "openai-processing-ms": "21",
+    "x-ratelimit-limit-requests": "5000",
+    "x-ratelimit-limit-tokens": "2000000",
+    "x-ratelimit-remaining-requests": "4998",
+    "x-ratelimit-remaining-tokens": "1999437",
+    "x-ratelimit-reset-requests": "24ms",
+    "x-ratelimit-reset-tokens": "16ms",
+    "x-request-id": "req_5d6e9be4ce40427295c91cf633b6754c"
+  },
+  "response_header_names": [
+    "access-control-expose-headers",
+    "alt-svc",
+    "cf-cache-status",
+    "cf-ray",
+    "connection",
+    "content-length",
+    "content-type",
+    "date",
+    "openai-organization",
+    "openai-processing-ms",
+    "openai-project",
+    "openai-version",
+    "server",
+    "set-cookie",
+    "strict-transport-security",
+    "x-content-type-options",
+    "x-openai-proxy-wasm",
+    "x-ratelimit-limit-requests",
+    "x-ratelimit-limit-tokens",
+    "x-ratelimit-remaining-requests",
+    "x-ratelimit-remaining-tokens",
+    "x-ratelimit-reset-requests",
+    "x-ratelimit-reset-tokens",
+    "x-request-id"
+  ],
+  "duration_ms": 210,
+  "note": "abgelehnt: http 400 {'error': {'message': \"Unsupported value: 'reasoning_effort' does not support 'max' with this model. Supported values are: 'minimal', 'low', 'medium', and 'high'.\", 'type': 'invalid_request_error', 'param': 'reasoning_effort', 'code': 'unsupported_value'}}"
+}

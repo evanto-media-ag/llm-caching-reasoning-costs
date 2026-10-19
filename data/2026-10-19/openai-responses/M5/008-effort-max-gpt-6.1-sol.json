@@ -1,0 +1,159 @@
+{
+  "ts": "2026-10-19T08:11:55+00:00",
+  "target": "openai-responses",
+  "model": "gpt-6.1-sol",
+  "measurement": "M5",
+  "step": "effort-max",
+  "run_id": "e7cc4843",
+  "url": "https://api.openai.com/v1/responses",
+  "request_body": {
+    "model": "gpt-6.1-sol",
+    "instructions": "You are a careful assistant.",
+    "input": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only.",
+    "max_output_tokens": 2048,
+    "store": false,
+    "reasoning": {
+      "effort": "max"
+    }
+  },
+  "status": 200,
+  "response_body": {
+    "id": "resp_0b3d2e5ae8772e10016ad5d0c85e4c87d28e5b149f2d838776",
+    "object": "response",
+    "created_at": 1792397512,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792397514,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": "You are a careful assistant.",
+    "max_output_tokens": 2048,
+    "max_tool_calls": null,
+    "model": "gpt-6.1-sol",
+    "moderation": null,
+    "output": [
+      {
+        "id": "rs_0b3d2e5ae8772e10016ad5d0c960f087d2a606be884035945f",
+        "type": "reasoning",
+        "content": [],
+        "encrypted_content": "gAAAAABq1dDLN36deUdn84-rXWblvVWYd5cauGuNvPowUj557Tw-dJy-WdMjttfdXPgbtTmrUTHKLdSCuNFejNkO1nv0fXiWpEgx46njuJvJ1pmaaZTyM3l5webJg7JNoAAeQv4pniGtb1WUBr0buAQAnJvjFQLqHyWt_0ETWDZ01imhdv9Vx4DbwvE3mIjklzoWiTb8lWxprTkn8M9SUyZgXrMsQGkW15rjXnlhVUt7Sih5QGmCd3wVu0eU1gtyuJ5v3R-NUvzPYXD0E3eHr2FHqtHnb2EP5bN0pj3joVo77faq1huZA6e1Zl11dDQEBS2TOIgkkhIpAnnf29nECspUXi58wTSLh1X1ZtRAhJyDcPejeSYlzWMO1cPatBddaPWQhfYyTKBw_oEz6CMF0FmoW8EJzbjGvmmEsXdQD1rrtXl5QD1-SucV56wr6BtI9u4-6ZMCzkRl53LAjUDsvx9j0cIT-5cJgQ1f4kmBUTiN0rVugNvzXWweX_DLUnCy67W-oDa2lx4Zxp4cGaz9oAeHqYL3_HSHnRmoagJE5v95KmC34elkRdy_NJF5Q7LVpJw3o0p9sFzBbIZynXf21A1lDiGI4v_m3u9cOLo7p1LEgUHOVyCIxHZxOxa9RU8mCXk7GMpO5hqZXnYTqufogU-VSVxRj46Bb10C67NHedakorNrr2krrHc1_zuoPt-CDXfxJ19xR_mlYxzXoBNxOCzWuZIm1QDnM416dSHYc3RMUovRlMAQ58Ip-Kz1OYP63oxGEl4oOe85W8IvnpPLL7cj21SL54uogpdeZggAO42JDEQguzzb6x05iInVOW0X0hsHqTKWnji8IFoJos1bHbEthWeiOAAaRwSEIynSpO7VCh_cfeaDSXYXqGebY1dQKQqE4q-K7KT5Rm8JXJLbnmP7ydlLdRiHxZr-6MRHNLYxePJ_dJ_PQRKCm3sj1MPzu7_DduXIIAtbIdqMLW2AsrKTXe57REiBR87DtgZLSaXHpCWTHKKQGxfttRPFlV_7WqQgiICOBN4WxtGFrGnum37MMjhqVy_Y5mL0l6pYEuk-whGqstkSQUqJpWmwxWfqVL95hkr0t3l4NxAby7DX9Z34ttcZ1VmX4Z5tZXbiIYF0EkQarpWedguIbDjRmYCG7TBmEPMpSGbDIk4GbBpaBMUVyG6hBF46_4xRzGiZRO8d9IkewNmXp1Yaxiri0cId2I5I2a29XG6qzrnmHQtSzZhW7q-WHuRn8sxJkQHZfm9DUa47-PS_mbZf2g1mGU34vjGtR38KVXnxJeo42aKFipqxQUHMOrKFyMUuQI5jtbn7scEKUmvHdlgkW7yoC8-u1CxcFUNu61-BiaWlTHyG9hq0q-oIJR6B-AC1QVVMSZ7o1f6joKCb3FVF4o-_bh1wzOs3pt3e3zjh-aMPcPh1vZAEDCOzPHprkF88wYNZpUlCoSvo7pag81meT_LIAJ64ptlvgAhRUyC06cO_xi3ThKPKR5AoDq666kjoXY98CSBSmn1orBpHtG2_haG1jLkkXVZqEhRVQjzMReEMiO4Jy3056uY3ERo-msOmGc-PvQ7uRQQnD7Yis94tL2uxO98tbLzqV1myFzkau85l6gDutN2PQbDUZaspsyUi4U8VFe4C8NsiA9xzd_ZBRkIFXXXGaaM1iOmUUpmDNuAQPwc8BYmJ_-68dhYOp0DiKoL-DLiLKQZeyhYTTeOG5P8dMuAZZemjihiAVuDASwa2tRyOjh5KmbXd9EgZ7picIh17YmOaYeS8cKy-0nHA7imOhRhSf5-eoQpWRBwnUv-YZfsibYnODFbNZJMWZoKPi0pPhpgKFu_-mg3ugdylErhggVd-sywhpcLpYvEFg3zUCgZINyOV1-vsrvdtMkE5sELQxAEsa8eNI8BQJDVyFDdIPgGnFx_11U4aUQMi-Ajr1f0h9fBhn6K4Nzwstoz582Dh7NqNEoCj_phWU1dxq49EotxsvQK07jQsLQpIJXhkhu3Li9SCBA66UElzc7tzBJDLk4q9ElU92dAsfzGJN9x0ZnMyZE_3_oI7O0Q7hSHYiG0YbmspfYeY-v1rPLBA4DDTMKj3Tpoqmnr-cUnfI2TmVjTQJShiqFA2JFVk",
+        "summary": []
+      },
+      {
+        "id": "msg_0b3d2e5ae8772e10016ad5d0caa08c87d29c356cb626c06e37",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "0.05 EUR"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "all_turns",
+      "effort": "max",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": false,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 56,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 78,
+      "output_tokens_details": {
+        "reasoning_tokens": 68
+      },
+      "total_tokens": 134
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "response_headers": {
+    "openai-processing-ms": "2678",
+    "x-ratelimit-limit-requests": "5000",
+    "x-ratelimit-limit-tokens": "1000000",
+    "x-ratelimit-remaining-requests": "4999",
+    "x-ratelimit-remaining-tokens": "1000000",
+    "x-ratelimit-reset-requests": "12ms",
+    "x-ratelimit-reset-tokens": "0s",
+    "x-request-id": "req_4a2f514252cc4771ae3c724166943c7a"
+  },
+  "response_header_names": [
+    "access-control-expose-headers",
+    "alt-svc",
+    "cf-cache-status",
+    "cf-ray",
+    "connection",
+    "content-length",
+    "content-type",
+    "date",
+    "openai-organization",
+    "openai-processing-ms",
+    "openai-project",
+    "openai-version",
+    "server",
+    "set-cookie",
+    "strict-transport-security",
+    "x-content-type-options",
+    "x-ratelimit-limit-requests",
+    "x-ratelimit-limit-tokens",
+    "x-ratelimit-remaining-requests",
+    "x-ratelimit-remaining-tokens",
+    "x-ratelimit-reset-requests",
+    "x-ratelimit-reset-tokens",
+    "x-request-id"
+  ],
+  "duration_ms": 2934,
+  "note": "angenommen"
+}

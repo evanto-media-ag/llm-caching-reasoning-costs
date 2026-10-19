@@ -1,0 +1,85 @@
+{
+  "ts": "2026-10-19T08:22:53+00:00",
+  "target": "gemini",
+  "model": "gemini-3.8-flash",
+  "measurement": "M5",
+  "step": "effort-low",
+  "run_id": "de13bf9a",
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent",
+  "request_body": {
+    "systemInstruction": {
+      "parts": [
+        {
+          "text": "You are a careful assistant."
+        }
+      ]
+    },
+    "contents": [
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+          }
+        ]
+      }
+    ],
+    "generationConfig": {
+      "maxOutputTokens": 2048,
+      "thinkingConfig": {
+        "thinkingLevel": "low"
+      }
+    }
+  },
+  "status": 200,
+  "response_body": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "0.05 EUR",
+              "thoughtSignature": "EuEBCt4BAWkUfRPgSSKlImUeq7sCfdOe2I7dtVi8+rwjGpx91KFbpIe4q0ZB0w5+nvjIT1IuE+QsrSuEyxck3skHan0KOJzcQAnTVvHCfxhEzyKztuLA1O9eLXzbzxx4DCx9bIl42WqiZ8MxOODI6PiddOUhn2t2YjfqNvf7ZRLQTzbjymQt/wP2zjaTfAENi+oKh0jy0YfSh0FWh3BtYtqJsibE0AYIhI1ur25uyYr8WpBv2Tkr0J/2jJBmw9BtBHJiNNntmqR+ZYSvfL3jZ5AkXXOaCnd/UO5DMcESgLTB9r4B"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 49,
+      "candidatesTokenCount": 5,
+      "totalTokenCount": 126,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 49
+        }
+      ],
+      "thoughtsTokenCount": 72,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.8-flash",
+    "responseId": "UtPVas6KN_eX3boP0ci3KA"
+  },
+  "response_headers": {},
+  "response_header_names": [
+    "accept-ranges",
+    "alt-svc",
+    "connection",
+    "content-type",
+    "date",
+    "server",
+    "server-timing",
+    "transfer-encoding",
+    "vary",
+    "x-content-type-options",
+    "x-frame-options",
+    "x-gemini-service-tier",
+    "x-xss-protection"
+  ],
+  "duration_ms": 10799,
+  "note": "angenommen"
+}

@@ -1,0 +1,60 @@
+{
+  "ts": "2026-10-19T08:22:42+00:00",
+  "target": "gemini",
+  "model": "gemini-3.8-flash",
+  "measurement": "M5",
+  "step": "effort-minimal",
+  "run_id": "de13bf9a",
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent",
+  "request_body": {
+    "systemInstruction": {
+      "parts": [
+        {
+          "text": "You are a careful assistant."
+        }
+      ]
+    },
+    "contents": [
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+          }
+        ]
+      }
+    ],
+    "generationConfig": {
+      "maxOutputTokens": 2048,
+      "thinkingConfig": {
+        "thinkingLevel": "minimal"
+      }
+    }
+  },
+  "status": 400,
+  "response_body": {
+    "error": {
+      "code": 400,
+      "message": "Thinking level MINIMAL is not supported for this model. Please retry with other thinking level.",
+      "status": "INVALID_ARGUMENT"
+    }
+  },
+  "response_headers": {},
+  "response_header_names": [
+    "accept-ranges",
+    "alt-svc",
+    "connection",
+    "content-type",
+    "date",
+    "server",
+    "server-timing",
+    "transfer-encoding",
+    "vary",
+    "x-content-type-options",
+    "x-frame-options",
+    "x-gemini-service-tier",
+    "x-xss-protection"
+  ],
+  "duration_ms": 202,
+  "note": "abgelehnt: http 400 {'error': {'code': 400, 'message': 'Thinking level MINIMAL is not supported for this model. Please retry with other thinking level.', 'status': 'INVALID_ARGUMENT'}}"
+}

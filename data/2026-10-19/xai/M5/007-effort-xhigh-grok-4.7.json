@@ -1,0 +1,141 @@
+{
+  "ts": "2026-10-19T08:12:55+00:00",
+  "target": "xai",
+  "model": "grok-4.7",
+  "measurement": "M5",
+  "step": "effort-xhigh",
+  "run_id": "106a575d",
+  "url": "https://api.x.ai/v1/responses",
+  "request_body": {
+    "model": "grok-4.7",
+    "instructions": "You are a careful assistant.",
+    "input": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only.",
+    "max_output_tokens": 2048,
+    "store": false,
+    "reasoning": {
+      "effort": "xhigh"
+    }
+  },
+  "status": 200,
+  "response_body": {
+    "created_at": 1792397571,
+    "completed_at": 1792397575,
+    "id": "68567270-379d-9005-9e17-5e45194051cd",
+    "max_output_tokens": 2048,
+    "model": "grok-4.7",
+    "object": "response",
+    "output": [
+      {
+        "id": "rs_68567270-379d-9005-9e17-5e45194051cd",
+        "summary": [
+          {
+            "text": "Setting up the algebraic equations for the bat and ball pricing problem.\n\nThe ball costs 0.05 EUR. The intuitive answer of 0.10 EUR is incorrect.",
+            "type": "summary_text"
+          }
+        ],
+        "type": "reasoning",
+        "status": "completed",
+        "encrypted_content": "kaw06zZDOmvY5Rzjni4oPj0nYS8U5m+u9Mye4LlMgldyee1h6mDurM6XyhNNDMU6VnGReuz/npEZO72B/ECN2AczhsUjFaN5+ntGDZgqOr5JxirtCO9r8CBWdUCm6T8vcLqmzESbMjDHGw6KrmtGqjLdcYJhu13CJiuSvRSH0oNeTyFd2T8pZKARS0XPyvYw70DRkNr059MPjFpUq78zH7HyQBX9lFhzfU3EL2x6uyVt24Lu1m8PY5O1bAIDfMPq5f/dY7DkguaPAw7o6D5EcGILJhrehYRtEYU65EtcKLj8w1kysYJu6pGoxym+1YrAzGsLr3A9xGeiK1W5qIQ0AEJIVkofYCU1mI8TeE1JUkUcxGHPmrNQA/rRsAwGXra5dada/fY6nePYGY9oYWE0THe6KvUXovSDd62sw4GR85AFtdvnAKNWMGihugmtyW+3bO53bLPI9Hc3LAp0RUkGMhh7eQF74rihKuEAlmr2hceY5dcPLsGsjJm0rr2w6Ns2zWLEO/q+gu5nzZqg14Ij4AFV9XTqouf583Peb4VEKgFMitVVtSCtCiRpWSAu8l/jzkIw2y1JQpmVswPVDDGWyFLnUDmM6vNxrCIeFzCXDCX1Uw9Dz7+hE1kc9ZnfnlhgfxAlLgatMkvc4jVUe67ej/8wEl97FJGJrg7Vk0VxI2dGCuROTBsTxRNIWr5IxbOPJK45SKH9VEQuUCLG9LyLQwXZQZ+1Zgo+WBPKVliqEzT//0wXDogPUFOwNwRY52PDgBhJB9/zxoqN3GN5jj5fwNNhqj1R/GPnOV0mqrYjcyUAZQQY6ERuFxGRpJ/5ygK17z8af0b+kVDmZhbtvjXrUgxzmB60c8BNlHrgx5idq7mL1pWiksdO8Ir0KZZTJ1uV3cEQoIQ0HOaEIW8aD3m8SHV2v31PR6UJ9A2o3NGQDEHclWu7osqGq1dOUPa1yv41479H0tbKP+D+x4JL0bzzrVH2vr0lrJtm6NJ1mOjbcZm3RBAlrSkE40sAv8blKzL8iwWAB4e26hBUUns6hKtw3UZwSIs6/oiQd+htJY6aWaH5cfnqTZZ42k1R0V9bdsYOQzbw+4s0yyctqjXxxTN5OGsVMk7ghkqWOHzZpVc9JaMxRCOj58l/cZp38yTvm3u1BkU3E6rv6vCHRkUO1YgDJPyClbBsnGifqcVnTfEveoQu/5nTaYq+Dsc5abiE225DCS2TbmmbBo5tRghtmI0Th08d2kqjZR1BkFniBIB0Dn05CiYiCYuHPKbWQ0dWBMggQjwMQ61zmYPZX9SOcqY+cCzPAhl2XnKaSfWpbDePd3JNvY+Q7QhmI7vDMWnZm/23Gx23kGNF9HoIeR656uqTB9R1k1Q4HFRe+KJzH1ZpAKCzGz3OTOWoLX8tZQ"
+      },
+      {
+        "content": [
+          {
+            "type": "output_text",
+            "text": "0.05 EUR",
+            "logprobs": [],
+            "annotations": []
+          }
+        ],
+        "id": "msg_68567270-379d-9005-9e17-5e45194051cd",
+        "role": "assistant",
+        "type": "message",
+        "status": "completed"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "previous_response_id": null,
+    "reasoning": {
+      "effort": "xhigh",
+      "summary": "detailed"
+    },
+    "temperature": 0.7,
+    "text": {
+      "format": {
+        "type": "text"
+      }
+    },
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 0.95,
+    "usage": {
+      "input_tokens": 1292,
+      "input_tokens_details": {
+        "cached_tokens": 1152
+      },
+      "output_tokens": 322,
+      "output_tokens_details": {
+        "reasoning_tokens": 318
+      },
+      "total_tokens": 1614,
+      "num_sources_used": 0,
+      "num_server_side_tools_used": 0,
+      "cost_in_usd_ticks": 27880000,
+      "context_details": {
+        "input_tokens": 1292,
+        "output_tokens": 329
+      }
+    },
+    "user": null,
+    "incomplete_details": null,
+    "status": "completed",
+    "store": false,
+    "metadata": {
+      "system_fingerprint": "fp_c60958d81f66f847"
+    },
+    "background": false,
+    "service_tier": "default",
+    "truncation": "disabled",
+    "top_logprobs": 0,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0,
+    "prompt_cache_key": null,
+    "max_tool_calls": null,
+    "safety_identifier": null,
+    "error": null,
+    "instructions": "You are a careful assistant."
+  },
+  "response_headers": {
+    "x-ratelimit-limit-tokens": "50000000",
+    "x-ratelimit-remaining-tokens": "50000000",
+    "x-ratelimit-limit-requests": "7200",
+    "x-ratelimit-remaining-requests": "7200",
+    "x-request-id": "68567270-379d-9005-9e17-5e45194051cd"
+  },
+  "response_header_names": [
+    "access-control-allow-origin",
+    "access-control-expose-headers",
+    "cf-cache-status",
+    "cf-ray",
+    "connection",
+    "content-length",
+    "content-type",
+    "date",
+    "server",
+    "server-timing",
+    "set-cookie",
+    "strict-transport-security",
+    "traceparent",
+    "vary",
+    "x-data-retention",
+    "x-metrics-e2e-ms",
+    "x-metrics-ttft-ms",
+    "x-ratelimit-limit-requests",
+    "x-ratelimit-limit-tokens",
+    "x-ratelimit-remaining-requests",
+    "x-ratelimit-remaining-tokens",
+    "x-request-id",
+    "x-zero-data-retention"
+  ],
+  "duration_ms": 4239,
+  "note": "angenommen"
+}

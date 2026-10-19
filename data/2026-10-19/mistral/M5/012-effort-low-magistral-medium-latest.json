@@ -1,0 +1,56 @@
+{
+  "ts": "2026-10-19T08:23:07+00:00",
+  "target": "mistral",
+  "model": "magistral-medium-latest",
+  "measurement": "M5",
+  "step": "effort-low",
+  "run_id": "e45e5c35",
+  "url": "https://api.mistral.ai/v1/chat/completions",
+  "request_body": {
+    "model": "magistral-medium-latest",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful assistant."
+      },
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "max_tokens": 2048,
+    "reasoning_effort": "low"
+  },
+  "status": 400,
+  "response_body": {
+    "object": "error",
+    "message": "reasoning_effort low is not supported for this model, supported values: [<ReasoningEffort.high: 'high'>, <ReasoningEffort.none: 'none'>]",
+    "type": "invalid_request_invalid_args",
+    "param": null,
+    "code": "3051",
+    "raw_status_code": 400
+  },
+  "response_headers": {},
+  "response_header_names": [
+    "access-control-allow-origin",
+    "alt-svc",
+    "cf-cache-status",
+    "cf-ray",
+    "connection",
+    "content-length",
+    "content-type",
+    "date",
+    "mistral-correlation-id",
+    "server",
+    "server-timing",
+    "set-cookie",
+    "strict-transport-security",
+    "x-content-type-options",
+    "x-envoy-upstream-service-time",
+    "x-kong-proxy-latency",
+    "x-kong-request-id",
+    "x-kong-upstream-latency"
+  ],
+  "duration_ms": 358,
+  "note": "abgelehnt: http 400 {'object': 'error', 'message': \"reasoning_effort low is not supported for this model, supported values: [<ReasoningEffort.high: 'high'>, <ReasoningEffort.none: 'none'>]\", 'type': 'invalid_request_invalid_args', 'param': None, 'code': '3051', 'raw_status_code': 400}"
+}

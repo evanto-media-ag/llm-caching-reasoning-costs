@@ -1,0 +1,60 @@
+{
+  "ts": "2026-10-19T08:11:29+00:00",
+  "target": "anthropic",
+  "model": "claude-haiku-5-5",
+  "measurement": "M5",
+  "step": "effort-none",
+  "run_id": "31af8dd4",
+  "url": "https://api.anthropic.com/v1/messages",
+  "request_body": {
+    "model": "claude-haiku-5-5",
+    "max_tokens": 2048,
+    "system": [
+      {
+        "type": "text",
+        "text": "You are a careful assistant."
+      }
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "output_config": {
+      "effort": "none"
+    }
+  },
+  "status": 400,
+  "response_body": {
+    "type": "error",
+    "error": {
+      "type": "invalid_request_error",
+      "message": "output_config.effort: Input should be 'low', 'medium', 'high', 'xhigh' or 'max'"
+    },
+    "request_id": "req_011CgBFvN13JdPGNXo8d1SWH"
+  },
+  "response_headers": {
+    "request-id": "req_011CgBFvN13JdPGNXo8d1SWH"
+  },
+  "response_header_names": [
+    "anthropic-organization-id",
+    "anthropic-workspace-id",
+    "cf-cache-status",
+    "cf-ray",
+    "connection",
+    "content-security-policy",
+    "content-type",
+    "date",
+    "request-id",
+    "server",
+    "strict-transport-security",
+    "traceresponse",
+    "transfer-encoding",
+    "vary",
+    "x-robots-tag",
+    "x-should-retry"
+  ],
+  "duration_ms": 297,
+  "note": "abgelehnt: http 400 {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': \"output_config.effort: Input should be 'low', 'medium', 'high', 'xhigh' or 'max'\"}, 'request_id': 'req_011CgBFvN13JdPGNXo8d1SWH'}"
+}

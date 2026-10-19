@@ -1,0 +1,61 @@
+{
+  "ts": "2026-10-19T08:11:28+00:00",
+  "target": "anthropic",
+  "model": "claude-sonnet-5-5",
+  "measurement": "M5",
+  "step": "budget_tokens",
+  "run_id": "2e90df54",
+  "url": "https://api.anthropic.com/v1/messages",
+  "request_body": {
+    "model": "claude-sonnet-5-5",
+    "max_tokens": 2048,
+    "system": [
+      {
+        "type": "text",
+        "text": "You are a careful assistant."
+      }
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "thinking": {
+      "type": "enabled",
+      "budget_tokens": 1024
+    }
+  },
+  "status": 400,
+  "response_body": {
+    "type": "error",
+    "error": {
+      "type": "invalid_request_error",
+      "message": "\"thinking.type.enabled\" is not supported for this model. Use \"thinking.type.adaptive\" and \"output_config.effort\" to control thinking behavior."
+    },
+    "request_id": "req_011CgBFvJ59kciGcX593eQeG"
+  },
+  "response_headers": {
+    "request-id": "req_011CgBFvJ59kciGcX593eQeG"
+  },
+  "response_header_names": [
+    "anthropic-organization-id",
+    "anthropic-workspace-id",
+    "cf-cache-status",
+    "cf-ray",
+    "connection",
+    "content-security-policy",
+    "content-type",
+    "date",
+    "request-id",
+    "server",
+    "strict-transport-security",
+    "traceresponse",
+    "transfer-encoding",
+    "vary",
+    "x-robots-tag",
+    "x-should-retry"
+  ],
+  "duration_ms": 292,
+  "note": "abgelehnt: http 400 {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': '\"thinking.type.enabled\" is not supported for this model. Use \"thinking.type.adaptive\" and \"output_config.effort\" to control thinking behavior.'}, 'request_id': 'req_011CgBFvJ59kciGcX593eQeG'}"
+}

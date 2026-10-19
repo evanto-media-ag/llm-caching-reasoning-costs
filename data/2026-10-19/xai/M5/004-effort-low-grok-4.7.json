@@ -1,0 +1,141 @@
+{
+  "ts": "2026-10-19T08:12:43+00:00",
+  "target": "xai",
+  "model": "grok-4.7",
+  "measurement": "M5",
+  "step": "effort-low",
+  "run_id": "106a575d",
+  "url": "https://api.x.ai/v1/responses",
+  "request_body": {
+    "model": "grok-4.7",
+    "instructions": "You are a careful assistant.",
+    "input": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only.",
+    "max_output_tokens": 2048,
+    "store": false,
+    "reasoning": {
+      "effort": "low"
+    }
+  },
+  "status": 200,
+  "response_body": {
+    "created_at": 1792397559,
+    "completed_at": 1792397562,
+    "id": "38b14454-e340-971d-8089-e26ba31b769f",
+    "max_output_tokens": 2048,
+    "model": "grok-4.7",
+    "object": "response",
+    "output": [
+      {
+        "id": "rs_38b14454-e340-971d-8089-e26ba31b769f",
+        "summary": [
+          {
+            "text": "Setting up the algebraic equations for the bat and ball pricing problem.",
+            "type": "summary_text"
+          }
+        ],
+        "type": "reasoning",
+        "status": "completed",
+        "encrypted_content": "w9M7XCdmI1BKUTqlo6pF9nONidhB9Q0lyfVpE58T/lDfXKXM2oCm9jutnQhoi34YwxW1TcL5SZFZQZw1PJeliB36WHJbV0HjL71TJGZrPivdLKJP84rU+kAg+IeyeTYiHjo3L43ZKnaOg32ML7Hs/R55wQfh+ImGmoUPacFtxv9TF+6dcdADy61FbJPhCp7LRhR++4a+drhI1IhV3h2NcbmVtchbKraPU5k/HKNHgARiN6cjwOcPIeCk/uh1GmRS28Av7gNCLdSuO9j7j1gwQxIpq6eN1jWGub7StHuO2yWM6dVclZ8nRCt5EXLhz+0V94POF6u8KT5uCE++Edd0/u37VkJ5fYNA/ohTCpCNlJLsjEd5oNNWN+J1ISckv1gy2q2udwMHTjKj2eUxPmLphiNXyvb7W+iD0am8+PFHB8hwSrcbfCges92Dhi/1Gwl6WUf0Y7sJ9RzGKZunEICTqijUCw/zSDuSJOa+ltaIAMiq/jLgPD1aLnIT2RIf9FAKO6w+3VItg82vBEVBLZrOgp1JDQhr+0FhvVGQFCGJI+cy/8mCh//gTy8WDb9qQ7Xppupvj7QwV0cnStdUUvgXmeyYcRdfKsJoVdiYjcsIFK6I4zr4BP4jDMEtF7v6ZNsS74P9MXwn+CO5YnI/UtbyBXuiGKNV/o/YPEfjm5rlw9TTNyCcWe539jQDEiSbktC+A4tZncccq7/ynok+dc7RvrwhpLIM3JEvxJ0VLrc9p9S6PzoeUHkltK/4WfgZ9ajUaiw92zGQMoetwCevQmYQtinYSyxuPfveLgIS3B+WEw"
+      },
+      {
+        "content": [
+          {
+            "type": "output_text",
+            "text": "0.05 EUR",
+            "logprobs": [],
+            "annotations": []
+          }
+        ],
+        "id": "msg_38b14454-e340-971d-8089-e26ba31b769f",
+        "role": "assistant",
+        "type": "message",
+        "status": "completed"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "previous_response_id": null,
+    "reasoning": {
+      "effort": "low",
+      "summary": "detailed"
+    },
+    "temperature": 0.7,
+    "text": {
+      "format": {
+        "type": "text"
+      }
+    },
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 0.95,
+    "usage": {
+      "input_tokens": 1291,
+      "input_tokens_details": {
+        "cached_tokens": 1152
+      },
+      "output_tokens": 194,
+      "output_tokens_details": {
+        "reasoning_tokens": 190
+      },
+      "total_tokens": 1485,
+      "num_sources_used": 0,
+      "num_server_side_tools_used": 0,
+      "cost_in_usd_ticks": 20180000,
+      "context_details": {
+        "input_tokens": 1291,
+        "output_tokens": 201
+      }
+    },
+    "user": null,
+    "incomplete_details": null,
+    "status": "completed",
+    "store": false,
+    "metadata": {
+      "system_fingerprint": "fp_c60958d81f66f847"
+    },
+    "background": false,
+    "service_tier": "default",
+    "truncation": "disabled",
+    "top_logprobs": 0,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0,
+    "prompt_cache_key": null,
+    "max_tool_calls": null,
+    "safety_identifier": null,
+    "error": null,
+    "instructions": "You are a careful assistant."
+  },
+  "response_headers": {
+    "x-ratelimit-limit-tokens": "50000000",
+    "x-ratelimit-remaining-tokens": "50000000",
+    "x-ratelimit-limit-requests": "7200",
+    "x-ratelimit-remaining-requests": "7200",
+    "x-request-id": "38b14454-e340-971d-8089-e26ba31b769f"
+  },
+  "response_header_names": [
+    "access-control-allow-origin",
+    "access-control-expose-headers",
+    "cf-cache-status",
+    "cf-ray",
+    "connection",
+    "content-length",
+    "content-type",
+    "date",
+    "server",
+    "server-timing",
+    "set-cookie",
+    "strict-transport-security",
+    "traceparent",
+    "vary",
+    "x-data-retention",
+    "x-metrics-e2e-ms",
+    "x-metrics-ttft-ms",
+    "x-ratelimit-limit-requests",
+    "x-ratelimit-limit-tokens",
+    "x-ratelimit-remaining-requests",
+    "x-ratelimit-remaining-tokens",
+    "x-request-id",
+    "x-zero-data-retention"
+  ],
+  "duration_ms": 3359,
+  "note": "angenommen"
+}

@@ -1,0 +1,71 @@
+{
+  "ts": "2026-10-19T08:12:16+00:00",
+  "target": "openai-chat",
+  "model": "gpt-5.6-luna",
+  "measurement": "M5",
+  "step": "effort-minimal",
+  "run_id": "f95bff2e",
+  "url": "https://api.openai.com/v1/chat/completions",
+  "request_body": {
+    "model": "gpt-5.6-luna",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful assistant."
+      },
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "max_completion_tokens": 2048,
+    "reasoning_effort": "minimal"
+  },
+  "status": 400,
+  "response_body": {
+    "error": {
+      "message": "Unsupported value: 'reasoning_effort' does not support 'minimal' with this model. Supported values are: 'none', 'low', 'medium', 'high', and 'xhigh'.",
+      "type": "invalid_request_error",
+      "param": "reasoning_effort",
+      "code": "unsupported_value"
+    }
+  },
+  "response_headers": {
+    "openai-processing-ms": "19",
+    "x-ratelimit-limit-requests": "5000",
+    "x-ratelimit-limit-tokens": "2000000",
+    "x-ratelimit-remaining-requests": "4998",
+    "x-ratelimit-remaining-tokens": "1999874",
+    "x-ratelimit-reset-requests": "24ms",
+    "x-ratelimit-reset-tokens": "3ms",
+    "x-request-id": "req_241efd4ed4a74a8abd863d26be87bb6e"
+  },
+  "response_header_names": [
+    "access-control-expose-headers",
+    "alt-svc",
+    "cf-cache-status",
+    "cf-ray",
+    "connection",
+    "content-length",
+    "content-type",
+    "date",
+    "openai-organization",
+    "openai-processing-ms",
+    "openai-project",
+    "openai-version",
+    "server",
+    "set-cookie",
+    "strict-transport-security",
+    "x-content-type-options",
+    "x-openai-proxy-wasm",
+    "x-ratelimit-limit-requests",
+    "x-ratelimit-limit-tokens",
+    "x-ratelimit-remaining-requests",
+    "x-ratelimit-remaining-tokens",
+    "x-ratelimit-reset-requests",
+    "x-ratelimit-reset-tokens",
+    "x-request-id"
+  ],
+  "duration_ms": 208,
+  "note": "abgelehnt: http 400 {'error': {'message': \"Unsupported value: 'reasoning_effort' does not support 'minimal' with this model. Supported values are: 'none', 'low', 'medium', 'high', and 'xhigh'.\", 'type': 'invalid_request_error', 'param': 'reasoning_effort', 'code': 'unsupported_value'}}"
+}

@@ -1,0 +1,101 @@
+{
+  "ts": "2026-10-19T08:11:27+00:00",
+  "target": "anthropic",
+  "model": "claude-sonnet-5-5",
+  "measurement": "M5",
+  "step": "effort-max",
+  "run_id": "2e90df54",
+  "url": "https://api.anthropic.com/v1/messages",
+  "request_body": {
+    "model": "claude-sonnet-5-5",
+    "max_tokens": 2048,
+    "system": [
+      {
+        "type": "text",
+        "text": "You are a careful assistant."
+      }
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "output_config": {
+      "effort": "max"
+    }
+  },
+  "status": 200,
+  "response_body": {
+    "model": "claude-sonnet-5-5",
+    "id": "msg_011CgBFvCJt5N42vfS2AXuLT",
+    "type": "message",
+    "role": "assistant",
+    "content": [
+      {
+        "type": "thinking",
+        "thinking": "",
+        "signature": "CAQSjQYKEAgSGAI4AUIIdGhpbmtpbmcSDH8e1qySW3Mzgt6+XhoMwInx47zNqxt1IJGuIjCSjDsbBK1PmfKpTdlEoP1eDQ8YpdHcfdeLDLLMeAPpFAaFDZEVjY0zIUcF06pHL3IqqgVbHwPo9JL9wufjpwzdo6HEOqGg6+fmcq3Z98fQMjIWiYyI6/hy0qjPaqc0X5jvb93Ul6aCVv9XX1u+o52r24yR8h9PxJJaRMJw/HeSreP32mDo3aVA8yTY6vRrNGUf0tjhyUBO2I1tJtQWoPlWw3pmcnStPZkMYNRa3/8JHrd/ggB2cV1RTyqD6MOt3C7eFq75T3D75lyu4++C7yTtP1xGqmTkV2Ezd6kY1ODCbdfFgs+g/UAhcAUjr9i3VBka2XFssEZsmBwOIF4xjfHotiEn7GHmtP2zyuzw4HQfCKr6zJ4B/ytqDkGV1Wq5zyIBK31O9mmsBXjSyVer8JdAJo+OdZYpr1xaLTwYe2mmrgWdSptHhByBcSbnQ5sAGRYwXnXn06qEb2jX6j+74eaWqj1VsdX3kLN90U2TSLU/F2cOPjyDGxkr/hhYe/IcS1NKWJALcnf8vZMvLA13jYVRFGBCOTP4Gq9zHCN6qQVW/jo9crX/6GVoqd2TFRrkhATXXfSx1VpWj7hJ7W93hXQ10V8fE7O/d7ONAA6UQomP+YPo455xvxl0V51i7ket7DquDcnotJovk/wEqEEdaQXNyGL9ATABnKY80YrYDi5vBo1YO7gf6yQDqaMQTNgYGfTNaO8Dguf/7GGbEI5mmAFVLavedOmtP1Zlkitu7R7wQ/nweJdQz+YC0RWwrb9wPPEZtydc0hxs4UGPn7OFZk9yKi8B4GNHZ1iRIxdAjvbIQWBW/CTbsybf+YOEe3JPCFIDl+x1psZDPmzb9OHXA8m4N75cZ3vx+hXp6Vv2g9n5YjEhUnJGyV2fjIJ4GgE6IysC/eN01+R/s6YaHnwujtpIlDMLl9HvKCFPKeKZ3KuLB7ZNOiYT1ocafOHNYDW377ZLXkz+g8lA6+DBbB3bGAE="
+      },
+      {
+        "type": "text",
+        "text": "0.05 EUR"
+      }
+    ],
+    "container": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "stop_details": null,
+    "usage": {
+      "input_tokens": 75,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "output_tokens": 116,
+      "output_tokens_details": {
+        "thinking_tokens": 107
+      },
+      "service_tier": "standard",
+      "inference_geo": "global",
+      "speed": "standard"
+    },
+    "diagnostics": null
+  },
+  "response_headers": {
+    "request-id": "req_011CgBFvBwZVx9CQr52dysTE"
+  },
+  "response_header_names": [
+    "anthropic-organization-id",
+    "anthropic-ratelimit-input-tokens-limit",
+    "anthropic-ratelimit-input-tokens-remaining",
+    "anthropic-ratelimit-input-tokens-reset",
+    "anthropic-ratelimit-output-tokens-limit",
+    "anthropic-ratelimit-output-tokens-remaining",
+    "anthropic-ratelimit-output-tokens-reset",
+    "anthropic-ratelimit-requests-limit",
+    "anthropic-ratelimit-requests-remaining",
+    "anthropic-ratelimit-requests-reset",
+    "anthropic-ratelimit-tokens-limit",
+    "anthropic-ratelimit-tokens-remaining",
+    "anthropic-ratelimit-tokens-reset",
+    "anthropic-workspace-id",
+    "cf-cache-status",
+    "cf-ray",
+    "connection",
+    "content-security-policy",
+    "content-type",
+    "date",
+    "request-id",
+    "server",
+    "strict-transport-security",
+    "traceresponse",
+    "transfer-encoding",
+    "vary",
+    "x-robots-tag"
+  ],
+  "duration_ms": 1407,
+  "note": "angenommen"
+}

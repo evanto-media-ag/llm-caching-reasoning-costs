@@ -1,0 +1,159 @@
+{
+  "ts": "2026-10-19T08:11:59+00:00",
+  "target": "openai-responses",
+  "model": "gpt-5.6-luna",
+  "measurement": "M5",
+  "step": "effort-high",
+  "run_id": "9f557df6",
+  "url": "https://api.openai.com/v1/responses",
+  "request_body": {
+    "model": "gpt-5.6-luna",
+    "instructions": "You are a careful assistant.",
+    "input": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only.",
+    "max_output_tokens": 2048,
+    "store": false,
+    "reasoning": {
+      "effort": "high"
+    }
+  },
+  "status": 200,
+  "response_body": {
+    "id": "resp_0aa1a40791364a23016ad5d0ced03887d2aa6ef36a8c99d949",
+    "object": "response",
+    "created_at": 1792397518,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792397519,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": "You are a careful assistant.",
+    "max_output_tokens": 2048,
+    "max_tool_calls": null,
+    "model": "gpt-5.6-luna",
+    "moderation": null,
+    "output": [
+      {
+        "id": "rs_0aa1a40791364a23016ad5d0cf4df887d285993c7e705d424b",
+        "type": "reasoning",
+        "content": [],
+        "encrypted_content": "gAAAAABq1dDP8cG5XzElsWx08djYvIvvRUgD57AQ2RPSWXGqvNmsnXci4EcV3rMYN3YJ3UPFyRc9DGXp-jsSuQidMivZa48QPIjPStojbVow6wvhtefHxpRlXz-QtWXH1S1VCU4Gi27TFsyamkgMVCChAyyKqmVVraqlrV50TKXklZhaTDt68yEQtWekCpXFqFCA8nZdIw0Jcj4DLSD1-krD6inOUgDkBBywvbfFekReEfAEZTebs48PlnmdXEmnUkeaZ7bVy75GhEsoM8Lk07CrcRrBoNBus-pa84CWscCuU3g_ZyDMbXZV-0QeoLO2X_8q3_mZ-73CgR5e_xQ6u9IlC2fGF9q2QkUvtQwUDOkCMvQowX2jztjN2lHruiiqydfXXw82fONjhCBOX93e8TpMPmJ-d31GDI_fcvlwTWrEbTvOuy155ECPvRbHpilQld5OWxSvfj7ElMvWl808pEpVw55c14omyklp9VatmQiGeyAvedY3CaRjcnMFIOBVYFlFTsVQ9O7vCeRM1lvepNZ4_IZxTI7D1XQZMiSvsljRM6_i2Tyzyuvea1uHb4ejk9oIFWTSgZZltZAJcIPdIKJZLwbmcyWgbtOcwxPiaL5Iqikahb4zdwMQRhpaZndZkxgdY4HLka7mcLe10pa4VFBVHhHQoUHiX0gja6xp-RNWd7APm5EPBEqnFbowuZkScZVjkDPRCi79PdmeqOKhEfBmL506OmQpDea7HcRubv2zpWOXNrRE4xdqZoXLBCBwy0Kg5CDPRlpDXDR0BHnBuRTjZpVekw7xa2RXxW36aWct3Zzzsj9A4jHY1uX4JRLmaLjaDw2njQaIbrmHYS4s8TCaSJ4-jDXKXaFr7Aw9u-WAINxmouLG4mUUPq5wxhZch8CZXEFoDnbm5Iv5h_2Bxdv-VGq5_NUp5qwq9ko28jJMucSsmksjT4qpCH63cR0tYFCTUrw38PZpaI0NB4I393JiJ2j0i5d-r18GmzrNt4gPSeNyfC0YxKC4nUwa5o6PpksM8tB8XdJAabtS5AzhHVpQ0ka88XpKZnzqA4D3UZetrISmYUBzitoMfMENwCEWxbA0m-if7lXgDBpRmsUGhOFUDZrbcaejEcUmWoCHxyZ9W1A3NUhaYZma9N3l9cNiPCC3FMHY6V7HGTvfBiF4LYT0s_AuZI732yKbjyO6w0sDjVwuEaJ8TqWNHC-Inmjp20j2m6JewOzC9JlYBKsqsUkBX2j3rr_Awt9EDDG43fdT5_rVKW1hJOngmi8U1cPDwj9efde-jqs3pImlN6yDFgBYElKNbuDOCBvuR1cpYkjwhPiOwwU07j3myDuqo31Ps85JhI7gpYta5Xhf5s2MgfL3DrRyr7RxyAjIdjGun2XfocHvvqPzqm9glDf0swMTEiBhtAywwhnQleCvKyGytbgh2ogTVtSJ_tX5V9ZXBnHWaGD4_bXCq5HbGQIV_9MyqdGCrBsjmm92LK4K0OKo0cRF8T8SJ0X5ZhIv0xqkwPpTX3p2_KBfdnmzMiHnPafyqZT7DhuBpQVjvH9Nxb6OVzAzE3kvAWP9Q5kkXe1bhtpCkT2sgRwqBZq2C0g7f2XSUUIIwc7CIZpyVlMCOgiELeDkrY-Uo8R_TgJsO9oq7U3Y807q0Cj9Wyam5WWa57qdrinbDX5EFQRijUFKZK7b-zc0icnM8cUflw==",
+        "summary": []
+      },
+      {
+        "id": "msg_0aa1a40791364a23016ad5d0cf970087d2b7bfaf61d1562a82",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "0.05 EUR"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "all_turns",
+      "effort": "high",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": false,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 56,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 33,
+      "output_tokens_details": {
+        "reasoning_tokens": 23
+      },
+      "total_tokens": 89
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "response_headers": {
+    "openai-processing-ms": "958",
+    "x-ratelimit-limit-requests": "5000",
+    "x-ratelimit-limit-tokens": "2000000",
+    "x-ratelimit-remaining-requests": "4997",
+    "x-ratelimit-remaining-tokens": "2000000",
+    "x-ratelimit-reset-requests": "36ms",
+    "x-ratelimit-reset-tokens": "0s",
+    "x-request-id": "req_bf7dee4d5a8e4ed4bd8dc74ea9a88311"
+  },
+  "response_header_names": [
+    "access-control-expose-headers",
+    "alt-svc",
+    "cf-cache-status",
+    "cf-ray",
+    "connection",
+    "content-length",
+    "content-type",
+    "date",
+    "openai-organization",
+    "openai-processing-ms",
+    "openai-project",
+    "openai-version",
+    "server",
+    "set-cookie",
+    "strict-transport-security",
+    "x-content-type-options",
+    "x-ratelimit-limit-requests",
+    "x-ratelimit-limit-tokens",
+    "x-ratelimit-remaining-requests",
+    "x-ratelimit-remaining-tokens",
+    "x-ratelimit-reset-requests",
+    "x-ratelimit-reset-tokens",
+    "x-request-id"
+  ],
+  "duration_ms": 1198,
+  "note": "angenommen"
+}
