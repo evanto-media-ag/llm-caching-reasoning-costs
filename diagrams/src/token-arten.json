@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Woraus ein LLM-Aufruf preislich besteht",
+    "quality_profile": "showcase",
+    "legend": {
+      "mode": "hidden"
+    }
+  },
+  "components": [
+    {
+      "id": "call",
+      "type": "backend",
+      "label": "Ein Aufruf",
+      "sublabel": "Beispiel Claude Sonnet 5",
+      "pos": [
+        40,
+        300
+      ],
+      "size": [
+        170,
+        64
+      ]
+    },
+    {
+      "id": "input",
+      "type": "frontend",
+      "label": "Input ungecacht",
+      "sublabel": "2,00 $ je 1 Mio. · 1×",
+      "pos": [
+        380,
+        60
+      ],
+      "size": [
+        300,
+        60
+      ]
+    },
+    {
+      "id": "read",
+      "type": "database",
+      "label": "Cache-Read",
+      "sublabel": "0,20 $ je 1 Mio. · 0,1×",
+      "pos": [
+        380,
+        180
+      ],
+      "size": [
+        300,
+        60
+      ]
+    },
+    {
+      "id": "write",
+      "type": "database",
+      "label": "Cache-Write",
+      "sublabel": "2,50 $ (5 min) · 4,00 $ (1 h) · 1,25× / 2×",
+      "pos": [
+        380,
+        300
+      ],
+      "size": [
+        300,
+        60
+      ]
+    },
+    {
+      "id": "output",
+      "type": "frontend",
+      "label": "Output",
+      "sublabel": "10,00 $ je 1 Mio. · 5×",
+      "pos": [
+        380,
+        440
+      ],
+      "size": [
+        300,
+        60
+      ]
+    },
+    {
+      "id": "reasoning",
+      "type": "external",
+      "label": "Reasoning",
+      "sublabel": "oft unsichtbar, voll bezahlt",
+      "pos": [
+        790,
+        440
+      ],
+      "size": [
+        210,
+        60
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "Prompt-Seite",
+      "wraps": [
+        "input",
+        "read",
+        "write"
+      ]
+    },
+    {
+      "kind": "region",
+      "label": "Antwort-Seite",
+      "wraps": [
+        "output",
+        "reasoning"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "c-input",
+      "from": "call",
+      "to": "input"
+    },
+    {
+      "id": "c-read",
+      "from": "call",
+      "to": "read"
+    },
+    {
+      "id": "c-write",
+      "from": "call",
+      "to": "write"
+    },
+    {
+      "id": "c-output",
+      "from": "call",
+      "to": "output"
+    },
+    {
+      "id": "o-reason",
+      "from": "output",
+      "to": "reasoning",
+      "label": "enthält",
+      "variant": "dashed"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Preise: Anthropic, 19.10.2026",
+      "items": [
+        "Faktoren beziehen sich auf den Input-Preis",
+        "Read-Faktor je Modell verschieden: 0,1× bis 0,025×"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Falle beim Zählen",
+      "items": [
+        "Anthropic: input_tokens ohne Cache-Tokens",
+        "OpenAI-Stil: prompt_tokens mit Cache-Tokens"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Der Weg eines Claude-Aufrufs durch einen Router",
+    "quality_profile": "showcase",
+    "legend": {
+      "mode": "hidden"
+    }
+  },
+  "components": [
+    {
+      "id": "app",
+      "type": "frontend",
+      "label": "Ihre Anwendung",
+      "sublabel": "großer Systemprompt",
+      "pos": [
+        40,
+        220
+      ],
+      "size": [
+        170,
+        64
+      ]
+    },
+    {
+      "id": "router",
+      "type": "cloud",
+      "label": "Router",
+      "sublabel": "Cortecs · EU Router · Requesty",
+      "pos": [
+        400,
+        220
+      ],
+      "size": [
+        200,
+        64
+      ]
+    },
+    {
+      "id": "bedrock",
+      "type": "cloud",
+      "label": "AWS Bedrock",
+      "sublabel": "amazon_ireland",
+      "pos": [
+        760,
+        110
+      ],
+      "size": [
+        170,
+        64
+      ]
+    },
+    {
+      "id": "vertex",
+      "type": "cloud",
+      "label": "Google Vertex",
+      "sublabel": "Standardwahl Cortecs",
+      "pos": [
+        760,
+        330
+      ],
+      "size": [
+        170,
+        64
+      ]
+    },
+    {
+      "id": "anthropic",
+      "type": "backend",
+      "label": "Anthropic API",
+      "sublabel": "direkter Zugang",
+      "pos": [
+        40,
+        420
+      ],
+      "size": [
+        170,
+        64
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "app-router",
+      "from": "app",
+      "to": "router",
+      "label": "cache_control + Pinning",
+      "variant": "emphasis"
+    },
+    {
+      "id": "pinned",
+      "from": "router",
+      "to": "bedrock",
+      "label": "gepinnt: 4/4 Treffer",
+      "variant": "emphasis",
+      "fromSide": "top",
+      "toSide": "left"
+    },
+    {
+      "id": "unpinned",
+      "from": "router",
+      "to": "vertex",
+      "label": "ohne Pinning: 0/4",
+      "variant": "dashed",
+      "fromSide": "bottom",
+      "toSide": "left"
+    },
+    {
+      "id": "direct",
+      "from": "app",
+      "to": "anthropic",
+      "label": "direkt: 4/4",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "labelAt": [
+        125,
+        352
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Gemessen am 19.10.2026",
+      "items": [
+        "Mit cache_control und gepinntem Upstream: 4 von 4 Folgeaufrufen aus dem Cache",
+        "Ohne cache_control: 0 von 4, bei allen Routern"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Worauf es ankommt",
+      "items": [
+        "Der Router wählt den Upstream, nicht Sie",
+        "Nur ein Upstream mit Cache-Unterstützung spart Geld"
+      ]
+    }
+  ]
+}

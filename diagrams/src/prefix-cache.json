@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Prefix-Cache: was ihn trägt und was ihn bricht",
+    "quality_profile": "showcase",
+    "legend": {
+      "mode": "hidden"
+    }
+  },
+  "components": [
+    {
+      "id": "tools",
+      "type": "backend",
+      "label": "Tools",
+      "sublabel": "Definitionen",
+      "pos": [
+        40,
+        140
+      ],
+      "size": [
+        150,
+        60
+      ]
+    },
+    {
+      "id": "system",
+      "type": "backend",
+      "label": "Systemprompt",
+      "sublabel": "Regeln, Wissen",
+      "pos": [
+        270,
+        140
+      ],
+      "size": [
+        150,
+        60
+      ]
+    },
+    {
+      "id": "history",
+      "type": "backend",
+      "label": "Verlauf",
+      "sublabel": "frühere Züge",
+      "pos": [
+        500,
+        140
+      ],
+      "size": [
+        150,
+        60
+      ]
+    },
+    {
+      "id": "turn",
+      "type": "frontend",
+      "label": "Neue Nachricht",
+      "sublabel": "ändert sich immer",
+      "pos": [
+        760,
+        140
+      ],
+      "size": [
+        160,
+        60
+      ]
+    },
+    {
+      "id": "tools-change",
+      "type": "external",
+      "label": "Tool-Liste geändert",
+      "sublabel": "alles danach neu",
+      "pos": [
+        30,
+        360
+      ],
+      "size": [
+        170,
+        60
+      ]
+    },
+    {
+      "id": "date",
+      "type": "external",
+      "label": "Datum im Systemprompt",
+      "sublabel": "jeder Tag ein neuer Präfix",
+      "pos": [
+        250,
+        360
+      ],
+      "size": [
+        190,
+        60
+      ]
+    },
+    {
+      "id": "effort",
+      "type": "external",
+      "label": "Effort-Wechsel",
+      "sublabel": "bei OpenAI, xAI, Sonnet 5",
+      "pos": [
+        480,
+        360
+      ],
+      "size": [
+        190,
+        60
+      ]
+    },
+    {
+      "id": "minimum",
+      "type": "external",
+      "label": "Unter Mindestgröße",
+      "sublabel": "512–4 096 Tokens",
+      "pos": [
+        755,
+        360
+      ],
+      "size": [
+        170,
+        60
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "gecachter Präfix (identisch Byte für Byte)",
+      "wraps": [
+        "tools",
+        "system",
+        "history"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "p1",
+      "from": "tools",
+      "to": "system"
+    },
+    {
+      "id": "p2",
+      "from": "system",
+      "to": "history"
+    },
+    {
+      "id": "p3",
+      "from": "history",
+      "to": "turn",
+      "label": "ungecacht"
+    },
+    {
+      "id": "b1",
+      "from": "tools-change",
+      "to": "tools",
+      "label": "bricht",
+      "variant": "dashed",
+      "fromSide": "top",
+      "toSide": "bottom"
+    },
+    {
+      "id": "b2",
+      "from": "date",
+      "to": "system",
+      "label": "bricht",
+      "variant": "dashed",
+      "fromSide": "top",
+      "toSide": "bottom"
+    },
+    {
+      "id": "b3",
+      "from": "effort",
+      "to": "history",
+      "label": "bricht teils",
+      "variant": "dashed",
+      "fromSide": "top",
+      "toSide": "bottom"
+    },
+    {
+      "id": "b4",
+      "from": "minimum",
+      "to": "turn",
+      "label": "kein Cache",
+      "variant": "dashed",
+      "fromSide": "top",
+      "toSide": "bottom"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Gemessen am 19.10.2026",
+      "items": [
+        "Effort-Wechsel bricht den Cache bei OpenAI, xAI, Gemini und Claude Sonnet 5",
+        "Claude Sonnet 5.5 und Haiku 5.5 behalten ihn"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Lesson Learned",
+      "items": [
+        "Veränderliches ans Ende des Prompts",
+        "Unter der Mindestgröße wird still nicht gecacht"
+      ]
+    }
+  ]
+}
