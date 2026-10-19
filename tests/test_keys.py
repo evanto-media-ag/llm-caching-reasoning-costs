@@ -24,6 +24,7 @@ class KeysTest(unittest.TestCase):
         os.environ.pop("OPENAI_API_KEY", None)
 
     def tearDown(self):
+        keys._loaded.clear()  # short test values ("s1") would otherwise match random text in other tests
         self.env.stop()
         self.patch.stop()
         self.tmp.cleanup()

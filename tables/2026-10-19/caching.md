@@ -42,7 +42,7 @@ M2 (nach Wartezeit):
 
 | Ziel | Modell | Variante | Read nach 5,5 min | Read nach 61 min |
 |---|---|---|---|---|
-| anthropic | claude-sonnet-5-5 | 1h | 7223 | — |
+| anthropic | claude-sonnet-5-5 | 1h | 7223 | 7223 |
 | anthropic | claude-sonnet-5-5 | 5m | 0 | — |
 | cortecs-residency | claude-sonnet-5 | - | 0 | — |
 | cortecs-sovereign | gpt-oss-120b | - | 4624 | — |
