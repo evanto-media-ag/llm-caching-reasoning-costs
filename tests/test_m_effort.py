@@ -62,6 +62,9 @@ class EffortTest(unittest.TestCase):
         resp = {"output": [{"type": "reasoning", "summary": [{"text": "s"}]},
                            {"type": "message", "content": [{"type": "output_text", "text": "0.05"}]}]}
         self.assertEqual(m6_hidden.visible_text("openai-responses", resp), ("0.05", "s"))
+        mag = {"choices": [{"message": {"content": [
+            {"type": "thinking", "thinking": [{"type": "text", "text": "ponder"}]}, {"type": "text", "text": "0.05"}]}}]}
+        self.assertEqual(m6_hidden.visible_text("openai-chat", mag), ("0.05", "ponder"))
         gem = {"candidates": [{"content": {"parts": [{"text": "t", "thought": True}, {"text": "0.05"}]}}]}
         self.assertEqual(m6_hidden.visible_text("gemini", gem), ("0.05", "t"))
 

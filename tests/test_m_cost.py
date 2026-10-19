@@ -25,8 +25,9 @@ class CostReconcileTest(unittest.TestCase):
         payload = {"status": 200, "body": {"data": [
             {"request_id": "mine", "model": "claude", "user_email": "a@b.c", "key_name": "prod",
              "attempts": [{"cost": 0.01, "provider": "google", "tokens": 9, "prompt": "secret text"}]},
-            {"request_id": "other-team", "model": "x", "attempts": []}]}}
-        self.assertEqual(own_log_entries(payload, {"mine"}),
+            {"request_id": "other-team", "model": "x", "attempts": []},
+            {"model": "no-id-entry", "attempts": []}]}}
+        self.assertEqual(own_log_entries(payload, {"mine", None, ""}),
                          [{"request_id": "mine", "model": "claude",
                            "attempts": [{"cost": 0.01, "provider": "google", "tokens": 9}]}])
 

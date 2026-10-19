@@ -52,9 +52,10 @@ _ATTEMPT_FIELDS = ("cost", "provider", "model", "tokens", "status")
 
 def own_log_entries(payload: dict, own_ids: set[str]) -> list[dict]:
     """Management logs cover the whole account: keep only this run's requests and non-sensitive fields."""
+    own_ids = {i for i in own_ids if i}  # error records carry no id; None must never match
     out = []
     for e in (payload.get("body") or {}).get("data") or []:
-        if e.get("request_id") in own_ids:
+        if e.get("request_id") and e["request_id"] in own_ids:
             row = {k: e[k] for k in _LOG_FIELDS if k in e}
             row["attempts"] = [{k: a[k] for k in _ATTEMPT_FIELDS if k in a} for a in e.get("attempts") or []]
             out.append(row)

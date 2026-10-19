@@ -28,7 +28,13 @@ def visible_text(style: str, body: dict) -> tuple[str, str]:
         return ("".join(p.get("text", "") for p in parts if not p.get("thought")),
                 "".join(p.get("text", "") for p in parts if p.get("thought")))
     msg = ((body.get("choices") or [{}])[0].get("message")) or {}
-    return msg.get("content") or "", msg.get("reasoning_content") or msg.get("reasoning") or ""
+    content = msg.get("content") or ""
+    if isinstance(content, list):  # Magistral: content parts with nested thinking text
+        text = "".join(p.get("text", "") for p in content if p.get("type") == "text")
+        thinking = "".join(t.get("text", "") for p in content if p.get("type") == "thinking"
+                           for t in (p.get("thinking") or []) if isinstance(t, dict))
+        return text, thinking
+    return content, msg.get("reasoning_content") or msg.get("reasoning") or ""
 
 
 def run(t: Target, model: str | None, ctx: Ctx) -> list[Path]:
