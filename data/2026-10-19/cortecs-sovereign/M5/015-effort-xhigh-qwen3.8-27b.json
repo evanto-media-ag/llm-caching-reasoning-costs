@@ -1,0 +1,87 @@
+{
+  "ts": "2026-10-19T08:23:40+00:00",
+  "target": "cortecs-sovereign",
+  "model": "qwen3.8-27b",
+  "measurement": "M5",
+  "step": "effort-xhigh",
+  "run_id": "713641a3",
+  "url": "https://api.cortecs.ai/v1/chat/completions",
+  "request_body": {
+    "model": "qwen3.8-27b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful assistant."
+      },
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "max_tokens": 2048,
+    "reasoning_effort": "xhigh"
+  },
+  "status": 200,
+  "response_body": {
+    "id": "chatcmpl-5244ee5b-0452-4f9b-bee3-90bd706b6f9c-29e7",
+    "created": 1792398220,
+    "model": "qwen3.8-27b",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "0.05",
+          "role": "assistant",
+          "reasoning_content": "We need answer user's riddle. Need think: bat+ball=1.10, bat=ball+1.00. Let ball x, bat x+1, 2x+1=1.10 => x=0.05. Amount only. Final 0.05? They ask EUR total, answer amount only. Could be \"0.05\" or \"0.05 EUR\". Amount only maybe just number. Need likely \"0.05\". Ensure no extra.",
+          "provider_specific_fields": {
+            "reasoning": "We need answer user's riddle. Need think: bat+ball=1.10, bat=ball+1.00. Let ball x, bat x+1, 2x+1=1.10 => x=0.05. Amount only. Final 0.05? They ask EUR total, answer amount only. Could be \"0.05\" or \"0.05 EUR\". Amount only maybe just number. Need likely \"0.05\". Ensure no extra.",
+            "refusal": null
+          },
+          "annotations": []
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 117,
+      "prompt_tokens": 101,
+      "total_tokens": 218,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "cost": 289,
+      "cost_details": {
+        "prompt_cost": 31,
+        "cache_read_cost": 0,
+        "cache_write_cost": 0,
+        "completion_cost": 258,
+        "prompt_audio_cost": 0
+      }
+    },
+    "service_tier": "default"
+  },
+  "response_headers": {},
+  "response_header_names": [
+    "access-control-expose-headers",
+    "connection",
+    "content-length",
+    "content-security-policy",
+    "content-type",
+    "date",
+    "x-content-type-options",
+    "x-cortecs-model",
+    "x-cortecs-provider",
+    "x-frame-options"
+  ],
+  "duration_ms": 1520,
+  "note": "angenommen"
+}

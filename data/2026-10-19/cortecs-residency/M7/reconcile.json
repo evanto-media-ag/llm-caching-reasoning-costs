@@ -1,0 +1,152 @@
+[
+  {
+    "record": "data/2026-10-19/cortecs-residency/M1/001-default-A-claude-sonnet-5.json",
+    "model": "claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.014332571,
+    "reported": 0.014332,
+    "currency": "EUR",
+    "deviation_pct": -0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/cortecs-residency/M1/002-default-B-claude-sonnet-5.json",
+    "model": "claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.014332571,
+    "reported": 0.014332,
+    "currency": "EUR",
+    "deviation_pct": -0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/cortecs-residency/M1/003-default-A-gpt-oss-120b.json",
+    "model": "gpt-oss-120b",
+    "stage": "M7a",
+    "computed": 0.00037727999999999997,
+    "reported": 0.0006309999999999999,
+    "currency": "EUR",
+    "deviation_pct": 67.25,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/cortecs-residency/M1/004-default-B-gpt-oss-120b.json",
+    "model": "gpt-oss-120b",
+    "stage": "M7a",
+    "computed": 0.00037727999999999997,
+    "reported": 0.0006309999999999999,
+    "currency": "EUR",
+    "deviation_pct": 67.25,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/cortecs-residency/M2/001-A-claude-sonnet-5.json",
+    "model": "claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.014332571,
+    "reported": 0.014332,
+    "currency": "EUR",
+    "deviation_pct": -0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/cortecs-residency/M2/002-B-claude-sonnet-5.json",
+    "model": "claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.014332571,
+    "reported": 0.014332,
+    "currency": "EUR",
+    "deviation_pct": -0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/cortecs-residency/M3/001-A-claude-sonnet-5.json",
+    "model": "claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.014334546,
+    "reported": 0.014334,
+    "currency": "EUR",
+    "deviation_pct": -0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/cortecs-residency/M3/002-B-claude-sonnet-5.json",
+    "model": "claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.014334546,
+    "reported": 0.014334,
+    "currency": "EUR",
+    "deviation_pct": -0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/cortecs-residency/M3/003-C-claude-sonnet-5.json",
+    "model": "claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.014334546,
+    "reported": 0.014334,
+    "currency": "EUR",
+    "deviation_pct": -0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/cortecs-residency/M3/004-A-gpt-oss-120b.json",
+    "model": "gpt-oss-120b",
+    "stage": "M7a",
+    "computed": 0.00044560000000000004,
+    "reported": 0.0011309999999999998,
+    "currency": "EUR",
+    "deviation_pct": 153.82,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/cortecs-residency/M3/005-B-gpt-oss-120b.json",
+    "model": "gpt-oss-120b",
+    "stage": "M7a",
+    "computed": 0.0003784,
+    "reported": 0.001032,
+    "currency": "EUR",
+    "deviation_pct": 172.73,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/cortecs-residency/M3/006-C-gpt-oss-120b.json",
+    "model": "gpt-oss-120b",
+    "stage": "M7a",
+    "computed": 0.00039936,
+    "reported": 0.000661,
+    "currency": "EUR",
+    "deviation_pct": 65.51,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/cortecs-residency/M5/001-effort-default-claude-sonnet-5.json",
+    "model": "claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.000233041,
+    "reported": 0.000234,
+    "currency": "EUR",
+    "deviation_pct": 0.41,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/cortecs-residency/M5/002-effort-none-claude-sonnet-5.json",
+    "model": "claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.000233041,
+    "reported": 0.000234,
+    "currency": "EUR",
+    "deviation_pct": 0.41,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/cortecs-residency/M5/003-effort-minimal-claude-sonnet-5.json",
+    "model": "claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.000233041,
+    "reported": 0.000234,
+    "currency": "EUR",
+    "deviation_pct": 0.41,
+    "note": "ok"
+  }
+]

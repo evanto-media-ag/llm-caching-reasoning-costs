@@ -1,0 +1,83 @@
+{
+  "ts": "2026-10-19T08:23:28+00:00",
+  "target": "cortecs-sovereign",
+  "model": "gpt-oss-120b",
+  "measurement": "M5",
+  "step": "effort-medium",
+  "run_id": "7cde93fe",
+  "url": "https://api.cortecs.ai/v1/chat/completions",
+  "request_body": {
+    "model": "gpt-oss-120b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful assistant."
+      },
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "max_tokens": 2048,
+    "reasoning_effort": "medium"
+  },
+  "status": 200,
+  "response_body": {
+    "id": "chatcmpl-0e9d70a5-546b-4ccd-91aa-fa580a24b526",
+    "created": 1792398207,
+    "model": "gpt-oss-120b",
+    "object": "chat.completion",
+    "system_fingerprint": "vllm-v0.22.0-tp4-3e04bf1c",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "0.05",
+          "role": "assistant",
+          "reasoning_content": "We need to solve: bat + ball = 1.10 EUR. Bat = ball + 1.00 EUR. Let ball = x. Then bat = x +1.00. So x + (x+1) = 1.10 => 2x + 1.00 = 1.10 => 2x = 0.10 => x = 0.05 EUR. Answer with amount only: \"0.05 EUR\" or \"0.05\". The prompt: \"Answer with the amount only.\" So maybe just \"0.05\". Probably include currency? It says amount only, so likely numeric value: 0.05. We'll output that.",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning": "We need to solve: bat + ball = 1.10 EUR. Bat = ball + 1.00 EUR. Let ball = x. Then bat = x +1.00. So x + (x+1) = 1.10 => 2x + 1.00 = 1.10 => 2x = 0.10 => x = 0.05 EUR. Answer with amount only: \"0.05 EUR\" or \"0.05\". The prompt: \"Answer with the amount only.\" So maybe just \"0.05\". Probably include currency? It says amount only, so likely numeric value: 0.05. We'll output that."
+          }
+        },
+        "provider_specific_fields": {
+          "token_ids": null,
+          "stop_reason": null,
+          "routed_experts": null
+        }
+      }
+    ],
+    "usage": {
+      "completion_tokens": 155,
+      "prompt_tokens": 117,
+      "total_tokens": 272,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "cost": 101,
+      "cost_details": {
+        "prompt_cost": 8,
+        "cache_read_cost": 9,
+        "cache_write_cost": 0,
+        "completion_cost": 84,
+        "prompt_audio_cost": 0
+      }
+    }
+  },
+  "response_headers": {},
+  "response_header_names": [
+    "access-control-expose-headers",
+    "connection",
+    "content-length",
+    "content-security-policy",
+    "content-type",
+    "date",
+    "x-content-type-options",
+    "x-cortecs-model",
+    "x-cortecs-provider",
+    "x-frame-options"
+  ],
+  "duration_ms": 653,
+  "note": "angenommen"
+}

@@ -1,0 +1,87 @@
+{
+  "ts": "2026-10-19T08:23:36+00:00",
+  "target": "cortecs-sovereign",
+  "model": "qwen3.8-27b",
+  "measurement": "M5",
+  "step": "effort-low",
+  "run_id": "713641a3",
+  "url": "https://api.cortecs.ai/v1/chat/completions",
+  "request_body": {
+    "model": "qwen3.8-27b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful assistant."
+      },
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "max_tokens": 2048,
+    "reasoning_effort": "low"
+  },
+  "status": 200,
+  "response_body": {
+    "id": "chatcmpl-c6d41e97-ce2b-402b-9ccd-516fd1cf5e37-bdef",
+    "created": 1792398216,
+    "model": "qwen3.8-27b",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "0.05",
+          "role": "assistant",
+          "reasoning_content": "Let me work through this classic problem.\n\nLet the ball cost x EUR.\nThen the bat costs x + 1.00 EUR.\n\nTogether: x + (x + 1.00) = 1.10\n2x + 1.00 = 1.10\n2x = 0.10\nx = 0.05\n\nThe ball costs 0.05 EUR.",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning": "Let me work through this classic problem.\n\nLet the ball cost x EUR.\nThen the bat costs x + 1.00 EUR.\n\nTogether: x + (x + 1.00) = 1.10\n2x + 1.00 = 1.10\n2x = 0.10\nx = 0.05\n\nThe ball costs 0.05 EUR."
+          },
+          "annotations": []
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 101,
+      "prompt_tokens": 89,
+      "total_tokens": 190,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "cost": 250,
+      "cost_details": {
+        "prompt_cost": 27,
+        "cache_read_cost": 0,
+        "cache_write_cost": 0,
+        "completion_cost": 223,
+        "prompt_audio_cost": 0
+      }
+    },
+    "service_tier": "default"
+  },
+  "response_headers": {},
+  "response_header_names": [
+    "access-control-expose-headers",
+    "connection",
+    "content-length",
+    "content-security-policy",
+    "content-type",
+    "date",
+    "x-content-type-options",
+    "x-cortecs-model",
+    "x-cortecs-provider",
+    "x-frame-options"
+  ],
+  "duration_ms": 1077,
+  "note": "angenommen"
+}

@@ -1,0 +1,282 @@
+[
+  {
+    "record": "data/2026-10-19/xai/M1/001-nokey-A-grok-4.7.json",
+    "model": "grok-4.7",
+    "stage": "M7a",
+    "computed": 0.010286,
+    "reported": 0.010286,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/xai/M1/002-nokey-B-grok-4.7.json",
+    "model": "grok-4.7",
+    "stage": "M7a",
+    "computed": 0.003368,
+    "reported": 0.0033680000000000003,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/xai/M1/003-key-A-grok-4.7.json",
+    "model": "grok-4.7",
+    "stage": "M7a",
+    "computed": 0.010086,
+    "reported": 0.010086000000000001,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/xai/M1/004-key-B-grok-4.7.json",
+    "model": "grok-4.7",
+    "stage": "M7a",
+    "computed": 0.00318,
+    "reported": 0.00318,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/xai/M1/005-nokey-A-grok-4.5.json",
+    "model": "grok-4.5",
+    "stage": "M7a",
+    "computed": 0.009553200000000001,
+    "reported": 0.0095532,
+    "currency": "USD",
+    "deviation_pct": -0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/xai/M1/006-nokey-B-grok-4.5.json",
+    "model": "grok-4.5",
+    "stage": "M7a",
+    "computed": 0.0019416,
+    "reported": 0.0019416000000000001,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/xai/M1/007-key-A-grok-4.5.json",
+    "model": "grok-4.5",
+    "stage": "M7a",
+    "computed": 0.0095492,
+    "reported": 0.0095492,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/xai/M1/008-key-B-grok-4.5.json",
+    "model": "grok-4.5",
+    "stage": "M7a",
+    "computed": 0.0017155999999999999,
+    "reported": 0.0017156,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/xai/M2/001-A-grok-4.7.json",
+    "model": "grok-4.7",
+    "stage": "M7a",
+    "computed": 0.010798,
+    "reported": 0.010798,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/xai/M2/002-B-grok-4.7.json",
+    "model": "grok-4.7",
+    "stage": "M7a",
+    "computed": 0.003208,
+    "reported": 0.003208,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/xai/M3/001-A-grok-4.7.json",
+    "model": "grok-4.7",
+    "stage": "M7a",
+    "computed": 0.010088,
+    "reported": 0.010088,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/xai/M3/002-B-grok-4.7.json",
+    "model": "grok-4.7",
+    "stage": "M7a",
+    "computed": 0.010034,
+    "reported": 0.010034,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/xai/M3/003-C-grok-4.7.json",
+    "model": "grok-4.7",
+    "stage": "M7a",
+    "computed": 0.003266,
+    "reported": 0.0032660000000000002,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/xai/M3/004-A-grok-4.5.json",
+    "model": "grok-4.5",
+    "stage": "M7a",
+    "computed": 0.009853200000000001,
+    "reported": 0.009853200000000001,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/xai/M3/005-B-grok-4.5.json",
+    "model": "grok-4.5",
+    "stage": "M7a",
+    "computed": 0.0095472,
+    "reported": 0.0095472,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/xai/M3/006-C-grok-4.5.json",
+    "model": "grok-4.5",
+    "stage": "M7a",
+    "computed": 0.0095472,
+    "reported": 0.0095472,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/xai/M5/001-effort-default-grok-4.7.json",
+    "model": "grok-4.7",
+    "stage": "M7a",
+    "computed": 0.00293,
+    "reported": 0.0029300000000000003,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/xai/M5/003-effort-minimal-grok-4.7.json",
+    "model": "grok-4.7",
+    "stage": "M7a",
+    "computed": 0.002384,
+    "reported": 0.0023840000000000003,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/xai/M5/004-effort-low-grok-4.7.json",
+    "model": "grok-4.7",
+    "stage": "M7a",
+    "computed": 0.002018,
+    "reported": 0.0020180000000000003,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/xai/M5/005-effort-medium-grok-4.7.json",
+    "model": "grok-4.7",
+    "stage": "M7a",
+    "computed": 0.00227,
+    "reported": 0.00227,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/xai/M5/006-effort-high-grok-4.7.json",
+    "model": "grok-4.7",
+    "stage": "M7a",
+    "computed": 0.003356,
+    "reported": 0.003356,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/xai/M5/007-effort-xhigh-grok-4.7.json",
+    "model": "grok-4.7",
+    "stage": "M7a",
+    "computed": 0.002788,
+    "reported": 0.002788,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/xai/M5/009-effort-default-grok-4.5.json",
+    "model": "grok-4.5",
+    "stage": "M7a",
+    "computed": 0.0016752,
+    "reported": 0.0016752,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/xai/M5/011-effort-minimal-grok-4.5.json",
+    "model": "grok-4.5",
+    "stage": "M7a",
+    "computed": 0.0013992,
+    "reported": 0.0013992,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/xai/M5/012-effort-low-grok-4.5.json",
+    "model": "grok-4.5",
+    "stage": "M7a",
+    "computed": 0.0013752,
+    "reported": 0.0013752,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/xai/M5/013-effort-medium-grok-4.5.json",
+    "model": "grok-4.5",
+    "stage": "M7a",
+    "computed": 0.002028,
+    "reported": 0.0020280000000000003,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/xai/M5/014-effort-high-grok-4.5.json",
+    "model": "grok-4.5",
+    "stage": "M7a",
+    "computed": 0.0013152,
+    "reported": 0.0013152,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/xai/M5/015-effort-xhigh-grok-4.5.json",
+    "model": "grok-4.5",
+    "stage": "M7a",
+    "computed": 0.0011815999999999999,
+    "reported": 0.0011816,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  }
+]

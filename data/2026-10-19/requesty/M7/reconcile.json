@@ -1,0 +1,122 @@
+[
+  {
+    "record": "data/2026-10-19/requesty/M1/001-default-A-anthropic_claude-sonnet-5.json",
+    "model": "anthropic/claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.014512,
+    "reported": 0.014512,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/requesty/M1/002-default-B-anthropic_claude-sonnet-5.json",
+    "model": "anthropic/claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.014512,
+    "reported": 0.014512,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/requesty/M1/003-default-A-fireworks_gpt-oss-120b.json",
+    "model": "fireworks/gpt-oss-120b",
+    "stage": "M7a",
+    "computed": 0.0007056,
+    "reported": 0.0007056,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/requesty/M1/004-default-B-fireworks_gpt-oss-120b.json",
+    "model": "fireworks/gpt-oss-120b",
+    "stage": "M7a",
+    "computed": 7.9335e-05,
+    "reported": 7.9335e-05,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/requesty/M2/001-A-anthropic_claude-sonnet-5.json",
+    "model": "anthropic/claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.014514,
+    "reported": 0.014514,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/requesty/M2/002-B-anthropic_claude-sonnet-5.json",
+    "model": "anthropic/claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.014514,
+    "reported": 0.014514,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/requesty/M3/001-A-anthropic_claude-sonnet-5.json",
+    "model": "anthropic/claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.01456,
+    "reported": 0.01456,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/requesty/M3/002-B-anthropic_claude-sonnet-5.json",
+    "model": "anthropic/claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.01456,
+    "reported": 0.01456,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/requesty/M3/003-C-anthropic_claude-sonnet-5.json",
+    "model": "anthropic/claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.01456,
+    "reported": 0.01456,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/requesty/M3/004-A-fireworks_gpt-oss-120b.json",
+    "model": "fireworks/gpt-oss-120b",
+    "stage": "M7a",
+    "computed": 0.0007340999999999999,
+    "reported": 0.0007341,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/requesty/M3/005-B-fireworks_gpt-oss-120b.json",
+    "model": "fireworks/gpt-oss-120b",
+    "stage": "M7a",
+    "computed": 0.0007017,
+    "reported": 0.0007017,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/requesty/M3/006-C-fireworks_gpt-oss-120b.json",
+    "model": "fireworks/gpt-oss-120b",
+    "stage": "M7a",
+    "computed": 0.000128505,
+    "reported": 0.000128505,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  }
+]

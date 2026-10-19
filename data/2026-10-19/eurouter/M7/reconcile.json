@@ -1,0 +1,182 @@
+[
+  {
+    "record": "data/2026-10-19/eurouter/M1/001-default-A-claude-sonnet-5.json",
+    "model": "claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.015969800000000003,
+    "reported": 0.0159698,
+    "currency": "USD",
+    "deviation_pct": -0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/eurouter/M1/002-default-B-claude-sonnet-5.json",
+    "model": "claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.015969800000000003,
+    "reported": 0.0159698,
+    "currency": "USD",
+    "deviation_pct": -0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/eurouter/M1/003-default-A-gpt-oss-120b.json",
+    "model": "gpt-oss-120b",
+    "stage": "M7a",
+    "computed": 0.00037759999999999996,
+    "reported": 0.0009392,
+    "currency": "EUR",
+    "deviation_pct": 148.73,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/eurouter/M1/004-default-B-gpt-oss-120b.json",
+    "model": "gpt-oss-120b",
+    "stage": "M7a",
+    "computed": 0.00037736,
+    "reported": 0.000835366546,
+    "currency": "EUR",
+    "deviation_pct": 121.37,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/eurouter/M1/005-default-A-qwen3.8-27b.json",
+    "model": "qwen3.8-27b",
+    "stage": "M7a",
+    "computed": 0.0006100999999999999,
+    "reported": 0.0018463,
+    "currency": "USD/EUR",
+    "deviation_pct": null,
+    "note": "Währung"
+  },
+  {
+    "record": "data/2026-10-19/eurouter/M1/006-default-B-qwen3.8-27b.json",
+    "model": "qwen3.8-27b",
+    "stage": "M7a",
+    "computed": 0.00032209999999999997,
+    "reported": 0.0008863,
+    "currency": "USD/EUR",
+    "deviation_pct": null,
+    "note": "Währung"
+  },
+  {
+    "record": "data/2026-10-19/eurouter/M2/001-A-claude-sonnet-5.json",
+    "model": "claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.0159632,
+    "reported": 0.0159632,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/eurouter/M2/002-B-claude-sonnet-5.json",
+    "model": "claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.0159632,
+    "reported": 0.0159632,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/eurouter/M3/001-A-claude-sonnet-5.json",
+    "model": "claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.0159632,
+    "reported": 0.0159632,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/eurouter/M3/002-B-claude-sonnet-5.json",
+    "model": "claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.0159632,
+    "reported": 0.0159632,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/eurouter/M3/003-C-claude-sonnet-5.json",
+    "model": "claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.0159632,
+    "reported": 0.0159632,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/eurouter/M3/004-A-gpt-oss-120b.json",
+    "model": "gpt-oss-120b",
+    "stage": "M7a",
+    "computed": 0.00039296,
+    "reported": 0.0006474259575,
+    "currency": "EUR",
+    "deviation_pct": 64.76,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/eurouter/M3/006-A-gpt-oss-120b.json",
+    "model": "gpt-oss-120b",
+    "stage": "M7a",
+    "computed": 0.0004144,
+    "reported": 0.000769108802,
+    "currency": "EUR",
+    "deviation_pct": 85.6,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/eurouter/M3/007-B-gpt-oss-120b.json",
+    "model": "gpt-oss-120b",
+    "stage": "M7a",
+    "computed": 0.0003788,
+    "reported": 0.0009413,
+    "currency": "EUR",
+    "deviation_pct": 148.5,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/eurouter/M3/008-C-gpt-oss-120b.json",
+    "model": "gpt-oss-120b",
+    "stage": "M7a",
+    "computed": 0.00039976,
+    "reported": 0.0006564901875,
+    "currency": "EUR",
+    "deviation_pct": 64.22,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/eurouter/M3/009-A-qwen3.8-27b.json",
+    "model": "qwen3.8-27b",
+    "stage": "M7a",
+    "computed": 0.0006228,
+    "reported": 0.0006228,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/eurouter/M3/010-B-qwen3.8-27b.json",
+    "model": "qwen3.8-27b",
+    "stage": "M7a",
+    "computed": 0.0006108,
+    "reported": 0.0006108,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/eurouter/M3/011-C-qwen3.8-27b.json",
+    "model": "qwen3.8-27b",
+    "stage": "M7a",
+    "computed": 0.0006675999999999999,
+    "reported": 0.0006676,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  }
+]

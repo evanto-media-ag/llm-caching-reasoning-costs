@@ -1,0 +1,87 @@
+{
+  "ts": "2026-10-19T08:23:27+00:00",
+  "target": "cortecs-sovereign",
+  "model": "gpt-oss-120b",
+  "measurement": "M5",
+  "step": "effort-minimal",
+  "run_id": "7cde93fe",
+  "url": "https://api.cortecs.ai/v1/chat/completions",
+  "request_body": {
+    "model": "gpt-oss-120b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful assistant."
+      },
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "max_tokens": 2048,
+    "reasoning_effort": "minimal"
+  },
+  "status": 200,
+  "response_body": {
+    "id": "chatcmpl-4ebe3258-8736-424f-b113-6632afa2b744-0bdb",
+    "created": 1792398206,
+    "model": "gpt-oss-120b",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "0.05",
+          "role": "assistant",
+          "reasoning_content": "We need to solve simple algebra: Let ball = x, bat = x+1.00. Total = x + (x+1.00) = 1.10 => 2x + 1 = 1.10 => 2x = 0.10 => x = 0.05. So answer: 0.05. Should output amount only: \"0.05\". Possibly with currency? They said amount only. So \"0.05\".",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning": "We need to solve simple algebra: Let ball = x, bat = x+1.00. Total = x + (x+1.00) = 1.10 => 2x + 1 = 1.10 => 2x = 0.10 => x = 0.05. So answer: 0.05. Should output amount only: \"0.05\". Possibly with currency? They said amount only. So \"0.05\"."
+          },
+          "annotations": []
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 111,
+      "prompt_tokens": 120,
+      "total_tokens": 231,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 64
+      },
+      "cost": 81,
+      "cost_details": {
+        "prompt_cost": 9,
+        "cache_read_cost": 10,
+        "cache_write_cost": 0,
+        "completion_cost": 62,
+        "prompt_audio_cost": 0
+      }
+    },
+    "service_tier": "default"
+  },
+  "response_headers": {},
+  "response_header_names": [
+    "access-control-expose-headers",
+    "connection",
+    "content-length",
+    "content-security-policy",
+    "content-type",
+    "date",
+    "x-content-type-options",
+    "x-cortecs-model",
+    "x-cortecs-provider",
+    "x-frame-options"
+  ],
+  "duration_ms": 911,
+  "note": "angenommen"
+}

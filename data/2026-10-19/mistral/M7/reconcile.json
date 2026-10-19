@@ -1,0 +1,102 @@
+[
+  {
+    "record": "data/2026-10-19/mistral/M1/001-nokey-A-mistral-medium-latest.json",
+    "model": "mistral-medium-latest",
+    "stage": "-",
+    "computed": 0.0087255,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/mistral/M1/002-nokey-B-mistral-medium-latest.json",
+    "model": "mistral-medium-latest",
+    "stage": "-",
+    "computed": 0.0087255,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/mistral/M1/003-key-A-mistral-medium-latest.json",
+    "model": "mistral-medium-latest",
+    "stage": "-",
+    "computed": 0.008718,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/mistral/M1/004-key-B-mistral-medium-latest.json",
+    "model": "mistral-medium-latest",
+    "stage": "-",
+    "computed": 0.008718,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/mistral/M2/001-A-mistral-medium-latest.json",
+    "model": "mistral-medium-latest",
+    "stage": "-",
+    "computed": 0.0087255,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/mistral/M2/002-B-mistral-medium-latest.json",
+    "model": "mistral-medium-latest",
+    "stage": "-",
+    "computed": 0.0087255,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/mistral/M3/001-A-mistral-medium-latest.json",
+    "model": "mistral-medium-latest",
+    "stage": "-",
+    "computed": 0.009228,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/mistral/M5/001-effort-default-mistral-medium-latest.json",
+    "model": "mistral-medium-latest",
+    "stage": "-",
+    "computed": 0.0001425,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/mistral/M5/002-effort-none-mistral-medium-latest.json",
+    "model": "mistral-medium-latest",
+    "stage": "-",
+    "computed": 0.0001425,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/mistral/M5/006-effort-high-mistral-medium-latest.json",
+    "model": "mistral-medium-latest",
+    "stage": "-",
+    "computed": 0.002445,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  }
+]

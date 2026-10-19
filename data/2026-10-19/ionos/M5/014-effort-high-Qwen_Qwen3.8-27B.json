@@ -1,0 +1,54 @@
+{
+  "ts": "2026-10-19T08:23:21+00:00",
+  "target": "ionos",
+  "model": "Qwen/Qwen3.8-27B",
+  "measurement": "M5",
+  "step": "effort-high",
+  "run_id": "7de93dd6",
+  "url": "https://openai.inference.de-txl.ionos.com/v1/chat/completions",
+  "request_body": {
+    "model": "Qwen/Qwen3.8-27B",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful assistant."
+      },
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "max_tokens": 2048,
+    "reasoning_effort": "high"
+  },
+  "status": 400,
+  "response_body": {
+    "httpStatus": 400,
+    "messages": [
+      {
+        "errorCode": "UPSTREAM_REJECTED",
+        "message": "Unexpected reasoning effort high. Supported types are xhigh (default), medium, and low."
+      }
+    ]
+  },
+  "response_headers": {
+    "x-ratelimit-limit-requests": "5",
+    "x-ratelimit-remaining-requests": "4",
+    "x-ratelimit-reset-requests": "200ms",
+    "x-request-id": "1532f589def44ff190baa8c8f3cfe4e7"
+  },
+  "response_header_names": [
+    "connection",
+    "content-length",
+    "content-type",
+    "date",
+    "x-gateway-version",
+    "x-ratelimit-limit-requests",
+    "x-ratelimit-remaining-requests",
+    "x-ratelimit-reset-requests",
+    "x-request-id",
+    "x-trace-id"
+  ],
+  "duration_ms": 73,
+  "note": "abgelehnt: http 400 {'httpStatus': 400, 'messages': [{'errorCode': 'UPSTREAM_REJECTED', 'message': 'Unexpected reasoning effort high. Supported types are xhigh (default), medium, and low.'}]}"
+}

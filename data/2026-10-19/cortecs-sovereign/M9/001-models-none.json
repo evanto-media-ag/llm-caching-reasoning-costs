@@ -1,0 +1,3830 @@
+{
+  "ts": "2026-10-19T08:23:58+00:00",
+  "target": "cortecs-sovereign",
+  "model": null,
+  "measurement": "M9",
+  "step": "models",
+  "run_id": null,
+  "url": "https://api.cortecs.ai/v1/models?extended=true",
+  "request_body": null,
+  "status": 200,
+  "response_body": {
+    "object": "list",
+    "data": [
+      {
+        "id": "deepseek-v4.1-flash-1017",
+        "object": "model",
+        "created": 1792223311,
+        "owned_by": "Deepseek",
+        "description": "DeepSeek V4.1 Flash 1017 is an open-weight multimodal model optimized for efficient reasoning, coding, and agentic workflows with a 1-million-token context window.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.459,
+          "output_token": 1.377,
+          "cache_read_cost": 0.115
+        },
+        "providers": [
+          "tensorix"
+        ],
+        "context_size": 1048576,
+        "max_output_tokens": 64000,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Reasoning",
+          "Vision"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "deepseek-v4-flash"
+        ],
+        "providers_details": {
+          "tensorix": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.459,
+              "output_token": 1.377,
+              "cache_read_cost": 0.115
+            },
+            "quantization": "fp8",
+            "context_size": 1048576,
+            "max_output_tokens": 64000,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 446.87,
+              "latency": 3.04,
+              "ttft": 1.48,
+              "cache_hit_rate": 0.94,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "mistral-large-4-0",
+        "object": "model",
+        "created": 1791280393,
+        "owned_by": "Mistral AI",
+        "description": "Mistral Large 4 is a trillion-parameter multimodal MoE model built for frontier-level reasoning, enterprise workloads, and multilingual applications, with 49B active parameters per token.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.687,
+          "output_token": 2.11,
+          "cache_read_cost": 0.071
+        },
+        "providers": [
+          "mistral"
+        ],
+        "context_size": 1000000,
+        "max_output_tokens": 262144,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Vision",
+          "Reasoning"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "mistral-large"
+        ],
+        "providers_details": {
+          "mistral": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.687,
+              "output_token": 2.11,
+              "cache_read_cost": 0.071
+            },
+            "quantization": null,
+            "context_size": 1000000,
+            "max_output_tokens": 262144,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 97.77,
+              "latency": 12.98,
+              "ttft": 3.56,
+              "cache_hit_rate": 0.78,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "deepseek-v4.1-flash",
+        "object": "model",
+        "created": 1789372111,
+        "owned_by": "Deepseek",
+        "description": "DeepSeek V4.1 Flash is an efficient multimodal MoE model optimized for fast agentic reasoning and coding workflows.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.25,
+          "output_token": 1.0,
+          "cache_read_cost": 0.1
+        },
+        "providers": [
+          "tensorix",
+          "aki",
+          "scaleway"
+        ],
+        "context_size": 1048576,
+        "max_output_tokens": 81920,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Reasoning",
+          "Vision"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "deepseek-v4-flash"
+        ],
+        "providers_details": {
+          "tensorix": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.449,
+              "output_token": 1.346,
+              "cache_read_cost": 0.117
+            },
+            "quantization": "fp8",
+            "context_size": 1048576,
+            "max_output_tokens": 64000,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 391.91,
+              "latency": 3.2,
+              "ttft": 1.89,
+              "cache_hit_rate": 0.87,
+              "uptime": 0.9
+            }
+          },
+          "aki": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.25,
+              "output_token": 1.0,
+              "cache_read_cost": 0.1
+            },
+            "quantization": "fp8",
+            "context_size": 1048576,
+            "max_output_tokens": 81920,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 299.95,
+              "latency": 6.64,
+              "ttft": 5.38,
+              "cache_hit_rate": 0.92,
+              "uptime": 0.98
+            }
+          },
+          "scaleway": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.6,
+              "output_token": 1.8,
+              "cache_read_cost": 0.12
+            },
+            "quantization": null,
+            "context_size": 262000,
+            "max_output_tokens": 32768,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 248.17,
+              "latency": 5.48,
+              "ttft": 1.24,
+              "cache_hit_rate": 0.72,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "deepseek-v4-pro-0813",
+        "object": "model",
+        "created": 1788161882,
+        "owned_by": "Deepseek",
+        "description": "DeepSeek V4 Pro 0813 is a flagship MoE model delivering efficient long-context reasoning, coding, and agentic performance.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 1.795,
+          "output_token": 3.59,
+          "cache_read_cost": 0.449
+        },
+        "providers": [
+          "tensorix"
+        ],
+        "context_size": 1048576,
+        "max_output_tokens": 64000,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Reasoning"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "deepseek-v4-pro"
+        ],
+        "providers_details": {
+          "tensorix": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 1.795,
+              "output_token": 3.59,
+              "cache_read_cost": 0.449
+            },
+            "quantization": "fp8",
+            "context_size": 1048576,
+            "max_output_tokens": 64000,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 104.66,
+              "latency": 0.86,
+              "ttft": 1.45,
+              "cache_hit_rate": 0.9,
+              "uptime": 0.99
+            }
+          }
+        }
+      },
+      {
+        "id": "glm-5.3",
+        "object": "model",
+        "created": 1787936282,
+        "owned_by": "Z.ai",
+        "description": "GLM-5.3 is a flagship open-weight model optimized for advanced coding, agentic workflows, and long-context reasoning.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.784,
+          "output_token": 2.968,
+          "cache_read_cost": 0.198
+        },
+        "providers": [
+          "tensorix",
+          "inceptron",
+          "aki",
+          "mistral",
+          "scaleway"
+        ],
+        "context_size": 1048576,
+        "max_output_tokens": 1048576,
+        "tags": [
+          "Instruct",
+          "Reasoning",
+          "Tools"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "glm-5"
+        ],
+        "providers_details": {
+          "tensorix": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 1.571,
+              "output_token": 4.039,
+              "cache_read_cost": 0.393
+            },
+            "quantization": "fp8",
+            "context_size": 1048576,
+            "max_output_tokens": 64000,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 189.49,
+              "latency": 12.44,
+              "ttft": 2.86,
+              "cache_hit_rate": 0.85,
+              "uptime": 1.0
+            }
+          },
+          "inceptron": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.784,
+              "output_token": 2.968,
+              "cache_read_cost": 0.198
+            },
+            "quantization": "fp4",
+            "context_size": 1048576,
+            "max_output_tokens": 1048576,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 204.13,
+              "latency": 2.56,
+              "ttft": 1.23,
+              "cache_hit_rate": 0.91,
+              "uptime": 1.0
+            }
+          },
+          "aki": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 1.0,
+              "output_token": 3.5,
+              "cache_read_cost": 0.25
+            },
+            "quantization": "nvfp4",
+            "context_size": 512000,
+            "max_output_tokens": 81920,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 101.43,
+              "latency": 7.75,
+              "ttft": 28.48,
+              "cache_hit_rate": 0.0,
+              "uptime": 1.0
+            }
+          },
+          "mistral": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 1.382,
+              "output_token": 4.344,
+              "cache_read_cost": 0.138
+            },
+            "quantization": null,
+            "context_size": 1000000,
+            "max_output_tokens": 128000,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 300.47,
+              "latency": 2.23,
+              "ttft": 1.54,
+              "cache_hit_rate": 0.87,
+              "uptime": 1.0
+            }
+          },
+          "scaleway": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 1.8,
+              "output_token": 5.5
+            },
+            "quantization": null,
+            "context_size": 256000,
+            "max_output_tokens": 16384,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 357.46,
+              "latency": 1.64,
+              "ttft": 0.93,
+              "cache_hit_rate": 0.4,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "qwen3.8-flash-next",
+        "object": "model",
+        "created": 1787909762,
+        "owned_by": "Alibaba Cloud",
+        "description": "Qwen3.8 Flash Next is an efficient multimodal MoE model designed for low-cost inference and strong coding performance.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.18,
+          "output_token": 0.449,
+          "cache_read_cost": 0.045
+        },
+        "providers": [
+          "tensorix"
+        ],
+        "context_size": 262144,
+        "max_output_tokens": 64000,
+        "tags": [
+          "Instruct",
+          "Reasoning",
+          "Tools",
+          "Vision"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "qwen-3-flash"
+        ],
+        "providers_details": {
+          "tensorix": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.18,
+              "output_token": 0.449,
+              "cache_read_cost": 0.045
+            },
+            "quantization": "fp8",
+            "context_size": 262144,
+            "max_output_tokens": 64000,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 286.16,
+              "latency": 5.47,
+              "ttft": 1.26,
+              "cache_hit_rate": 0.87,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "glm-5.3-flash",
+        "object": "model",
+        "created": 1787907482,
+        "owned_by": "Z.ai",
+        "description": "GLM 5.3 Flash is a fast, cost-efficient multimodal model built for long-context reasoning and scalable workflows.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.135,
+          "output_token": 0.449,
+          "cache_read_cost": 0.063
+        },
+        "providers": [
+          "tensorix",
+          "inceptron"
+        ],
+        "context_size": 1048576,
+        "max_output_tokens": 1048576,
+        "tags": [
+          "Instruct",
+          "Reasoning",
+          "Tools",
+          "Vision"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "glm-5-flash"
+        ],
+        "providers_details": {
+          "tensorix": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.18,
+              "output_token": 0.449,
+              "cache_read_cost": 0.045
+            },
+            "quantization": "fp8",
+            "context_size": 1048576,
+            "max_output_tokens": 64000,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 149.49,
+              "latency": 8.32,
+              "ttft": 2.34,
+              "cache_hit_rate": 0.81,
+              "uptime": 1.0
+            }
+          },
+          "inceptron": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.135,
+              "output_token": 0.449,
+              "cache_read_cost": 0.063
+            },
+            "quantization": "fp8",
+            "context_size": 1048576,
+            "max_output_tokens": 1048576,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 158.02,
+              "latency": 8.86,
+              "ttft": 1.46,
+              "cache_hit_rate": 0.9,
+              "uptime": 0.98
+            }
+          }
+        }
+      },
+      {
+        "id": "qwen3.8-27b",
+        "object": "model",
+        "created": 1786966562,
+        "owned_by": "Alibaba Cloud",
+        "description": "Qwen3.8 27B is a compact open-weight multimodal model optimized for efficient reasoning, coding, and agentic workflows on local hardware.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.3,
+          "output_token": 2.2,
+          "cache_read_cost": 0.1
+        },
+        "providers": [
+          "tensorix",
+          "aki",
+          "ionos",
+          "ovh",
+          "scaleway"
+        ],
+        "context_size": 262144,
+        "max_output_tokens": 262144,
+        "tags": [
+          "Instruct",
+          "Reasoning",
+          "Tools",
+          "Vision"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "qwen-3-27b"
+        ],
+        "providers_details": {
+          "tensorix": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.359,
+              "output_token": 2.154,
+              "cache_read_cost": 0.09
+            },
+            "quantization": "fp8",
+            "context_size": 262144,
+            "max_output_tokens": 262144,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 38.82,
+              "latency": 20.79,
+              "ttft": 6.63,
+              "cache_hit_rate": 0.11,
+              "uptime": 0.99
+            }
+          },
+          "aki": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.3,
+              "output_token": 2.2,
+              "cache_read_cost": 0.1
+            },
+            "quantization": "fp16",
+            "context_size": 262144,
+            "max_output_tokens": 262144,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 83.97,
+              "latency": 21.16,
+              "ttft": 8.35,
+              "cache_hit_rate": 0.76,
+              "uptime": 1.0
+            }
+          },
+          "ionos": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.4,
+              "output_token": 2.7
+            },
+            "quantization": "int4",
+            "context_size": 262000,
+            "max_output_tokens": 262000,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 74.56,
+              "latency": 24.7,
+              "ttft": 1.25,
+              "cache_hit_rate": null,
+              "uptime": 1.0
+            }
+          },
+          "ovh": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.4,
+              "output_token": 2.7
+            },
+            "quantization": "fp8",
+            "context_size": 262000,
+            "max_output_tokens": 262000,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 88.61,
+              "latency": 38.0,
+              "ttft": 9.03,
+              "cache_hit_rate": null,
+              "uptime": 1.0
+            }
+          },
+          "scaleway": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.6,
+              "output_token": 3.3,
+              "cache_read_cost": 0.12
+            },
+            "quantization": null,
+            "context_size": 262000,
+            "max_output_tokens": 32768,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 168.2,
+              "latency": 6.61,
+              "ttft": 1.04,
+              "cache_hit_rate": 0.42,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "qwen3.8-2.4t-a95b",
+        "object": "model",
+        "created": 1786685762,
+        "owned_by": "Alibaba Cloud",
+        "description": "Qwen3.8-2.4T-A95B is an open-weight flagship MoE model built for advanced reasoning, coding, and long-horizon agentic workflows.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 2.244,
+          "output_token": 5.386,
+          "cache_read_cost": 0.561
+        },
+        "providers": [
+          "tensorix"
+        ],
+        "context_size": 262144,
+        "max_output_tokens": 262144,
+        "tags": [
+          "Instruct",
+          "Reasoning",
+          "Tools"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "qwen-3-2.4t"
+        ],
+        "providers_details": {
+          "tensorix": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 2.244,
+              "output_token": 5.386,
+              "cache_read_cost": 0.561
+            },
+            "quantization": "nvfp4",
+            "context_size": 262144,
+            "max_output_tokens": 262144,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 278.47,
+              "latency": 15.96,
+              "ttft": 1.11,
+              "cache_hit_rate": 0.95,
+              "uptime": 0.99
+            }
+          }
+        }
+      },
+      {
+        "id": "deepseek-v4-flash-0731",
+        "object": "model",
+        "created": 1785566282,
+        "owned_by": "Deepseek",
+        "description": "DeepSeek V4 Flash 0731 is an efficient MoE model optimized for fast reasoning, coding, and enhanced agentic workflows.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.074,
+          "output_token": 0.371,
+          "cache_read_cost": 0.054
+        },
+        "providers": [
+          "tensorix",
+          "inceptron",
+          "scaleway"
+        ],
+        "context_size": 1048576,
+        "max_output_tokens": 1048576,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Reasoning"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "deepseek-v4-flash"
+        ],
+        "providers_details": {
+          "tensorix": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.224,
+              "output_token": 0.269,
+              "cache_read_cost": 0.056
+            },
+            "quantization": "fp4",
+            "context_size": 1048576,
+            "max_output_tokens": 64000,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 140.37,
+              "latency": 7.44,
+              "ttft": 1.71,
+              "cache_hit_rate": 0.65,
+              "uptime": 1.0
+            }
+          },
+          "inceptron": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.074,
+              "output_token": 0.371,
+              "cache_read_cost": 0.054
+            },
+            "quantization": "fp4",
+            "context_size": 1048576,
+            "max_output_tokens": 1048576,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 115.17,
+              "latency": 3.21,
+              "ttft": 1.45,
+              "cache_hit_rate": 0.82,
+              "uptime": 1.0
+            }
+          },
+          "scaleway": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.4,
+              "output_token": 0.8,
+              "cache_read_cost": 0.08
+            },
+            "quantization": null,
+            "context_size": 256000,
+            "max_output_tokens": 32768,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 293.48,
+              "latency": 3.65,
+              "ttft": 1.9,
+              "cache_hit_rate": 0.66,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "kimi-k3",
+        "object": "model",
+        "created": 1785137882,
+        "owned_by": "Moonshot AI",
+        "description": "Kimi K3 is a frontier open-weight multimodal model built for long-horizon reasoning, coding, and advanced agentic workflows.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 2.693,
+          "output_token": 13.464
+        },
+        "providers": [
+          "nebius",
+          "tensorix"
+        ],
+        "context_size": 1048576,
+        "max_output_tokens": 1048576,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Reasoning",
+          "Vision"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "kimi-k3"
+        ],
+        "providers_details": {
+          "nebius": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 2.693,
+              "output_token": 13.464
+            },
+            "quantization": "fp4",
+            "context_size": 1024000,
+            "max_output_tokens": 1024000,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 203.09,
+              "latency": 40.56,
+              "ttft": 2.04,
+              "cache_hit_rate": 0.75,
+              "uptime": 1.0
+            }
+          },
+          "tensorix": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 2.693,
+              "output_token": 13.464,
+              "cache_read_cost": 0.673
+            },
+            "quantization": "mxfp4",
+            "context_size": 1048576,
+            "max_output_tokens": 1048576,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 99.77,
+              "latency": 14.93,
+              "ttft": 6.52,
+              "cache_hit_rate": 0.87,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "apertus-70b",
+        "object": "model",
+        "created": 1783507082,
+        "owned_by": "Swiss AI Initiative",
+        "description": "Apertus 70B is an open, multilingual language model designed for research, long-context reasoning, and sovereignty-focused AI systems.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 1.25,
+          "output_token": 2.0
+        },
+        "providers": [
+          "aki"
+        ],
+        "context_size": 65536,
+        "max_output_tokens": 16384,
+        "tags": [
+          "Instruct",
+          "Reasoning",
+          "Tools"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "apertus-70b"
+        ],
+        "providers_details": {
+          "aki": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 1.25,
+              "output_token": 2.0
+            },
+            "quantization": "fp8",
+            "context_size": 65536,
+            "max_output_tokens": 16384,
+            "supported_features": [
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 22.16,
+              "latency": 13.73,
+              "ttft": 0.95,
+              "cache_hit_rate": 0.12,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "gemma-4-31b-it",
+        "object": "model",
+        "created": 1781854682,
+        "owned_by": "Google",
+        "description": "Gemma 4 31B IT is a multimodal instruction-tuned model from Google DeepMind designed for strong reasoning, coding, and vision-language tasks.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.2,
+          "output_token": 0.35
+        },
+        "providers": [
+          "infercom"
+        ],
+        "context_size": 128000,
+        "max_output_tokens": 32768,
+        "tags": [
+          "Instruct",
+          "Vision",
+          "Tools",
+          "Reasoning"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "gemma-4-31b"
+        ],
+        "providers_details": {
+          "infercom": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.2,
+              "output_token": 0.35
+            },
+            "quantization": "bf16",
+            "context_size": 128000,
+            "max_output_tokens": 32768,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 96.67,
+              "latency": 1.46,
+              "ttft": 2.78,
+              "cache_hit_rate": null,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "glm-5.2",
+        "object": "model",
+        "created": 1781686682,
+        "owned_by": "Z.ai",
+        "description": "GLM-5.2 is a flagship model built for long-horizon agentic tasks with stable 1M-token context and advanced coding capabilities.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.808,
+          "output_token": 2.908,
+          "cache_read_cost": 0.17
+        },
+        "providers": [
+          "tensorix",
+          "scaleway",
+          "inceptron",
+          "mistral"
+        ],
+        "context_size": 1048576,
+        "max_output_tokens": 1000000,
+        "tags": [
+          "Instruct",
+          "Reasoning",
+          "Tools"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "glm-5"
+        ],
+        "providers_details": {
+          "tensorix": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 1.331,
+              "output_token": 3.993,
+              "cache_read_cost": 0.337
+            },
+            "quantization": "fp8",
+            "context_size": 1048576,
+            "max_output_tokens": 131072,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 183.41,
+              "latency": 10.01,
+              "ttft": 1.51,
+              "cache_hit_rate": 0.69,
+              "uptime": 0.8
+            }
+          },
+          "scaleway": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 1.8,
+              "output_token": 5.5,
+              "cache_read_cost": 0.36
+            },
+            "quantization": null,
+            "context_size": 256000,
+            "max_output_tokens": 16384,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 112.24,
+              "latency": 6.33,
+              "ttft": 0.83,
+              "cache_hit_rate": null,
+              "uptime": 0.68
+            }
+          },
+          "inceptron": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.808,
+              "output_token": 2.908,
+              "cache_read_cost": 0.17
+            },
+            "quantization": "fp4",
+            "context_size": 1000000,
+            "max_output_tokens": 1000000,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 142.77,
+              "latency": 2.3,
+              "ttft": 2.98,
+              "cache_hit_rate": 0.52,
+              "uptime": 0.59
+            }
+          },
+          "mistral": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 1.309,
+              "output_token": 4.114,
+              "cache_read_cost": 0.131
+            },
+            "quantization": null,
+            "context_size": 1000000,
+            "max_output_tokens": 128000,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 101.17,
+              "latency": 1.15,
+              "ttft": 8.94,
+              "cache_hit_rate": 0.41,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "kimi-k2.7-code",
+        "object": "model",
+        "created": 1781599082,
+        "owned_by": "Moonshot AI",
+        "description": "Kimi K2.7 Code is an open-source agentic coding model optimized for long-horizon software engineering and efficient multi-step execution.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.589,
+          "output_token": 2.962,
+          "cache_read_cost": 0.162
+        },
+        "providers": [
+          "tensorix",
+          "inceptron"
+        ],
+        "context_size": 262144,
+        "max_output_tokens": 262144,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Reasoning",
+          "Vision",
+          "Document"
+        ],
+        "input_modalities": [
+          "text",
+          "image",
+          "file"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "kimi-k2"
+        ],
+        "providers_details": {
+          "tensorix": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 1.109,
+              "output_token": 3.993,
+              "cache_read_cost": 0.277
+            },
+            "quantization": "int4",
+            "context_size": 262144,
+            "max_output_tokens": 262144,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 143.85,
+              "latency": 3.84,
+              "ttft": 0.34,
+              "cache_hit_rate": 0.06,
+              "uptime": 1.0
+            }
+          },
+          "inceptron": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.589,
+              "output_token": 2.962,
+              "cache_read_cost": 0.162
+            },
+            "quantization": "int4",
+            "context_size": 256000,
+            "max_output_tokens": 256000,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 118.7,
+              "latency": 5.26,
+              "ttft": 2.23,
+              "cache_hit_rate": 0.16,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "minimax-m3",
+        "object": "model",
+        "created": 1781509082,
+        "owned_by": "MiniMax AI",
+        "description": "MiniMax M3 is a multimodal frontier model built for coding and agentic workflows, featuring ultra-long context and advanced tool-driven reasoning.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.355,
+          "output_token": 1.775,
+          "cache_read_cost": 0.089
+        },
+        "providers": [
+          "tensorix"
+        ],
+        "context_size": 1048576,
+        "max_output_tokens": 1048576,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Reasoning",
+          "Vision"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "minimax-m3"
+        ],
+        "providers_details": {
+          "tensorix": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.355,
+              "output_token": 1.775,
+              "cache_read_cost": 0.089
+            },
+            "quantization": "fp8",
+            "context_size": 1048576,
+            "max_output_tokens": 1048576,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 74.05,
+              "latency": 6.51,
+              "ttft": 7.83,
+              "cache_hit_rate": 0.87,
+              "uptime": 0.99
+            }
+          }
+        }
+      },
+      {
+        "id": "qwen3.6-27b",
+        "object": "model",
+        "created": 1780392962,
+        "owned_by": "Alibaba Cloud",
+        "description": "Qwen3.6 27B is a dense multimodal model offering strong agentic coding and reasoning performance with easy deployment at a practical scale.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.4,
+          "output_token": 2.7
+        },
+        "providers": [
+          "ovh"
+        ],
+        "context_size": 262000,
+        "max_output_tokens": 262000,
+        "tags": [
+          "Instruct",
+          "Reasoning",
+          "Tools",
+          "Vision"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "qwen-3-27b"
+        ],
+        "providers_details": {
+          "ovh": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.4,
+              "output_token": 2.7
+            },
+            "quantization": "fp8",
+            "context_size": 262000,
+            "max_output_tokens": 262000,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 78.71,
+              "latency": 23.11,
+              "ttft": 0.18,
+              "cache_hit_rate": null,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "minicpm-v-4.5",
+        "object": "model",
+        "created": 1780385882,
+        "owned_by": "OpenBMB",
+        "description": "MiniCPM-V 4.5 is a compact, high-performance vision-language model excelling in video understanding, OCR, and multimodal reasoning with efficient deployment.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.584,
+          "output_token": 0.985
+        },
+        "providers": [
+          "nebius"
+        ],
+        "context_size": 32000,
+        "max_output_tokens": 32000,
+        "tags": [
+          "Instruct"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "tools"
+        ],
+        "model_series": [
+          "minicpm-v-4"
+        ],
+        "providers_details": {
+          "nebius": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.584,
+              "output_token": 0.985
+            },
+            "quantization": "fp16",
+            "context_size": 32000,
+            "max_output_tokens": 32000,
+            "supported_features": [
+              "json_mode",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 154.37,
+              "latency": 4.47,
+              "ttft": 0.23,
+              "cache_hit_rate": 0.52,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "qwen3.6-35b-a3b",
+        "object": "model",
+        "created": 1778755082,
+        "owned_by": "Alibaba Cloud",
+        "description": "Qwen3.6 35B A3B is a lightweight multimodal MoE model focused on efficient agentic coding, long-context reasoning, and visual understanding.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.15,
+          "output_token": 0.5
+        },
+        "providers": [
+          "scaleway",
+          "aki"
+        ],
+        "context_size": 262000,
+        "max_output_tokens": 32768,
+        "tags": [
+          "Instruct",
+          "Reasoning",
+          "Tools",
+          "Vision"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "qwen-3-35b"
+        ],
+        "providers_details": {
+          "scaleway": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.25,
+              "output_token": 1.5
+            },
+            "quantization": null,
+            "context_size": 262000,
+            "max_output_tokens": 32768,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 217.45,
+              "latency": 10.71,
+              "ttft": 0.24,
+              "cache_hit_rate": null,
+              "uptime": 1.0
+            }
+          },
+          "aki": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.15,
+              "output_token": 0.5
+            },
+            "quantization": "fp8",
+            "context_size": 256000,
+            "max_output_tokens": 32768,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 194.14,
+              "latency": 20.92,
+              "ttft": 1.09,
+              "cache_hit_rate": 0.6,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "gemma-4-26b-a4b-it",
+        "object": "model",
+        "created": 1778153882,
+        "owned_by": "Google",
+        "description": "Gemma 4 26B A4B is a multimodal Mixture-of-Experts model optimized for fast, efficient inference with strong reasoning, coding, and agentic capabilities.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.1,
+          "output_token": 0.5
+        },
+        "providers": [
+          "scaleway",
+          "aki"
+        ],
+        "context_size": 262000,
+        "max_output_tokens": 81920,
+        "tags": [
+          "Instruct",
+          "Vision",
+          "Tools",
+          "Reasoning"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "gemma-4-26b"
+        ],
+        "providers_details": {
+          "scaleway": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.25,
+              "output_token": 0.5
+            },
+            "quantization": null,
+            "context_size": 262000,
+            "max_output_tokens": 32768,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 224.88,
+              "latency": 1.07,
+              "ttft": 0.27,
+              "cache_hit_rate": null,
+              "uptime": 1.0
+            }
+          },
+          "aki": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.1,
+              "output_token": 0.5
+            },
+            "quantization": "nvfp4",
+            "context_size": 256000,
+            "max_output_tokens": 81920,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 183.0,
+              "latency": 5.22,
+              "ttft": 1.63,
+              "cache_hit_rate": 0.11,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "mistral-medium-3.5",
+        "object": "model",
+        "created": 1777549993,
+        "owned_by": "Mistral AI",
+        "description": "Mistral Medium 3.5 is a frontier multimodal 128B model combining reasoning, coding, and instruction-following with strong agentic performance and efficient deployment.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 1.375,
+          "output_token": 7.04,
+          "cache_read_cost": 0.138
+        },
+        "providers": [
+          "mistral",
+          "scaleway"
+        ],
+        "context_size": 256000,
+        "max_output_tokens": 256000,
+        "tags": [
+          "Instruct",
+          "Reasoning",
+          "Tools",
+          "Vision"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "mistral-medium"
+        ],
+        "providers_details": {
+          "mistral": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 1.375,
+              "output_token": 7.04,
+              "cache_read_cost": 0.138
+            },
+            "quantization": null,
+            "context_size": 256000,
+            "max_output_tokens": 256000,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 76.44,
+              "latency": 2.56,
+              "ttft": 4.09,
+              "cache_hit_rate": 0.21,
+              "uptime": 1.0
+            }
+          },
+          "scaleway": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 1.5,
+              "output_token": 7.5
+            },
+            "quantization": null,
+            "context_size": 256000,
+            "max_output_tokens": 16384,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 66.92,
+              "latency": 6.11,
+              "ttft": 0.73,
+              "cache_hit_rate": null,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "kimi-k2.6",
+        "object": "model",
+        "created": 1776929882,
+        "owned_by": "Moonshot AI",
+        "description": "Kimi K2.6 is an advanced multimodal agentic model with strong long-horizon coding, instruction following, and autonomous execution capabilities.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.426,
+          "output_token": 2.666,
+          "cache_read_cost": 0.09
+        },
+        "providers": [
+          "inceptron"
+        ],
+        "context_size": 256000,
+        "max_output_tokens": 256000,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Reasoning",
+          "Vision",
+          "Document"
+        ],
+        "input_modalities": [
+          "text",
+          "image",
+          "file"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "kimi-k2"
+        ],
+        "providers_details": {
+          "inceptron": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.426,
+              "output_token": 2.666,
+              "cache_read_cost": 0.09
+            },
+            "quantization": "int4",
+            "context_size": 256000,
+            "max_output_tokens": 256000,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 124.33,
+              "latency": 64.72,
+              "ttft": 0.75,
+              "cache_hit_rate": 0.02,
+              "uptime": 0.94
+            }
+          }
+        }
+      },
+      {
+        "id": "glm-5.1",
+        "object": "model",
+        "created": 1775735882,
+        "owned_by": "Z.ai",
+        "description": "GLM-5.1 is a next-generation flagship model for agentic engineering, excelling in long-horizon reasoning and advanced coding tasks.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 1.242,
+          "output_token": 3.903
+        },
+        "providers": [
+          "nebius"
+        ],
+        "context_size": 202752,
+        "max_output_tokens": 202752,
+        "tags": [
+          "Instruct",
+          "Reasoning",
+          "Tools"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "glm-5"
+        ],
+        "providers_details": {
+          "nebius": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 1.242,
+              "output_token": 3.903
+            },
+            "quantization": "fp8",
+            "context_size": 202752,
+            "max_output_tokens": 202752,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 42.55,
+              "latency": 22.19,
+              "ttft": 0.61,
+              "cache_hit_rate": 0.91,
+              "uptime": 0.98
+            }
+          }
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "object": "model",
+        "created": 1775727362,
+        "owned_by": "Alibaba Cloud",
+        "description": "Qwen3.5-9B is a dense multimodal model delivering strong reasoning, coding, and visual understanding with efficient performance and long context.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.1,
+          "output_token": 0.15
+        },
+        "providers": [
+          "ovh",
+          "ionos"
+        ],
+        "context_size": 262000,
+        "max_output_tokens": 262000,
+        "tags": [
+          "Instruct",
+          "Reasoning",
+          "Tools",
+          "Vision"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "qwen-3-9b"
+        ],
+        "providers_details": {
+          "ovh": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.1,
+              "output_token": 0.15
+            },
+            "quantization": "bf16",
+            "context_size": 262000,
+            "max_output_tokens": 262000,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 34.78,
+              "latency": 65.7,
+              "ttft": 1.85,
+              "cache_hit_rate": null,
+              "uptime": 1.0
+            }
+          },
+          "ionos": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.1,
+              "output_token": 0.15
+            },
+            "quantization": "fp8",
+            "context_size": 262000,
+            "max_output_tokens": 262000,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 59.67,
+              "latency": 38.57,
+              "ttft": 1.27,
+              "cache_hit_rate": null,
+              "uptime": 0.98
+            }
+          }
+        }
+      },
+      {
+        "id": "qwen3-coder-next",
+        "object": "model",
+        "created": 1775140682,
+        "owned_by": "Alibaba Cloud",
+        "description": "Qwen3 Coder Next 80B is a high-performance coding model optimized for complex software development, agentic workflows, and multi-language programming.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.15,
+          "output_token": 0.8
+        },
+        "providers": [
+          "ionos"
+        ],
+        "context_size": 256000,
+        "max_output_tokens": 256000,
+        "tags": [
+          "Instruct",
+          "Reasoning",
+          "Tools"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "qwen-3-coder-next"
+        ],
+        "providers_details": {
+          "ionos": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.15,
+              "output_token": 0.8
+            },
+            "quantization": "int4",
+            "context_size": 256000,
+            "max_output_tokens": 256000,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 138.12,
+              "latency": 5.34,
+              "ttft": 0.32,
+              "cache_hit_rate": null,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "qwen3.5-397b-a17b",
+        "object": "model",
+        "created": 1773837482,
+        "owned_by": "Alibaba Cloud",
+        "description": "Qwen3.5-397B-A17B is a large-scale multimodal model with a hybrid Mixture-of-Experts architecture, delivering state-of-the-art performance across chat, RAG, vision-language, video understanding, and agentic workflows.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.6,
+          "output_token": 3.6
+        },
+        "providers": [
+          "scaleway",
+          "ovh",
+          "ionos"
+        ],
+        "context_size": 262000,
+        "max_output_tokens": 262000,
+        "tags": [
+          "Instruct",
+          "Reasoning",
+          "Tools"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "qwen-3-397b"
+        ],
+        "providers_details": {
+          "scaleway": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.6,
+              "output_token": 3.6
+            },
+            "quantization": null,
+            "context_size": 250000,
+            "max_output_tokens": 16384,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 74.43,
+              "latency": 1.63,
+              "ttft": 0.74,
+              "cache_hit_rate": null,
+              "uptime": 1.0
+            }
+          },
+          "ovh": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.6,
+              "output_token": 3.6
+            },
+            "quantization": "fp8",
+            "context_size": 262000,
+            "max_output_tokens": 262000,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 146.48,
+              "latency": 17.4,
+              "ttft": 1.29,
+              "cache_hit_rate": null,
+              "uptime": 0.98
+            }
+          },
+          "ionos": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.6,
+              "output_token": 3.6
+            },
+            "quantization": "fp8",
+            "context_size": 262000,
+            "max_output_tokens": 262000,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 61.94,
+              "latency": 15.72,
+              "ttft": 0.6,
+              "cache_hit_rate": null,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "mistral-small-2603",
+        "object": "model",
+        "created": 1773741193,
+        "owned_by": "Mistral AI",
+        "description": "Mistral Small 4 is a versatile Mixture-of-Experts model that unifies reasoning, multimodal understanding, and agentic coding in a single architecture, optimized for efficiency and long-context interactions.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.14,
+          "output_token": 0.561,
+          "cache_read_cost": 0.014
+        },
+        "providers": [
+          "mistral",
+          "aki"
+        ],
+        "context_size": 262144,
+        "max_output_tokens": 256000,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Vision",
+          "Reasoning"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "mistral-small"
+        ],
+        "providers_details": {
+          "mistral": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.14,
+              "output_token": 0.561,
+              "cache_read_cost": 0.014
+            },
+            "quantization": null,
+            "context_size": 256000,
+            "max_output_tokens": 256000,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 181.99,
+              "latency": 1.76,
+              "ttft": 2.16,
+              "cache_hit_rate": 0.29,
+              "uptime": 1.0
+            }
+          },
+          "aki": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.2,
+              "output_token": 0.6
+            },
+            "quantization": "fp8",
+            "context_size": 262144,
+            "max_output_tokens": 81920,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 141.33,
+              "latency": 3.65,
+              "ttft": 0.93,
+              "cache_hit_rate": 0.28,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "qwen3guard-gen-8b",
+        "object": "model",
+        "created": 1770204122,
+        "owned_by": "Alibaba Cloud",
+        "description": "Qwen3Guard-Gen-8B is a large-scale multilingual safety moderation model designed for high-accuracy prompt and response classification.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.0,
+          "output_token": 0.0
+        },
+        "providers": [
+          "ovh"
+        ],
+        "context_size": 32000,
+        "max_output_tokens": 32000,
+        "tags": [
+          "Instruct",
+          "Safety-guard"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [],
+        "model_series": [
+          "qwen-3-guard-8b"
+        ],
+        "providers_details": {
+          "ovh": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.0,
+              "output_token": 0.0
+            },
+            "quantization": "fp16",
+            "context_size": 32000,
+            "max_output_tokens": 32000,
+            "supported_features": [],
+            "metrics": {
+              "throughput": 31.78,
+              "latency": 0.92,
+              "ttft": 0.21,
+              "cache_hit_rate": null,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "qwen3guard-gen-0.6b",
+        "object": "model",
+        "created": 1770204002,
+        "owned_by": "Alibaba Cloud",
+        "description": "Qwen3Guard-Gen-0.6B is a lightweight multilingual safety moderation model that classifies prompts and responses into safe, controversial, or unsafe categories.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.0,
+          "output_token": 0.0
+        },
+        "providers": [
+          "ovh"
+        ],
+        "context_size": 32000,
+        "max_output_tokens": 32000,
+        "tags": [
+          "Instruct",
+          "Safety-guard"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [],
+        "model_series": [
+          "qwen-3-guard-0.6b"
+        ],
+        "providers_details": {
+          "ovh": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.0,
+              "output_token": 0.0
+            },
+            "quantization": "fp16",
+            "context_size": 32000,
+            "max_output_tokens": 32000,
+            "supported_features": [],
+            "metrics": {
+              "throughput": 52.17,
+              "latency": 0.23,
+              "ttft": 0.12,
+              "cache_hit_rate": null,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "voxtral-small-2507",
+        "object": "model",
+        "created": 1770025993,
+        "owned_by": "Mistral AI",
+        "description": "Voxtral Small is a multimodal model with audio input, combining advanced speech capabilities with strong text performance for transcription, translation, and audio understanding.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.11,
+          "output_token": 0.33,
+          "audio_cost": 7.37e-05,
+          "cache_read_cost": 0.011
+        },
+        "providers": [
+          "mistral"
+        ],
+        "context_size": 32000,
+        "max_output_tokens": 32000,
+        "tags": [
+          "Instruct",
+          "Audio"
+        ],
+        "input_modalities": [
+          "text",
+          "audio"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "tools"
+        ],
+        "model_series": [
+          "voxtral-small"
+        ],
+        "providers_details": {
+          "mistral": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.11,
+              "output_token": 0.33,
+              "audio_cost": 7.37e-05,
+              "cache_read_cost": 0.011
+            },
+            "quantization": null,
+            "context_size": 32000,
+            "max_output_tokens": 32000,
+            "supported_features": [
+              "json_mode",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 117.74,
+              "latency": 1.93,
+              "ttft": 0.24,
+              "cache_hit_rate": 0.05,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "nvidia-nemotron-3-nano-30b-a3b",
+        "object": "model",
+        "created": 1768217882,
+        "owned_by": "Nvidia",
+        "description": "Nemotron-Nano-3-30B-A3B is a compact Mixture-of-Experts model optimized for efficient reasoning, chat, and coding, with strong multilingual support and long-context RAG and agent workflows.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.054,
+          "output_token": 0.215
+        },
+        "providers": [
+          "nebius"
+        ],
+        "context_size": 128000,
+        "max_output_tokens": 128000,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Reasoning"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "nemotron-3-nano"
+        ],
+        "providers_details": {
+          "nebius": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.054,
+              "output_token": 0.215
+            },
+            "quantization": "fp8",
+            "context_size": 128000,
+            "max_output_tokens": 128000,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 218.34,
+              "latency": 4.87,
+              "ttft": 0.27,
+              "cache_hit_rate": 0.62,
+              "uptime": 0.92
+            }
+          }
+        }
+      },
+      {
+        "id": "mistral-large-2512",
+        "object": "model",
+        "created": 1764762602,
+        "owned_by": "Mistral AI",
+        "description": "Mistral Large 3 is a state-of-the-art open-weight multimodal Mixture-of-Experts model with 41B active parameters, delivering frontier-level performance across text and vision tasks.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.55,
+          "output_token": 1.65,
+          "cache_read_cost": 0.055
+        },
+        "providers": [
+          "mistral"
+        ],
+        "context_size": 256000,
+        "max_output_tokens": 256000,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Vision"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "tools"
+        ],
+        "model_series": [
+          "mistral-large"
+        ],
+        "providers_details": {
+          "mistral": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.55,
+              "output_token": 1.65,
+              "cache_read_cost": 0.055
+            },
+            "quantization": null,
+            "context_size": 256000,
+            "max_output_tokens": 256000,
+            "supported_features": [
+              "json_mode",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 74.98,
+              "latency": 3.52,
+              "ttft": 1.2,
+              "cache_hit_rate": 0.36,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "ministral-8b-2512",
+        "object": "model",
+        "created": 1764762542,
+        "owned_by": "Mistral AI",
+        "description": "Ministral 3 8B is a balanced, efficient multimodal model offering strong text and vision capabilities, optimized for edge and local deployment.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.165,
+          "output_token": 0.165,
+          "cache_read_cost": 0.017
+        },
+        "providers": [
+          "mistral"
+        ],
+        "context_size": 256000,
+        "max_output_tokens": 256000,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Vision"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "tools"
+        ],
+        "model_series": [
+          "ministral-8b"
+        ],
+        "providers_details": {
+          "mistral": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.165,
+              "output_token": 0.165,
+              "cache_read_cost": 0.017
+            },
+            "quantization": null,
+            "context_size": 256000,
+            "max_output_tokens": 256000,
+            "supported_features": [
+              "json_mode",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 81.41,
+              "latency": 1.24,
+              "ttft": 0.3,
+              "cache_hit_rate": 0.12,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "ministral-3b-2512",
+        "object": "model",
+        "created": 1764762482,
+        "owned_by": "Mistral AI",
+        "description": "Ministral 3 3B is a compact, efficient multimodal model with strong language, vision capabilities, and ideal for custom fine-tuning.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.11,
+          "output_token": 0.11,
+          "cache_read_cost": 0.011
+        },
+        "providers": [
+          "mistral"
+        ],
+        "context_size": 256000,
+        "max_output_tokens": 256000,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Vision"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "tools"
+        ],
+        "model_series": [
+          "ministral-3b"
+        ],
+        "providers_details": {
+          "mistral": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.11,
+              "output_token": 0.11,
+              "cache_read_cost": 0.011
+            },
+            "quantization": null,
+            "context_size": 256000,
+            "max_output_tokens": 256000,
+            "supported_features": [
+              "json_mode",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 225.89,
+              "latency": 1.45,
+              "ttft": 0.43,
+              "cache_hit_rate": 0.01,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "ministral-14b-2512",
+        "object": "model",
+        "created": 1764761882,
+        "owned_by": "Mistral AI",
+        "description": "Ministral 3 14B is a frontier-level 14B multimodal model optimized for local deployment, delivering state-of-the-art text and vision reasoning with a 256K context window and strong agentic capabilities.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.22,
+          "output_token": 0.22,
+          "cache_read_cost": 0.022
+        },
+        "providers": [
+          "mistral"
+        ],
+        "context_size": 256000,
+        "max_output_tokens": 256000,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Vision"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "tools"
+        ],
+        "model_series": [
+          "ministral-14b"
+        ],
+        "providers_details": {
+          "mistral": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.22,
+              "output_token": 0.22,
+              "cache_read_cost": 0.022
+            },
+            "quantization": null,
+            "context_size": 256000,
+            "max_output_tokens": 256000,
+            "supported_features": [
+              "json_mode",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 87.85,
+              "latency": 4.97,
+              "ttft": 0.37,
+              "cache_hit_rate": 0.14,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "gpt-oss-120b",
+        "object": "model",
+        "created": 1754393882,
+        "owned_by": "OpenAI",
+        "description": "GPT Oss 120b is a 120B parameter Mixture-of-Experts model by OpenAI, built for advanced reasoning, agentic tasks, and flexible developer use under Apache 2.0.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.08,
+          "output_token": 0.4
+        },
+        "providers": [
+          "scaleway",
+          "nebius",
+          "ionos",
+          "ovh",
+          "infercom",
+          "aki"
+        ],
+        "context_size": 131000,
+        "max_output_tokens": 131000,
+        "tags": [
+          "Instruct",
+          "Reasoning",
+          "Tools"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "gpt-oss-120b"
+        ],
+        "providers_details": {
+          "scaleway": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.15,
+              "output_token": 0.6
+            },
+            "quantization": null,
+            "context_size": 128000,
+            "max_output_tokens": 8192,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 142.63,
+              "latency": 6.78,
+              "ttft": 1.04,
+              "cache_hit_rate": null,
+              "uptime": 1.0
+            }
+          },
+          "nebius": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.134,
+              "output_token": 0.537
+            },
+            "quantization": "fp4",
+            "context_size": 131000,
+            "max_output_tokens": 131000,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 386.83,
+              "latency": 1.93,
+              "ttft": 0.37,
+              "cache_hit_rate": 0.68,
+              "uptime": 1.0
+            }
+          },
+          "ionos": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.15,
+              "output_token": 0.65
+            },
+            "quantization": "mxfp4",
+            "context_size": 128000,
+            "max_output_tokens": 128000,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 182.08,
+              "latency": 2.25,
+              "ttft": 0.37,
+              "cache_hit_rate": null,
+              "uptime": 1.0
+            }
+          },
+          "ovh": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.08,
+              "output_token": 0.4
+            },
+            "quantization": "fp4",
+            "context_size": 131000,
+            "max_output_tokens": 131000,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 45.42,
+              "latency": 12.63,
+              "ttft": 1.09,
+              "cache_hit_rate": null,
+              "uptime": 1.0
+            }
+          },
+          "infercom": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.22,
+              "output_token": 0.59
+            },
+            "quantization": "mxfp4",
+            "context_size": 128000,
+            "max_output_tokens": 128000,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 582.31,
+              "latency": 1.49,
+              "ttft": 1.0,
+              "cache_hit_rate": null,
+              "uptime": 1.0
+            }
+          },
+          "aki": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.15,
+              "output_token": 0.55
+            },
+            "quantization": "mxfp4",
+            "context_size": 128000,
+            "max_output_tokens": 32768,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 223.87,
+              "latency": 5.14,
+              "ttft": 0.97,
+              "cache_hit_rate": 0.23,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "qwen3-30b-a3b-instruct-2507",
+        "object": "model",
+        "created": 1753702682,
+        "owned_by": "Alibaba Cloud",
+        "description": "Qwen3-30B-A3B-Instruct-2507 is an advanced Mixture-of-Experts model optimized for reasoning, coding, and multilingual instruction following.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.089,
+          "output_token": 0.268
+        },
+        "providers": [
+          "nebius"
+        ],
+        "context_size": 262000,
+        "max_output_tokens": 262000,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Reasoning"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "qwen-3-30b"
+        ],
+        "providers_details": {
+          "nebius": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.089,
+              "output_token": 0.268
+            },
+            "quantization": "fp8",
+            "context_size": 262000,
+            "max_output_tokens": 262000,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 42.64,
+              "latency": 7.96,
+              "ttft": 1.21,
+              "cache_hit_rate": 0.61,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "gpt-oss-20b",
+        "object": "model",
+        "created": 1752838682,
+        "owned_by": "OpenAI",
+        "description": "GPT Oss 20B is an open-weight Mixture-of-Experts model from OpenAI, optimized for low-latency inference and local deployment.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.04,
+          "output_token": 0.15
+        },
+        "providers": [
+          "ovh"
+        ],
+        "context_size": 131000,
+        "max_output_tokens": 131000,
+        "tags": [
+          "Instruct",
+          "Reasoning",
+          "Tools"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "gpt-oss-20b"
+        ],
+        "providers_details": {
+          "ovh": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.04,
+              "output_token": 0.15
+            },
+            "quantization": "fp4",
+            "context_size": 131000,
+            "max_output_tokens": 131000,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 84.52,
+              "latency": 11.26,
+              "ttft": 1.12,
+              "cache_hit_rate": null,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "mistral-small-3.2-24b-instruct-2506",
+        "object": "model",
+        "created": 1748252162,
+        "owned_by": "Mistral AI",
+        "description": "Mistral-Small-3.2-24B-Instruct-2506 is a 24B parameter instruction-tuned model with enhanced long-context support (128k) and state-of-the-art vision understanding.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.09,
+          "output_token": 0.28
+        },
+        "providers": [
+          "ovh",
+          "scaleway"
+        ],
+        "context_size": 128000,
+        "max_output_tokens": 128000,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Vision"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "tools"
+        ],
+        "model_series": [
+          "mistral-small"
+        ],
+        "providers_details": {
+          "ovh": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.09,
+              "output_token": 0.28
+            },
+            "quantization": "bf16",
+            "context_size": 128000,
+            "max_output_tokens": 128000,
+            "supported_features": [
+              "json_mode",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 41.99,
+              "latency": 5.5,
+              "ttft": 0.29,
+              "cache_hit_rate": null,
+              "uptime": 1.0
+            }
+          },
+          "scaleway": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.15,
+              "output_token": 0.35
+            },
+            "quantization": null,
+            "context_size": 128000,
+            "max_output_tokens": 8192,
+            "supported_features": [
+              "json_mode",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 119.58,
+              "latency": 1.58,
+              "ttft": 0.18,
+              "cache_hit_rate": null,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "qwen3-235b-a22b-instruct-2507",
+        "object": "model",
+        "created": 1745840282,
+        "owned_by": "Alibaba Cloud",
+        "description": "Qwen3-235B-A22B-Instruct-2507 is a large non-thinking mode model with major improvements in reasoning, instruction following, knowledge coverage, and long-context understanding up to 256K tokens.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.179,
+          "output_token": 0.537
+        },
+        "providers": [
+          "scaleway",
+          "nebius"
+        ],
+        "context_size": 262000,
+        "max_output_tokens": 262000,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Reasoning"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "qwen-3-235b"
+        ],
+        "providers_details": {
+          "scaleway": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.75,
+              "output_token": 2.25
+            },
+            "quantization": null,
+            "context_size": 250000,
+            "max_output_tokens": 8192,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 109.09,
+              "latency": 7.12,
+              "ttft": 1.3,
+              "cache_hit_rate": null,
+              "uptime": 0.72
+            }
+          },
+          "nebius": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.179,
+              "output_token": 0.537
+            },
+            "quantization": "fp4",
+            "context_size": 262000,
+            "max_output_tokens": 262000,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 62.45,
+              "latency": 3.33,
+              "ttft": 1.15,
+              "cache_hit_rate": 0.41,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "qwen3-coder-30b-a3b-instruct",
+        "object": "model",
+        "created": 1745840282,
+        "owned_by": "Alibaba Cloud",
+        "description": "Qwen3 Coder 30b a3b Instruct is a 30.5B parameter open-source Mixture-of-Experts model specialized for coding, tool use, and complex multi-step programming workflows.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.2,
+          "output_token": 0.8
+        },
+        "providers": [
+          "scaleway"
+        ],
+        "context_size": 128000,
+        "max_output_tokens": 32000,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Reasoning"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "qwen-3-coder-30b"
+        ],
+        "providers_details": {
+          "scaleway": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.2,
+              "output_token": 0.8
+            },
+            "quantization": null,
+            "context_size": 128000,
+            "max_output_tokens": 32000,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 173.19,
+              "latency": 1.55,
+              "ttft": 0.16,
+              "cache_hit_rate": null,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "mistral-small-2503",
+        "object": "model",
+        "created": 1742482730,
+        "owned_by": "Mistral AI",
+        "description": "Combines advanced text and vision capabilities with 24 billion parameters, supporting multilingual tasks and long contexts up to 131k tokens, making it versatile for various applications without sacrificing performance.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.1,
+          "output_token": 0.3
+        },
+        "providers": [
+          "ionos"
+        ],
+        "context_size": 128000,
+        "max_output_tokens": 128000,
+        "tags": [
+          "Instruct",
+          "Vision",
+          "Tools"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "tools"
+        ],
+        "model_series": [
+          "mistral-small"
+        ],
+        "providers_details": {
+          "ionos": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.1,
+              "output_token": 0.3
+            },
+            "quantization": "fp8",
+            "context_size": 128000,
+            "max_output_tokens": 128000,
+            "supported_features": [
+              "json_mode",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 40.85,
+              "latency": 5.59,
+              "ttft": 0.62,
+              "cache_hit_rate": null,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "object": "model",
+        "created": 1741779482,
+        "owned_by": "Google",
+        "description": "Gemma 3 is a family of lightweight, multimodal models from Google, supporting text and image inputs, multilingual capabilities, and a 131K context window.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.089,
+          "output_token": 0.268
+        },
+        "providers": [
+          "nebius"
+        ],
+        "context_size": 131000,
+        "max_output_tokens": 110000,
+        "tags": [
+          "Instruct",
+          "Vision",
+          "Tools",
+          "Reasoning"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning"
+        ],
+        "model_series": [
+          "gemma-3-27b"
+        ],
+        "providers_details": {
+          "nebius": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.089,
+              "output_token": 0.268
+            },
+            "quantization": "fp8",
+            "context_size": 131000,
+            "max_output_tokens": 110000,
+            "supported_features": [
+              "json_mode",
+              "reasoning"
+            ],
+            "metrics": {
+              "throughput": 38.35,
+              "latency": 0.51,
+              "ttft": 0.25,
+              "cache_hit_rate": 0.68,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "qwen2.5-vl-72b-instruct",
+        "object": "model",
+        "created": 1737977882,
+        "owned_by": "Alibaba Cloud",
+        "description": "Qwen2.5-VL is a powerful vision-language model with advanced capabilities in visual understanding, long video reasoning, and structured output generation.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.91,
+          "output_token": 0.91
+        },
+        "providers": [
+          "ovh"
+        ],
+        "context_size": 32000,
+        "max_output_tokens": 32000,
+        "tags": [
+          "Instruct",
+          "Vision",
+          "Reasoning"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning"
+        ],
+        "model_series": [
+          "qwen-2-vl-72b"
+        ],
+        "providers_details": {
+          "ovh": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.91,
+              "output_token": 0.91
+            },
+            "quantization": "fp8",
+            "context_size": 32000,
+            "max_output_tokens": 32000,
+            "supported_features": [
+              "json_mode",
+              "reasoning"
+            ],
+            "metrics": {
+              "throughput": 29.09,
+              "latency": 34.99,
+              "ttft": 0.27,
+              "cache_hit_rate": null,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "codestral-2508",
+        "object": "model",
+        "created": 1736768282,
+        "owned_by": "Mistral AI",
+        "description": "Codestral-2508 is a cutting-edge coding model optimized for low-latency, high-frequency tasks like FIM, code correction, and test generation.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.33,
+          "output_token": 0.99,
+          "cache_read_cost": 0.033
+        },
+        "providers": [
+          "mistral"
+        ],
+        "context_size": 256000,
+        "max_output_tokens": 256000,
+        "tags": [
+          "Instruct",
+          "Tools"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "tools"
+        ],
+        "model_series": [
+          "codestral"
+        ],
+        "providers_details": {
+          "mistral": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.33,
+              "output_token": 0.99,
+              "cache_read_cost": 0.033
+            },
+            "quantization": null,
+            "context_size": 256000,
+            "max_output_tokens": 256000,
+            "supported_features": [
+              "json_mode",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 130.69,
+              "latency": 1.87,
+              "ttft": 0.34,
+              "cache_hit_rate": 0.06,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "llama-3.3-70b-instruct",
+        "object": "model",
+        "created": 1733830682,
+        "owned_by": "Meta",
+        "description": "With 70 billion parameters, this cutting-edge multilingual model excels in generating high-quality, safe, and helpful text across eight languages, making it stand out from other chat models.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.65,
+          "output_token": 0.65
+        },
+        "providers": [
+          "scaleway",
+          "ovh",
+          "ionos"
+        ],
+        "context_size": 131000,
+        "max_output_tokens": 131000,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Reasoning"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "llama-3-70b"
+        ],
+        "providers_details": {
+          "scaleway": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.9,
+              "output_token": 0.9
+            },
+            "quantization": null,
+            "context_size": 131000,
+            "max_output_tokens": 16384,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 83.92,
+              "latency": 3.19,
+              "ttft": 0.59,
+              "cache_hit_rate": null,
+              "uptime": 1.0
+            }
+          },
+          "ovh": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.67,
+              "output_token": 0.67
+            },
+            "quantization": "fp8",
+            "context_size": 131000,
+            "max_output_tokens": 131000,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 19.53,
+              "latency": 26.8,
+              "ttft": 6.65,
+              "cache_hit_rate": null,
+              "uptime": 1.0
+            }
+          },
+          "ionos": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.65,
+              "output_token": 0.65
+            },
+            "quantization": "int4",
+            "context_size": 128000,
+            "max_output_tokens": 128000,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 46.13,
+              "latency": 8.3,
+              "ttft": 0.36,
+              "cache_hit_rate": null,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "pixtral-12b-2409",
+        "object": "model",
+        "created": 1731176378,
+        "owned_by": "Mistral AI",
+        "description": "Pixtral 2409 12B is a state-of-the-art multimodal model with 12B parameters and a 400M vision encoder, natively trained on interleaved text and image data. It excels in tasks spanning vision-language reasoning, instruction following, and pure text understanding, making it highly effective for real-world multimodal applications.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.2,
+          "output_token": 0.2
+        },
+        "providers": [
+          "scaleway"
+        ],
+        "context_size": 128000,
+        "max_output_tokens": 4096,
+        "tags": [
+          "Instruct",
+          "Vision",
+          "Reasoning"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "pixtral-12b"
+        ],
+        "providers_details": {
+          "scaleway": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.2,
+              "output_token": 0.2
+            },
+            "quantization": null,
+            "context_size": 128000,
+            "max_output_tokens": 4096,
+            "supported_features": [
+              "json_mode",
+              "reasoning",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 110.43,
+              "latency": 2.51,
+              "ttft": 0.15,
+              "cache_hit_rate": null,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "hermes-4-405b",
+        "object": "model",
+        "created": 1723549082,
+        "owned_by": "NousResearch",
+        "description": "Hermes 4 405B is a frontier hybrid-mode reasoning model built on Llama 3.1, optimized for advanced logic, math, coding, and structured output generation.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.894,
+          "output_token": 2.683
+        },
+        "providers": [
+          "nebius"
+        ],
+        "context_size": 128000,
+        "max_output_tokens": 128000,
+        "tags": [
+          "Instruct",
+          "Tools"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "tools"
+        ],
+        "model_series": [
+          "hermes-4-405b"
+        ],
+        "providers_details": {
+          "nebius": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.894,
+              "output_token": 2.683
+            },
+            "quantization": "fp8",
+            "context_size": 128000,
+            "max_output_tokens": 128000,
+            "supported_features": [
+              "json_mode",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 34.36,
+              "latency": 11.28,
+              "ttft": 0.76,
+              "cache_hit_rate": 0.48,
+              "uptime": 1.0
+            }
+          }
+        }
+      },
+      {
+        "id": "mistral-nemo-instruct-2407",
+        "object": "model",
+        "created": 1723020793,
+        "owned_by": "Mistral AI",
+        "description": "A 12B parameter, instruct-tuned language model by Mistral AI and NVIDIA, designed for advanced instruction following, multi-turn conversations, and generating text and code across multiple languages.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.13,
+          "output_token": 0.13
+        },
+        "providers": [
+          "ovh",
+          "ionos"
+        ],
+        "context_size": 128000,
+        "max_output_tokens": 128000,
+        "tags": [
+          "Instruct",
+          "Tools"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "tools"
+        ],
+        "model_series": [
+          "mistral-nemo"
+        ],
+        "providers_details": {
+          "ovh": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.13,
+              "output_token": 0.13
+            },
+            "quantization": "fp16",
+            "context_size": 118000,
+            "max_output_tokens": 118000,
+            "supported_features": [
+              "json_mode",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 26.79,
+              "latency": 18.07,
+              "ttft": 0.25,
+              "cache_hit_rate": null,
+              "uptime": 1.0
+            }
+          },
+          "ionos": {
+            "pricing": {
+              "currency": "EUR",
+              "input_token": 0.15,
+              "output_token": 0.15
+            },
+            "quantization": "fp8",
+            "context_size": 128000,
+            "max_output_tokens": 128000,
+            "supported_features": [
+              "json_mode",
+              "tools"
+            ],
+            "metrics": {
+              "throughput": 50.53,
+              "latency": 6.71,
+              "ttft": 0.42,
+              "cache_hit_rate": null,
+              "uptime": 1.0
+            }
+          }
+        }
+      }
+    ]
+  },
+  "response_headers": {},
+  "response_header_names": [
+    "access-control-expose-headers",
+    "connection",
+    "content-length",
+    "content-security-policy",
+    "content-type",
+    "date",
+    "x-content-type-options",
+    "x-frame-options"
+  ],
+  "duration_ms": 121,
+  "note": "ok"
+}

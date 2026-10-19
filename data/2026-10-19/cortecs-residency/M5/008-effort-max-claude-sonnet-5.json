@@ -1,0 +1,103 @@
+{
+  "ts": "2026-10-19T08:24:15+00:00",
+  "target": "cortecs-residency",
+  "model": "claude-sonnet-5",
+  "measurement": "M5",
+  "step": "effort-max",
+  "run_id": "cbbf6470",
+  "url": "https://api.cortecs.ai/v1/chat/completions",
+  "request_body": {
+    "model": "claude-sonnet-5",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful assistant."
+      },
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "max_tokens": 2048,
+    "reasoning_effort": "max"
+  },
+  "status": 200,
+  "response_body": {
+    "id": "chatcmpl-e36ef082-1ea6-4701-99b6-142731aec9e6",
+    "created": 1792398255,
+    "model": "claude-sonnet-5",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "0.05 EUR",
+          "role": "assistant",
+          "reasoning_content": "Setting up the equations: bat plus ball equals 1.10, and bat equals ball plus 1.00. Substituting gives two balls plus 1.00 equals 1.10, so the ball costs 0.05.\n\n",
+          "thinking_blocks": [
+            {
+              "type": "thinking",
+              "thinking": "Setting up the equations: bat plus ball equals 1.10, and bat equals ball plus 1.00. Substituting gives two balls plus 1.00 equals 1.10, so the ball costs 0.05.\n\n",
+              "signature": "EtoDCp0CCBIQAhgCKkDjqRWnTTEey1rE6rz0faHhTeIVQMmm6OsUVhd5Y11nxqegz7yZzEQCGVJ+ZM8sMnOJ4kVB43evh25u0Ek9FlxNMg9jbGF1ZGUtc29ubmV0LTU4AEIIdGhpbmtpbmdaDDI2NTk5MDIzMzExNKgBr6fX1gbCAT0IBRAAGg8BMUIC2ooDTzcFKqYEJq0gAjIEEnHPJToEXXFH40IEODMjikoEODMjilAAWgTZBeFWYAJoAXAB2gFgChZwcmVmaXhfYmVmb3JlX2Jsb2NrX3YxEiCzhY8TunMVNxT5/MwulYIdx3si/z87C6ZbXJdmzwgjvyIAMiDCwBPIapyS4i+Wbz2GF3aPi3pEyQKtzAl7+h4JivtOH0gDEgzzbfl5JEKsRxYT1hMaDLfBFEi8qxW5FJaorCIw+IPoxRRB2lgoQHpIGwtYidVpDYopVdawCHUsreOpEiIaP+v6e1NUdKfaj56Md90eKmp0CBpJoSEE9GenO2fPSYa85edTP2h1uaXtFYDMwBJgzDy9VzA1bhOoFGPUZnxBXIXFl8PV7ZGKGZ/11jwhdHnlUqtbyJen4/8rLKJ1a5I228J+xemb7X7OG34TAMwnl8vFkvj70d44Pn9jGAE="
+            }
+          ],
+          "provider_specific_fields": {
+            "citations": null,
+            "thinking_blocks": [
+              {
+                "type": "thinking",
+                "thinking": "Setting up the equations: bat plus ball equals 1.10, and bat equals ball plus 1.00. Substituting gives two balls plus 1.00 equals 1.10, so the ball costs 0.05.\n\n",
+                "signature": "EtoDCp0CCBIQAhgCKkDjqRWnTTEey1rE6rz0faHhTeIVQMmm6OsUVhd5Y11nxqegz7yZzEQCGVJ+ZM8sMnOJ4kVB43evh25u0Ek9FlxNMg9jbGF1ZGUtc29ubmV0LTU4AEIIdGhpbmtpbmdaDDI2NTk5MDIzMzExNKgBr6fX1gbCAT0IBRAAGg8BMUIC2ooDTzcFKqYEJq0gAjIEEnHPJToEXXFH40IEODMjikoEODMjilAAWgTZBeFWYAJoAXAB2gFgChZwcmVmaXhfYmVmb3JlX2Jsb2NrX3YxEiCzhY8TunMVNxT5/MwulYIdx3si/z87C6ZbXJdmzwgjvyIAMiDCwBPIapyS4i+Wbz2GF3aPi3pEyQKtzAl7+h4JivtOH0gDEgzzbfl5JEKsRxYT1hMaDLfBFEi8qxW5FJaorCIw+IPoxRRB2lgoQHpIGwtYidVpDYopVdawCHUsreOpEiIaP+v6e1NUdKfaj56Md90eKmp0CBpJoSEE9GenO2fPSYa85edTP2h1uaXtFYDMwBJgzDy9VzA1bhOoFGPUZnxBXIXFl8PV7ZGKGZ/11jwhdHnlUqtbyJen4/8rLKJ1a5I228J+xemb7X7OG34TAMwnl8vFkvj70d44Pn9jGAE="
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "usage": {
+      "completion_tokens": 69,
+      "prompt_tokens": 73,
+      "total_tokens": 142,
+      "completion_tokens_details": {
+        "reasoning_tokens": 61,
+        "text_tokens": 8
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "text_tokens": 73,
+        "cache_write_tokens": 0,
+        "cache_creation_tokens": 0,
+        "cache_creation_token_details": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        }
+      },
+      "cost": 827,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "cost_details": {
+        "prompt_cost": 145,
+        "cache_read_cost": 0,
+        "cache_write_cost": 0,
+        "completion_cost": 682,
+        "prompt_audio_cost": 0
+      }
+    }
+  },
+  "response_headers": {},
+  "response_header_names": [
+    "access-control-expose-headers",
+    "connection",
+    "content-length",
+    "content-security-policy",
+    "content-type",
+    "date",
+    "x-content-type-options",
+    "x-cortecs-model",
+    "x-cortecs-provider",
+    "x-frame-options"
+  ],
+  "duration_ms": 1864,
+  "note": "angenommen"
+}

@@ -1,0 +1,232 @@
+[
+  {
+    "record": "data/2026-10-19/openai-chat/M1/001-default-A-gpt-5.6-luna.json",
+    "model": "gpt-5.6-luna",
+    "stage": "-",
+    "computed": 0.0011488999999999998,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/openai-chat/M1/002-default-B-gpt-5.6-luna.json",
+    "model": "gpt-5.6-luna",
+    "stage": "-",
+    "computed": 9.688e-05,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/openai-chat/M1/003-default-A-gpt-5-mini.json",
+    "model": "gpt-5-mini",
+    "stage": "-",
+    "computed": 0.0011765,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/openai-chat/M1/004-default-B-gpt-5-mini.json",
+    "model": "gpt-5-mini",
+    "stage": "-",
+    "computed": 0.0001685,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/openai-chat/M2/001-A-gpt-5.6-luna.json",
+    "model": "gpt-5.6-luna",
+    "stage": "-",
+    "computed": 0.0011488999999999998,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/openai-chat/M2/002-B-gpt-5.6-luna.json",
+    "model": "gpt-5.6-luna",
+    "stage": "-",
+    "computed": 9.688e-05,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/openai-chat/M3/001-A-gpt-5.6-luna.json",
+    "model": "gpt-5.6-luna",
+    "stage": "-",
+    "computed": 0.0011488999999999998,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/openai-chat/M3/002-B-gpt-5.6-luna.json",
+    "model": "gpt-5.6-luna",
+    "stage": "-",
+    "computed": 0.0011488999999999998,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/openai-chat/M3/003-C-gpt-5.6-luna.json",
+    "model": "gpt-5.6-luna",
+    "stage": "-",
+    "computed": 9.688e-05,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/openai-chat/M3/004-A-gpt-5-mini.json",
+    "model": "gpt-5-mini",
+    "stage": "-",
+    "computed": 0.00116475,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/openai-chat/M3/005-B-gpt-5-mini.json",
+    "model": "gpt-5-mini",
+    "stage": "-",
+    "computed": 0.00116475,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/openai-chat/M3/006-C-gpt-5-mini.json",
+    "model": "gpt-5-mini",
+    "stage": "-",
+    "computed": 0.00028475,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/openai-chat/M5/001-effort-default-gpt-5.6-luna.json",
+    "model": "gpt-5.6-luna",
+    "stage": "-",
+    "computed": 1.9600000000000002e-05,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/openai-chat/M5/002-effort-none-gpt-5.6-luna.json",
+    "model": "gpt-5.6-luna",
+    "stage": "-",
+    "computed": 1.9600000000000002e-05,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/openai-chat/M5/004-effort-low-gpt-5.6-luna.json",
+    "model": "gpt-5.6-luna",
+    "stage": "-",
+    "computed": 1.9600000000000002e-05,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/openai-chat/M5/005-effort-medium-gpt-5.6-luna.json",
+    "model": "gpt-5.6-luna",
+    "stage": "-",
+    "computed": 1.9600000000000002e-05,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/openai-chat/M5/006-effort-high-gpt-5.6-luna.json",
+    "model": "gpt-5.6-luna",
+    "stage": "-",
+    "computed": 1.9600000000000002e-05,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/openai-chat/M5/007-effort-xhigh-gpt-5.6-luna.json",
+    "model": "gpt-5.6-luna",
+    "stage": "-",
+    "computed": 6.16e-05,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/openai-chat/M5/009-effort-default-gpt-5-mini.json",
+    "model": "gpt-5-mini",
+    "stage": "-",
+    "computed": 0.000296,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/openai-chat/M5/011-effort-minimal-gpt-5-mini.json",
+    "model": "gpt-5-mini",
+    "stage": "-",
+    "computed": 4e-05,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/openai-chat/M5/012-effort-low-gpt-5-mini.json",
+    "model": "gpt-5-mini",
+    "stage": "-",
+    "computed": 0.000296,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/openai-chat/M5/013-effort-medium-gpt-5-mini.json",
+    "model": "gpt-5-mini",
+    "stage": "-",
+    "computed": 0.000296,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/openai-chat/M5/014-effort-high-gpt-5-mini.json",
+    "model": "gpt-5-mini",
+    "stage": "-",
+    "computed": 0.000936,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  }
+]

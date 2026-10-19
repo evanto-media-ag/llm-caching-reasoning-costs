@@ -1,0 +1,83 @@
+{
+  "ts": "2026-10-19T08:23:29+00:00",
+  "target": "cortecs-sovereign",
+  "model": "gpt-oss-120b",
+  "measurement": "M5",
+  "step": "effort-high",
+  "run_id": "7cde93fe",
+  "url": "https://api.cortecs.ai/v1/chat/completions",
+  "request_body": {
+    "model": "gpt-oss-120b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful assistant."
+      },
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "max_tokens": 2048,
+    "reasoning_effort": "high"
+  },
+  "status": 200,
+  "response_body": {
+    "id": "chatcmpl-dec8d4e0-e29f-4742-8ea4-978a901da561",
+    "created": 1792398208,
+    "model": "gpt-oss-120b",
+    "object": "chat.completion",
+    "system_fingerprint": "vllm-v0.22.0-tp4-3e04bf1c",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "0.05",
+          "role": "assistant",
+          "reasoning_content": "We need to solve the classic bat and ball problem. Usually the answer is 5 cents (0.05 EUR). However, careful might be 0.05. The question: \"A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only.\"\n\nWe should solve: Let ball price = x EUR. Bat price = x + 1.00 EUR. Sum: x + (x + 1.00) = 1.10 => 2x + 1.00 = 1.10 => 2x = 0.10 => x = 0.05 EUR. So answer: 0.05. Should we include the euro sign? They ask \"amount only\". Could be \"0.05\". Possibly \"0.05 EUR\". The phrase \"amount only\" suggests we give the number (maybe with the unit). Safer to give \"0.05 EUR\" maybe. But the prompt typically expects just the amount, so maybe \"0.05\". I will answer \"0.05 EUR\". But the instruction: \"Answer with the amount only.\" Ambiguous: that could mean just the number, not the unit. Many puzzle sites ask answer with just the amount, like \"0.05\". So I will answer \"0.05\". Perhaps include the euro sign? Usually no. I'll answer \"0.05\".",
+          "provider_specific_fields": {
+            "reasoning": "We need to solve the classic bat and ball problem. Usually the answer is 5 cents (0.05 EUR). However, careful might be 0.05. The question: \"A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only.\"\n\nWe should solve: Let ball price = x EUR. Bat price = x + 1.00 EUR. Sum: x + (x + 1.00) = 1.10 => 2x + 1.00 = 1.10 => 2x = 0.10 => x = 0.05 EUR. So answer: 0.05. Should we include the euro sign? They ask \"amount only\". Could be \"0.05\". Possibly \"0.05 EUR\". The phrase \"amount only\" suggests we give the number (maybe with the unit). Safer to give \"0.05 EUR\" maybe. But the prompt typically expects just the amount, so maybe \"0.05\". I will answer \"0.05 EUR\". But the instruction: \"Answer with the amount only.\" Ambiguous: that could mean just the number, not the unit. Many puzzle sites ask answer with just the amount, like \"0.05\". So I will answer \"0.05\". Perhaps include the euro sign? Usually no. I'll answer \"0.05\".",
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {
+          "token_ids": null,
+          "stop_reason": null,
+          "routed_experts": null
+        }
+      }
+    ],
+    "usage": {
+      "completion_tokens": 317,
+      "prompt_tokens": 117,
+      "total_tokens": 434,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "cost": 188,
+      "cost_details": {
+        "prompt_cost": 8,
+        "cache_read_cost": 9,
+        "cache_write_cost": 0,
+        "completion_cost": 171,
+        "prompt_audio_cost": 0
+      }
+    }
+  },
+  "response_headers": {},
+  "response_header_names": [
+    "access-control-expose-headers",
+    "connection",
+    "content-length",
+    "content-security-policy",
+    "content-type",
+    "date",
+    "x-content-type-options",
+    "x-cortecs-model",
+    "x-cortecs-provider",
+    "x-frame-options"
+  ],
+  "duration_ms": 1080,
+  "note": "angenommen"
+}

@@ -1,0 +1,70 @@
+{
+  "ts": "2026-10-19T08:23:17+00:00",
+  "target": "ionos",
+  "model": "Qwen/Qwen3.8-27B",
+  "measurement": "M5",
+  "step": "effort-default",
+  "run_id": "7de93dd6",
+  "url": "https://openai.inference.de-txl.ionos.com/v1/chat/completions",
+  "request_body": {
+    "model": "Qwen/Qwen3.8-27B",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful assistant."
+      },
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "max_tokens": 2048
+  },
+  "status": 200,
+  "response_body": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "\n\n0.05 EUR",
+          "reasoning": "Let me solve this step by step.\n\nLet the ball cost = x EUR\nThen the bat costs = x + 1.00 EUR\n\nTogether they cost 1.10 EUR:\nx + (x + 1.00) = 1.10\n2x + 1.00 = 1.10\n2x = 0.10\nx = 0.05\n\nThe ball costs 0.05 EUR.\n\nThe user wants just the amount.\n",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1792398195,
+    "id": "chatcmpl-ba412f8e-72e8-9d09-8956-87a063056711",
+    "model": "Qwen/Qwen3.8-27B",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 119,
+      "completion_tokens_details": {
+        "reasoning_tokens": 111
+      },
+      "prompt_tokens": 63,
+      "total_tokens": 182
+    }
+  },
+  "response_headers": {
+    "x-ratelimit-limit-requests": "5",
+    "x-ratelimit-remaining-requests": "4",
+    "x-ratelimit-reset-requests": "200ms",
+    "x-request-id": "3be315112c7485b26a338af4d26fefef"
+  },
+  "response_header_names": [
+    "connection",
+    "content-length",
+    "content-type",
+    "date",
+    "x-gateway-version",
+    "x-ratelimit-limit-requests",
+    "x-ratelimit-remaining-requests",
+    "x-ratelimit-reset-requests",
+    "x-request-id",
+    "x-trace-id"
+  ],
+  "duration_ms": 2035,
+  "note": "angenommen"
+}

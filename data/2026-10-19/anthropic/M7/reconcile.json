@@ -1,0 +1,552 @@
+[
+  {
+    "record": "data/2026-10-19/anthropic/M1/001-explicit-A-claude-sonnet-5-5.json",
+    "model": "claude-sonnet-5-5",
+    "stage": "-",
+    "computed": 0.018132,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M1/002-explicit-B-claude-sonnet-5-5.json",
+    "model": "claude-sonnet-5-5",
+    "stage": "-",
+    "computed": 0.0007944000000000001,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M1/003-auto-A-claude-sonnet-5-5.json",
+    "model": "claude-sonnet-5-5",
+    "stage": "-",
+    "computed": 0.018138,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M1/004-auto-B-claude-sonnet-5-5.json",
+    "model": "claude-sonnet-5-5",
+    "stage": "-",
+    "computed": 0.0007716,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M1/005-explicit-A-claude-haiku-5-5.json",
+    "model": "claude-haiku-5-5",
+    "stage": "-",
+    "computed": 0.0009066,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M1/006-explicit-B-claude-haiku-5-5.json",
+    "model": "claude-haiku-5-5",
+    "stage": "-",
+    "computed": 7.583999999999999e-05,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M1/007-auto-A-claude-haiku-5-5.json",
+    "model": "claude-haiku-5-5",
+    "stage": "-",
+    "computed": 0.00090665,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M1/008-auto-B-claude-haiku-5-5.json",
+    "model": "claude-haiku-5-5",
+    "stage": "-",
+    "computed": 7.474e-05,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M1/009-explicit-A-claude-sonnet-5.json",
+    "model": "claude-sonnet-5",
+    "stage": "-",
+    "computed": 0.018126,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M1/010-explicit-B-claude-sonnet-5.json",
+    "model": "claude-sonnet-5",
+    "stage": "-",
+    "computed": 0.0015108,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M1/011-auto-A-claude-sonnet-5.json",
+    "model": "claude-sonnet-5",
+    "stage": "-",
+    "computed": 0.0181315,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M1/012-auto-B-claude-sonnet-5.json",
+    "model": "claude-sonnet-5",
+    "stage": "-",
+    "computed": 0.001491,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M2/001-5m-A-claude-sonnet-5-5.json",
+    "model": "claude-sonnet-5-5",
+    "stage": "-",
+    "computed": 0.0181295,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M2/002-5m-B-claude-sonnet-5-5.json",
+    "model": "claude-sonnet-5-5",
+    "stage": "-",
+    "computed": 0.0181295,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M2/003-1h-A-claude-sonnet-5-5.json",
+    "model": "claude-sonnet-5-5",
+    "stage": "-",
+    "computed": 0.028964,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M2/004-1h-B-claude-sonnet-5-5.json",
+    "model": "claude-sonnet-5-5",
+    "stage": "-",
+    "computed": 0.0007943000000000001,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M3/001-A-claude-sonnet-5-5.json",
+    "model": "claude-sonnet-5-5",
+    "stage": "-",
+    "computed": 0.018127,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M3/002-B-claude-sonnet-5-5.json",
+    "model": "claude-sonnet-5-5",
+    "stage": "-",
+    "computed": 0.0007942,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M3/003-C-claude-sonnet-5-5.json",
+    "model": "claude-sonnet-5-5",
+    "stage": "-",
+    "computed": 0.0007942,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M3/004-A-claude-haiku-5-5.json",
+    "model": "claude-haiku-5-5",
+    "stage": "-",
+    "computed": 0.000913975,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M3/005-B-claude-haiku-5-5.json",
+    "model": "claude-haiku-5-5",
+    "stage": "-",
+    "computed": 7.583e-05,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M3/006-C-claude-haiku-5-5.json",
+    "model": "claude-haiku-5-5",
+    "stage": "-",
+    "computed": 9.133e-05,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M3/007-A-claude-sonnet-5.json",
+    "model": "claude-sonnet-5",
+    "stage": "-",
+    "computed": 0.018126,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M3/008-B-claude-sonnet-5.json",
+    "model": "claude-sonnet-5",
+    "stage": "-",
+    "computed": 0.018126,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M3/009-C-claude-sonnet-5.json",
+    "model": "claude-sonnet-5",
+    "stage": "-",
+    "computed": 0.0015108,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M4/001-below-A-claude-sonnet-5-5.json",
+    "model": "claude-sonnet-5-5",
+    "stage": "-",
+    "computed": 0.000966,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M4/002-below-B-claude-sonnet-5-5.json",
+    "model": "claude-sonnet-5-5",
+    "stage": "-",
+    "computed": 0.000966,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M4/003-above-A-claude-sonnet-5-5.json",
+    "model": "claude-sonnet-5-5",
+    "stage": "-",
+    "computed": 0.0014445,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M4/004-above-B-claude-sonnet-5-5.json",
+    "model": "claude-sonnet-5-5",
+    "stage": "-",
+    "computed": 0.0001269,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M4/005-below-A-claude-haiku-5-5.json",
+    "model": "claude-haiku-5-5",
+    "stage": "-",
+    "computed": 5.45e-05,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M4/006-below-B-claude-haiku-5-5.json",
+    "model": "claude-haiku-5-5",
+    "stage": "-",
+    "computed": 5.45e-05,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M4/007-above-A-claude-haiku-5-5.json",
+    "model": "claude-haiku-5-5",
+    "stage": "-",
+    "computed": 7.822499999999999e-05,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M4/008-above-B-claude-haiku-5-5.json",
+    "model": "claude-haiku-5-5",
+    "stage": "-",
+    "computed": 1.509e-05,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M4/009-below-A-claude-sonnet-5.json",
+    "model": "claude-sonnet-5",
+    "stage": "-",
+    "computed": 0.001884,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M4/010-below-B-claude-sonnet-5.json",
+    "model": "claude-sonnet-5",
+    "stage": "-",
+    "computed": 0.001884,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M4/011-above-A-claude-sonnet-5.json",
+    "model": "claude-sonnet-5",
+    "stage": "-",
+    "computed": 0.002843,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M4/012-above-B-claude-sonnet-5.json",
+    "model": "claude-sonnet-5",
+    "stage": "-",
+    "computed": 0.00029,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M5/001-effort-default-claude-sonnet-5-5.json",
+    "model": "claude-sonnet-5-5",
+    "stage": "-",
+    "computed": 0.00024,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M5/004-effort-low-claude-sonnet-5-5.json",
+    "model": "claude-sonnet-5-5",
+    "stage": "-",
+    "computed": 0.00024,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M5/005-effort-medium-claude-sonnet-5-5.json",
+    "model": "claude-sonnet-5-5",
+    "stage": "-",
+    "computed": 0.00024,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M5/006-effort-high-claude-sonnet-5-5.json",
+    "model": "claude-sonnet-5-5",
+    "stage": "-",
+    "computed": 0.00024,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M5/007-effort-xhigh-claude-sonnet-5-5.json",
+    "model": "claude-sonnet-5-5",
+    "stage": "-",
+    "computed": 0.00024,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M5/008-effort-max-claude-sonnet-5-5.json",
+    "model": "claude-sonnet-5-5",
+    "stage": "-",
+    "computed": 0.00131,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M5/010-effort-default-claude-haiku-5-5.json",
+    "model": "claude-haiku-5-5",
+    "stage": "-",
+    "computed": 1.2e-05,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M5/013-effort-low-claude-haiku-5-5.json",
+    "model": "claude-haiku-5-5",
+    "stage": "-",
+    "computed": 1.2e-05,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M5/014-effort-medium-claude-haiku-5-5.json",
+    "model": "claude-haiku-5-5",
+    "stage": "-",
+    "computed": 1.2e-05,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M5/015-effort-high-claude-haiku-5-5.json",
+    "model": "claude-haiku-5-5",
+    "stage": "-",
+    "computed": 3.7e-05,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M5/016-effort-xhigh-claude-haiku-5-5.json",
+    "model": "claude-haiku-5-5",
+    "stage": "-",
+    "computed": 3.85e-05,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M5/017-effort-max-claude-haiku-5-5.json",
+    "model": "claude-haiku-5-5",
+    "stage": "-",
+    "computed": 9.8e-05,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M5/019-effort-default-claude-sonnet-5.json",
+    "model": "claude-sonnet-5",
+    "stage": "-",
+    "computed": 0.000236,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M5/022-effort-low-claude-sonnet-5.json",
+    "model": "claude-sonnet-5",
+    "stage": "-",
+    "computed": 0.000236,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M5/023-effort-medium-claude-sonnet-5.json",
+    "model": "claude-sonnet-5",
+    "stage": "-",
+    "computed": 0.000236,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M5/024-effort-high-claude-sonnet-5.json",
+    "model": "claude-sonnet-5",
+    "stage": "-",
+    "computed": 0.000236,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M5/025-effort-xhigh-claude-sonnet-5.json",
+    "model": "claude-sonnet-5",
+    "stage": "-",
+    "computed": 0.000236,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/anthropic/M5/026-effort-max-claude-sonnet-5.json",
+    "model": "claude-sonnet-5",
+    "stage": "-",
+    "computed": 0.001026,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  }
+]

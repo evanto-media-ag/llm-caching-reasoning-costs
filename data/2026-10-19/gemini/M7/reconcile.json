@@ -1,0 +1,132 @@
+[
+  {
+    "record": "data/2026-10-19/gemini/M1/004-default-A-gemini-3.8-flash.json",
+    "model": "gemini-3.8-flash",
+    "stage": "-",
+    "computed": 0.00452475,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/gemini/M1/005-default-B-gemini-3.8-flash.json",
+    "model": "gemini-3.8-flash",
+    "stage": "-",
+    "computed": 0.001872375,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/gemini/M3/004-A-gemini-3.8-flash.json",
+    "model": "gemini-3.8-flash",
+    "stage": "-",
+    "computed": 0.00468225,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/gemini/M3/005-B-gemini-3.8-flash.json",
+    "model": "gemini-3.8-flash",
+    "stage": "-",
+    "computed": 0.0044835,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/gemini/M3/006-C-gemini-3.8-flash.json",
+    "model": "gemini-3.8-flash",
+    "stage": "-",
+    "computed": 0.002041125,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/gemini/M4/001-below-A-gemini-3.8-flash.json",
+    "model": "gemini-3.8-flash",
+    "stage": "-",
+    "computed": 0.00281175,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/gemini/M4/002-below-B-gemini-3.8-flash.json",
+    "model": "gemini-3.8-flash",
+    "stage": "-",
+    "computed": 0.002808,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/gemini/M4/003-above-A-gemini-3.8-flash.json",
+    "model": "gemini-3.8-flash",
+    "stage": "-",
+    "computed": 0.003426,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/gemini/M4/004-above-B-gemini-3.8-flash.json",
+    "model": "gemini-3.8-flash",
+    "stage": "-",
+    "computed": 0.0017598,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/gemini/M5/022-effort-default-gemini-3.8-flash.json",
+    "model": "gemini-3.8-flash",
+    "stage": "-",
+    "computed": 0.0010305,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/gemini/M5/025-effort-low-gemini-3.8-flash.json",
+    "model": "gemini-3.8-flash",
+    "stage": "-",
+    "computed": 0.0003255,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/gemini/M5/026-effort-medium-gemini-3.8-flash.json",
+    "model": "gemini-3.8-flash",
+    "stage": "-",
+    "computed": 0.0010155,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  },
+  {
+    "record": "data/2026-10-19/gemini/M5/027-effort-high-gemini-3.8-flash.json",
+    "model": "gemini-3.8-flash",
+    "stage": "-",
+    "computed": 0.001053,
+    "reported": null,
+    "currency": "USD",
+    "deviation_pct": null,
+    "note": "nur berechnet"
+  }
+]

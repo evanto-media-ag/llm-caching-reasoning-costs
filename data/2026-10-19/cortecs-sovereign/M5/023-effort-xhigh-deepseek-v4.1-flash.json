@@ -1,0 +1,78 @@
+{
+  "ts": "2026-10-19T08:23:48+00:00",
+  "target": "cortecs-sovereign",
+  "model": "deepseek-v4.1-flash",
+  "measurement": "M5",
+  "step": "effort-xhigh",
+  "run_id": "79d05933",
+  "url": "https://api.cortecs.ai/v1/chat/completions",
+  "request_body": {
+    "model": "deepseek-v4.1-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful assistant."
+      },
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "max_tokens": 2048,
+    "reasoning_effort": "xhigh"
+  },
+  "status": 200,
+  "response_body": {
+    "id": "chatcmpl-8dda3ef4-4cc3-4d82-b1ea-462d4555ead4",
+    "created": 1792398227,
+    "model": "deepseek-v4.1-flash",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "0.05 EUR",
+          "role": "assistant",
+          "reasoning_content": "We need answer only amount. Classic: bat + ball =1.10, bat = ball+1.00. Let ball x, bat x+1 =>2x+1=1.10 =>2x=.10=>x=.05. Answer amount only. Need likely \"0.05 EUR\" or \"0.05\". User says Answer with amount only. We can say 0.05 EUR? amount only maybe 0.05. Ensure no explanation.",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "We need answer only amount. Classic: bat + ball =1.10, bat = ball+1.00. Let ball x, bat x+1 =>2x+1=1.10 =>2x=.10=>x=.05. Answer amount only. Need likely \"0.05 EUR\" or \"0.05\". User says Answer with amount only. We can say 0.05 EUR? amount only maybe 0.05. Ensure no explanation."
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 103,
+      "prompt_tokens": 76,
+      "total_tokens": 179,
+      "completion_tokens_details": {
+        "reasoning_tokens": 103
+      },
+      "cost": 174,
+      "cost_details": {
+        "prompt_cost": 35,
+        "cache_read_cost": 0,
+        "cache_write_cost": 0,
+        "completion_cost": 139,
+        "prompt_audio_cost": 0
+      }
+    }
+  },
+  "response_headers": {},
+  "response_header_names": [
+    "access-control-expose-headers",
+    "connection",
+    "content-length",
+    "content-security-policy",
+    "content-type",
+    "date",
+    "x-content-type-options",
+    "x-cortecs-model",
+    "x-cortecs-provider",
+    "x-frame-options"
+  ],
+  "duration_ms": 838,
+  "note": "angenommen"
+}
