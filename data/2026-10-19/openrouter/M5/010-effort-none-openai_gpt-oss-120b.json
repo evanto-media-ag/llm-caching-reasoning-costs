@@ -1,0 +1,53 @@
+{
+  "ts": "2026-10-19T10:00:47+00:00",
+  "target": "openrouter",
+  "model": "openai/gpt-oss-120b",
+  "measurement": "M5",
+  "step": "effort-none",
+  "run_id": "ef10c29b",
+  "url": "https://openrouter.ai/api/v1/chat/completions",
+  "request_body": {
+    "model": "openai/gpt-oss-120b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful assistant."
+      },
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "max_tokens": 2048,
+    "reasoning_effort": "none"
+  },
+  "status": 400,
+  "response_body": {
+    "error": {
+      "message": "Reasoning is mandatory for this endpoint and cannot be disabled.",
+      "code": 400,
+      "metadata": {
+        "provider_name": null
+      }
+    }
+  },
+  "response_headers": {},
+  "response_header_names": [
+    "access-control-allow-origin",
+    "access-control-expose-headers",
+    "cf-ray",
+    "connection",
+    "content-type",
+    "date",
+    "permissions-policy",
+    "referrer-policy",
+    "server",
+    "server-timing",
+    "set-cookie",
+    "transfer-encoding",
+    "x-content-type-options",
+    "x-generation-id"
+  ],
+  "duration_ms": 67,
+  "note": "abgelehnt: http 400 {'error': {'message': 'Reasoning is mandatory for this endpoint and cannot be disabled.', 'code': 400, 'metadata': {'provider_name': None}}}"
+}

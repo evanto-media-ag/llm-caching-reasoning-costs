@@ -1,0 +1,99 @@
+{
+  "ts": "2026-10-19T10:00:45+00:00",
+  "target": "openrouter",
+  "model": "anthropic/claude-sonnet-5",
+  "measurement": "M5",
+  "step": "effort-max",
+  "run_id": "8e6098e9",
+  "url": "https://openrouter.ai/api/v1/chat/completions",
+  "request_body": {
+    "model": "anthropic/claude-sonnet-5",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful assistant."
+      },
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "max_tokens": 2048,
+    "reasoning_effort": "max"
+  },
+  "status": 200,
+  "response_body": {
+    "id": "gen-1792404042-uvmeysOVVumtuqJ5BnV4",
+    "object": "chat.completion",
+    "created": 1792404042,
+    "model": "anthropic/claude-sonnet-5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "0.05 EUR",
+          "refusal": null,
+          "reasoning": "This is the classic bat-and-ball puzzle: setting ball + (ball + 1.00) = 1.10 gives ball = 0.05, so the ball costs 0.05 EUR.\n\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "This is the classic bat-and-ball puzzle: setting ball + (ball + 1.00) = 1.10 gives ball = 0.05, so the ball costs 0.05 EUR.\n\n",
+              "format": "anthropic-claude-v1",
+              "index": 0,
+              "signature": "EsgECucCCBIYAipAS7xsUouadHW3K4qqLXDQH+RiZHjodjPohoLzSizeGcjAKXwVfH0fanithmu0+hOcL9jYiz8/wcSdbcmB1ewl2zIPY2xhdWRlLXNvbm5ldC01OABCCHRoaW5raW5nWiQ0YzBmMDQ2Zi0yNWZkLTQ1ZmItYmZiMy1hMDhhOGUyNDljYTd6HnVwcm9mXzAxMUNnQlFDQmJMcU04TkFYVmZBWGlrQpoBEQoPY2xhdWRlLXNvbm5ldC01qAHN1NfWBsIBPQgFEAAaDwExQgLaigNPNwUqpgQmrSACMgQScc8lOgRdcUfjQgQ4MyOKSgQ4MyOKUABaBNkF4VZgAmgBcAHaAWAKFnByZWZpeF9iZWZvcmVfYmxvY2tfdjESILOFjxO6cxU3FPn8zC6Vgh3HeyL/PzsLpltcl2bPCCO/IgAyIMLAE8hqnJLiL5ZvPYYXdo+LekTJAq3MCXv6HgmK+04fSAMSDNQIsMO4pxSb20334hoMf0CrBVdcHDFOrdHVIjB9PnQTYxrNBqQCu3C5LVcwKpE3AlOY8j86+kXhhFIoHRCBE9WRB/DvQ+IJlfImawMqjQEv48bDYs/PeBfTZ3Yc9MdW/03nLJT+mw/KKfVQDmad7dH6cxz5zW0DSxVWS4MxDUvLJt9SWrVdAoVR1sCrR/HazlzHkJEDQD7wcIrgcmyWitzBSAi5ykKLCA7IsWmf2Sq2aXogiYUZwA7AN/p8UmIwctUedWczHcInVGRJxbZ8t+pIRceiDLAFAXgPONMYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1zb25uZXQtNS0yMDI2MDYzMHxjbGF1ZGUtb24tYXdzIn0"
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 73,
+      "completion_tokens": 87,
+      "total_tokens": 160,
+      "cost": 0.001016,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001016,
+        "upstream_inference_prompt_cost": 0.000146,
+        "upstream_inference_completions_cost": 0.00087
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 78,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_headers": {},
+  "response_header_names": [
+    "access-control-allow-origin",
+    "access-control-expose-headers",
+    "cf-ray",
+    "connection",
+    "content-type",
+    "date",
+    "permissions-policy",
+    "referrer-policy",
+    "server",
+    "server-timing",
+    "set-cookie",
+    "transfer-encoding",
+    "x-content-type-options",
+    "x-generation-id"
+  ],
+  "duration_ms": 2762,
+  "note": "angenommen"
+}

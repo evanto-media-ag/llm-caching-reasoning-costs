@@ -31,6 +31,9 @@ Stand: 2026-10-19
 | openai-responses | gpt-5.6-luna | nokey | 4573 | 4573 | 100 % |
 | openai-responses | gpt-6.1-sol | key | 4574 | 4574 | 100 % |
 | openai-responses | gpt-6.1-sol | nokey | 4573 | 4573 | 100 % |
+| openrouter | anthropic/claude-sonnet-5 | default | 0 | 0 | 0 % |
+| openrouter | openai/gpt-oss-120b | default | 0 | 64 | 1 % |
+| openrouter | qwen/qwen3.8-27b | default | 0 | 6016 | 100 % |
 | requesty | anthropic/claude-sonnet-5 | default | 0 | 0 | 0 % |
 | requesty | fireworks/gpt-oss-120b | default | 0 | 4639 | 100 % |
 | xai | grok-4.5 | key | 0 | 4992 | 99 % |
@@ -51,6 +54,7 @@ M2 (nach Wartezeit):
 | mistral | mistral-medium-latest | - | 0 | — |
 | openai-chat | gpt-5.6-luna | - | 4574 | — |
 | openai-responses | gpt-6.1-sol | - | 4573 | — |
+| openrouter | anthropic/claude-sonnet-5 | - | 0 | — |
 | requesty | anthropic/claude-sonnet-5 | - | 0 | — |
 | xai | grok-4.7 | - | 5760 | — |
 
@@ -76,6 +80,9 @@ M3 (Effort A → B → wie A):
 | openai-responses | gpt-5-mini | 0 | 4480 |
 | openai-responses | gpt-5.6-luna | 0 | 4572 |
 | openai-responses | gpt-6.1-sol | 0 | 4573 |
+| openrouter | anthropic/claude-sonnet-5 | 0 | 0 |
+| openrouter | openai/gpt-oss-120b | 0 | 32 |
+| openrouter | qwen/qwen3.8-27b | 0 | 4800 |
 | requesty | anthropic/claude-sonnet-5 | 0 | 0 |
 | requesty | fireworks/gpt-oss-120b | 40 | 4637 |
 | xai | grok-4.5 | 384 | 384 |

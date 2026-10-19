@@ -1,0 +1,98 @@
+{
+  "ts": "2026-10-19T10:01:26+00:00",
+  "target": "openrouter",
+  "model": "qwen/qwen3.8-27b",
+  "measurement": "M5",
+  "step": "effort-max",
+  "run_id": "cd7e7c88",
+  "url": "https://openrouter.ai/api/v1/chat/completions",
+  "request_body": {
+    "model": "qwen/qwen3.8-27b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful assistant."
+      },
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "max_tokens": 2048,
+    "reasoning_effort": "max"
+  },
+  "status": 200,
+  "response_body": {
+    "id": "gen-1792404085-30eJrgVA3oQlrKhKt6wO",
+    "object": "chat.completion",
+    "created": 1792404085,
+    "model": "qwen/qwen3.8-27b",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\n0.05 EUR",
+          "refusal": null,
+          "reasoning": "We need answer user: \"A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only.\"\n\nClassic puzzle: ball = 0.05 EUR, bat = 1.05 EUR. User wants amount only. Need likely \"0.05 EUR\" or \"5 cents\"? They said amount only, currency given EUR. Could answer \"0.05 EUR\". Need final only.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer user: \"A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only.\"\n\nClassic puzzle: ball = 0.05 EUR, bat = 1.05 EUR. User wants amount only. Need likely \"0.05 EUR\" or \"5 cents\"? They said amount only, currency given EUR. Could answer \"0.05 EUR\". Need final only.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 101,
+      "completion_tokens": 120,
+      "total_tokens": 221,
+      "cost": 0.000279976,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 64,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000279976,
+        "upstream_inference_prompt_cost": 3.976e-06,
+        "upstream_inference_completions_cost": 0.000276
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 113,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_headers": {},
+  "response_header_names": [
+    "access-control-allow-origin",
+    "access-control-expose-headers",
+    "cf-ray",
+    "connection",
+    "content-type",
+    "date",
+    "permissions-policy",
+    "referrer-policy",
+    "server",
+    "server-timing",
+    "set-cookie",
+    "transfer-encoding",
+    "x-content-type-options",
+    "x-generation-id"
+  ],
+  "duration_ms": 1059,
+  "note": "angenommen"
+}

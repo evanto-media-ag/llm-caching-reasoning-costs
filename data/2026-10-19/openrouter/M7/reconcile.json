@@ -1,0 +1,432 @@
+[
+  {
+    "record": "data/2026-10-19/openrouter/M1/001-default-A-anthropic_claude-sonnet-5.json",
+    "model": "anthropic/claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.01451,
+    "reported": 0.01451,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M1/002-default-B-anthropic_claude-sonnet-5.json",
+    "model": "anthropic/claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.01451,
+    "reported": 0.01451,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M1/003-default-A-openai_gpt-oss-120b.json",
+    "model": "openai/gpt-oss-120b",
+    "stage": "M7a",
+    "computed": 0.0007212,
+    "reported": 0.000178886,
+    "currency": "USD",
+    "deviation_pct": -75.2,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M1/004-default-B-openai_gpt-oss-120b.json",
+    "model": "openai/gpt-oss-120b",
+    "stage": "M7a",
+    "computed": 0.0007297499999999999,
+    "reported": 0.000151198,
+    "currency": "USD",
+    "deviation_pct": -79.28,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M1/005-default-A-qwen_qwen3.8-27b.json",
+    "model": "qwen/qwen3.8-27b",
+    "stage": "M7a",
+    "computed": 0.00151928,
+    "reported": 0.0006143041,
+    "currency": "USD",
+    "deviation_pct": -59.57,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M1/006-default-B-qwen_qwen3.8-27b.json",
+    "model": "qwen/qwen3.8-27b",
+    "stage": "M7a",
+    "computed": 0.00036744,
+    "reported": 0.0005790353,
+    "currency": "USD",
+    "deviation_pct": 57.59,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M2/001-A-anthropic_claude-sonnet-5.json",
+    "model": "anthropic/claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.014516,
+    "reported": 0.014516,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M2/002-B-anthropic_claude-sonnet-5.json",
+    "model": "anthropic/claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.014516,
+    "reported": 0.014516,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M3/001-A-anthropic_claude-sonnet-5.json",
+    "model": "anthropic/claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.014516,
+    "reported": 0.014516,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M3/002-B-anthropic_claude-sonnet-5.json",
+    "model": "anthropic/claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.014516,
+    "reported": 0.014516,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M3/003-C-anthropic_claude-sonnet-5.json",
+    "model": "anthropic/claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.014516,
+    "reported": 0.014516,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M3/004-A-openai_gpt-oss-120b.json",
+    "model": "openai/gpt-oss-120b",
+    "stage": "M7a",
+    "computed": 0.0007494,
+    "reported": 0.000186876,
+    "currency": "USD",
+    "deviation_pct": -75.06,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M3/005-B-openai_gpt-oss-120b.json",
+    "model": "openai/gpt-oss-120b",
+    "stage": "M7a",
+    "computed": 0.0007116000000000001,
+    "reported": 0.0002385,
+    "currency": "USD",
+    "deviation_pct": -66.48,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M3/006-C-openai_gpt-oss-120b.json",
+    "model": "openai/gpt-oss-120b",
+    "stage": "M7a",
+    "computed": 0.00074235,
+    "reported": 0.0001509,
+    "currency": "USD",
+    "deviation_pct": -79.67,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M3/007-A-qwen_qwen3.8-27b.json",
+    "model": "qwen/qwen3.8-27b",
+    "stage": "M7a",
+    "computed": 0.0014796,
+    "reported": 0.0002643,
+    "currency": "USD",
+    "deviation_pct": -82.14,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M3/008-B-qwen_qwen3.8-27b.json",
+    "model": "qwen/qwen3.8-27b",
+    "stage": "M7a",
+    "computed": 0.00148804,
+    "reported": 0.00026669,
+    "currency": "USD",
+    "deviation_pct": -82.08,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M3/009-C-qwen_qwen3.8-27b.json",
+    "model": "qwen/qwen3.8-27b",
+    "stage": "M7a",
+    "computed": 0.000583,
+    "reported": 0.00016815,
+    "currency": "USD",
+    "deviation_pct": -71.16,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M5/001-effort-default-anthropic_claude-sonnet-5.json",
+    "model": "anthropic/claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.000236,
+    "reported": 0.000236,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M5/002-effort-none-anthropic_claude-sonnet-5.json",
+    "model": "anthropic/claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.000236,
+    "reported": 0.000236,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M5/003-effort-minimal-anthropic_claude-sonnet-5.json",
+    "model": "anthropic/claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.000236,
+    "reported": 0.000236,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M5/004-effort-low-anthropic_claude-sonnet-5.json",
+    "model": "anthropic/claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.000236,
+    "reported": 0.000236,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M5/005-effort-medium-anthropic_claude-sonnet-5.json",
+    "model": "anthropic/claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.000236,
+    "reported": 0.000236,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M5/006-effort-high-anthropic_claude-sonnet-5.json",
+    "model": "anthropic/claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.000236,
+    "reported": 0.000236,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M5/007-effort-xhigh-anthropic_claude-sonnet-5.json",
+    "model": "anthropic/claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.000236,
+    "reported": 0.000236,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M5/008-effort-max-anthropic_claude-sonnet-5.json",
+    "model": "anthropic/claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.001016,
+    "reported": 0.001016,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M5/009-effort-default-openai_gpt-oss-120b.json",
+    "model": "openai/gpt-oss-120b",
+    "stage": "M7a",
+    "computed": 6e-05,
+    "reported": 1.428e-05,
+    "currency": "USD",
+    "deviation_pct": -76.2,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M5/011-effort-minimal-openai_gpt-oss-120b.json",
+    "model": "openai/gpt-oss-120b",
+    "stage": "M7a",
+    "computed": 2.88e-05,
+    "reported": 6.48e-06,
+    "currency": "USD",
+    "deviation_pct": -77.5,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M5/012-effort-low-openai_gpt-oss-120b.json",
+    "model": "openai/gpt-oss-120b",
+    "stage": "M7a",
+    "computed": 5.2799999999999996e-05,
+    "reported": 1.266e-05,
+    "currency": "USD",
+    "deviation_pct": -76.02,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M5/013-effort-medium-openai_gpt-oss-120b.json",
+    "model": "openai/gpt-oss-120b",
+    "stage": "M7a",
+    "computed": 5.94e-05,
+    "reported": 1.431e-05,
+    "currency": "USD",
+    "deviation_pct": -75.91,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M5/014-effort-high-openai_gpt-oss-120b.json",
+    "model": "openai/gpt-oss-120b",
+    "stage": "M7a",
+    "computed": 0.000153,
+    "reported": 3.747e-05,
+    "currency": "USD",
+    "deviation_pct": -75.51,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M5/015-effort-xhigh-openai_gpt-oss-120b.json",
+    "model": "openai/gpt-oss-120b",
+    "stage": "M7a",
+    "computed": 0.0001554,
+    "reported": 3.831e-05,
+    "currency": "USD",
+    "deviation_pct": -75.35,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M5/016-effort-max-openai_gpt-oss-120b.json",
+    "model": "openai/gpt-oss-120b",
+    "stage": "M7a",
+    "computed": 0.0001734,
+    "reported": 4.281e-05,
+    "currency": "USD",
+    "deviation_pct": -75.31,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M5/017-effort-default-qwen_qwen3.8-27b.json",
+    "model": "qwen/qwen3.8-27b",
+    "stage": "M7a",
+    "computed": 0.00032344000000000003,
+    "reported": 0.00031684,
+    "currency": "USD",
+    "deviation_pct": -2.04,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M5/018-effort-none-qwen_qwen3.8-27b.json",
+    "model": "qwen/qwen3.8-27b",
+    "stage": "M7a",
+    "computed": 2.6600000000000003e-05,
+    "reported": 1.41e-05,
+    "currency": "USD",
+    "deviation_pct": -46.99,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M5/019-effort-minimal-qwen_qwen3.8-27b.json",
+    "model": "qwen/qwen3.8-27b",
+    "stage": "M7a",
+    "computed": 0.00028096,
+    "reported": 0.00027496,
+    "currency": "USD",
+    "deviation_pct": -2.14,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M5/020-effort-low-qwen_qwen3.8-27b.json",
+    "model": "qwen/qwen3.8-27b",
+    "stage": "M7a",
+    "computed": 0.00023140000000000001,
+    "reported": 0.000235796,
+    "currency": "USD",
+    "deviation_pct": 1.9,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M5/021-effort-medium-qwen_qwen3.8-27b.json",
+    "model": "qwen/qwen3.8-27b",
+    "stage": "M7a",
+    "computed": 0.00023732,
+    "reported": 0.00023482,
+    "currency": "USD",
+    "deviation_pct": -1.05,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M5/022-effort-high-qwen_qwen3.8-27b.json",
+    "model": "qwen/qwen3.8-27b",
+    "stage": "M7a",
+    "computed": 0.00025932,
+    "reported": 0.00025782,
+    "currency": "USD",
+    "deviation_pct": -0.58,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M5/023-effort-xhigh-qwen_qwen3.8-27b.json",
+    "model": "qwen/qwen3.8-27b",
+    "stage": "M7a",
+    "computed": 0.00032448000000000004,
+    "reported": 0.000330576,
+    "currency": "USD",
+    "deviation_pct": 1.88,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M5/024-effort-max-qwen_qwen3.8-27b.json",
+    "model": "qwen/qwen3.8-27b",
+    "stage": "M7a",
+    "computed": 0.00027608,
+    "reported": 0.000279976,
+    "currency": "USD",
+    "deviation_pct": 1.41,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M6/001-effort-high-anthropic_claude-sonnet-5.json",
+    "model": "anthropic/claude-sonnet-5",
+    "stage": "M7a",
+    "computed": 0.000236,
+    "reported": 0.000236,
+    "currency": "USD",
+    "deviation_pct": 0.0,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M6/002-effort-high-openai_gpt-oss-120b.json",
+    "model": "openai/gpt-oss-120b",
+    "stage": "M7a",
+    "computed": 0.00012419999999999998,
+    "reported": 3.051e-05,
+    "currency": "USD",
+    "deviation_pct": -75.43,
+    "note": "ok"
+  },
+  {
+    "record": "data/2026-10-19/openrouter/M6/003-effort-high-qwen_qwen3.8-27b.json",
+    "model": "qwen/qwen3.8-27b",
+    "stage": "M7a",
+    "computed": 0.00023512000000000004,
+    "reported": 0.00023252,
+    "currency": "USD",
+    "deviation_pct": -1.11,
+    "note": "ok"
+  }
+]

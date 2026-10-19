@@ -26,6 +26,9 @@ Zelle: ✓ Reasoning-Tokens bzw. ✗ HTTP-Status
 | openai-responses | gpt-5-mini | ✓ 128 | ✗ 400 | ✓ 0 | ✓ 64 | ✓ 128 | ✓ 320 | ✗ 400 | ✗ 400 | — | — |
 | openai-responses | gpt-5.6-luna | ✓ 0 | ✓ 0 | ✗ 400 | ✓ 0 | ✓ 17 | ✓ 23 | ✓ 23 | ✓ 45 | — | — |
 | openai-responses | gpt-6.1-sol | ✓ 13 | ✗ 400 | ✗ 400 | ✓ 11 | ✓ 14 | ✓ 13 | ✓ 34 | ✓ 68 | — | — |
+| openrouter | anthropic/claude-sonnet-5 | ✓ 0 | ✓ 0 | ✓ 0 | ✓ 0 | ✓ 0 | ✓ 0 | ✓ 0 | ✓ 78 | — | — |
+| openrouter | openai/gpt-oss-120b | ✓ 63 | ✗ 400 | ✓ 10 | ✓ 57 | ✓ 68 | ✓ 216 | ✓ 228 | ✓ 258 | — | — |
+| openrouter | qwen/qwen3.8-27b | ✓ 129 | ✓ 0 | ✓ 111 | ✓ 94 | ✓ 94 | ✓ 104 | ✓ 135 | ✓ 113 | — | — |
 | requesty | anthropic/claude-sonnet-5 | ✓ ? | ✓ ? | ✗ 400 | ✓ ? | ✓ ? | ✓ ? | ✓ ? | ✓ ? | — | — |
 | requesty | fireworks/gpt-oss-120b | ✓ 122 | ✓ 53 | ✗ 400 | ✓ 9 | ✓ 134 | ✓ 103 | ✓ 145 | ✓ 101 | — | — |
 | xai | grok-4.5 | ✓ 203 | ✗ 400 | ✓ 157 | ✓ 153 | ✓ 153 | ✓ 143 | ✓ 157 | ✗ 400 | — | — |

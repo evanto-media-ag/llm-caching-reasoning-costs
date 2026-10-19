@@ -21,6 +21,9 @@ Stand: 2026-10-19
 | openai-responses | gpt-5-mini | 16 | — | — | — | nur berechnet |
 | openai-responses | gpt-5.6-luna | 18 | — | — | — | nur berechnet |
 | openai-responses | gpt-6.1-sol | 24 | — | — | — | nur berechnet |
+| openrouter | anthropic/claude-sonnet-5 | 16 | +0.0 % | +0.0 % | +0.0 % | ok |
+| openrouter | openai/gpt-oss-120b | 13 | -75.5 % | -79.7 % | -66.5 % | ok |
+| openrouter | qwen/qwen3.8-27b | 14 | -1.6 % | -82.1 % | +57.6 % | ok |
 | requesty | anthropic/claude-sonnet-5 | 7 | +0.0 % | +0.0 % | +0.0 % | ok |
 | requesty | fireworks/gpt-oss-120b | 5 | +0.0 % | +0.0 % | +0.0 % | ok |
 | xai | grok-4.5 | 13 | +0.0 % | -0.0 % | -0.0 % | ok |

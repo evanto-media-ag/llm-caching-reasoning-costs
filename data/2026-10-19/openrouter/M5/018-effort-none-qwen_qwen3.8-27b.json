@@ -1,0 +1,90 @@
+{
+  "ts": "2026-10-19T10:01:20+00:00",
+  "target": "openrouter",
+  "model": "qwen/qwen3.8-27b",
+  "measurement": "M5",
+  "step": "effort-none",
+  "run_id": "cd7e7c88",
+  "url": "https://openrouter.ai/api/v1/chat/completions",
+  "request_body": {
+    "model": "qwen/qwen3.8-27b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful assistant."
+      },
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "max_tokens": 2048,
+    "reasoning_effort": "none"
+  },
+  "status": 200,
+  "response_body": {
+    "id": "gen-1792404079-ne404QoA6si8fA0v8n80",
+    "object": "chat.completion",
+    "created": 1792404079,
+    "model": "qwen/qwen3.8-27b",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "0.05",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 65,
+      "completion_tokens": 5,
+      "total_tokens": 70,
+      "cost": 1.41e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.41e-05,
+        "upstream_inference_prompt_cost": 2.6e-06,
+        "upstream_inference_completions_cost": 1.15e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_headers": {},
+  "response_header_names": [
+    "access-control-allow-origin",
+    "access-control-expose-headers",
+    "cf-ray",
+    "connection",
+    "content-type",
+    "date",
+    "permissions-policy",
+    "referrer-policy",
+    "server",
+    "server-timing",
+    "set-cookie",
+    "transfer-encoding",
+    "x-content-type-options",
+    "x-generation-id"
+  ],
+  "duration_ms": 462,
+  "note": "angenommen"
+}

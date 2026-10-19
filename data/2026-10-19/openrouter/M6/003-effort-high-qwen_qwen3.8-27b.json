@@ -1,0 +1,98 @@
+{
+  "ts": "2026-10-19T10:01:35+00:00",
+  "target": "openrouter",
+  "model": "qwen/qwen3.8-27b",
+  "measurement": "M6",
+  "step": "effort-high",
+  "run_id": "48bc3c6e",
+  "url": "https://openrouter.ai/api/v1/chat/completions",
+  "request_body": {
+    "model": "qwen/qwen3.8-27b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful assistant."
+      },
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "max_tokens": 2048,
+    "reasoning_effort": "high"
+  },
+  "status": 200,
+  "response_body": {
+    "id": "gen-1792404094-dAjtMOqDpsYnJdMd6ejC",
+    "object": "chat.completion",
+    "created": 1792404094,
+    "model": "qwen/qwen3.8-27b",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\n0.05 EUR",
+          "refusal": null,
+          "reasoning": "Let me solve this step by step.\n\nLet the ball cost = x\nLet the bat cost = x + 1.00\n\nTotal: x + (x + 1.00) = 1.10\n2x + 1.00 = 1.10\n2x = 0.10\nx = 0.05\n\nThe ball costs 0.05 EUR.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Let me solve this step by step.\n\nLet the ball cost = x\nLet the bat cost = x + 1.00\n\nTotal: x + (x + 1.00) = 1.10\n2x + 1.00 = 1.10\n2x = 0.10\nx = 0.05\n\nThe ball costs 0.05 EUR.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 63,
+      "completion_tokens": 100,
+      "total_tokens": 163,
+      "cost": 0.00023252,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00023252,
+        "upstream_inference_prompt_cost": 2.52e-06,
+        "upstream_inference_completions_cost": 0.00023
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 93,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_headers": {},
+  "response_header_names": [
+    "access-control-allow-origin",
+    "access-control-expose-headers",
+    "cf-ray",
+    "connection",
+    "content-type",
+    "date",
+    "permissions-policy",
+    "referrer-policy",
+    "server",
+    "server-timing",
+    "set-cookie",
+    "transfer-encoding",
+    "x-content-type-options",
+    "x-generation-id"
+  ],
+  "duration_ms": 1248,
+  "note": "ok"
+}

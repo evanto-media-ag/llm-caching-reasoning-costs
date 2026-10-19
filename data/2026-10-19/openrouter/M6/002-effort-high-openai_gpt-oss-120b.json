@@ -1,0 +1,98 @@
+{
+  "ts": "2026-10-19T10:01:34+00:00",
+  "target": "openrouter",
+  "model": "openai/gpt-oss-120b",
+  "measurement": "M6",
+  "step": "effort-high",
+  "run_id": "b88ad4b9",
+  "url": "https://openrouter.ai/api/v1/chat/completions",
+  "request_body": {
+    "model": "openai/gpt-oss-120b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful assistant."
+      },
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "max_tokens": 2048,
+    "reasoning_effort": "high"
+  },
+  "status": 200,
+  "response_body": {
+    "id": "gen-1792404088-Cu7JHiTza62WeKSULDPZ",
+    "object": "chat.completion",
+    "created": 1792404088,
+    "model": "openai/gpt-oss-120b",
+    "provider": "Near AI",
+    "system_fingerprint": "vllm-0.31.0-5e5536ce",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "0.05",
+          "refusal": null,
+          "reasoning": "We are given a classic puzzle: bat and ball cost 1.10 euros total; bat costs 1.00 euro more than the ball. Let ball = x, bat = x+1.00. Total = x + (x+1) = 2x + 1 = 1.10 => 2x = 0.10 => x = 0.05. Answer: 0.05\n\nThus just give the amount only: \"0.05 EUR\" but they ask \"Answer with the amount only.\" So they likely want just \"0.05\". Might also add \"0.05 EUR\". Since request: \"Answer with the amount only.\" I'd give \"0.05\". The puzzle expects answer 0.05 (in euros). So final answer: 0.05\n\nThus output: \"0.05\".",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We are given a classic puzzle: bat and ball cost 1.10 euros total; bat costs 1.00 euro more than the ball. Let ball = x, bat = x+1.00. Total = x + (x+1) = 2x + 1 = 1.10 => 2x = 0.10 => x = 0.05. Answer: 0.05\n\nThus just give the amount only: \"0.05 EUR\" but they ask \"Answer with the amount only.\" So they likely want just \"0.05\". Might also add \"0.05 EUR\". Since request: \"Answer with the amount only.\" I'd give \"0.05\". The puzzle expects answer 0.05 (in euros). So final answer: 0.05\n\nThus output: \"0.05\".",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 120,
+      "completion_tokens": 189,
+      "total_tokens": 309,
+      "cost": 3.051e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 96,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 3.051e-05,
+        "upstream_inference_prompt_cost": 2.16e-06,
+        "upstream_inference_completions_cost": 2.835e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 176,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_headers": {},
+  "response_header_names": [
+    "access-control-allow-origin",
+    "access-control-expose-headers",
+    "cf-ray",
+    "connection",
+    "content-type",
+    "date",
+    "permissions-policy",
+    "referrer-policy",
+    "server",
+    "server-timing",
+    "set-cookie",
+    "transfer-encoding",
+    "x-content-type-options",
+    "x-generation-id"
+  ],
+  "duration_ms": 5760,
+  "note": "ok"
+}

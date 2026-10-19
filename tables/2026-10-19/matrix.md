@@ -13,4 +13,4 @@ Stand: 2026-10-19
 | cortecs-residency | ja (100 %) | nein | verfallen | ja | — | 7/7 | ja | ja |
 | eurouter | ja (80 %) | nein | verfallen | ja | — | 5–7/7 | ja | ja |
 | requesty | ja (100 %) | nein | verfallen | ja | — | 6/7 | ja | ja |
-| openrouter | — | — | — | — | — | — | — | ja |
+| openrouter | ja (100 %) | nein | verfallen | ja | — | 6–7/7 | ja | ja |

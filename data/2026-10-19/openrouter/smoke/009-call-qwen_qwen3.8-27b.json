@@ -1,0 +1,97 @@
+{
+  "ts": "2026-10-19T09:59:51+00:00",
+  "target": "openrouter",
+  "model": "qwen/qwen3.8-27b",
+  "measurement": "smoke",
+  "step": "call",
+  "run_id": null,
+  "url": "https://openrouter.ai/api/v1/chat/completions",
+  "request_body": {
+    "model": "qwen/qwen3.8-27b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a test."
+      },
+      {
+        "role": "user",
+        "content": "Reply with the single word OK."
+      }
+    ],
+    "max_tokens": 32
+  },
+  "status": 200,
+  "response_body": {
+    "id": "gen-1792403991-T1nt840RCUSQpNAcQIvY",
+    "object": "chat.completion",
+    "created": 1792403991,
+    "model": "qwen/qwen3.8-27b",
+    "provider": "ModelRun",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "OK",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"Reply with the single word OK.\" Need final just OK.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need to respond to user: \"Reply with the single word OK.\" Need final just OK.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 65,
+      "completion_tokens": 25,
+      "total_tokens": 90,
+      "cost": 7.55e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 7.55e-05,
+        "upstream_inference_prompt_cost": 1.3e-05,
+        "upstream_inference_completions_cost": 6.25e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 23,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_headers": {},
+  "response_header_names": [
+    "access-control-allow-origin",
+    "access-control-expose-headers",
+    "cf-ray",
+    "connection",
+    "content-type",
+    "date",
+    "permissions-policy",
+    "referrer-policy",
+    "server",
+    "server-timing",
+    "set-cookie",
+    "transfer-encoding",
+    "x-content-type-options",
+    "x-generation-id"
+  ],
+  "duration_ms": 302,
+  "note": "ok"
+}
