@@ -48,6 +48,12 @@ class ReportTest(unittest.TestCase):
         self.assertIn("| anthropic | m | explicit | 7000 | 7000 |", caching)
         self.assertIn("1 ungültige Läufe", caching)
 
+    def test_effort_values_show_range_across_models(self):
+        for i, (model, status) in enumerate([("a", 200), ("a", 400), ("b", 200), ("b", 200)]):
+            self.put(i, rec("xai", model, "M5", f"effort-v{i % 2}", status=status, run_id=model))
+        row = next(l for l in build_tables("2026-10-20", self.root)["matrix.md"].splitlines() if l.startswith("| xai "))
+        self.assertIn("| 1–2/2 |", row)
+
     def test_stale_ok_note_is_reclassified(self):
         empty = {"status": "incomplete", "usage": {"input_tokens": 0, "output_tokens": 0}}
         r = rec("openai-responses", "m", "M1", "key-A", run_id="x")

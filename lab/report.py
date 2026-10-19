@@ -165,8 +165,12 @@ def _matrix(date: str, root: Path, records: list[dict]) -> str:
     for r in records:
         if r["measurement"] == "M5" and r["step"].startswith("effort-") and r["step"] != "effort-default":
             m5[(r["target"], r["model"])].append(r["status"] == 200)
+    accepted: dict = defaultdict(list)
     for (t, m), ok in m5.items():
-        cells[t]["Effort-Werte"] = f"{sum(ok)}/{len(ok)}" if "Effort-Werte" not in cells[t] else cells[t]["Effort-Werte"]
+        accepted[t].append((sum(ok), len(ok)))
+    for t, counts in accepted.items():
+        lo, hi, n = min(c for c, _ in counts), max(c for c, _ in counts), max(n for _, n in counts)
+        cells[t]["Effort-Werte"] = f"{lo}/{n}" if lo == hi else f"{lo}–{hi}/{n}"
     for f in (root / "data" / date).glob("*/M7/reconcile.json"):
         rows = json.loads(f.read_text())
         cells[f.parts[-3]]["Kosten pro Aufruf"] = "ja" if any(r["stage"] == "M7a" for r in rows) else "nein"
