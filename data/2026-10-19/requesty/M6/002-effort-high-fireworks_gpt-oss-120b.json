@@ -1,0 +1,66 @@
+{
+  "ts": "2026-10-19T08:26:36+00:00",
+  "target": "requesty",
+  "model": "fireworks/gpt-oss-120b",
+  "measurement": "M6",
+  "step": "effort-high",
+  "run_id": "a5afa1e9",
+  "url": "https://router.requesty.ai/v1/chat/completions",
+  "request_body": {
+    "model": "fireworks/gpt-oss-120b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful assistant."
+      },
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "max_tokens": 2048,
+    "reasoning_effort": "high"
+  },
+  "status": 200,
+  "response_body": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "0.05",
+          "reasoning_content": "We need to parse the puzzle: bat + ball = 1.10 EUR, bat costs 1.00 EUR more than ball.\n\nLet ball be x, bat be x + 1.00.\n\nThen total x + (x + 1.00) = 1.10 -> 2x + 1.00 = 1.10 -> 2x = 0.10 -> x = 0.05.\n\nThus answer: 0.05 EUR. They ask \"Answer with the amount only.\" So respond with \"0.05\". Perhaps include currency? They said amount only. The amount presumably with 2 decimal places. So \"0.05\". No extra text.\n\nThus answer: 0.05.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1792398395,
+    "id": "rqsty-cmpl-2dbf7686-29ae-4d2f-af10-90abeabf0bb8",
+    "model": "accounts/fireworks/models/gpt-oss-120b",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 165,
+      "completion_tokens_details": {
+        "reasoning_tokens": 152
+      },
+      "prompt_tokens": 118,
+      "prompt_tokens_details": {
+        "cached_tokens": 117
+      },
+      "total_tokens": 283,
+      "cost": 0.000100905
+    }
+  },
+  "response_headers": {},
+  "response_header_names": [
+    "connection",
+    "content-type",
+    "date",
+    "strict-transport-security",
+    "transfer-encoding",
+    "vary",
+    "x-content-type-options"
+  ],
+  "duration_ms": 793,
+  "note": "ok"
+}

@@ -1,0 +1,90 @@
+{
+  "ts": "2026-10-19T08:26:28+00:00",
+  "target": "cortecs-sovereign",
+  "model": "qwen3.8-27b",
+  "measurement": "M6",
+  "step": "effort-high",
+  "run_id": "5d6432e0",
+  "url": "https://api.cortecs.ai/v1/chat/completions",
+  "request_body": {
+    "model": "qwen3.8-27b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful assistant."
+      },
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "max_tokens": 2048,
+    "reasoning_effort": "high"
+  },
+  "status": 200,
+  "response_body": {
+    "id": "chatcmpl-3128fc5a-dc08-457a-86ee-74dfb786aacb-9be4",
+    "created": 1792398388,
+    "model": "qwen3.8-27b",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "0.05",
+          "role": "assistant",
+          "reasoning_content": "We need answer simple puzzle. Need final amount only. Compute: bat = ball + 1.00. total ball + bat = 1.10 => 2*ball + 1.00 = 1.10 => ball = 0.05 EUR. User says Answer with amount only. Could be \"0.05\" maybe \"0.05 EUR\"? amount only likely 0.05. Ensure no extra.",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning": "We need answer simple puzzle. Need final amount only. Compute: bat = ball + 1.00. total ball + bat = 1.10 => 2*ball + 1.00 = 1.10 => ball = 0.05 EUR. User says Answer with amount only. Could be \"0.05\" maybe \"0.05 EUR\"? amount only likely 0.05. Ensure no extra."
+          },
+          "annotations": []
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 104,
+      "prompt_tokens": 101,
+      "total_tokens": 205,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "cost": 260,
+      "cost_details": {
+        "prompt_cost": 31,
+        "cache_read_cost": 0,
+        "cache_write_cost": 0,
+        "completion_cost": 229,
+        "prompt_audio_cost": 0
+      }
+    },
+    "service_tier": "default"
+  },
+  "response_headers": {
+    "x-cortecs-model": "qwen3.8-27b",
+    "x-cortecs-provider": "aki"
+  },
+  "response_header_names": [
+    "access-control-expose-headers",
+    "connection",
+    "content-length",
+    "content-security-policy",
+    "content-type",
+    "date",
+    "x-content-type-options",
+    "x-cortecs-model",
+    "x-cortecs-provider",
+    "x-frame-options"
+  ],
+  "duration_ms": 1509,
+  "note": "ok"
+}

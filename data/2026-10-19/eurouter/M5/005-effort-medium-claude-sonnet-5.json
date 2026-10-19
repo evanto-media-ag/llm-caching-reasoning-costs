@@ -1,0 +1,111 @@
+{
+  "ts": "2026-10-19T08:24:29+00:00",
+  "target": "eurouter",
+  "model": "claude-sonnet-5",
+  "measurement": "M5",
+  "step": "effort-medium",
+  "run_id": "9da4e020",
+  "url": "https://api.eurouter.ai/api/v1/chat/completions",
+  "request_body": {
+    "model": "claude-sonnet-5",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful assistant."
+      },
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "max_tokens": 2048,
+    "reasoning_effort": "medium"
+  },
+  "status": 200,
+  "response_body": {
+    "id": "chatcmpl-46bfe912-f2a6-4a5d-a1e9-5ed5da217697",
+    "object": "chat.completion",
+    "created": 1792398269,
+    "model": "aws-bedrock/claude-sonnet-5",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "0.05 EUR"
+        },
+        "finish_reason": "stop",
+        "native_finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "completion_tokens": 9,
+      "prompt_tokens": 73,
+      "total_tokens": 82,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0,
+        "image_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost": 0.0002596,
+      "cost_currency": "USD",
+      "cost_eur": 0.00023069354,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0002596,
+        "upstream_inference_prompt_cost": 0.0001606,
+        "upstream_inference_completions_cost": 9.9e-05,
+        "upstream_inference_uncached_prompt_cost": 0.0001606,
+        "upstream_inference_cache_read_cost": 0,
+        "upstream_inference_cache_write_cost": 0
+      }
+    },
+    "provider": "aws-bedrock",
+    "service_tier": "default"
+  },
+  "response_headers": {
+    "x-ratelimit-limit": "60",
+    "x-ratelimit-remaining": "55",
+    "x-ratelimit-reset": "1792398323",
+    "x-request-id": "3f2b582b-b6b2-44c5-931d-e9bc9adb7abe"
+  },
+  "response_header_names": [
+    "access-control-allow-origin",
+    "connection",
+    "content-length",
+    "content-security-policy",
+    "content-type",
+    "cross-origin-opener-policy",
+    "cross-origin-resource-policy",
+    "date",
+    "origin-agent-cluster",
+    "referrer-policy",
+    "server",
+    "strict-transport-security",
+    "x-content-type-options",
+    "x-dns-prefetch-control",
+    "x-download-options",
+    "x-envoy-upstream-service-time",
+    "x-frame-options",
+    "x-model-used",
+    "x-permitted-cross-domain-policies",
+    "x-provider-id",
+    "x-provider-slug",
+    "x-ratelimit-limit",
+    "x-ratelimit-remaining",
+    "x-ratelimit-reset",
+    "x-request-id",
+    "x-routing-strategy",
+    "x-xss-protection"
+  ],
+  "duration_ms": 1371,
+  "note": "angenommen"
+}

@@ -1,0 +1,66 @@
+{
+  "ts": "2026-10-19T08:25:30+00:00",
+  "target": "requesty",
+  "model": "fireworks/gpt-oss-120b",
+  "measurement": "M5",
+  "step": "effort-high",
+  "run_id": "042fa68d",
+  "url": "https://router.requesty.ai/v1/chat/completions",
+  "request_body": {
+    "model": "fireworks/gpt-oss-120b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful assistant."
+      },
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "max_tokens": 2048,
+    "reasoning_effort": "high"
+  },
+  "status": 200,
+  "response_body": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "0.05",
+          "reasoning_content": "We need to solve classic puzzle: Bat+ball=1.10, bat=ball+1.00. So ball = 0.05 EUR. The answer with amount only: \"0.05\". Probably with euro sign? The user says \"Answer with the amount only.\" Probably just numeric like \"0.05\". Could also add \"€0.05\". But \"amount only\" suggests just number. Use decimal with two places: 0.05. We'll respond \"0.05\".",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1792398330,
+    "id": "rqsty-cmpl-8e29c8bc-9eee-49f6-ba37-7a7b0a063ab3",
+    "model": "accounts/fireworks/models/gpt-oss-120b",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 116,
+      "completion_tokens_details": {
+        "reasoning_tokens": 103
+      },
+      "prompt_tokens": 118,
+      "prompt_tokens_details": {
+        "cached_tokens": 40
+      },
+      "total_tokens": 234,
+      "cost": 8.19e-05
+    }
+  },
+  "response_headers": {},
+  "response_header_names": [
+    "connection",
+    "content-type",
+    "date",
+    "strict-transport-security",
+    "transfer-encoding",
+    "vary",
+    "x-content-type-options"
+  ],
+  "duration_ms": 681,
+  "note": "angenommen"
+}

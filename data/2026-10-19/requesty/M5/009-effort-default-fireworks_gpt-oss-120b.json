@@ -1,0 +1,65 @@
+{
+  "ts": "2026-10-19T08:25:27+00:00",
+  "target": "requesty",
+  "model": "fireworks/gpt-oss-120b",
+  "measurement": "M5",
+  "step": "effort-default",
+  "run_id": "042fa68d",
+  "url": "https://router.requesty.ai/v1/chat/completions",
+  "request_body": {
+    "model": "fireworks/gpt-oss-120b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful assistant."
+      },
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "max_tokens": 2048
+  },
+  "status": 200,
+  "response_body": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "0.05",
+          "reasoning_content": "We need to solve: bat + ball = 1.10, bat = ball + 1.00. So ball + (ball + 1.00) = 1.10 => 2*ball + 1.00 = 1.10 => 2*ball = 0.10 => ball = 0.05. Answer with amount only: \"0.05 EUR\"? Or just \"0.05\". The instruction: \"Answer with the amount only.\" Probably \"0.05\". Probably include currency? But amount only suggests numeric value: 0.05.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1792398327,
+    "id": "rqsty-cmpl-86356bce-dab3-4a94-bc2a-49762ea6641c",
+    "model": "accounts/fireworks/models/gpt-oss-120b",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 135,
+      "completion_tokens_details": {
+        "reasoning_tokens": 122
+      },
+      "prompt_tokens": 118,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 253,
+      "cost": 9.87e-05
+    }
+  },
+  "response_headers": {},
+  "response_header_names": [
+    "connection",
+    "content-type",
+    "date",
+    "strict-transport-security",
+    "transfer-encoding",
+    "vary",
+    "x-content-type-options"
+  ],
+  "duration_ms": 875,
+  "note": "angenommen"
+}

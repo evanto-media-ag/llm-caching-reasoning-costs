@@ -1,0 +1,87 @@
+{
+  "ts": "2026-10-19T08:24:22+00:00",
+  "target": "cortecs-residency",
+  "model": "gpt-oss-120b",
+  "measurement": "M5",
+  "step": "effort-max",
+  "run_id": "9f998137",
+  "url": "https://api.cortecs.ai/v1/chat/completions",
+  "request_body": {
+    "model": "gpt-oss-120b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful assistant."
+      },
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "max_tokens": 2048,
+    "reasoning_effort": "max"
+  },
+  "status": 200,
+  "response_body": {
+    "id": "chatcmpl-6440aa7d-7cb5-45d7-bbc3-40c3d7d72d76-ddbd",
+    "created": 1792398262,
+    "model": "gpt-oss-120b",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "0.05",
+          "role": "assistant",
+          "reasoning_content": "We need to solve: bat + ball = 1.10, bat = ball + 1.00. So ball = 0.05. Answer with amount only: 0.05 EUR? Probably \"0.05\".",
+          "provider_specific_fields": {
+            "reasoning": "We need to solve: bat + ball = 1.10, bat = ball + 1.00. So ball = 0.05. Answer with amount only: 0.05 EUR? Probably \"0.05\".",
+            "refusal": null
+          },
+          "annotations": []
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 61,
+      "prompt_tokens": 120,
+      "total_tokens": 181,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 112
+      },
+      "cost": 53,
+      "cost_details": {
+        "prompt_cost": 2,
+        "cache_read_cost": 17,
+        "cache_write_cost": 0,
+        "completion_cost": 34,
+        "prompt_audio_cost": 0
+      }
+    },
+    "service_tier": "default"
+  },
+  "response_headers": {},
+  "response_header_names": [
+    "access-control-expose-headers",
+    "connection",
+    "content-length",
+    "content-security-policy",
+    "content-type",
+    "date",
+    "x-content-type-options",
+    "x-cortecs-model",
+    "x-cortecs-provider",
+    "x-frame-options"
+  ],
+  "duration_ms": 913,
+  "note": "angenommen"
+}

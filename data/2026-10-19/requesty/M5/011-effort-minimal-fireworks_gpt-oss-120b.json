@@ -1,0 +1,43 @@
+{
+  "ts": "2026-10-19T08:25:28+00:00",
+  "target": "requesty",
+  "model": "fireworks/gpt-oss-120b",
+  "measurement": "M5",
+  "step": "effort-minimal",
+  "run_id": "042fa68d",
+  "url": "https://router.requesty.ai/v1/chat/completions",
+  "request_body": {
+    "model": "fireworks/gpt-oss-120b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful assistant."
+      },
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "max_tokens": 2048,
+    "reasoning_effort": "minimal"
+  },
+  "status": 400,
+  "response_body": {
+    "error": {
+      "origin": "router",
+      "message": "Invalid request. See https://docs.requesty.ai/api-reference for the expected schema"
+    }
+  },
+  "response_headers": {},
+  "response_header_names": [
+    "connection",
+    "content-type",
+    "date",
+    "strict-transport-security",
+    "transfer-encoding",
+    "vary",
+    "x-content-type-options"
+  ],
+  "duration_ms": 30,
+  "note": "abgelehnt: http 400 {'error': {'origin': 'router', 'message': 'Invalid request. See https://docs.requesty.ai/api-reference for the expected schema'}}"
+}

@@ -1,0 +1,66 @@
+{
+  "ts": "2026-10-19T08:25:29+00:00",
+  "target": "requesty",
+  "model": "fireworks/gpt-oss-120b",
+  "measurement": "M5",
+  "step": "effort-low",
+  "run_id": "042fa68d",
+  "url": "https://router.requesty.ai/v1/chat/completions",
+  "request_body": {
+    "model": "fireworks/gpt-oss-120b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful assistant."
+      },
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "max_tokens": 2048,
+    "reasoning_effort": "low"
+  },
+  "status": 200,
+  "response_body": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "0.05",
+          "reasoning_content": "Simple: ball = 0.05.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1792398329,
+    "id": "rqsty-cmpl-c1f5f2be-edaa-4e00-a13e-bf519b64bde9",
+    "model": "accounts/fireworks/models/gpt-oss-120b",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 22,
+      "completion_tokens_details": {
+        "reasoning_tokens": 9
+      },
+      "prompt_tokens": 118,
+      "prompt_tokens_details": {
+        "cached_tokens": 117
+      },
+      "total_tokens": 140,
+      "cost": 1.5105e-05
+    }
+  },
+  "response_headers": {},
+  "response_header_names": [
+    "connection",
+    "content-type",
+    "date",
+    "strict-transport-security",
+    "transfer-encoding",
+    "vary",
+    "x-content-type-options"
+  ],
+  "duration_ms": 378,
+  "note": "angenommen"
+}

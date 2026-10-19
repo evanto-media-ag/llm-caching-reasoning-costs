@@ -1,0 +1,121 @@
+{
+  "ts": "2026-10-19T08:26:32+00:00",
+  "target": "eurouter",
+  "model": "gpt-oss-120b",
+  "measurement": "M6",
+  "step": "effort-high",
+  "run_id": "78b3d765",
+  "url": "https://api.eurouter.ai/api/v1/chat/completions",
+  "request_body": {
+    "model": "gpt-oss-120b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful assistant."
+      },
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "max_tokens": 2048,
+    "reasoning_effort": "high"
+  },
+  "status": 200,
+  "response_body": {
+    "id": "chatcmpl-b8cc6a620da9f9aa",
+    "object": "chat.completion",
+    "created": 1792398392,
+    "model": "regolo/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "0.05",
+          "refusal": null,
+          "reasoning": "The problem is classic: bat + ball = 1.10; bat = ball + 1.00, so ball = 0.05 (5 cents). So answer: 0.05. Probably want \"0.05\" or \"0.05 EUR\". The prompt says answer with the amount only. So just give \"0.05\". Probably they want with decimal point. So \"0.05\".",
+          "annotations": [],
+          "reasoning_content": "The problem is classic: bat + ball = 1.10; bat = ball + 1.00, so ball = 0.05 (5 cents). So answer: 0.05. Probably want \"0.05\" or \"0.05 EUR\". The prompt says answer with the amount only. So just give \"0.05\". Probably they want with decimal point. So \"0.05\"."
+        },
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "logprobs": null
+      }
+    ],
+    "usage": {
+      "completion_tokens": 99,
+      "prompt_tokens": 120,
+      "total_tokens": 219,
+      "completion_tokens_details": {
+        "reasoning_tokens": 86,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0,
+        "image_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost": 0.0005358,
+      "cost_currency": "EUR",
+      "cost_eur": 0.0005358,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0005358,
+        "upstream_inference_prompt_cost": 0.00012,
+        "upstream_inference_completions_cost": 0.0004158,
+        "upstream_inference_uncached_prompt_cost": 0.00012,
+        "upstream_inference_cache_read_cost": 0,
+        "upstream_inference_cache_write_cost": 0
+      }
+    },
+    "provider": "regolo",
+    "service_tier": "default",
+    "system_fingerprint": null
+  },
+  "response_headers": {
+    "x-model-used": "gpt-oss-120b",
+    "x-provider-id": "7bd24e43-eadb-4374-8d1b-46861d30fd91",
+    "x-provider-slug": "regolo",
+    "x-ratelimit-limit": "60",
+    "x-ratelimit-remaining": "58",
+    "x-ratelimit-reset": "1792398451",
+    "x-request-id": "8877d46a-e42b-486d-862b-9ee9af6c96c7",
+    "x-routing-strategy": "default"
+  },
+  "response_header_names": [
+    "access-control-allow-origin",
+    "connection",
+    "content-length",
+    "content-security-policy",
+    "content-type",
+    "cross-origin-opener-policy",
+    "cross-origin-resource-policy",
+    "date",
+    "origin-agent-cluster",
+    "referrer-policy",
+    "server",
+    "strict-transport-security",
+    "x-content-type-options",
+    "x-dns-prefetch-control",
+    "x-download-options",
+    "x-envoy-upstream-service-time",
+    "x-frame-options",
+    "x-model-used",
+    "x-permitted-cross-domain-policies",
+    "x-provider-id",
+    "x-provider-slug",
+    "x-ratelimit-limit",
+    "x-ratelimit-remaining",
+    "x-ratelimit-reset",
+    "x-request-id",
+    "x-routing-strategy",
+    "x-xss-protection"
+  ],
+  "duration_ms": 802,
+  "note": "ok"
+}

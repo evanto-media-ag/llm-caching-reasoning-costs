@@ -1,0 +1,85 @@
+{
+  "ts": "2026-10-19T08:26:19+00:00",
+  "target": "gemini",
+  "model": "gemini-3.8-flash",
+  "measurement": "M6",
+  "step": "effort-high",
+  "run_id": "781e20ad",
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent",
+  "request_body": {
+    "systemInstruction": {
+      "parts": [
+        {
+          "text": "You are a careful assistant."
+        }
+      ]
+    },
+    "contents": [
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+          }
+        ]
+      }
+    ],
+    "generationConfig": {
+      "maxOutputTokens": 2048,
+      "thinkingConfig": {
+        "thinkingLevel": "high"
+      }
+    }
+  },
+  "status": 200,
+  "response_body": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "0.05 EUR",
+              "thoughtSignature": "EqYFCqMFAWkUfRNAiks99iD9yWKE+DLwE/nSQrtuSnUGCbxge3XjFKlOXfKRZS/PLRGn/GbXmnhaBuUO3dIt9t9aptoxHp0uJtvh2PDzJxlMd16F/2vkL3ZSKbedI0S57vySs4Qy7jzYmL+B53ZUhVS7bdu7QqPX+xvnhzVYVQecO/iyKsGy4Uqc7XhQujVFRpifiLa9timXxSwk+HcF5txfT76qc0RXQn6vqLA37HG6yaytGLvytmIsUJR4hNoWf0n3jQ5J99eGomfc5DeWlB2MuSBTWvuB3RF4fFyheaxjZKZS6Wri6qy3RQZHYmX9oPl95rD60oxgyjM0nQGxAqgQkD9XsPn+HLfr9gKxOMqVb3xhyC0jXSvye1BJ0VCf9EW4biU2Ju9ZKNgWBfIEKTB/+fPqZs5AjWFXB/du+xAWh4QlUxav2X+1+nS1aLzzzYlOoY0281A3gBkOzXTcHdhZYqJDncawFt6BedpG+OeCN6gZLvvQ0iNZwK+31JYZAgxBO0nIzPJOgmoi2jR41Kd011bAVirOp1+0YK/z/gh1rK0Mh6GuCD75S7UJv6NwtSO3WqzKN/e1edU+BO9S6Rkj7sMvErAjuXzD48MSn5Jks0g/gzVFV1RepGNiMyA9Xt8ffEqO/r7kiGkmqVMIpabXy+gJhu8ffZaGiRSb3VTYd04A7RnyVq5MBl2fsilGLV8sdBq9m7GTrVbZq7I9ZbyXXlOXZemIqi5ezUpeTWOo5GnRSV1EnCVAdhHdgVZw0cFwc9oZdcy1dJl7nx6s0lHhaVJaDoWTyoizrgrqRkpEbUDWPZ95R/XoLo2Z7/CsoATROokHroelvShkS20OyiFJRjqmLZDkJInqiHOOO8pPvaGi37h/nA+cmUln6QSc1XYPaZpPknpz"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 49,
+      "candidatesTokenCount": 5,
+      "totalTokenCount": 301,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 49
+        }
+      ],
+      "thoughtsTokenCount": 247,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.8-flash",
+    "responseId": "EtTVasb4NqCe3boPqZGPaQ"
+  },
+  "response_headers": {},
+  "response_header_names": [
+    "accept-ranges",
+    "alt-svc",
+    "connection",
+    "content-type",
+    "date",
+    "server",
+    "server-timing",
+    "transfer-encoding",
+    "vary",
+    "x-content-type-options",
+    "x-frame-options",
+    "x-gemini-service-tier",
+    "x-xss-protection"
+  ],
+  "duration_ms": 24641,
+  "note": "ok"
+}

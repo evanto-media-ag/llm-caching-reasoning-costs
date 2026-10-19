@@ -1,0 +1,104 @@
+{
+  "ts": "2026-10-19T08:26:22+00:00",
+  "target": "mistral",
+  "model": "mistral-medium-latest",
+  "measurement": "M6",
+  "step": "effort-high",
+  "run_id": "5178a3f8",
+  "url": "https://api.mistral.ai/v1/chat/completions",
+  "request_body": {
+    "model": "mistral-medium-latest",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful assistant."
+      },
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "max_tokens": 2048,
+    "reasoning_effort": "high"
+  },
+  "status": 200,
+  "response_body": {
+    "id": "ccc694a53c5745e384cdbc1a59fff734",
+    "created": 1792398379,
+    "model": "mistral-medium-latest",
+    "usage": {
+      "prompt_tokens": 65,
+      "total_tokens": 420,
+      "completion_tokens": 355,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 348
+      },
+      "service_tier": "standard"
+    },
+    "object": "chat.completion",
+    "choices": [
+      {
+        "index": 0,
+        "finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "tool_calls": null,
+          "content": [
+            {
+              "type": "thinking",
+              "thinking": [
+                {
+                  "type": "text",
+                  "text": "Okay, let's see. The problem is that a bat and a ball together cost 1.10 EUR. The bat costs 1.00 EUR more than the ball. We need to find out how much the ball costs.\n\nHmm, so let's denote the cost of the ball as x EUR. Then the bat would cost x + 1.00 EUR, right? Because it's 1.00 more than the ball.\n\nSo the total cost is bat + ball = (x + 1.00) + x = 2x + 1.00. And that's equal to 1.10 EUR. So the equation is 2x + 1.00 = 1.10.\n\nWait, solving for x: subtract 1.00 from both sides, so 2x = 0.10. Then x = 0.05. So the ball is 0.05 EUR, and the bat is 1.05 EUR. Let me check: 1.05 + 0.05 = 1.10. Yes, that adds up. And the bat is indeed 1.00 more than the ball (1.05 - 0.05 = 1.00). So that seems right.\n\nWait, but sometimes people might think the ball is 0.10, but then the bat would be 1.10, which would make the total 1.20, which is too much. So no, the correct answer is 0.05. So the ball costs 0.05 EUR."
+                }
+              ],
+              "closed": true
+            },
+            {
+              "type": "text",
+              "text": "0.05"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "response_headers": {
+    "x-ratelimit-limit-tokens-minute": "500000",
+    "x-ratelimit-remaining-tokens-minute": "499580",
+    "x-ratelimit-tokens-query-cost": "420",
+    "x-ratelimit-limit-req-minute": "1000",
+    "x-ratelimit-remaining-req-minute": "999"
+  },
+  "response_header_names": [
+    "access-control-allow-origin",
+    "alt-svc",
+    "cf-cache-status",
+    "cf-ray",
+    "connection",
+    "content-length",
+    "content-type",
+    "date",
+    "mistral-correlation-id",
+    "server",
+    "server-timing",
+    "set-cookie",
+    "strict-transport-security",
+    "x-content-type-options",
+    "x-envoy-upstream-service-time",
+    "x-kong-proxy-latency",
+    "x-kong-request-id",
+    "x-kong-upstream-latency",
+    "x-max-retry-attempts-reached",
+    "x-ratelimit-limit-req-minute",
+    "x-ratelimit-limit-tokens-minute",
+    "x-ratelimit-remaining-req-minute",
+    "x-ratelimit-remaining-tokens-minute",
+    "x-ratelimit-tokens-query-cost"
+  ],
+  "duration_ms": 3058,
+  "note": "ok"
+}

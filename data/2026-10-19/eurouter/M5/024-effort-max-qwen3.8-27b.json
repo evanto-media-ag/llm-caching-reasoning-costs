@@ -1,0 +1,116 @@
+{
+  "ts": "2026-10-19T08:25:22+00:00",
+  "target": "eurouter",
+  "model": "qwen3.8-27b",
+  "measurement": "M5",
+  "step": "effort-max",
+  "run_id": "02a6c4df",
+  "url": "https://api.eurouter.ai/api/v1/chat/completions",
+  "request_body": {
+    "model": "qwen3.8-27b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful assistant."
+      },
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "max_tokens": 2048,
+    "reasoning_effort": "max"
+  },
+  "status": 200,
+  "response_body": {
+    "id": "chatcmpl-a884754f-396d-425a-9f9e-464b5128b9f1-7c66",
+    "object": "chat.completion",
+    "created": 1792398322,
+    "model": "aki/qwen3.8-27b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "0.05 EUR",
+          "refusal": null,
+          "reasoning": "We need answer user: \"A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only.\"\n\nWe need solve. Let ball x, bat x+1.00, total 2x+1.00=1.10 => 2x=0.10 => x=0.05. Answer amount only. Need maybe \"0.05 EUR\"? User says amount only. Could output \"0.05\" or \"0.05 EUR\"? They said amount only, likely just number? Maybe \"0.05 EUR\" is amount? To be safe, \"0.05\" since answer with amount only? But currency context. Many puzzle expected 0.05 EUR. \"Amount only\" maybe no explanation. Could output \"0.05 EUR\". Is EUR part of amount? If they ask \"How much does the ball cost? Answer with the amount only.\" I'd output \"0.05 EUR\". But if strict amount only, currency might be considered not amount? They used EUR in question. Probably answer with amount only means no words/explanation, just the value. I can output \"0.05 EUR\". Final concise.",
+          "annotations": []
+        },
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "logprobs": null
+      }
+    ],
+    "usage": {
+      "completion_tokens": 286,
+      "prompt_tokens": 101,
+      "total_tokens": 387,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0,
+        "image_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost": 0.0006595,
+      "cost_currency": "EUR",
+      "cost_eur": 0.0006595,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0006595,
+        "upstream_inference_prompt_cost": 3.03e-05,
+        "upstream_inference_completions_cost": 0.0006292,
+        "upstream_inference_uncached_prompt_cost": 3.03e-05,
+        "upstream_inference_cache_read_cost": 0,
+        "upstream_inference_cache_write_cost": 0
+      }
+    },
+    "provider": "aki",
+    "service_tier": "default",
+    "system_fingerprint": null
+  },
+  "response_headers": {
+    "x-ratelimit-limit": "60",
+    "x-ratelimit-remaining": "36",
+    "x-ratelimit-reset": "1792398323",
+    "x-request-id": "b33b72f2-d27b-4923-801a-a31e23e713d8"
+  },
+  "response_header_names": [
+    "access-control-allow-origin",
+    "connection",
+    "content-length",
+    "content-security-policy",
+    "content-type",
+    "cross-origin-opener-policy",
+    "cross-origin-resource-policy",
+    "date",
+    "origin-agent-cluster",
+    "referrer-policy",
+    "server",
+    "strict-transport-security",
+    "x-content-type-options",
+    "x-dns-prefetch-control",
+    "x-download-options",
+    "x-envoy-upstream-service-time",
+    "x-frame-options",
+    "x-model-used",
+    "x-permitted-cross-domain-policies",
+    "x-provider-id",
+    "x-provider-slug",
+    "x-ratelimit-limit",
+    "x-ratelimit-remaining",
+    "x-ratelimit-reset",
+    "x-request-id",
+    "x-routing-strategy",
+    "x-xss-protection"
+  ],
+  "duration_ms": 3366,
+  "note": "angenommen"
+}

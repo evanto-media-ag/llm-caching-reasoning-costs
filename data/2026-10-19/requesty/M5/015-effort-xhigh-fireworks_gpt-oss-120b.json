@@ -1,0 +1,66 @@
+{
+  "ts": "2026-10-19T08:25:31+00:00",
+  "target": "requesty",
+  "model": "fireworks/gpt-oss-120b",
+  "measurement": "M5",
+  "step": "effort-xhigh",
+  "run_id": "042fa68d",
+  "url": "https://router.requesty.ai/v1/chat/completions",
+  "request_body": {
+    "model": "fireworks/gpt-oss-120b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful assistant."
+      },
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "max_tokens": 2048,
+    "reasoning_effort": "xhigh"
+  },
+  "status": 200,
+  "response_body": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "0.05",
+          "reasoning_content": "We need to answer the classic puzzle: total cost 1.10 EUR, bat costs 1.00 EUR more than ball. Let ball = x, bat = x + 1.00, so total 2x + 1.00 = 1.10 => 2x = 0.10 => x = 0.05 EUR. So answer: 0.05 EUR. The prompt says answer with the amount only. So respond: 0.05. Might include \"0.05 EUR\" but presumably \"0.05\". It specifically: \"Answer with the amount only.\" So I'd give \"0.05\". There's no extra. So answer: 0.05.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1792398331,
+    "id": "rqsty-cmpl-11f54dc7-6c34-449f-8582-186b34efe269",
+    "model": "accounts/fireworks/models/gpt-oss-120b",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 158,
+      "completion_tokens_details": {
+        "reasoning_tokens": 145
+      },
+      "prompt_tokens": 118,
+      "prompt_tokens_details": {
+        "cached_tokens": 117
+      },
+      "total_tokens": 276,
+      "cost": 9.6705e-05
+    }
+  },
+  "response_headers": {},
+  "response_header_names": [
+    "connection",
+    "content-type",
+    "date",
+    "strict-transport-security",
+    "transfer-encoding",
+    "vary",
+    "x-content-type-options"
+  ],
+  "duration_ms": 937,
+  "note": "angenommen"
+}

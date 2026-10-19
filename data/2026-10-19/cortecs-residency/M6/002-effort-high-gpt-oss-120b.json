@@ -1,0 +1,94 @@
+{
+  "ts": "2026-10-19T08:26:30+00:00",
+  "target": "cortecs-residency",
+  "model": "gpt-oss-120b",
+  "measurement": "M6",
+  "step": "effort-high",
+  "run_id": "2db5152b",
+  "url": "https://api.cortecs.ai/v1/chat/completions",
+  "request_body": {
+    "model": "gpt-oss-120b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful assistant."
+      },
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "max_tokens": 2048,
+    "reasoning_effort": "high"
+  },
+  "status": 200,
+  "response_body": {
+    "id": "f7752ef8-0fbb-4949-abf2-de25b171f4bb",
+    "created": 1792398390,
+    "model": "gpt-oss-120b",
+    "object": "chat.completion",
+    "system_fingerprint": "fastcoe",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "0.05",
+          "role": "assistant",
+          "reasoning_content": "We need to answer with the amount only. The classic puzzle: bat + ball = 1.10, bat = ball + 1.00. Let ball = x, bat = x + 1.00. Then x + (x + 1.00) = 1.10 => 2x + 1.00 = 1.10 => 2x = 0.10 => x = 0.05. So ball costs 0.05 EUR. The answer should be \"0.05 EUR\"? The instruction: \"Answer with the amount only.\" So just \"0.05\". Possibly include currency? The instruction says amount only, so likely just \"0.05\". Could also be \"0.05 EUR\". But \"amount only\" suggests numeric value. So answer: 0.05.",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning": "We need to answer with the amount only. The classic puzzle: bat + ball = 1.10, bat = ball + 1.00. Let ball = x, bat = x + 1.00. Then x + (x + 1.00) = 1.10 => 2x + 1.00 = 1.10 => 2x = 0.10 => x = 0.05. So ball costs 0.05 EUR. The answer should be \"0.05 EUR\"? The instruction: \"Answer with the amount only.\" So just \"0.05\". Possibly include currency? The instruction says amount only, so likely just \"0.05\". Could also be \"0.05 EUR\". But \"amount only\" suggests numeric value. So answer: 0.05."
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 184,
+      "prompt_tokens": 120,
+      "total_tokens": 304,
+      "completion_tokens_details": {
+        "reasoning_tokens": 173
+      },
+      "cost": 136,
+      "completion_tokens_after_first_per_sec": 691.6478925021086,
+      "completion_tokens_after_first_per_sec_first_ten": 694.680129024317,
+      "completion_tokens_after_first_per_sec_graph": 694.680129024317,
+      "completion_tokens_per_sec": 580.8721271645759,
+      "end_time": 1792398390.6060627,
+      "is_last_response": true,
+      "start_time": 1792398390.2892976,
+      "stop_reason": "stop",
+      "time_to_first_token": 0.052179574966430664,
+      "time_to_first_token_graph": 0.04592132568359375,
+      "total_latency": 0.31676506996154785,
+      "total_tokens_per_sec": 959.7017753153863,
+      "cost_details": {
+        "prompt_cost": 27,
+        "cache_read_cost": 0,
+        "cache_write_cost": 0,
+        "completion_cost": 109,
+        "prompt_audio_cost": 0
+      }
+    }
+  },
+  "response_headers": {
+    "x-cortecs-model": "gpt-oss-120b",
+    "x-cortecs-provider": "infercom"
+  },
+  "response_header_names": [
+    "access-control-expose-headers",
+    "connection",
+    "content-length",
+    "content-security-policy",
+    "content-type",
+    "date",
+    "x-content-type-options",
+    "x-cortecs-model",
+    "x-cortecs-provider",
+    "x-frame-options"
+  ],
+  "duration_ms": 493,
+  "note": "ok"
+}

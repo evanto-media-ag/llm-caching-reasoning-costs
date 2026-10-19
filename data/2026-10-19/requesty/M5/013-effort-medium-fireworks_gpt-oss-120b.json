@@ -1,0 +1,66 @@
+{
+  "ts": "2026-10-19T08:25:30+00:00",
+  "target": "requesty",
+  "model": "fireworks/gpt-oss-120b",
+  "measurement": "M5",
+  "step": "effort-medium",
+  "run_id": "042fa68d",
+  "url": "https://router.requesty.ai/v1/chat/completions",
+  "request_body": {
+    "model": "fireworks/gpt-oss-120b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful assistant."
+      },
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "max_tokens": 2048,
+    "reasoning_effort": "medium"
+  },
+  "status": 200,
+  "response_body": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "0.05",
+          "reasoning_content": "We need to solve a classic puzzle: total cost 1.10, bat costs 1.00 more than ball. Let ball = x, bat = x + 1.00. Sum: x + (x+1.00) = 1.10 => 2x + 1.00 = 1.10 => 2x = 0.10 => x = 0.05. So answer is \"0.05 EUR\". The user wants answer with the amount only. So just \"0.05\". Possibly include currency? They said amount only, so just numeric amount? Probably \"0.05\". Let's output.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1792398330,
+    "id": "rqsty-cmpl-e0b5792a-27ae-4d08-9066-33dec901b899",
+    "model": "accounts/fireworks/models/gpt-oss-120b",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 147,
+      "completion_tokens_details": {
+        "reasoning_tokens": 134
+      },
+      "prompt_tokens": 118,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 265,
+      "cost": 0.0001059
+    }
+  },
+  "response_headers": {},
+  "response_header_names": [
+    "connection",
+    "content-type",
+    "date",
+    "strict-transport-security",
+    "transfer-encoding",
+    "vary",
+    "x-content-type-options"
+  ],
+  "duration_ms": 1079,
+  "note": "angenommen"
+}

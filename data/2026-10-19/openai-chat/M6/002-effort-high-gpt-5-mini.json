@@ -1,0 +1,98 @@
+{
+  "ts": "2026-10-19T08:25:46+00:00",
+  "target": "openai-chat",
+  "model": "gpt-5-mini",
+  "measurement": "M6",
+  "step": "effort-high",
+  "run_id": "55cc365b",
+  "url": "https://api.openai.com/v1/chat/completions",
+  "request_body": {
+    "model": "gpt-5-mini",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful assistant."
+      },
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "max_completion_tokens": 2048,
+    "reasoning_effort": "high"
+  },
+  "status": 200,
+  "response_body": {
+    "id": "chatcmpl-EacydhLSooVwCIHVgtDBwgB78jITD",
+    "object": "chat.completion",
+    "created": 1792398343,
+    "model": "gpt-5-mini-2025-08-07",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "€0.05",
+          "refusal": null,
+          "annotations": []
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 56,
+      "completion_tokens": 333,
+      "total_tokens": 389,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 320,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "service_tier": "default",
+    "system_fingerprint": null
+  },
+  "response_headers": {
+    "openai-processing-ms": "3384",
+    "x-ratelimit-limit-requests": "5000",
+    "x-ratelimit-limit-tokens": "2000000",
+    "x-ratelimit-remaining-requests": "4999",
+    "x-ratelimit-remaining-tokens": "1999904",
+    "x-ratelimit-reset-requests": "12ms",
+    "x-ratelimit-reset-tokens": "2ms",
+    "x-request-id": "req_fa2e0b0952964195adc241f80daf92ab"
+  },
+  "response_header_names": [
+    "access-control-expose-headers",
+    "alt-svc",
+    "cf-cache-status",
+    "cf-ray",
+    "connection",
+    "content-length",
+    "content-type",
+    "date",
+    "openai-organization",
+    "openai-processing-ms",
+    "openai-project",
+    "openai-version",
+    "server",
+    "set-cookie",
+    "strict-transport-security",
+    "x-content-type-options",
+    "x-openai-proxy-wasm",
+    "x-ratelimit-limit-requests",
+    "x-ratelimit-limit-tokens",
+    "x-ratelimit-remaining-requests",
+    "x-ratelimit-remaining-tokens",
+    "x-ratelimit-reset-requests",
+    "x-ratelimit-reset-tokens",
+    "x-request-id"
+  ],
+  "duration_ms": 3596,
+  "note": "ok"
+}

@@ -1,0 +1,71 @@
+{
+  "ts": "2026-10-19T08:26:25+00:00",
+  "target": "ionos",
+  "model": "openai/gpt-oss-120b",
+  "measurement": "M6",
+  "step": "effort-high",
+  "run_id": "92491d42",
+  "url": "https://openai.inference.de-txl.ionos.com/v1/chat/completions",
+  "request_body": {
+    "model": "openai/gpt-oss-120b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful assistant."
+      },
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "max_tokens": 2048,
+    "reasoning_effort": "high"
+  },
+  "status": 200,
+  "response_body": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "0.05",
+          "reasoning": "We need to answer with the amount only. Classic problem: bat and ball cost 1.10 EUR, bat costs 1.00 EUR more than ball.\n\nLet ball = x, bat = x + 1.00, total = x + (x+1.00) = 2x + 1.00 = 1.10 → 2x = 0.10 → x = 0.05 EUR. So answer: 0.05 EUR. The user says \"Answer with the amount only.\" So output \"0.05\". Perhaps include currency? They may want amount only, likely \"0.05\". Possibly \"0.05 EUR\". But they said amount only. I'll just give \"0.05\".",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1792398385,
+    "id": "chatcmpl-ab3e077d-cb45-991a-afde-6c8d3fe22132",
+    "model": "openai/gpt-oss-120b",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 166,
+      "completion_tokens_details": {
+        "reasoning_tokens": 153
+      },
+      "prompt_tokens": 120,
+      "total_tokens": 286
+    }
+  },
+  "response_headers": {
+    "x-ratelimit-limit-requests": "5",
+    "x-ratelimit-remaining-requests": "4",
+    "x-ratelimit-reset-requests": "200ms",
+    "x-request-id": "f1accb28f038280cb6bd7352251c00c0"
+  },
+  "response_header_names": [
+    "connection",
+    "content-length",
+    "content-type",
+    "date",
+    "x-gateway-version",
+    "x-ratelimit-limit-requests",
+    "x-ratelimit-remaining-requests",
+    "x-ratelimit-reset-requests",
+    "x-request-id",
+    "x-trace-id"
+  ],
+  "duration_ms": 973,
+  "note": "ok"
+}

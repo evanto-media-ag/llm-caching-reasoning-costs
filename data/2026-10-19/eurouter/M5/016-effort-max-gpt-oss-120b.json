@@ -1,0 +1,67 @@
+{
+  "ts": "2026-10-19T08:24:41+00:00",
+  "target": "eurouter",
+  "model": "gpt-oss-120b",
+  "measurement": "M5",
+  "step": "effort-max",
+  "run_id": "977d221d",
+  "url": "https://api.eurouter.ai/api/v1/chat/completions",
+  "request_body": {
+    "model": "gpt-oss-120b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful assistant."
+      },
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "max_tokens": 2048,
+    "reasoning_effort": "max"
+  },
+  "status": 400,
+  "response_body": {
+    "error": {
+      "code": 400,
+      "message": "The provider rejected the request. Check the requested model and parameters.",
+      "type": "invalid_request_error",
+      "param": null
+    },
+    "requestId": "e3b95576-b766-46e0-b103-60fffa7cfba9"
+  },
+  "response_headers": {
+    "x-ratelimit-limit": "60",
+    "x-ratelimit-remaining": "44",
+    "x-ratelimit-reset": "1792398323",
+    "x-request-id": "e3b95576-b766-46e0-b103-60fffa7cfba9"
+  },
+  "response_header_names": [
+    "access-control-allow-origin",
+    "connection",
+    "content-length",
+    "content-security-policy",
+    "content-type",
+    "cross-origin-opener-policy",
+    "cross-origin-resource-policy",
+    "date",
+    "origin-agent-cluster",
+    "referrer-policy",
+    "server",
+    "strict-transport-security",
+    "x-content-type-options",
+    "x-dns-prefetch-control",
+    "x-download-options",
+    "x-envoy-upstream-service-time",
+    "x-frame-options",
+    "x-permitted-cross-domain-policies",
+    "x-ratelimit-limit",
+    "x-ratelimit-remaining",
+    "x-ratelimit-reset",
+    "x-request-id",
+    "x-xss-protection"
+  ],
+  "duration_ms": 356,
+  "note": "abgelehnt: http 400 {'error': {'code': 400, 'message': 'The provider rejected the request. Check the requested model and parameters.', 'type': 'invalid_request_error', 'param': None}, 'requestId': 'e3b95576-b766-46e0-b103-60fffa7cfba9'}"
+}

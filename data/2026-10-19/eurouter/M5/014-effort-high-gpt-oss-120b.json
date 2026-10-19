@@ -1,0 +1,116 @@
+{
+  "ts": "2026-10-19T08:24:39+00:00",
+  "target": "eurouter",
+  "model": "gpt-oss-120b",
+  "measurement": "M5",
+  "step": "effort-high",
+  "run_id": "977d221d",
+  "url": "https://api.eurouter.ai/api/v1/chat/completions",
+  "request_body": {
+    "model": "gpt-oss-120b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful assistant."
+      },
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "max_tokens": 2048,
+    "reasoning_effort": "high"
+  },
+  "status": 200,
+  "response_body": {
+    "id": "chatcmpl-fc0d736c-b707-48dc-a4cd-bc0b64615f8c-884a",
+    "object": "chat.completion",
+    "created": 1792398279,
+    "model": "aki/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "0.05 EUR",
+          "refusal": null,
+          "reasoning": "The user asks a simple puzzle: \"A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only.\"\n\nClassic puzzle: The answer is 0.05 EUR (5 cents). Explanation: Let ball = x, bat = x + 1.00, total = x + (x+1) = 2x + 1 = 1.10 => 2x = 0.10 => x = 0.05.\n\nThus answer: \"0.05 EUR\" or just \"0.05\". The user says \"Answer with the amount only.\" So we should output just the numeric amount, maybe with the currency? The instruction says \"Answer with the amount only.\" It could be \"0.05 EUR\". But does that count as \"the amount only\"? Usually the puzzle answer is \"0.05 EUR\". Or just \"0.05\". Since they ask for the amount only, I think \"0.05 EUR\" is acceptable, but maybe they want just \"0.05\". However, they say \"Answer with the amount only.\" Might want just the number: \"0.05\". But that is ambiguous if they want the currency. Usually they'd want \"0.05 EUR\". But they say \"amount only\", maybe they'd accept \"0.05\". Let's see. The puzzle is known. Provide the answer as just the amount. Could be \"0.05\". I think it's safe to answer \"0.05 EUR\". That includes the amount and currency, but it's more than amount only? The amount includes the unit. The phrase \"amount only\" could be interpreted as \"just the numeric value\". But the user may want the currency? In the puzzle, the answer is \"0.05 EUR\". However, they said \"Answer with the amount only.\" I'd go with \"0.05\". Because that is the amount only, not the unit. But they may want the currency. I'd lean to \"0.05\". There's a slight chance they'd want \"0.05 EUR\". The instruction: \"Answer with the amount only.\" Typically that means no explanation, just the answer. The amount is \"0.05 EUR\". That is the amount. So maybe \"0.05 EUR\". I'd produce \"0.05 EUR\". It's safe. It includes the amount and the unit. However, the phrase \"amount only\" might be ambiguous. If we include the unit, it's still an amount. Usually they'd want the numeric value. But we can include the unit because it's part of the amount. I think it's okay to answer \"0.05 EUR\". Let's answer that.",
+          "annotations": []
+        },
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "logprobs": null
+      }
+    ],
+    "usage": {
+      "completion_tokens": 573,
+      "prompt_tokens": 120,
+      "total_tokens": 693,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0,
+        "image_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 32,
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost": 0.00033315,
+      "cost_currency": "EUR",
+      "cost_eur": 0.00033315,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.00033315,
+        "upstream_inference_prompt_cost": 1.8e-05,
+        "upstream_inference_completions_cost": 0.00031515,
+        "upstream_inference_uncached_prompt_cost": 1.8e-05,
+        "upstream_inference_cache_read_cost": 0,
+        "upstream_inference_cache_write_cost": 0
+      }
+    },
+    "provider": "aki",
+    "service_tier": "default",
+    "system_fingerprint": null
+  },
+  "response_headers": {
+    "x-ratelimit-limit": "60",
+    "x-ratelimit-remaining": "46",
+    "x-ratelimit-reset": "1792398322",
+    "x-request-id": "1d9b2e33-38a7-4845-bd85-74c6755fe370"
+  },
+  "response_header_names": [
+    "access-control-allow-origin",
+    "connection",
+    "content-length",
+    "content-security-policy",
+    "content-type",
+    "cross-origin-opener-policy",
+    "cross-origin-resource-policy",
+    "date",
+    "origin-agent-cluster",
+    "referrer-policy",
+    "server",
+    "strict-transport-security",
+    "x-content-type-options",
+    "x-dns-prefetch-control",
+    "x-download-options",
+    "x-envoy-upstream-service-time",
+    "x-frame-options",
+    "x-model-used",
+    "x-permitted-cross-domain-policies",
+    "x-provider-id",
+    "x-provider-slug",
+    "x-ratelimit-limit",
+    "x-ratelimit-remaining",
+    "x-ratelimit-reset",
+    "x-request-id",
+    "x-routing-strategy",
+    "x-xss-protection"
+  ],
+  "duration_ms": 2698,
+  "note": "angenommen"
+}

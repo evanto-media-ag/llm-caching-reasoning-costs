@@ -1,0 +1,67 @@
+{
+  "ts": "2026-10-19T08:25:25+00:00",
+  "target": "requesty",
+  "model": "anthropic/claude-sonnet-5",
+  "measurement": "M5",
+  "step": "effort-high",
+  "run_id": "7f822a17",
+  "url": "https://router.requesty.ai/v1/chat/completions",
+  "request_body": {
+    "model": "anthropic/claude-sonnet-5",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful assistant."
+      },
+      {
+        "role": "user",
+        "content": "A bat and a ball cost 1.10 EUR in total. The bat costs 1.00 EUR more than the ball. How much does the ball cost? Answer with the amount only."
+      }
+    ],
+    "max_tokens": 2048,
+    "reasoning_effort": "high"
+  },
+  "status": 200,
+  "response_body": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "0.05 EUR",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1792398325,
+    "id": "rqsty-cmpl-442bbca2-0542-460c-9f4d-2ef4a9955ec7",
+    "model": "claude-sonnet-5",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 9,
+      "prompt_tokens": 96,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "caching_token_details": {
+          "caching_5m_tokens": 0,
+          "caching_1h_tokens": 0
+        },
+        "caching_tokens": 0
+      },
+      "total_tokens": 105,
+      "cost": 0.000282
+    }
+  },
+  "response_headers": {},
+  "response_header_names": [
+    "connection",
+    "content-type",
+    "date",
+    "strict-transport-security",
+    "transfer-encoding",
+    "vary",
+    "x-content-type-options"
+  ],
+  "duration_ms": 586,
+  "note": "angenommen"
+}
