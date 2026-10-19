@@ -29,7 +29,7 @@ def _safe(name: str) -> str:
     return re.sub(r"[^A-Za-z0-9._-]+", "_", name or "none")
 
 
-def _note(resp: Response, note: str) -> str:
+def _note(resp: Response, note: str, error_label: str = "fehler") -> str:
     if resp.status == 200:
         body = resp.body if isinstance(resp.body, dict) else {}
         if body.get("status") == "incomplete" and not (body.get("usage") or {}).get("input_tokens"):
@@ -37,11 +37,12 @@ def _note(resp: Response, note: str) -> str:
         return note
     if resp.status == 429 or resp.status >= 500:
         return f"ungültig: http {resp.status}"
-    return f"fehler: http {resp.status} {str(resp.body)[:300]}"
+    return f"{error_label}: http {resp.status} {str(resp.body)[:300]}"
 
 
 def call(ctx: Ctx, target: str, model: str | None, measurement: str, step: str, run_id: str | None,
-         url: str, headers: dict, body: dict | None, method: str = "POST", note: str = "ok") -> tuple[Response, Path]:
+         url: str, headers: dict, body: dict | None, method: str = "POST", note: str = "ok",
+         error_label: str = "fehler") -> tuple[Response, Path]:
     resp = ctx.send(method, url, headers, body)
     folder = run_dir(ctx.date, target, measurement, root=ctx.root)
     seq = len(list(folder.glob("*.json"))) + 1 if folder.exists() else 1
@@ -50,7 +51,7 @@ def call(ctx: Ctx, target: str, model: str | None, measurement: str, step: str, 
               "model": model, "measurement": measurement, "step": step, "run_id": run_id, "url": url,
               "request_body": body, "status": resp.status, "response_body": resp.body,
               "response_headers": resp.headers, "response_header_names": resp.header_names,
-              "duration_ms": resp.duration_ms, "note": _note(resp, note)}
+              "duration_ms": resp.duration_ms, "note": _note(resp, note, error_label)}
     write_record(path, record)
     return resp, path
 
