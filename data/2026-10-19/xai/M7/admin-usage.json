@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-19",
+  "status": 200,
+  "provider_cost_by_model": {
+    "grok-4.5": 0.0623844,
+    "grok-4.7": 0.099076
+  },
+  "our_reported_cost_by_model": {
+    "grok-4.7": 0.099076,
+    "grok-4.5": 0.0623844
+  },
+  "note": "xAI billing is per team; the measurement key was the only xAI traffic that day"
+}

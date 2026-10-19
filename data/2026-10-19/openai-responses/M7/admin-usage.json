@@ -1,0 +1,170 @@
+{
+  "date": "2026-10-19",
+  "key_id_matched": true,
+  "ours": {
+    "gpt-6.1-sol": {
+      "num_model_requests": 30,
+      "input_tokens": 62629,
+      "input_cached_tokens": 25121,
+      "cache_write_tokens": 34261,
+      "output_tokens": 505
+    },
+    "gpt-5.6-luna": {
+      "num_model_requests": 36,
+      "input_tokens": 73638,
+      "input_cached_tokens": 28569,
+      "cache_write_tokens": 42280,
+      "output_tokens": 387
+    },
+    "gpt-5-mini": {
+      "num_model_requests": 30,
+      "input_tokens": 59759,
+      "input_cached_tokens": 23424,
+      "cache_write_tokens": 0,
+      "output_tokens": 2734
+    }
+  },
+  "provider_usage": {
+    "gpt-5.6-luna": {
+      "num_model_requests": 36,
+      "input_cache_write_tokens": 42280,
+      "output_tokens": 387,
+      "input_cache_write_12h_tokens": 0,
+      "input_tokens": 73638,
+      "input_cached_tokens": 28569
+    },
+    "gpt-6.1-sol": {
+      "num_model_requests": 27,
+      "input_cache_write_tokens": 34261,
+      "output_tokens": 505,
+      "input_cache_write_12h_tokens": 0,
+      "input_tokens": 62629,
+      "input_cached_tokens": 25121
+    },
+    "gpt-5-mini": {
+      "num_model_requests": 30,
+      "input_cache_write_tokens": 0,
+      "output_tokens": 2734,
+      "input_cache_write_12h_tokens": 0,
+      "input_tokens": 59759,
+      "input_cached_tokens": 23424
+    }
+  },
+  "provider_costs_by_line_item": [
+    {
+      "line_item": "gpt-5.6-luna, cache writes - 12hr",
+      "amount": {
+        "currency": "usd",
+        "value": 0.0
+      },
+      "quantity": 0.0
+    },
+    {
+      "line_item": "gpt-5.6-luna, cache writes",
+      "amount": {
+        "currency": "usd",
+        "value": 0.01057
+      },
+      "quantity": 42280.0
+    },
+    {
+      "line_item": "gpt-5.6-luna, cached input",
+      "amount": {
+        "currency": "usd",
+        "value": 0.00057138
+      },
+      "quantity": 28569.0
+    },
+    {
+      "line_item": "gpt-5.6-luna, input",
+      "amount": {
+        "currency": "usd",
+        "value": 0.0005578
+      },
+      "quantity": 2789.0
+    },
+    {
+      "line_item": "gpt-5.6-luna, output",
+      "amount": {
+        "currency": "usd",
+        "value": 0.0004644
+      },
+      "quantity": 387.0
+    },
+    {
+      "line_item": "gpt-5-mini-2025-08-07, cached input",
+      "amount": {
+        "currency": "usd",
+        "value": 0.0005856
+      },
+      "quantity": 23424.0
+    },
+    {
+      "line_item": "gpt-5-mini-2025-08-07, input",
+      "amount": {
+        "currency": "usd",
+        "value": 0.00908375
+      },
+      "quantity": 36335.0
+    },
+    {
+      "line_item": "gpt-5-mini-2025-08-07, output",
+      "amount": {
+        "currency": "usd",
+        "value": 0.005468
+      },
+      "quantity": 2734.0
+    },
+    {
+      "line_item": "gpt-6.1-sol, cache writes - 12hr",
+      "amount": {
+        "currency": "usd",
+        "value": 0.0
+      },
+      "quantity": 0.0
+    },
+    {
+      "line_item": "gpt-6.1-sol, cache writes",
+      "amount": {
+        "currency": "usd",
+        "value": 0.0856525
+      },
+      "quantity": 34261.0
+    },
+    {
+      "line_item": "gpt-6.1-sol, cached input",
+      "amount": {
+        "currency": "usd",
+        "value": 0.0025121
+      },
+      "quantity": 25121.0
+    },
+    {
+      "line_item": "gpt-6.1-sol, input",
+      "amount": {
+        "currency": "usd",
+        "value": 0.006494
+      },
+      "quantity": 3247.0
+    },
+    {
+      "line_item": "gpt-6.1-sol, output",
+      "amount": {
+        "currency": "usd",
+        "value": 0.00505
+      },
+      "quantity": 505.0
+    }
+  ],
+  "provider_cost_by_model": {
+    "gpt-5.6-luna": 0.01216358,
+    "gpt-5-mini": 0.01513735,
+    "gpt-6.1-sol": 0.0997086
+  },
+  "our_cost_by_model": {
+    "gpt-6.1-sol": 0.0997086,
+    "gpt-5.6-luna": 0.01216358,
+    "gpt-5-mini": 0.01513735
+  },
+  "note": "costs are per project, not per key"
+}

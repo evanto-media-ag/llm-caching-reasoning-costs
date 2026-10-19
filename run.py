@@ -11,7 +11,7 @@ from lab.keys import load_key
 from lab.targets import KEY_NAMES, load_targets
 
 MEASUREMENTS = {"smoke": "smoke", "m1": "m1_cache", "m2": "m2_ttl", "m3": "m3_break", "m4": "m4_minimum",
-                "m5": "m5_effort", "m6": "m6_hidden", "m7": "m7_cost", "m8": "m8_routers", "m9": "m9_prices"}
+                "m5": "m5_effort", "m6": "m6_hidden", "m7": "m7_cost", "m8": "m8_routers", "m9": "m9_prices", "m7c": "m7c"}
 
 
 def _measure(args) -> int:

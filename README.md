@@ -28,7 +28,7 @@ python3 run.py m1 --date 2026-10-20
 | `data/<date>/` | One JSON per API call: request body, status, response body, kept response headers — no request headers, no keys |
 | `prices/<date>/` | Price listings via API, pricing-page quotes, public price-source subsets |
 | `tables/<date>/` | Generated tables (`python3 run.py report --date <date>`) |
-| `claims.csv` | 85 claims with status and evidence path |
+| `claims.csv` | 91 claims with status and evidence path |
 | `snippets/` | .NET code excerpts quoted in the articles |
 | `diagrams/` | Diagrams (HTML + PNG) |
 

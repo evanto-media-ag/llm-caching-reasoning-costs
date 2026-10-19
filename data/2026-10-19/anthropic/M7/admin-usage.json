@@ -1,0 +1,7 @@
+{
+  "date": "2026-10-19",
+  "org_type_name_suffix": "Individual Organization",
+  "usage_report_status": 403,
+  "error_type": "permission_error",
+  "error_message": "Missing permissions. Please check with Anthropic support if you think this is in error."
+}
