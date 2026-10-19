@@ -7,7 +7,8 @@ KEY_DIR = Path.home() / ".llm-keys"
 # The production Managed-AI account must never be used for measurements.
 _FORBIDDEN = Path.home() / ".cortecs-sovereign-key"
 _ENV_FALLBACK = {"anthropic": "ANTHROPIC_API_KEY", "openai": "OPENAI_API_KEY"}
-_loaded: dict[str, str] = {}
+# Every value ever loaded stays here, so a replaced key is still redacted.
+_loaded: set[str] = set()
 
 
 class ForbiddenKeyError(Exception):
@@ -29,15 +30,15 @@ def load_key(name: str) -> str | None:
         if path.is_file():
             value = path.read_text().strip()
             if value:
-                _loaded[name] = value
+                _loaded.add(value)
                 return value
     env = _ENV_FALLBACK.get(name)
     value = os.environ.get(env, "").strip() if env else ""
     if value:
-        _loaded[name] = value
+        _loaded.add(value)
         return value
     return None
 
 
 def loaded_secrets() -> list[str]:
-    return list(_loaded.values())
+    return list(_loaded)

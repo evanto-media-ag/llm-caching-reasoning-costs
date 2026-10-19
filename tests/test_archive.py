@@ -11,7 +11,7 @@ class ArchiveTest(unittest.TestCase):
         self.tmp = tempfile.TemporaryDirectory()
         self.root = Path(self.tmp.name)
         keys._loaded.clear()
-        keys._loaded["test"] = "sk-test-123"
+        keys._loaded.add("sk-test-123")
 
     def tearDown(self):
         keys._loaded.clear()

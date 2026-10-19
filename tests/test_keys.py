@@ -44,6 +44,13 @@ class KeysTest(unittest.TestCase):
         with self.assertRaises(keys.ForbiddenKeyError):
             keys.load_key("evil")
 
+    def test_loaded_secrets_keeps_replaced_values(self):
+        os.environ["ANTHROPIC_API_KEY"] = "env-key"
+        keys.load_key("anthropic")
+        (self.dir / "anthropic-measure").write_text("file-key")
+        keys.load_key("anthropic")
+        self.assertEqual(sorted(keys.loaded_secrets()), ["env-key", "file-key"])
+
     def test_loaded_secrets_tracks_values(self):
         (self.dir / "xai").write_text("s1")
         (self.dir / "gemini").write_text("s2")
