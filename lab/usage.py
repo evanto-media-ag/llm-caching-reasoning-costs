@@ -47,7 +47,9 @@ def _chat(u: dict) -> Usage:
     inp = u.get("prompt_tokens_details") or {}
     out = u.get("completion_tokens_details") or {}
     write = inp.get("cache_write_tokens") or inp.get("cache_creation_tokens") or inp.get("caching_tokens") or 0
-    return Usage(u.get("prompt_tokens", 0), inp.get("cached_tokens") or 0, write, 0,
+    split = inp.get("caching_token_details") or {}  # Requesty
+    w1h = split.get("caching_1h_tokens") or (inp.get("cache_creation_token_details") or {}).get("ephemeral_1h_input_tokens") or 0
+    return Usage(u.get("prompt_tokens", 0), inp.get("cached_tokens") or 0, write - w1h, w1h,
                  u.get("completion_tokens", 0), out.get("reasoning_tokens"), *_cost(u))
 
 

@@ -52,6 +52,18 @@ class UsageTest(unittest.TestCase):
         u = extract_usage("openai-chat", body)
         self.assertEqual((u.reported_cost, u.cost_currency, u.cache_write_5m), (0.002, "USD", 700))
 
+    def test_router_write_split_by_ttl(self):
+        requesty = {"usage": {"prompt_tokens": 7239, "completion_tokens": 4, "prompt_tokens_details": {
+            "cached_tokens": 0, "caching_tokens": 7226,
+            "caching_token_details": {"caching_5m_tokens": 0, "caching_1h_tokens": 7226}}}}
+        u = extract_usage("openai-chat", requesty)
+        self.assertEqual((u.cache_write_5m, u.cache_write_1h), (0, 7226))
+        cortecs = {"usage": {"prompt_tokens": 9, "completion_tokens": 1, "prompt_tokens_details": {
+            "cache_write_tokens": 500, "cache_creation_token_details": {"ephemeral_5m_input_tokens": 0,
+                                                                        "ephemeral_1h_input_tokens": 500}}}}
+        u = extract_usage("openai-chat", cortecs)
+        self.assertEqual((u.cache_write_5m, u.cache_write_1h), (0, 500))
+
     def test_cortecs_cost_unit_from_target(self):
         body = {"usage": {"prompt_tokens": 22, "completion_tokens": 4, "cost": 84}}
         u = extract_usage("openai-chat", body, cost_unit=("EUR", 1e-6))
