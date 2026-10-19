@@ -70,3 +70,14 @@ def build_prices(date: str, root: Path = Path(".")) -> dict:
             for m, spec in models.items():
                 out.setdefault(name, {}).setdefault(m, spec)
     return out
+
+
+def source_subset(models_dev: dict, litellm: dict, ids: list[str]) -> dict:
+    """Only our models from the public price sources (full files are large and change daily)."""
+    md = {}
+    for provider, spec in models_dev.items():
+        for mid, m in (spec.get("models") or {}).items():
+            if mid in ids:
+                md.setdefault(mid, {})[provider] = m.get("cost")
+    ll = {k: {f: v for f, v in e.items() if "cost" in f} for k, e in litellm.items() if k in ids}
+    return {"models.dev": md, "litellm": ll}

@@ -1,0 +1,1439 @@
+{
+  "fetched": "2026-10-19",
+  "urls": [
+    "https://models.dev/api.json",
+    "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+  ],
+  "models.dev": {
+    "claude-sonnet-5": {
+      "model-oracle-ai": null,
+      "aihubmix": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2,
+        "cache_write": 2.5
+      },
+      "azure": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2,
+        "cache_write": 2.5
+      },
+      "opper": {
+        "input": 2.2,
+        "output": 11,
+        "cache_read": 0.22,
+        "cache_write": 2.75
+      },
+      "venice": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2,
+        "cache_write": 2.5
+      },
+      "abacus": {
+        "input": 3,
+        "output": 15
+      },
+      "neon": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2,
+        "cache_write": 2.5
+      },
+      "azure-cognitive-services": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2,
+        "cache_write": 2.5
+      },
+      "github-copilot": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2,
+        "cache_write": 2.5
+      },
+      "commandcode": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2,
+        "cache_write": 2.5
+      },
+      "llmgateway": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2,
+        "cache_write": 2.5
+      },
+      "opencode": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2,
+        "cache_write": 2.5
+      },
+      "kenari": {
+        "input": 0,
+        "output": 0
+      },
+      "cortecs": {
+        "input": 2.2,
+        "output": 11,
+        "cache_read": 0.219,
+        "cache_write": 2.749
+      },
+      "302ai": {
+        "input": 2,
+        "output": 10
+      },
+      "unorouter": {
+        "input": 1.44,
+        "output": 7.2
+      },
+      "vivgrid": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2,
+        "cache_write": 2.5
+      },
+      "pioneer": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2,
+        "cache_write": 2.5
+      },
+      "requesty": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2,
+        "cache_write": 2.5
+      },
+      "anthropic": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2,
+        "cache_write": 2.5
+      },
+      "snowflake-cortex": null
+    },
+    "gemini-3.8-flash": {
+      "aihubmix": {
+        "input": 0.75,
+        "output": 3.75,
+        "cache_read": 0.075
+      },
+      "opper": {
+        "input": 0.825,
+        "output": 4.125,
+        "cache_read": 0.0825
+      },
+      "github-copilot": {
+        "input": 0.75,
+        "output": 3.75,
+        "cache_read": 0.075
+      },
+      "llmgateway": {
+        "input": 0.75,
+        "output": 3.75,
+        "cache_read": 0.075,
+        "cache_write": 0.08333
+      },
+      "opencode": {
+        "input": 1.5,
+        "output": 7.5,
+        "cache_read": 0.15,
+        "input_audio": 1.5
+      },
+      "cortecs": {
+        "input": 0.825,
+        "output": 4.125,
+        "cache_read": 0.082,
+        "cache_write": 0.084
+      },
+      "302ai": {
+        "input": 0.75,
+        "output": 3.75
+      },
+      "vivgrid": {
+        "input": 0.75,
+        "output": 3.75,
+        "cache_read": 0.15
+      },
+      "google-vertex": {
+        "input": 0.75,
+        "output": 3.75,
+        "cache_read": 0.075,
+        "input_audio": 0.75
+      },
+      "requesty": {
+        "input": 0.75,
+        "output": 3.75,
+        "cache_read": 0.075
+      },
+      "google": {
+        "input": 0.75,
+        "output": 3.75,
+        "cache_read": 0.075,
+        "input_audio": 0.75
+      },
+      "sap-ai-core": null
+    },
+    "gpt-6.1-sol": {
+      "aihubmix": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1,
+        "cache_write": 2.5,
+        "tiers": [
+          {
+            "input": 4,
+            "output": 15,
+            "cache_read": 0.2,
+            "cache_write": 5,
+            "tier": {
+              "type": "context",
+              "size": 272000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 4,
+          "output": 15,
+          "cache_read": 0.2,
+          "cache_write": 5
+        }
+      },
+      "azure": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1,
+        "cache_write": 2.5,
+        "tiers": [
+          {
+            "input": 4,
+            "output": 15,
+            "cache_read": 0.2,
+            "cache_write": 5,
+            "tier": {
+              "type": "context",
+              "size": 272000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 4,
+          "output": 15,
+          "cache_read": 0.2,
+          "cache_write": 5
+        }
+      },
+      "azure-cognitive-services": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1,
+        "cache_write": 2.5,
+        "tiers": [
+          {
+            "input": 4,
+            "output": 15,
+            "cache_read": 0.2,
+            "cache_write": 5,
+            "tier": {
+              "type": "context",
+              "size": 272000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 4,
+          "output": 15,
+          "cache_read": 0.2,
+          "cache_write": 5
+        }
+      },
+      "github-copilot": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1,
+        "cache_write": 2.5,
+        "tiers": [
+          {
+            "input": 4,
+            "output": 15,
+            "cache_read": 0.2,
+            "cache_write": 5,
+            "tier": {
+              "type": "context",
+              "size": 272000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 4,
+          "output": 15,
+          "cache_read": 0.2,
+          "cache_write": 5
+        }
+      },
+      "commandcode": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1,
+        "cache_write": 2.5,
+        "tiers": [
+          {
+            "input": 4,
+            "output": 15,
+            "cache_read": 0.2,
+            "cache_write": 5,
+            "tier": {
+              "type": "context",
+              "size": 272000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 4,
+          "output": 15,
+          "cache_read": 0.2,
+          "cache_write": 5
+        }
+      },
+      "llmgateway": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1,
+        "cache_write": 2.5
+      },
+      "opencode": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1,
+        "cache_write": 2.5,
+        "tiers": [
+          {
+            "input": 4,
+            "output": 15,
+            "cache_read": 0.2,
+            "cache_write": 5,
+            "tier": {
+              "type": "context",
+              "size": 272000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 4,
+          "output": 15,
+          "cache_read": 0.2,
+          "cache_write": 5
+        }
+      },
+      "cortecs": {
+        "input": 2.4,
+        "output": 11.999,
+        "cache_read": 0.12,
+        "cache_write": 3
+      },
+      "302ai": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1,
+        "cache_write": 2.5
+      },
+      "vivgrid": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2,
+        "cache_write": 2.5,
+        "tiers": [
+          {
+            "input": 4,
+            "output": 15,
+            "cache_read": 0.4,
+            "cache_write": 5,
+            "tier": {
+              "type": "context",
+              "size": 272000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 4,
+          "output": 15,
+          "cache_read": 0.4,
+          "cache_write": 5
+        }
+      },
+      "requesty": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1,
+        "cache_write": 2.5,
+        "tiers": [
+          {
+            "input": 4,
+            "output": 15,
+            "cache_read": 0.2,
+            "cache_write": 5,
+            "tier": {
+              "type": "context",
+              "size": 272000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 4,
+          "output": 15,
+          "cache_read": 0.2,
+          "cache_write": 5
+        }
+      },
+      "openai": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1,
+        "cache_write": 2.5,
+        "tiers": [
+          {
+            "input": 4,
+            "output": 15,
+            "cache_read": 0.2,
+            "cache_write": 5,
+            "tier": {
+              "type": "context",
+              "size": 272000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 4,
+          "output": 15,
+          "cache_read": 0.2,
+          "cache_write": 5
+        }
+      },
+      "sap-ai-core": null
+    },
+    "gpt-5.6-luna": {
+      "aihubmix": {
+        "input": 1,
+        "output": 6,
+        "cache_read": 0.1,
+        "cache_write": 1.25
+      },
+      "azure": {
+        "input": 0.2,
+        "output": 1.2,
+        "cache_read": 0.02,
+        "cache_write": 0.25,
+        "tiers": [
+          {
+            "input": 0.4,
+            "output": 1.8,
+            "cache_read": 0.04,
+            "cache_write": 0.5,
+            "tier": {
+              "type": "context",
+              "size": 272000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 0.4,
+          "output": 1.8,
+          "cache_read": 0.04,
+          "cache_write": 0.5
+        }
+      },
+      "boundless": {
+        "input": 0.2,
+        "output": 1.2,
+        "cache_read": 0.02
+      },
+      "opper": {
+        "input": 0.2,
+        "output": 1.2,
+        "cache_read": 0.02,
+        "cache_write": 0.25,
+        "tiers": [
+          {
+            "input": 0.4,
+            "output": 1.8,
+            "cache_read": 0.04,
+            "cache_write": 0.5,
+            "tier": {
+              "type": "context",
+              "size": 272000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 0.4,
+          "output": 1.8,
+          "cache_read": 0.04,
+          "cache_write": 0.5
+        }
+      },
+      "abacus": {
+        "input": 1,
+        "output": 6,
+        "cache_read": 0.1
+      },
+      "ai-router": {
+        "input": 1,
+        "output": 6,
+        "cache_read": 0.1,
+        "cache_write": 1.25
+      },
+      "azure-cognitive-services": {
+        "input": 1,
+        "output": 6,
+        "cache_read": 0.1,
+        "cache_write": 1.25,
+        "tiers": [
+          {
+            "input": 2,
+            "output": 9,
+            "cache_read": 0.2,
+            "cache_write": 2.5,
+            "tier": {
+              "type": "context",
+              "size": 272000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 2,
+          "output": 9,
+          "cache_read": 0.2,
+          "cache_write": 2.5
+        }
+      },
+      "github-copilot": {
+        "input": 0.2,
+        "output": 1.2,
+        "cache_read": 0.02,
+        "cache_write": 0.25,
+        "tiers": [
+          {
+            "input": 0.4,
+            "output": 1.8,
+            "cache_read": 0.04,
+            "cache_write": 0.5,
+            "tier": {
+              "type": "context",
+              "size": 200000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 0.4,
+          "output": 1.8,
+          "cache_read": 0.04,
+          "cache_write": 0.5
+        }
+      },
+      "commandcode": {
+        "input": 0.2,
+        "output": 1.2,
+        "cache_read": 0.02,
+        "cache_write": 0.25,
+        "tiers": [
+          {
+            "input": 0.4,
+            "output": 1.8,
+            "cache_read": 0.04,
+            "cache_write": 0.5,
+            "tier": {
+              "type": "context",
+              "size": 272000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 0.4,
+          "output": 1.8,
+          "cache_read": 0.04,
+          "cache_write": 0.5
+        }
+      },
+      "llmgateway": {
+        "input": 0.2,
+        "output": 1.2,
+        "cache_read": 0.02,
+        "cache_write": 0.25
+      },
+      "opencode": {
+        "input": 0.2,
+        "output": 1.2,
+        "cache_read": 0.02,
+        "cache_write": 0.25,
+        "tiers": [
+          {
+            "input": 0.4,
+            "output": 1.8,
+            "cache_read": 0.04,
+            "cache_write": 0.5,
+            "tier": {
+              "type": "context",
+              "size": 272000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 0.4,
+          "output": 1.8,
+          "cache_read": 0.04,
+          "cache_write": 0.5
+        }
+      },
+      "cortecs": {
+        "input": 0.219,
+        "output": 1.32,
+        "cache_read": 0.022,
+        "cache_write": 0.275
+      },
+      "302ai": {
+        "input": 0.2,
+        "output": 1.2
+      },
+      "opencode-go": {
+        "input": 0.2,
+        "output": 1.2,
+        "cache_read": 0.02,
+        "cache_write": 0.25,
+        "tiers": [
+          {
+            "input": 0.4,
+            "output": 1.8,
+            "cache_read": 0.04,
+            "cache_write": 0.5,
+            "tier": {
+              "type": "context",
+              "size": 272000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 0.4,
+          "output": 1.8,
+          "cache_read": 0.04,
+          "cache_write": 0.5
+        }
+      },
+      "routing-run": {
+        "input": 0.7,
+        "output": 4.2
+      },
+      "vivgrid": {
+        "input": 1,
+        "output": 6,
+        "cache_read": 0.1,
+        "cache_write": 1.25
+      },
+      "pioneer": {
+        "input": 1,
+        "output": 6,
+        "cache_read": 0.1,
+        "cache_write": 1.25
+      },
+      "requesty": {
+        "input": 0.2,
+        "output": 1.2,
+        "cache_read": 0.02,
+        "cache_write": 0.25,
+        "tiers": [
+          {
+            "input": 0.4,
+            "output": 1.8,
+            "cache_read": 0.04,
+            "cache_write": 0.5,
+            "tier": {
+              "type": "context",
+              "size": 272000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 0.4,
+          "output": 1.8,
+          "cache_read": 0.04,
+          "cache_write": 0.5
+        }
+      },
+      "openai": {
+        "input": 0.2,
+        "output": 1.2,
+        "cache_read": 0.02,
+        "cache_write": 0.25,
+        "tiers": [
+          {
+            "input": 0.4,
+            "output": 1.8,
+            "cache_read": 0.04,
+            "cache_write": 0.5,
+            "tier": {
+              "type": "context",
+              "size": 272000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 0.4,
+          "output": 1.8,
+          "cache_read": 0.04,
+          "cache_write": 0.5
+        }
+      },
+      "bothub": {
+        "input": 0.06,
+        "output": 0.37
+      },
+      "sap-ai-core": {
+        "input": 1,
+        "output": 6,
+        "cache_read": 0.1,
+        "tiers": [
+          {
+            "input": 2,
+            "output": 9,
+            "cache_read": 0.2,
+            "tier": {
+              "type": "context",
+              "size": 272000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 2,
+          "output": 9,
+          "cache_read": 0.2
+        }
+      }
+    },
+    "gemini-4-argon": {
+      "aihubmix": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1,
+        "input_audio": 2
+      },
+      "venice": {
+        "input": 2.5,
+        "output": 12.5,
+        "cache_read": 0.125
+      },
+      "github-copilot": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1
+      },
+      "llmgateway": {
+        "input": 4,
+        "output": 20,
+        "cache_read": 0.2,
+        "cache_write": 0.375
+      },
+      "opencode": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1,
+        "input_audio": 2
+      },
+      "cortecs": {
+        "input": 2.25,
+        "output": 11.249,
+        "cache_read": 0.113
+      },
+      "302ai": {
+        "input": 4,
+        "output": 10,
+        "cache_read": 0.2,
+        "cache_write": 0.375
+      },
+      "google-vertex": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1,
+        "input_audio": 2
+      },
+      "requesty": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1
+      },
+      "google": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1,
+        "input_audio": 2
+      }
+    },
+    "grok-4.7": {
+      "aihubmix": {
+        "input": 2.2,
+        "output": 6.6,
+        "cache_read": 0.55,
+        "tiers": [
+          {
+            "input": 4.4,
+            "output": 13.2,
+            "cache_read": 1.1,
+            "tier": {
+              "type": "context",
+              "size": 200000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 4.4,
+          "output": 13.2,
+          "cache_read": 1.1
+        }
+      },
+      "xai": {
+        "input": 2,
+        "output": 6,
+        "cache_read": 0.5,
+        "tiers": [
+          {
+            "input": 4,
+            "output": 12,
+            "cache_read": 1,
+            "tier": {
+              "type": "context",
+              "size": 200000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 4,
+          "output": 12,
+          "cache_read": 1
+        }
+      },
+      "azure": null,
+      "github-copilot": {
+        "input": 2,
+        "output": 6,
+        "cache_read": 0.5,
+        "tiers": [
+          {
+            "input": 4,
+            "output": 12,
+            "cache_read": 1,
+            "tier": {
+              "type": "context",
+              "size": 200000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 4,
+          "output": 12,
+          "cache_read": 1
+        }
+      },
+      "opencode": {
+        "input": 2,
+        "output": 6,
+        "cache_read": 0.5,
+        "tiers": [
+          {
+            "input": 4,
+            "output": 12,
+            "cache_read": 1,
+            "tier": {
+              "type": "context",
+              "size": 200000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 4,
+          "output": 12,
+          "cache_read": 1
+        }
+      },
+      "302ai": {
+        "input": 2,
+        "output": 6,
+        "cache_read": 0.5,
+        "cache_write": 0.5
+      },
+      "opencode-go": {
+        "input": 2,
+        "output": 6,
+        "cache_read": 0.5,
+        "tiers": [
+          {
+            "input": 4,
+            "output": 12,
+            "cache_read": 1,
+            "tier": {
+              "type": "context",
+              "size": 200000
+            }
+          }
+        ],
+        "context_over_200k": {
+          "input": 4,
+          "output": 12,
+          "cache_read": 1
+        }
+      },
+      "requesty": {
+        "input": 2,
+        "output": 6,
+        "cache_read": 0.5,
+        "cache_write": 2
+      }
+    },
+    "claude-sonnet-5-5": {
+      "aihubmix": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1,
+        "cache_write": 2.5
+      },
+      "azure": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2,
+        "cache_write": 2.5
+      },
+      "venice": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1,
+        "cache_write": 2.5
+      },
+      "neon": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2,
+        "cache_write": 2.5
+      },
+      "azure-cognitive-services": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2,
+        "cache_write": 2.5
+      },
+      "commandcode": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1,
+        "cache_write": 2.5
+      },
+      "llmgateway": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1,
+        "cache_write": 2.5
+      },
+      "opencode": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2,
+        "cache_write": 2.5
+      },
+      "302ai": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2,
+        "cache_write": 2.5
+      },
+      "vivgrid": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2,
+        "cache_write": 2.5
+      },
+      "requesty": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2,
+        "cache_write": 2.5
+      },
+      "anthropic": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1,
+        "cache_write": 2.5
+      }
+    },
+    "claude-haiku-5-5": {
+      "aihubmix": {
+        "input": 0.1,
+        "output": 0.5,
+        "cache_read": 0.01,
+        "cache_write": 0.125,
+        "tiers": [
+          {
+            "input": 0.5,
+            "output": 2.5,
+            "cache_read": 0.05,
+            "cache_write": 0.625,
+            "tier": {
+              "type": "context",
+              "size": 100000
+            }
+          }
+        ]
+      },
+      "azure": {
+        "input": 0.1,
+        "output": 0.5,
+        "cache_read": 0.01,
+        "cache_write": 0.125,
+        "tiers": [
+          {
+            "input": 0.5,
+            "output": 2.5,
+            "cache_read": 0.05,
+            "cache_write": 0.625,
+            "tier": {
+              "type": "context",
+              "size": 100000
+            }
+          }
+        ]
+      },
+      "venice": {
+        "input": 0.1,
+        "output": 0.5,
+        "cache_read": 0.01,
+        "cache_write": 0.125,
+        "tiers": [
+          {
+            "input": 0.5,
+            "output": 2.5,
+            "cache_read": 0.05,
+            "cache_write": 0.625,
+            "tier": {
+              "type": "context",
+              "size": 100000
+            }
+          }
+        ]
+      },
+      "neon": {
+        "input": 0.1,
+        "output": 0.5,
+        "cache_read": 0.01,
+        "cache_write": 0.125,
+        "tiers": [
+          {
+            "input": 0.5,
+            "output": 2.5,
+            "cache_read": 0.05,
+            "cache_write": 0.625,
+            "tier": {
+              "type": "context",
+              "size": 100000
+            }
+          }
+        ]
+      },
+      "azure-cognitive-services": {
+        "input": 0.1,
+        "output": 0.5,
+        "cache_read": 0.01,
+        "cache_write": 0.125,
+        "tiers": [
+          {
+            "input": 0.5,
+            "output": 2.5,
+            "cache_read": 0.05,
+            "cache_write": 0.625,
+            "tier": {
+              "type": "context",
+              "size": 100000
+            }
+          }
+        ]
+      },
+      "commandcode": {
+        "input": 0.1,
+        "output": 0.5,
+        "cache_read": 0.01,
+        "cache_write": 0.125,
+        "tiers": [
+          {
+            "input": 0.5,
+            "output": 2.5,
+            "cache_read": 0.05,
+            "cache_write": 0.625,
+            "tier": {
+              "type": "context",
+              "size": 100000
+            }
+          }
+        ]
+      },
+      "llmgateway": {
+        "input": 0.1,
+        "output": 0.5,
+        "cache_read": 0.01,
+        "cache_write": 0.125
+      },
+      "opencode": {
+        "input": 0.1,
+        "output": 0.5,
+        "cache_read": 0.01,
+        "cache_write": 0.125,
+        "tiers": [
+          {
+            "input": 0.5,
+            "output": 2.5,
+            "cache_read": 0.05,
+            "cache_write": 0.625,
+            "tier": {
+              "type": "context",
+              "size": 100000
+            }
+          }
+        ]
+      },
+      "302ai": {
+        "input": 0.1,
+        "output": 0.5,
+        "cache_read": 0.01,
+        "cache_write": 0.125
+      },
+      "opencode-go": {
+        "input": 0.1,
+        "output": 0.5,
+        "cache_read": 0.01,
+        "cache_write": 0.125,
+        "tiers": [
+          {
+            "input": 0.5,
+            "output": 2.5,
+            "cache_read": 0.05,
+            "cache_write": 0.625,
+            "tier": {
+              "type": "context",
+              "size": 100000
+            }
+          }
+        ]
+      },
+      "vivgrid": {
+        "input": 0.1,
+        "output": 0.5,
+        "cache_read": 0.01,
+        "cache_write": 0.125,
+        "tiers": [
+          {
+            "input": 0.5,
+            "output": 2.5,
+            "cache_read": 0.05,
+            "cache_write": 0.625,
+            "tier": {
+              "type": "context",
+              "size": 100000
+            }
+          }
+        ]
+      },
+      "requesty": {
+        "input": 0.1,
+        "output": 0.5,
+        "cache_read": 0.01,
+        "cache_write": 0.13,
+        "tiers": [
+          {
+            "input": 0.5,
+            "output": 2.5,
+            "cache_read": 0.05,
+            "cache_write": 0.63,
+            "tier": {
+              "type": "context",
+              "size": 100000
+            }
+          }
+        ]
+      },
+      "anthropic": {
+        "input": 0.1,
+        "output": 0.5,
+        "cache_read": 0.01,
+        "cache_write": 0.125,
+        "tiers": [
+          {
+            "input": 0.5,
+            "output": 2.5,
+            "cache_read": 0.05,
+            "cache_write": 0.625,
+            "tier": {
+              "type": "context",
+              "size": 100000
+            }
+          }
+        ]
+      }
+    },
+    "gpt-5-mini": {
+      "azure": {
+        "input": 0.25,
+        "output": 2,
+        "cache_read": 0.03
+      },
+      "abacus": {
+        "input": 0.25,
+        "output": 2,
+        "cache_read": 0.025
+      },
+      "neon": {
+        "input": 0.25,
+        "output": 2,
+        "cache_read": 0.025
+      },
+      "azure-cognitive-services": {
+        "input": 0.25,
+        "output": 2,
+        "cache_read": 0.03
+      },
+      "github-copilot": {
+        "input": 0.25,
+        "output": 2,
+        "cache_read": 0.025
+      },
+      "llmgateway": {
+        "input": 0.25,
+        "output": 2,
+        "cache_read": 0.025
+      },
+      "qihang-ai": {
+        "input": 0.04,
+        "output": 0.29
+      },
+      "cortecs": {
+        "input": 0.279,
+        "output": 2.192,
+        "cache_read": 0.056
+      },
+      "302ai": {
+        "input": 0.25,
+        "output": 2
+      },
+      "vivgrid": {
+        "input": 0.25,
+        "output": 2,
+        "cache_read": 0.03
+      },
+      "pioneer": {
+        "input": 0.25,
+        "output": 2,
+        "cache_read": 0.025,
+        "cache_write": 0.25
+      },
+      "openai": {
+        "input": 0.25,
+        "output": 2,
+        "cache_read": 0.025
+      },
+      "helicone": {
+        "input": 0.25,
+        "output": 2,
+        "cache_read": 0.024999999999999998
+      },
+      "jiekou": {
+        "input": 0.225,
+        "output": 1.8
+      },
+      "sap-ai-core": {
+        "input": 0.25,
+        "output": 2,
+        "cache_read": 0.025
+      }
+    }
+  },
+  "litellm": {
+    "claude-sonnet-5": {
+      "cache_creation_input_token_cost": 2.5e-06,
+      "cache_creation_input_token_cost_above_1hr": 4e-06,
+      "cache_creation_input_token_cost_batches": 1.25e-06,
+      "cache_read_input_token_cost": 2e-07,
+      "cache_read_input_token_cost_batches": 1e-07,
+      "input_cost_per_token": 2e-06,
+      "input_cost_per_token_batches": 1e-06,
+      "output_cost_per_token": 1e-05,
+      "output_cost_per_token_batches": 5e-06,
+      "search_context_cost_per_query": {
+        "search_context_size_high": 0.01,
+        "search_context_size_low": 0.01,
+        "search_context_size_medium": 0.01
+      }
+    },
+    "claude-sonnet-5-5": {
+      "cache_creation_input_token_cost": 2.5e-06,
+      "cache_creation_input_token_cost_above_1hr": 4e-06,
+      "cache_creation_input_token_cost_batches": 1.25e-06,
+      "cache_read_input_token_cost": 1e-07,
+      "cache_read_input_token_cost_batches": 5e-08,
+      "input_cost_per_token": 2e-06,
+      "input_cost_per_token_batches": 1e-06,
+      "output_cost_per_token": 1e-05,
+      "output_cost_per_token_batches": 5e-06,
+      "search_context_cost_per_query": {
+        "search_context_size_high": 0.01,
+        "search_context_size_low": 0.01,
+        "search_context_size_medium": 0.01
+      }
+    },
+    "gemini-3.8-flash": {
+      "cache_read_input_token_cost": 7.5e-08,
+      "cache_read_input_token_cost_batches": 3.75e-08,
+      "cache_read_input_token_cost_flex": 3.75e-08,
+      "cache_read_input_token_cost_priority": 1.35e-07,
+      "google_maps_grounding_cost_per_query": 0.014,
+      "input_cost_per_token": 7.5e-07,
+      "input_cost_per_token_batches": 3.75e-07,
+      "input_cost_per_token_flex": 3.75e-07,
+      "input_cost_per_token_priority": 1.35e-06,
+      "output_cost_per_reasoning_token": 3.75e-06,
+      "output_cost_per_token": 3.75e-06,
+      "output_cost_per_token_batches": 1.875e-06,
+      "output_cost_per_token_flex": 1.875e-06,
+      "output_cost_per_token_priority": 6.75e-06,
+      "search_context_cost_per_query": {
+        "search_context_size_low": 0.014,
+        "search_context_size_medium": 0.014,
+        "search_context_size_high": 0.014
+      }
+    },
+    "gpt-5.6-luna": {
+      "cache_creation_input_token_cost": 2.5e-07,
+      "cache_creation_input_token_cost_above_272k_tokens": 5e-07,
+      "cache_creation_input_token_cost_above_272k_tokens_flex": 2.5e-07,
+      "cache_creation_input_token_cost_above_272k_tokens_priority": 1e-06,
+      "cache_creation_input_token_cost_flex": 1.25e-07,
+      "cache_creation_input_token_cost_priority": 5e-07,
+      "cache_read_input_token_cost": 2e-08,
+      "cache_read_input_token_cost_above_272k_tokens": 4e-08,
+      "cache_read_input_token_cost_above_272k_tokens_flex": 2e-08,
+      "cache_read_input_token_cost_above_272k_tokens_priority": 8e-08,
+      "cache_read_input_token_cost_batches": 1e-08,
+      "cache_read_input_token_cost_above_272k_tokens_batches": 2e-08,
+      "cache_creation_input_token_cost_batches": 1.25e-07,
+      "cache_creation_input_token_cost_above_272k_tokens_batches": 2.5e-07,
+      "cache_read_input_token_cost_flex": 1e-08,
+      "cache_read_input_token_cost_priority": 4e-08,
+      "input_cost_per_token": 2e-07,
+      "input_cost_per_token_above_272k_tokens": 4e-07,
+      "input_cost_per_token_above_272k_tokens_flex": 2e-07,
+      "input_cost_per_token_above_272k_tokens_priority": 8e-07,
+      "input_cost_per_token_batches": 1e-07,
+      "input_cost_per_token_above_272k_tokens_batches": 2e-07,
+      "input_cost_per_token_flex": 1e-07,
+      "input_cost_per_token_priority": 4e-07,
+      "output_cost_per_token": 1.2e-06,
+      "output_cost_per_token_above_272k_tokens": 1.8e-06,
+      "output_cost_per_token_above_272k_tokens_flex": 9e-07,
+      "output_cost_per_token_above_272k_tokens_priority": 3.6e-06,
+      "output_cost_per_token_batches": 6e-07,
+      "output_cost_per_token_above_272k_tokens_batches": 9e-07,
+      "output_cost_per_token_flex": 6e-07,
+      "output_cost_per_token_priority": 2.4e-06,
+      "search_context_cost_per_query": {
+        "search_context_size_high": 0.01,
+        "search_context_size_low": 0.01,
+        "search_context_size_medium": 0.01
+      }
+    },
+    "gpt-5-mini": {
+      "cache_read_input_token_cost": 2.5e-08,
+      "cache_read_input_token_cost_batches": 1.25e-08,
+      "cache_read_input_token_cost_flex": 1.25e-08,
+      "cache_read_input_token_cost_priority": 4.5e-08,
+      "input_cost_per_token": 2.5e-07,
+      "input_cost_per_token_batches": 1.25e-07,
+      "input_cost_per_token_flex": 1.25e-07,
+      "input_cost_per_token_priority": 4.5e-07,
+      "output_cost_per_token": 2e-06,
+      "output_cost_per_token_batches": 1e-06,
+      "output_cost_per_token_flex": 1e-06,
+      "output_cost_per_token_priority": 3.6e-06,
+      "search_context_cost_per_query": {
+        "search_context_size_high": 0.01,
+        "search_context_size_low": 0.01,
+        "search_context_size_medium": 0.01
+      }
+    },
+    "gpt-6.1-sol": {
+      "cache_creation_input_token_cost": 2.5e-06,
+      "cache_creation_input_token_cost_above_272k_tokens": 5e-06,
+      "cache_creation_input_token_cost_above_272k_tokens_batches": 2.5e-06,
+      "cache_creation_input_token_cost_above_272k_tokens_flex": 2.5e-06,
+      "cache_creation_input_token_cost_above_272k_tokens_priority": 1e-05,
+      "cache_creation_input_token_cost_above_272k_tokens_ultrafast": 3e-05,
+      "cache_creation_input_token_cost_batches": 1.25e-06,
+      "cache_creation_input_token_cost_flex": 1.25e-06,
+      "cache_creation_input_token_cost_priority": 5e-06,
+      "cache_creation_input_token_cost_ultrafast": 1.5e-05,
+      "cache_read_input_token_cost": 1e-07,
+      "cache_read_input_token_cost_above_272k_tokens": 2e-07,
+      "cache_read_input_token_cost_above_272k_tokens_batches": 1e-07,
+      "cache_read_input_token_cost_above_272k_tokens_flex": 1e-07,
+      "cache_read_input_token_cost_above_272k_tokens_priority": 4e-07,
+      "cache_read_input_token_cost_above_272k_tokens_ultrafast": 1.2e-06,
+      "cache_read_input_token_cost_batches": 5e-08,
+      "cache_read_input_token_cost_flex": 5e-08,
+      "cache_read_input_token_cost_priority": 2e-07,
+      "cache_read_input_token_cost_ultrafast": 6e-07,
+      "input_cost_per_token": 2e-06,
+      "input_cost_per_token_above_272k_tokens": 4e-06,
+      "input_cost_per_token_above_272k_tokens_batches": 2e-06,
+      "input_cost_per_token_above_272k_tokens_flex": 2e-06,
+      "input_cost_per_token_above_272k_tokens_priority": 8e-06,
+      "input_cost_per_token_above_272k_tokens_ultrafast": 2.4e-05,
+      "input_cost_per_token_batches": 1e-06,
+      "input_cost_per_token_flex": 1e-06,
+      "input_cost_per_token_priority": 4e-06,
+      "input_cost_per_token_ultrafast": 1.2e-05,
+      "output_cost_per_token": 1e-05,
+      "output_cost_per_token_above_272k_tokens": 1.5e-05,
+      "output_cost_per_token_above_272k_tokens_batches": 7.5e-06,
+      "output_cost_per_token_above_272k_tokens_flex": 7.5e-06,
+      "output_cost_per_token_above_272k_tokens_priority": 3e-05,
+      "output_cost_per_token_above_272k_tokens_ultrafast": 9e-05,
+      "output_cost_per_token_batches": 5e-06,
+      "output_cost_per_token_flex": 5e-06,
+      "output_cost_per_token_priority": 2e-05,
+      "output_cost_per_token_ultrafast": 6e-05,
+      "search_context_cost_per_query": {
+        "search_context_size_high": 0.01,
+        "search_context_size_low": 0.01,
+        "search_context_size_medium": 0.01
+      }
+    },
+    "claude-haiku-5-5": {
+      "input_cost_per_token_above_100k_tokens_batches": 2.5e-07,
+      "output_cost_per_token_above_100k_tokens_batches": 1.25e-06,
+      "cache_creation_input_token_cost_above_100k_tokens_batches": 3.125e-07,
+      "cache_read_input_token_cost_above_100k_tokens_batches": 2.5e-08,
+      "cache_creation_input_token_cost": 1.25e-07,
+      "cache_creation_input_token_cost_above_1hr": 2e-07,
+      "cache_creation_input_token_cost_batches": 6.25e-08,
+      "cache_read_input_token_cost": 1e-08,
+      "cache_read_input_token_cost_batches": 5e-09,
+      "input_cost_per_token": 1e-07,
+      "input_cost_per_token_batches": 5e-08,
+      "output_cost_per_token": 5e-07,
+      "output_cost_per_token_batches": 2.5e-07,
+      "search_context_cost_per_query": {
+        "search_context_size_high": 0.01,
+        "search_context_size_low": 0.01,
+        "search_context_size_medium": 0.01
+      },
+      "input_cost_per_token_above_100k_tokens": 5e-07,
+      "output_cost_per_token_above_100k_tokens": 2.5e-06,
+      "cache_creation_input_token_cost_above_100k_tokens": 6.25e-07,
+      "cache_creation_input_token_cost_above_1hr_above_100k_tokens": 1e-06,
+      "cache_read_input_token_cost_above_100k_tokens": 5e-08
+    }
+  }
+}

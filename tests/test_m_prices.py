@@ -36,3 +36,14 @@ class PriceListingTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class SourceSubsetTest(unittest.TestCase):
+    def test_subset_keeps_cache_fields(self):
+        from lab.m.m9_prices import source_subset
+        md = {"anthropic": {"models": {"claude-sonnet-5": {"cost": {"input": 2, "cache_read": 0.2, "cache_write": 2.5}}}}}
+        ll = {"claude-sonnet-5": {"input_cost_per_token": 2e-06, "cache_creation_input_token_cost": 2.5e-06,
+                                  "cache_creation_input_token_cost_above_1hr": 4e-06, "mode": "chat"}}
+        got = source_subset(md, ll, ["claude-sonnet-5"])
+        self.assertEqual(got["models.dev"]["claude-sonnet-5"], {"anthropic": {"input": 2, "cache_read": 0.2, "cache_write": 2.5}})
+        self.assertEqual(got["litellm"]["claude-sonnet-5"]["cache_creation_input_token_cost_above_1hr"], 4e-06)
