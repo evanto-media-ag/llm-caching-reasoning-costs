@@ -44,6 +44,10 @@ class ArchiveTest(unittest.TestCase):
         (self.root / "data" / "ok.json").write_text("{}")
         self.assertEqual(archive.check_secrets(self.root), [bad])
 
+    def test_write_json_refuses_secret(self):
+        with self.assertRaises(archive.SecretLeakError):
+            archive.write_json(self.root / "x.json", {"k": "sk-test-123"})
+
     def test_run_dir_layout(self):
         self.assertEqual(archive.run_dir("2026-10-20", "xai", "M1", root=self.root),
                          self.root / "data" / "2026-10-20" / "xai" / "M1")

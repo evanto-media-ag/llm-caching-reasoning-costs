@@ -38,3 +38,12 @@ def check_secrets(root: Path = Path(".")) -> list[Path]:
             if file.is_file() and _leaks(file.read_text(errors="replace")):
                 hits.append(file)
     return hits
+
+
+def write_json(path: Path, obj) -> None:
+    """Derived data (reconciliations, billing payloads) with the same leak check as records."""
+    text = json.dumps(obj, ensure_ascii=False, indent=2)
+    if _leaks(text):
+        raise SecretLeakError(f"{path} would contain an API key; not written")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(text + "\n")
