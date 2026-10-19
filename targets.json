@@ -1,0 +1,12 @@
+{
+  "anthropic":        {"style": "anthropic",        "base_url": "https://api.anthropic.com/v1",                     "key_name": "anthropic",  "models": [], "extras": {}},
+  "openai-responses": {"style": "openai-responses", "base_url": "https://api.openai.com/v1",                        "key_name": "openai",     "models": [], "extras": {}},
+  "openai-chat":      {"style": "openai-chat",      "base_url": "https://api.openai.com/v1",                        "key_name": "openai",     "models": [], "extras": {"_max_tokens_field": "max_completion_tokens"}},
+  "xai":              {"style": "openai-responses", "base_url": "https://api.x.ai/v1",                              "key_name": "xai",        "models": [], "extras": {}},
+  "gemini":           {"style": "gemini",           "base_url": "https://generativelanguage.googleapis.com/v1beta", "key_name": "gemini",     "models": [], "extras": {}},
+  "mistral":          {"style": "openai-chat",      "base_url": "https://api.mistral.ai/v1",                        "key_name": "mistral",    "models": [], "extras": {}},
+  "cortecs":          {"style": "openai-chat",      "base_url": "https://api.cortecs.ai/v1",                        "key_name": "cortecs",    "models": [], "extras": {}},
+  "eurouter":         {"style": "openai-chat",      "base_url": "https://api.eurouter.ai/api/v1",                   "key_name": "eurouter",   "models": [], "extras": {}},
+  "requesty":         {"style": "openai-chat",      "base_url": "https://router.requesty.ai/v1",                    "key_name": "requesty",   "models": [], "extras": {}},
+  "openrouter":       {"style": "openai-chat",      "base_url": "https://openrouter.ai/api/v1",                     "key_name": "openrouter", "models": [], "extras": {}}
+}
