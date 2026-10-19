@@ -1,0 +1,70 @@
+{
+  "ts": "2026-10-19T07:56:25+00:00",
+  "target": "ionos",
+  "model": "Qwen/Qwen3.8-27B",
+  "measurement": "smoke",
+  "step": "call",
+  "run_id": null,
+  "url": "https://openai.inference.de-txl.ionos.com/v1/chat/completions",
+  "request_body": {
+    "model": "Qwen/Qwen3.8-27B",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a test."
+      },
+      {
+        "role": "user",
+        "content": "Reply with the single word OK."
+      }
+    ],
+    "max_tokens": 32
+  },
+  "status": 200,
+  "response_body": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "\n\nOK",
+          "reasoning": "The user wants me to reply with the single word \"OK\". This is a simple request.\n",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1792396585,
+    "id": "chatcmpl-e0c21f1c-9e2c-9e49-93c8-456f68c1452f",
+    "model": "Qwen/Qwen3.8-27B",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 24,
+      "completion_tokens_details": {
+        "reasoning_tokens": 20
+      },
+      "prompt_tokens": 27,
+      "total_tokens": 51
+    }
+  },
+  "response_headers": {
+    "x-ratelimit-limit-requests": "5",
+    "x-ratelimit-remaining-requests": "4",
+    "x-ratelimit-reset-requests": "200ms",
+    "x-request-id": "4ce35870fba87a5a7ce339d9056d303b"
+  },
+  "response_header_names": [
+    "connection",
+    "content-length",
+    "content-type",
+    "date",
+    "x-gateway-version",
+    "x-ratelimit-limit-requests",
+    "x-ratelimit-remaining-requests",
+    "x-ratelimit-reset-requests",
+    "x-request-id",
+    "x-trace-id"
+  ],
+  "duration_ms": 467,
+  "note": "ok"
+}

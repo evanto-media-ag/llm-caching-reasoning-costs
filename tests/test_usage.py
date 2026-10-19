@@ -52,6 +52,12 @@ class UsageTest(unittest.TestCase):
         u = extract_usage("openai-chat", body)
         self.assertEqual((u.reported_cost, u.cost_currency, u.cache_write_5m), (0.002, "USD", 700))
 
+    def test_cortecs_cost_unit_from_target(self):
+        body = {"usage": {"prompt_tokens": 22, "completion_tokens": 4, "cost": 84}}
+        u = extract_usage("openai-chat", body, cost_unit=("EUR", 1e-6))
+        self.assertAlmostEqual(u.reported_cost, 84e-6)
+        self.assertEqual(u.cost_currency, "EUR")
+
     def test_gemini_thoughts_as_reasoning(self):
         body = {"usageMetadata": {"promptTokenCount": 5000, "cachedContentTokenCount": 4096,
                                   "candidatesTokenCount": 100, "thoughtsTokenCount": 300}}

@@ -1,0 +1,126 @@
+{
+  "ts": "2026-10-19T07:56:20+00:00",
+  "target": "xai",
+  "model": "grok-4.5",
+  "measurement": "smoke",
+  "step": "call",
+  "run_id": null,
+  "url": "https://api.x.ai/v1/responses",
+  "request_body": {
+    "model": "grok-4.5",
+    "instructions": "You are a test.",
+    "input": "Reply with the single word OK.",
+    "max_output_tokens": 32,
+    "store": false
+  },
+  "status": 200,
+  "response_body": {
+    "created_at": 1792396579,
+    "completed_at": 1792396580,
+    "id": "1ab909c6-2246-9f0f-a485-5d776154ae4e",
+    "max_output_tokens": 32,
+    "model": "grok-4.5",
+    "object": "response",
+    "output": [
+      {
+        "content": [
+          {
+            "type": "output_text",
+            "text": "OK",
+            "logprobs": [],
+            "annotations": []
+          }
+        ],
+        "id": "msg_1ab909c6-2246-9f0f-a485-5d776154ae4e",
+        "role": "assistant",
+        "type": "message",
+        "status": "completed"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "previous_response_id": null,
+    "reasoning": {
+      "effort": "high",
+      "summary": "detailed"
+    },
+    "temperature": 0.7,
+    "text": {
+      "format": {
+        "type": "text"
+      }
+    },
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 0.95,
+    "usage": {
+      "input_tokens": 509,
+      "input_tokens_details": {
+        "cached_tokens": 384
+      },
+      "output_tokens": 29,
+      "output_tokens_details": {
+        "reasoning_tokens": 28
+      },
+      "total_tokens": 538,
+      "num_sources_used": 0,
+      "num_server_side_tools_used": 0,
+      "cost_in_usd_ticks": 5392000,
+      "context_details": {
+        "input_tokens": 509,
+        "output_tokens": 36
+      }
+    },
+    "user": null,
+    "incomplete_details": null,
+    "status": "completed",
+    "store": false,
+    "metadata": {
+      "system_fingerprint": "fp_a39489019fa99b6e"
+    },
+    "background": false,
+    "service_tier": "default",
+    "truncation": "disabled",
+    "top_logprobs": 0,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0,
+    "prompt_cache_key": null,
+    "max_tool_calls": null,
+    "safety_identifier": null,
+    "error": null,
+    "instructions": "You are a test."
+  },
+  "response_headers": {
+    "x-ratelimit-limit-tokens": "50000000",
+    "x-ratelimit-remaining-tokens": "50000000",
+    "x-ratelimit-limit-requests": "7200",
+    "x-ratelimit-remaining-requests": "7200",
+    "x-request-id": "1ab909c6-2246-9f0f-a485-5d776154ae4e"
+  },
+  "response_header_names": [
+    "access-control-allow-origin",
+    "access-control-expose-headers",
+    "cf-cache-status",
+    "cf-ray",
+    "connection",
+    "content-length",
+    "content-type",
+    "date",
+    "server",
+    "server-timing",
+    "set-cookie",
+    "strict-transport-security",
+    "traceparent",
+    "vary",
+    "x-data-retention",
+    "x-metrics-e2e-ms",
+    "x-metrics-ttft-ms",
+    "x-ratelimit-limit-requests",
+    "x-ratelimit-limit-tokens",
+    "x-ratelimit-remaining-requests",
+    "x-ratelimit-remaining-tokens",
+    "x-request-id",
+    "x-zero-data-retention"
+  ],
+  "duration_ms": 1200,
+  "note": "ok"
+}

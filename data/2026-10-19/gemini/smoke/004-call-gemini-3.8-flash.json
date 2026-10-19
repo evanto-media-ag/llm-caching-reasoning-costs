@@ -1,0 +1,73 @@
+{
+  "ts": "2026-10-19T07:56:24+00:00",
+  "target": "gemini",
+  "model": "gemini-3.8-flash",
+  "measurement": "smoke",
+  "step": "call",
+  "run_id": null,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent",
+  "request_body": {
+    "systemInstruction": {
+      "parts": [
+        {
+          "text": "You are a test."
+        }
+      ]
+    },
+    "contents": [
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "Reply with the single word OK."
+          }
+        ]
+      }
+    ],
+    "generationConfig": {
+      "maxOutputTokens": 32
+    }
+  },
+  "status": 200,
+  "response_body": {
+    "candidates": [
+      {
+        "content": {},
+        "finishReason": "MAX_TOKENS",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 13,
+      "totalTokenCount": 42,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 13
+        }
+      ],
+      "thoughtsTokenCount": 29,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.8-flash",
+    "responseId": "Jc3VaoSQGa7rkdUPgsiXoAw"
+  },
+  "response_headers": {},
+  "response_header_names": [
+    "accept-ranges",
+    "alt-svc",
+    "connection",
+    "content-type",
+    "date",
+    "server",
+    "server-timing",
+    "transfer-encoding",
+    "vary",
+    "x-content-type-options",
+    "x-frame-options",
+    "x-gemini-service-tier",
+    "x-xss-protection"
+  ],
+  "duration_ms": 2871,
+  "note": "ok"
+}

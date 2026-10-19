@@ -1,0 +1,64 @@
+{
+  "ts": "2026-10-19T07:56:39+00:00",
+  "target": "requesty",
+  "model": "fireworks/gpt-oss-120b",
+  "measurement": "smoke",
+  "step": "call",
+  "run_id": null,
+  "url": "https://router.requesty.ai/v1/chat/completions",
+  "request_body": {
+    "model": "fireworks/gpt-oss-120b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a test."
+      },
+      {
+        "role": "user",
+        "content": "Reply with the single word OK."
+      }
+    ],
+    "max_tokens": 32
+  },
+  "status": 200,
+  "response_body": {
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "message": {
+          "content": "<|channel|>analysis<|message|>The user asks: \"Reply with the single word OK.\" That's a simple request. There's no policy violation. Just reply \"OK\".<|end|><|start|>",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1792396599,
+    "id": "rqsty-cmpl-06e3ea0d-2627-417c-8e71-48720779292f",
+    "model": "accounts/fireworks/models/gpt-oss-120b",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 32,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 84,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 116,
+      "cost": 3.18e-05
+    }
+  },
+  "response_headers": {},
+  "response_header_names": [
+    "connection",
+    "content-type",
+    "date",
+    "strict-transport-security",
+    "transfer-encoding",
+    "vary",
+    "x-content-type-options"
+  ],
+  "duration_ms": 414,
+  "note": "ok"
+}

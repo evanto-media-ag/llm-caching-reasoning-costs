@@ -1,0 +1,88 @@
+{
+  "ts": "2026-10-19T07:56:28+00:00",
+  "target": "cortecs-residency",
+  "model": "claude-sonnet-5",
+  "measurement": "smoke",
+  "step": "call",
+  "run_id": null,
+  "url": "https://api.cortecs.ai/v1/chat/completions",
+  "request_body": {
+    "model": "claude-sonnet-5",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a test."
+      },
+      {
+        "role": "user",
+        "content": "Reply with the single word OK."
+      }
+    ],
+    "max_tokens": 32
+  },
+  "status": 200,
+  "response_body": {
+    "id": "chatcmpl-e9138a55-5562-4d2d-a83a-cd2739bf880e",
+    "created": 1792396588,
+    "model": "claude-sonnet-5",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "OK",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "citations": null,
+            "thinking_blocks": null
+          }
+        }
+      }
+    ],
+    "usage": {
+      "completion_tokens": 4,
+      "prompt_tokens": 22,
+      "total_tokens": 26,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 4
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "text_tokens": 22,
+        "cache_write_tokens": 0,
+        "cache_creation_tokens": 0,
+        "cache_creation_token_details": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        }
+      },
+      "cost": 84,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "cost_details": {
+        "prompt_cost": 44,
+        "cache_read_cost": 0,
+        "cache_write_cost": 0,
+        "completion_cost": 40,
+        "prompt_audio_cost": 0
+      }
+    }
+  },
+  "response_headers": {},
+  "response_header_names": [
+    "access-control-expose-headers",
+    "connection",
+    "content-length",
+    "content-security-policy",
+    "content-type",
+    "date",
+    "x-content-type-options",
+    "x-cortecs-model",
+    "x-cortecs-provider",
+    "x-frame-options"
+  ],
+  "duration_ms": 830,
+  "note": "ok"
+}

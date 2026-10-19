@@ -1,0 +1,82 @@
+{
+  "ts": "2026-10-19T07:56:28+00:00",
+  "target": "cortecs-residency",
+  "model": "gpt-oss-120b",
+  "measurement": "smoke",
+  "step": "call",
+  "run_id": null,
+  "url": "https://api.cortecs.ai/v1/chat/completions",
+  "request_body": {
+    "model": "gpt-oss-120b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a test."
+      },
+      {
+        "role": "user",
+        "content": "Reply with the single word OK."
+      }
+    ],
+    "max_tokens": 32
+  },
+  "status": 200,
+  "response_body": {
+    "id": "chatcmpl-5b697571-08c1-4b94-a33e-b308beaed4d7",
+    "created": 1792396588,
+    "model": "gpt-oss-120b",
+    "object": "chat.completion",
+    "system_fingerprint": "vllm-v0.22.0-tp4-3e04bf1c",
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "reasoning_content": "We have a user request: \"Reply with the single word OK.\" The assistant should output \"OK\". Must be exactly that, single word.",
+          "provider_specific_fields": {
+            "reasoning": "We have a user request: \"Reply with the single word OK.\" The assistant should output \"OK\". Must be exactly that, single word.",
+            "refusal": null
+          },
+          "content": null
+        },
+        "provider_specific_fields": {
+          "stop_reason": null,
+          "routed_experts": null,
+          "token_ids": null
+        }
+      }
+    ],
+    "usage": {
+      "completion_tokens": 32,
+      "prompt_tokens": 83,
+      "total_tokens": 115,
+      "prompt_tokens_details": {
+        "cached_tokens": 64
+      },
+      "cost": 30,
+      "cost_details": {
+        "prompt_cost": 3,
+        "cache_read_cost": 9,
+        "cache_write_cost": 0,
+        "completion_cost": 18,
+        "prompt_audio_cost": 0
+      }
+    }
+  },
+  "response_headers": {},
+  "response_header_names": [
+    "access-control-expose-headers",
+    "connection",
+    "content-length",
+    "content-security-policy",
+    "content-type",
+    "date",
+    "x-content-type-options",
+    "x-cortecs-model",
+    "x-cortecs-provider",
+    "x-frame-options"
+  ],
+  "duration_ms": 348,
+  "note": "ok"
+}

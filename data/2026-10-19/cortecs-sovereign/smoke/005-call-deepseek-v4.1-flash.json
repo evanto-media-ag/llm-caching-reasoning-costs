@@ -1,0 +1,75 @@
+{
+  "ts": "2026-10-19T07:56:27+00:00",
+  "target": "cortecs-sovereign",
+  "model": "deepseek-v4.1-flash",
+  "measurement": "smoke",
+  "step": "call",
+  "run_id": null,
+  "url": "https://api.cortecs.ai/v1/chat/completions",
+  "request_body": {
+    "model": "deepseek-v4.1-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a test."
+      },
+      {
+        "role": "user",
+        "content": "Reply with the single word OK."
+      }
+    ],
+    "max_tokens": 32
+  },
+  "status": 200,
+  "response_body": {
+    "id": "chatcmpl-06d4aca6-6f7b-46a6-bca0-57461306a502",
+    "created": 1792396586,
+    "model": "deepseek-v4.1-flash",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "OK",
+          "role": "assistant",
+          "provider_specific_fields": {
+            "refusal": null
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "usage": {
+      "completion_tokens": 2,
+      "prompt_tokens": 17,
+      "total_tokens": 19,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "cost": 11,
+      "cost_details": {
+        "prompt_cost": 8,
+        "cache_read_cost": 0,
+        "cache_write_cost": 0,
+        "completion_cost": 3,
+        "prompt_audio_cost": 0
+      }
+    }
+  },
+  "response_headers": {},
+  "response_header_names": [
+    "access-control-expose-headers",
+    "connection",
+    "content-length",
+    "content-security-policy",
+    "content-type",
+    "date",
+    "x-content-type-options",
+    "x-cortecs-model",
+    "x-cortecs-provider",
+    "x-frame-options"
+  ],
+  "duration_ms": 521,
+  "note": "ok"
+}

@@ -1,0 +1,131 @@
+{
+  "ts": "2026-10-19T07:56:04+00:00",
+  "target": "openai-responses",
+  "model": "gpt-5-mini",
+  "measurement": "smoke",
+  "step": "call",
+  "run_id": null,
+  "url": "https://api.openai.com/v1/responses",
+  "request_body": {
+    "model": "gpt-5-mini",
+    "instructions": "You are a test.",
+    "input": "Reply with the single word OK.",
+    "max_output_tokens": 32,
+    "store": false
+  },
+  "status": 200,
+  "response_body": {
+    "id": "resp_01736a36ab361dab016ad5cd1371f087d292912e8fe929319d",
+    "object": "response",
+    "created_at": 1792396563,
+    "status": "incomplete",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": null,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": {
+      "reason": "max_output_tokens"
+    },
+    "instructions": "You are a test.",
+    "max_output_tokens": 32,
+    "max_tool_calls": null,
+    "model": "gpt-5-mini-2025-08-07",
+    "moderation": null,
+    "output": [
+      {
+        "id": "rs_01736a36ab361dab016ad5cd14554c87d2919ce1b9c6e53132",
+        "type": "reasoning",
+        "content": [],
+        "encrypted_content": "gAAAAABq1c0UAgworbEVYvaxHUkKpWFgy0AUgM1mKk-NOb09-WbFBWzVwDemEAoXxuRgBT4K1dGxaTpZrvi40qhcWCzu7BZa8Iv80L8ZBH3JQQ_Da1pTw-jNrYB1mL2tUqE6HOudZSRMehmIGJnyo36xh-Kd-F1toVqc8TJy8oQun6SUmLKOds-WneQmzf9E0Jtkm5GqhqmbVRVwDA2YqFsQ-A_RG1pZTTpNHlSnpepx1Vi-76Cs2NTe9vyZk3v_C-TKj18SBCqIgX3VlIvyFvULI7wdAnQng5a6uKzpyQlAyu4JgTRMw9-vdwKUYwjzfgWoFDqa-XihOX_Rutu7lExcrrilDcIah6rHoYCqDqqsFeeRazuxhH8s89vJJlrW0yM2xXUx3OM43RCvj_0eolBoPa45xYt2oHDBzLFjiZ_8Z1O9TD436iCGBSAZ1YsEevGdPKiF6lNGpIZ6Y2-gwnoSETnFI5-kAb3YcDVMgQg-jKweMUDhsYSMps7xtK8JqGK1OkIx1YhrwI8nzxUQmIBU8kMHEjgFFCf69MkUjgUU7yJIttGAj20nSv_JGN_LkDUpnTOSxXjbyVfbNHgz8jMRKvusVVhnxC2KCLwaIGSsKwdqZrWaaflXzIhrEGcp89fxtubtg1Od1-tmEShPpTsbma_UaBG4ZAGarNGM481bVGmfR7HvQ1aTtMgcG6S4nkM5RMedayTnTOB3C8-47OdmJ9Y6khfy-t468v-XUia2zpQ5bWOIvNmfzaYI_aIXjvh8fu983WcaRjlrbYGL41IC98hCsmKPgxECXEUOpPfU9Af-Q0HPUzuh3N0M22g2n5dglL3_-fvgMMF6kVVOuo2C5UzMx9vmUnULBECQYiE7YOZzIutLIt96BvJpF4AWRbbaEgD42Y9vovlzMs2cfCiJyns1TO2LZ2y94CfL-CB0zFWnThufz1AnuHADk8CIuUJLdDl4Hu7nxNTSQStP2QsNe7i1HvTb0A067ac2kZLocILCZIsYcvrVn7D5ATgl72KooHweUu0_zE6a0pvLTWnnC71mCreu1aOgRdPi_R3CAZL5DMdSw7EgNhdUIYGTinbE1BnZQqwwUTOg71XFb2gsjnXMvaSo3btKT5wIWb72QSFfQnXQkXItB3uFJCOxckvE2CQ3Fn-FiSIhJVMCasvLjYgACm-G8gdePH3-jZDawk-pEyiXEDP72owTGyJi0xOIVuU1VGo2RYpbhl_p2oFlGLIF1UeYJkW-mXk2NtGihZP31vOmRuXSGlYEVdMWMXGAUM12sSxmeJUIXTTjiMVze0SsIrpPHDykkmNLBg-DvxG6Bx3BzvQOP4ZaE04i3c1_lQ4RLtz2Oe6ZDg8oNaCk733jjet7kuyFJklLLa6CU66dQXT4U7ADPkD-1IaNsE5nH8SWKiYvTbWCNSRFZPElVAK9azdpqg==",
+        "summary": []
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "in_memory",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "medium",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": false,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 1.0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 22,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 22
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "response_headers": {
+    "openai-processing-ms": "1199",
+    "x-request-id": "req_833991149d774d959bbc94ac40206cd6"
+  },
+  "response_header_names": [
+    "access-control-expose-headers",
+    "alt-svc",
+    "cf-cache-status",
+    "cf-ray",
+    "connection",
+    "content-length",
+    "content-type",
+    "date",
+    "openai-organization",
+    "openai-processing-ms",
+    "openai-project",
+    "openai-version",
+    "server",
+    "set-cookie",
+    "strict-transport-security",
+    "x-content-type-options",
+    "x-request-id"
+  ],
+  "duration_ms": 1416,
+  "note": "ok"
+}

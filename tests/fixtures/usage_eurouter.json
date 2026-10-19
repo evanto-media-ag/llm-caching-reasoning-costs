@@ -1,0 +1,32 @@
+{
+  "usage": {
+    "completion_tokens": 4,
+    "prompt_tokens": 7227,
+    "total_tokens": 7231,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost": 0.0159434,
+    "cost_currency": "USD",
+    "cost_eur": 0.01416810241,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0159434,
+      "upstream_inference_prompt_cost": 0.0158994,
+      "upstream_inference_completions_cost": 4.4e-05,
+      "upstream_inference_uncached_prompt_cost": 0.0158994,
+      "upstream_inference_cache_read_cost": 0,
+      "upstream_inference_cache_write_cost": 0
+    }
+  }
+}

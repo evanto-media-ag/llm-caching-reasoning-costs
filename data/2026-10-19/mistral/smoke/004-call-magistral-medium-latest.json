@@ -1,0 +1,88 @@
+{
+  "ts": "2026-10-19T07:56:24+00:00",
+  "target": "mistral",
+  "model": "magistral-medium-latest",
+  "measurement": "smoke",
+  "step": "call",
+  "run_id": null,
+  "url": "https://api.mistral.ai/v1/chat/completions",
+  "request_body": {
+    "model": "magistral-medium-latest",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a test."
+      },
+      {
+        "role": "user",
+        "content": "Reply with the single word OK."
+      }
+    ],
+    "max_tokens": 32
+  },
+  "status": 200,
+  "response_body": {
+    "id": "77b07f9be3474c6a98e3d5a6e21b5ae8",
+    "created": 1792396584,
+    "model": "magistral-medium-latest",
+    "usage": {
+      "prompt_tokens": 29,
+      "total_tokens": 31,
+      "completion_tokens": 2,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "service_tier": "standard"
+    },
+    "object": "chat.completion",
+    "choices": [
+      {
+        "index": 0,
+        "finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "tool_calls": null,
+          "content": "OK"
+        }
+      }
+    ]
+  },
+  "response_headers": {
+    "x-ratelimit-limit-tokens-minute": "500000",
+    "x-ratelimit-remaining-tokens-minute": "499938",
+    "x-ratelimit-tokens-query-cost": "31",
+    "x-ratelimit-limit-req-minute": "1000",
+    "x-ratelimit-remaining-req-minute": "998"
+  },
+  "response_header_names": [
+    "access-control-allow-origin",
+    "alt-svc",
+    "cf-cache-status",
+    "cf-ray",
+    "connection",
+    "content-length",
+    "content-type",
+    "date",
+    "mistral-correlation-id",
+    "server",
+    "server-timing",
+    "set-cookie",
+    "strict-transport-security",
+    "x-content-type-options",
+    "x-envoy-upstream-service-time",
+    "x-kong-proxy-latency",
+    "x-kong-request-id",
+    "x-kong-upstream-latency",
+    "x-max-retry-attempts-reached",
+    "x-ratelimit-limit-req-minute",
+    "x-ratelimit-limit-tokens-minute",
+    "x-ratelimit-remaining-req-minute",
+    "x-ratelimit-remaining-tokens-minute",
+    "x-ratelimit-tokens-query-cost"
+  ],
+  "duration_ms": 367,
+  "note": "ok"
+}

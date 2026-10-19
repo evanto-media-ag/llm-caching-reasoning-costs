@@ -1,0 +1,132 @@
+{
+  "ts": "2026-10-19T07:56:25+00:00",
+  "target": "ionos",
+  "model": null,
+  "measurement": "smoke",
+  "step": "models",
+  "run_id": null,
+  "url": "https://openai.inference.de-txl.ionos.com/v1/models",
+  "request_body": null,
+  "status": 200,
+  "response_body": {
+    "object": "list",
+    "data": [
+      {
+        "id": "BAAI/bge-large-en-v1.5",
+        "object": "model",
+        "created": 1787674171,
+        "owned_by": "ionos"
+      },
+      {
+        "id": "BAAI/bge-m3",
+        "object": "model",
+        "created": 1787674171,
+        "owned_by": "ionos"
+      },
+      {
+        "id": "Qwen/Qwen3-Coder-Next",
+        "object": "model",
+        "created": 1787674237,
+        "owned_by": "ionos"
+      },
+      {
+        "id": "Qwen/Qwen3-VL-Embedding-8B",
+        "object": "model",
+        "created": 1787674238,
+        "owned_by": "ionos"
+      },
+      {
+        "id": "Qwen/Qwen3-VL-Reranker-8B",
+        "object": "model",
+        "created": 1787674238,
+        "owned_by": "ionos"
+      },
+      {
+        "id": "Qwen/Qwen3.5-397B-A17B",
+        "object": "model",
+        "created": 1787674240,
+        "owned_by": "ionos"
+      },
+      {
+        "id": "Qwen/Qwen3.5-9B",
+        "object": "model",
+        "created": 1787674241,
+        "owned_by": "ionos"
+      },
+      {
+        "id": "Qwen/Qwen3.8-27B",
+        "object": "model",
+        "created": 1787928224,
+        "owned_by": "ionos"
+      },
+      {
+        "id": "black-forest-labs/FLUX.1-schnell",
+        "object": "model",
+        "created": 1787674177,
+        "owned_by": "ionos"
+      },
+      {
+        "id": "black-forest-labs/FLUX.2-klein-4B",
+        "object": "model",
+        "created": 1787674177,
+        "owned_by": "ionos"
+      },
+      {
+        "id": "lightonai/LightOnOCR-2-1B",
+        "object": "model",
+        "created": 1787674228,
+        "owned_by": "ionos"
+      },
+      {
+        "id": "meta-llama/Llama-3.3-70B-Instruct",
+        "object": "model",
+        "created": 1787674229,
+        "owned_by": "ionos"
+      },
+      {
+        "id": "mistralai/Mistral-Nemo-Instruct-2407",
+        "object": "model",
+        "created": 1787674233,
+        "owned_by": "ionos"
+      },
+      {
+        "id": "mistralai/Mistral-Small-24B-Instruct",
+        "object": "model",
+        "created": 1787674234,
+        "owned_by": "ionos"
+      },
+      {
+        "id": "openai/gpt-oss-120b",
+        "object": "model",
+        "created": 1787674179,
+        "owned_by": "ionos"
+      },
+      {
+        "id": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+        "object": "model",
+        "created": 1787674237,
+        "owned_by": "ionos"
+      }
+    ]
+  },
+  "response_headers": {
+    "x-ratelimit-limit-requests": "5",
+    "x-ratelimit-remaining-requests": "4",
+    "x-ratelimit-reset-requests": "200ms",
+    "x-request-id": "45137c4360a9da124592ffbdf6a7c40c"
+  },
+  "response_header_names": [
+    "connection",
+    "content-length",
+    "content-type",
+    "date",
+    "x-gateway-version",
+    "x-ratelimit-limit-requests",
+    "x-ratelimit-remaining-requests",
+    "x-ratelimit-reset-requests",
+    "x-request-id",
+    "x-trace-id"
+  ],
+  "duration_ms": 131,
+  "note": "ok"
+}

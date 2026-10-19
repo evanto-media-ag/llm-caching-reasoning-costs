@@ -1,0 +1,1870 @@
+{
+  "ts": "2026-10-19T07:56:26+00:00",
+  "target": "cortecs-sovereign",
+  "model": null,
+  "measurement": "smoke",
+  "step": "models",
+  "run_id": null,
+  "url": "https://api.cortecs.ai/v1/models",
+  "request_body": null,
+  "status": 200,
+  "response_body": {
+    "object": "list",
+    "data": [
+      {
+        "id": "deepseek-v4.1-flash-1017",
+        "object": "model",
+        "created": 1792223311,
+        "owned_by": "Deepseek",
+        "description": "DeepSeek V4.1 Flash 1017 is an open-weight multimodal model optimized for efficient reasoning, coding, and agentic workflows with a 1-million-token context window.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.459,
+          "output_token": 1.377,
+          "cache_read_cost": 0.115
+        },
+        "providers": [
+          "tensorix"
+        ],
+        "context_size": 1048576,
+        "max_output_tokens": 64000,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Reasoning",
+          "Vision"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "deepseek-v4-flash"
+        ]
+      },
+      {
+        "id": "mistral-large-4-0",
+        "object": "model",
+        "created": 1791280393,
+        "owned_by": "Mistral AI",
+        "description": "Mistral Large 4 is a trillion-parameter multimodal MoE model built for frontier-level reasoning, enterprise workloads, and multilingual applications, with 49B active parameters per token.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.687,
+          "output_token": 2.11,
+          "cache_read_cost": 0.071
+        },
+        "providers": [
+          "mistral"
+        ],
+        "context_size": 1000000,
+        "max_output_tokens": 262144,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Vision",
+          "Reasoning"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "mistral-large"
+        ]
+      },
+      {
+        "id": "deepseek-v4.1-flash",
+        "object": "model",
+        "created": 1789372111,
+        "owned_by": "Deepseek",
+        "description": "DeepSeek V4.1 Flash is an efficient multimodal MoE model optimized for fast agentic reasoning and coding workflows.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.25,
+          "output_token": 1.0,
+          "cache_read_cost": 0.1
+        },
+        "providers": [
+          "tensorix",
+          "aki",
+          "scaleway"
+        ],
+        "context_size": 1048576,
+        "max_output_tokens": 81920,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Reasoning",
+          "Vision"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "deepseek-v4-flash"
+        ]
+      },
+      {
+        "id": "deepseek-v4-pro-0813",
+        "object": "model",
+        "created": 1788161882,
+        "owned_by": "Deepseek",
+        "description": "DeepSeek V4 Pro 0813 is a flagship MoE model delivering efficient long-context reasoning, coding, and agentic performance.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 1.795,
+          "output_token": 3.59,
+          "cache_read_cost": 0.449
+        },
+        "providers": [
+          "tensorix"
+        ],
+        "context_size": 1048576,
+        "max_output_tokens": 64000,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Reasoning"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "deepseek-v4-pro"
+        ]
+      },
+      {
+        "id": "glm-5.3",
+        "object": "model",
+        "created": 1787936282,
+        "owned_by": "Z.ai",
+        "description": "GLM-5.3 is a flagship open-weight model optimized for advanced coding, agentic workflows, and long-context reasoning.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.784,
+          "output_token": 2.968,
+          "cache_read_cost": 0.198
+        },
+        "providers": [
+          "tensorix",
+          "inceptron",
+          "aki",
+          "mistral",
+          "scaleway"
+        ],
+        "context_size": 1048576,
+        "max_output_tokens": 1048576,
+        "tags": [
+          "Instruct",
+          "Reasoning",
+          "Tools"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "glm-5"
+        ]
+      },
+      {
+        "id": "qwen3.8-flash-next",
+        "object": "model",
+        "created": 1787909762,
+        "owned_by": "Alibaba Cloud",
+        "description": "Qwen3.8 Flash Next is an efficient multimodal MoE model designed for low-cost inference and strong coding performance.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.18,
+          "output_token": 0.449,
+          "cache_read_cost": 0.045
+        },
+        "providers": [
+          "tensorix"
+        ],
+        "context_size": 262144,
+        "max_output_tokens": 64000,
+        "tags": [
+          "Instruct",
+          "Reasoning",
+          "Tools",
+          "Vision"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "qwen-3-flash"
+        ]
+      },
+      {
+        "id": "glm-5.3-flash",
+        "object": "model",
+        "created": 1787907482,
+        "owned_by": "Z.ai",
+        "description": "GLM 5.3 Flash is a fast, cost-efficient multimodal model built for long-context reasoning and scalable workflows.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.135,
+          "output_token": 0.449,
+          "cache_read_cost": 0.063
+        },
+        "providers": [
+          "tensorix",
+          "inceptron"
+        ],
+        "context_size": 1048576,
+        "max_output_tokens": 1048576,
+        "tags": [
+          "Instruct",
+          "Reasoning",
+          "Tools",
+          "Vision"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "glm-5-flash"
+        ]
+      },
+      {
+        "id": "qwen3.8-27b",
+        "object": "model",
+        "created": 1786966562,
+        "owned_by": "Alibaba Cloud",
+        "description": "Qwen3.8 27B is a compact open-weight multimodal model optimized for efficient reasoning, coding, and agentic workflows on local hardware.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.3,
+          "output_token": 2.2,
+          "cache_read_cost": 0.1
+        },
+        "providers": [
+          "tensorix",
+          "aki",
+          "ionos",
+          "ovh",
+          "scaleway"
+        ],
+        "context_size": 262144,
+        "max_output_tokens": 262144,
+        "tags": [
+          "Instruct",
+          "Reasoning",
+          "Tools",
+          "Vision"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "qwen-3-27b"
+        ]
+      },
+      {
+        "id": "qwen3.8-2.4t-a95b",
+        "object": "model",
+        "created": 1786685762,
+        "owned_by": "Alibaba Cloud",
+        "description": "Qwen3.8-2.4T-A95B is an open-weight flagship MoE model built for advanced reasoning, coding, and long-horizon agentic workflows.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 2.244,
+          "output_token": 5.386,
+          "cache_read_cost": 0.561
+        },
+        "providers": [
+          "tensorix"
+        ],
+        "context_size": 262144,
+        "max_output_tokens": 262144,
+        "tags": [
+          "Instruct",
+          "Reasoning",
+          "Tools"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "qwen-3-2.4t"
+        ]
+      },
+      {
+        "id": "deepseek-v4-flash-0731",
+        "object": "model",
+        "created": 1785566282,
+        "owned_by": "Deepseek",
+        "description": "DeepSeek V4 Flash 0731 is an efficient MoE model optimized for fast reasoning, coding, and enhanced agentic workflows.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.074,
+          "output_token": 0.371,
+          "cache_read_cost": 0.054
+        },
+        "providers": [
+          "tensorix",
+          "inceptron",
+          "scaleway"
+        ],
+        "context_size": 1048576,
+        "max_output_tokens": 1048576,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Reasoning"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "deepseek-v4-flash"
+        ]
+      },
+      {
+        "id": "kimi-k3",
+        "object": "model",
+        "created": 1785137882,
+        "owned_by": "Moonshot AI",
+        "description": "Kimi K3 is a frontier open-weight multimodal model built for long-horizon reasoning, coding, and advanced agentic workflows.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 2.693,
+          "output_token": 13.464
+        },
+        "providers": [
+          "nebius",
+          "tensorix"
+        ],
+        "context_size": 1048576,
+        "max_output_tokens": 1048576,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Reasoning",
+          "Vision"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "kimi-k3"
+        ]
+      },
+      {
+        "id": "apertus-70b",
+        "object": "model",
+        "created": 1783507082,
+        "owned_by": "Swiss AI Initiative",
+        "description": "Apertus 70B is an open, multilingual language model designed for research, long-context reasoning, and sovereignty-focused AI systems.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 1.25,
+          "output_token": 2.0
+        },
+        "providers": [
+          "aki"
+        ],
+        "context_size": 65536,
+        "max_output_tokens": 16384,
+        "tags": [
+          "Instruct",
+          "Reasoning",
+          "Tools"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "apertus-70b"
+        ]
+      },
+      {
+        "id": "gemma-4-31b-it",
+        "object": "model",
+        "created": 1781854682,
+        "owned_by": "Google",
+        "description": "Gemma 4 31B IT is a multimodal instruction-tuned model from Google DeepMind designed for strong reasoning, coding, and vision-language tasks.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.2,
+          "output_token": 0.35
+        },
+        "providers": [
+          "infercom"
+        ],
+        "context_size": 128000,
+        "max_output_tokens": 32768,
+        "tags": [
+          "Instruct",
+          "Vision",
+          "Tools",
+          "Reasoning"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "gemma-4-31b"
+        ]
+      },
+      {
+        "id": "glm-5.2",
+        "object": "model",
+        "created": 1781686682,
+        "owned_by": "Z.ai",
+        "description": "GLM-5.2 is a flagship model built for long-horizon agentic tasks with stable 1M-token context and advanced coding capabilities.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.808,
+          "output_token": 2.908,
+          "cache_read_cost": 0.17
+        },
+        "providers": [
+          "tensorix",
+          "scaleway",
+          "inceptron",
+          "mistral"
+        ],
+        "context_size": 1048576,
+        "max_output_tokens": 1000000,
+        "tags": [
+          "Instruct",
+          "Reasoning",
+          "Tools"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "glm-5"
+        ]
+      },
+      {
+        "id": "kimi-k2.7-code",
+        "object": "model",
+        "created": 1781599082,
+        "owned_by": "Moonshot AI",
+        "description": "Kimi K2.7 Code is an open-source agentic coding model optimized for long-horizon software engineering and efficient multi-step execution.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.589,
+          "output_token": 2.962,
+          "cache_read_cost": 0.162
+        },
+        "providers": [
+          "tensorix",
+          "inceptron"
+        ],
+        "context_size": 262144,
+        "max_output_tokens": 262144,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Reasoning",
+          "Vision",
+          "Document"
+        ],
+        "input_modalities": [
+          "text",
+          "image",
+          "file"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "kimi-k2"
+        ]
+      },
+      {
+        "id": "minimax-m3",
+        "object": "model",
+        "created": 1781509082,
+        "owned_by": "MiniMax AI",
+        "description": "MiniMax M3 is a multimodal frontier model built for coding and agentic workflows, featuring ultra-long context and advanced tool-driven reasoning.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.355,
+          "output_token": 1.775,
+          "cache_read_cost": 0.089
+        },
+        "providers": [
+          "tensorix"
+        ],
+        "context_size": 1048576,
+        "max_output_tokens": 1048576,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Reasoning",
+          "Vision"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "minimax-m3"
+        ]
+      },
+      {
+        "id": "qwen3.6-27b",
+        "object": "model",
+        "created": 1780392962,
+        "owned_by": "Alibaba Cloud",
+        "description": "Qwen3.6 27B is a dense multimodal model offering strong agentic coding and reasoning performance with easy deployment at a practical scale.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.4,
+          "output_token": 2.7
+        },
+        "providers": [
+          "ovh"
+        ],
+        "context_size": 262000,
+        "max_output_tokens": 262000,
+        "tags": [
+          "Instruct",
+          "Reasoning",
+          "Tools",
+          "Vision"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "qwen-3-27b"
+        ]
+      },
+      {
+        "id": "minicpm-v-4.5",
+        "object": "model",
+        "created": 1780385882,
+        "owned_by": "OpenBMB",
+        "description": "MiniCPM-V 4.5 is a compact, high-performance vision-language model excelling in video understanding, OCR, and multimodal reasoning with efficient deployment.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.584,
+          "output_token": 0.985
+        },
+        "providers": [
+          "nebius"
+        ],
+        "context_size": 32000,
+        "max_output_tokens": 32000,
+        "tags": [
+          "Instruct"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "tools"
+        ],
+        "model_series": [
+          "minicpm-v-4"
+        ]
+      },
+      {
+        "id": "qwen3.6-35b-a3b",
+        "object": "model",
+        "created": 1778755082,
+        "owned_by": "Alibaba Cloud",
+        "description": "Qwen3.6 35B A3B is a lightweight multimodal MoE model focused on efficient agentic coding, long-context reasoning, and visual understanding.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.15,
+          "output_token": 0.5
+        },
+        "providers": [
+          "scaleway",
+          "aki"
+        ],
+        "context_size": 262000,
+        "max_output_tokens": 32768,
+        "tags": [
+          "Instruct",
+          "Reasoning",
+          "Tools",
+          "Vision"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "qwen-3-35b"
+        ]
+      },
+      {
+        "id": "gemma-4-26b-a4b-it",
+        "object": "model",
+        "created": 1778153882,
+        "owned_by": "Google",
+        "description": "Gemma 4 26B A4B is a multimodal Mixture-of-Experts model optimized for fast, efficient inference with strong reasoning, coding, and agentic capabilities.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.1,
+          "output_token": 0.5
+        },
+        "providers": [
+          "scaleway",
+          "aki"
+        ],
+        "context_size": 262000,
+        "max_output_tokens": 81920,
+        "tags": [
+          "Instruct",
+          "Vision",
+          "Tools",
+          "Reasoning"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "gemma-4-26b"
+        ]
+      },
+      {
+        "id": "mistral-medium-3.5",
+        "object": "model",
+        "created": 1777549993,
+        "owned_by": "Mistral AI",
+        "description": "Mistral Medium 3.5 is a frontier multimodal 128B model combining reasoning, coding, and instruction-following with strong agentic performance and efficient deployment.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 1.375,
+          "output_token": 7.04,
+          "cache_read_cost": 0.138
+        },
+        "providers": [
+          "mistral",
+          "scaleway"
+        ],
+        "context_size": 256000,
+        "max_output_tokens": 256000,
+        "tags": [
+          "Instruct",
+          "Reasoning",
+          "Tools",
+          "Vision"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "mistral-medium"
+        ]
+      },
+      {
+        "id": "kimi-k2.6",
+        "object": "model",
+        "created": 1776929882,
+        "owned_by": "Moonshot AI",
+        "description": "Kimi K2.6 is an advanced multimodal agentic model with strong long-horizon coding, instruction following, and autonomous execution capabilities.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.426,
+          "output_token": 2.666,
+          "cache_read_cost": 0.09
+        },
+        "providers": [
+          "inceptron"
+        ],
+        "context_size": 256000,
+        "max_output_tokens": 256000,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Reasoning",
+          "Vision",
+          "Document"
+        ],
+        "input_modalities": [
+          "text",
+          "image",
+          "file"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "kimi-k2"
+        ]
+      },
+      {
+        "id": "glm-5.1",
+        "object": "model",
+        "created": 1775735882,
+        "owned_by": "Z.ai",
+        "description": "GLM-5.1 is a next-generation flagship model for agentic engineering, excelling in long-horizon reasoning and advanced coding tasks.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 1.242,
+          "output_token": 3.903
+        },
+        "providers": [
+          "nebius"
+        ],
+        "context_size": 202752,
+        "max_output_tokens": 202752,
+        "tags": [
+          "Instruct",
+          "Reasoning",
+          "Tools"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "glm-5"
+        ]
+      },
+      {
+        "id": "qwen3.5-9b",
+        "object": "model",
+        "created": 1775727362,
+        "owned_by": "Alibaba Cloud",
+        "description": "Qwen3.5-9B is a dense multimodal model delivering strong reasoning, coding, and visual understanding with efficient performance and long context.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.1,
+          "output_token": 0.15
+        },
+        "providers": [
+          "ovh",
+          "ionos"
+        ],
+        "context_size": 262000,
+        "max_output_tokens": 262000,
+        "tags": [
+          "Instruct",
+          "Reasoning",
+          "Tools",
+          "Vision"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "qwen-3-9b"
+        ]
+      },
+      {
+        "id": "qwen3-coder-next",
+        "object": "model",
+        "created": 1775140682,
+        "owned_by": "Alibaba Cloud",
+        "description": "Qwen3 Coder Next 80B is a high-performance coding model optimized for complex software development, agentic workflows, and multi-language programming.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.15,
+          "output_token": 0.8
+        },
+        "providers": [
+          "ionos"
+        ],
+        "context_size": 256000,
+        "max_output_tokens": 256000,
+        "tags": [
+          "Instruct",
+          "Reasoning",
+          "Tools"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "qwen-3-coder-next"
+        ]
+      },
+      {
+        "id": "qwen3.5-397b-a17b",
+        "object": "model",
+        "created": 1773837482,
+        "owned_by": "Alibaba Cloud",
+        "description": "Qwen3.5-397B-A17B is a large-scale multimodal model with a hybrid Mixture-of-Experts architecture, delivering state-of-the-art performance across chat, RAG, vision-language, video understanding, and agentic workflows.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.6,
+          "output_token": 3.6
+        },
+        "providers": [
+          "scaleway",
+          "ovh",
+          "ionos"
+        ],
+        "context_size": 262000,
+        "max_output_tokens": 262000,
+        "tags": [
+          "Instruct",
+          "Reasoning",
+          "Tools"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "qwen-3-397b"
+        ]
+      },
+      {
+        "id": "mistral-small-2603",
+        "object": "model",
+        "created": 1773741193,
+        "owned_by": "Mistral AI",
+        "description": "Mistral Small 4 is a versatile Mixture-of-Experts model that unifies reasoning, multimodal understanding, and agentic coding in a single architecture, optimized for efficiency and long-context interactions.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.14,
+          "output_token": 0.561,
+          "cache_read_cost": 0.014
+        },
+        "providers": [
+          "mistral",
+          "aki"
+        ],
+        "context_size": 262144,
+        "max_output_tokens": 256000,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Vision",
+          "Reasoning"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "mistral-small"
+        ]
+      },
+      {
+        "id": "qwen3guard-gen-8b",
+        "object": "model",
+        "created": 1770204122,
+        "owned_by": "Alibaba Cloud",
+        "description": "Qwen3Guard-Gen-8B is a large-scale multilingual safety moderation model designed for high-accuracy prompt and response classification.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.0,
+          "output_token": 0.0
+        },
+        "providers": [
+          "ovh"
+        ],
+        "context_size": 32000,
+        "max_output_tokens": 32000,
+        "tags": [
+          "Instruct",
+          "Safety-guard"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [],
+        "model_series": [
+          "qwen-3-guard-8b"
+        ]
+      },
+      {
+        "id": "qwen3guard-gen-0.6b",
+        "object": "model",
+        "created": 1770204002,
+        "owned_by": "Alibaba Cloud",
+        "description": "Qwen3Guard-Gen-0.6B is a lightweight multilingual safety moderation model that classifies prompts and responses into safe, controversial, or unsafe categories.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.0,
+          "output_token": 0.0
+        },
+        "providers": [
+          "ovh"
+        ],
+        "context_size": 32000,
+        "max_output_tokens": 32000,
+        "tags": [
+          "Instruct",
+          "Safety-guard"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [],
+        "model_series": [
+          "qwen-3-guard-0.6b"
+        ]
+      },
+      {
+        "id": "voxtral-small-2507",
+        "object": "model",
+        "created": 1770025993,
+        "owned_by": "Mistral AI",
+        "description": "Voxtral Small is a multimodal model with audio input, combining advanced speech capabilities with strong text performance for transcription, translation, and audio understanding.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.11,
+          "output_token": 0.33,
+          "audio_cost": 7.37e-05,
+          "cache_read_cost": 0.011
+        },
+        "providers": [
+          "mistral"
+        ],
+        "context_size": 32000,
+        "max_output_tokens": 32000,
+        "tags": [
+          "Instruct",
+          "Audio"
+        ],
+        "input_modalities": [
+          "text",
+          "audio"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "tools"
+        ],
+        "model_series": [
+          "voxtral-small"
+        ]
+      },
+      {
+        "id": "nvidia-nemotron-3-nano-30b-a3b",
+        "object": "model",
+        "created": 1768217882,
+        "owned_by": "Nvidia",
+        "description": "Nemotron-Nano-3-30B-A3B is a compact Mixture-of-Experts model optimized for efficient reasoning, chat, and coding, with strong multilingual support and long-context RAG and agent workflows.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.054,
+          "output_token": 0.215
+        },
+        "providers": [
+          "nebius"
+        ],
+        "context_size": 128000,
+        "max_output_tokens": 128000,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Reasoning"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "nemotron-3-nano"
+        ]
+      },
+      {
+        "id": "mistral-large-2512",
+        "object": "model",
+        "created": 1764762602,
+        "owned_by": "Mistral AI",
+        "description": "Mistral Large 3 is a state-of-the-art open-weight multimodal Mixture-of-Experts model with 41B active parameters, delivering frontier-level performance across text and vision tasks.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.55,
+          "output_token": 1.65,
+          "cache_read_cost": 0.055
+        },
+        "providers": [
+          "mistral"
+        ],
+        "context_size": 256000,
+        "max_output_tokens": 256000,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Vision"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "tools"
+        ],
+        "model_series": [
+          "mistral-large"
+        ]
+      },
+      {
+        "id": "ministral-8b-2512",
+        "object": "model",
+        "created": 1764762542,
+        "owned_by": "Mistral AI",
+        "description": "Ministral 3 8B is a balanced, efficient multimodal model offering strong text and vision capabilities, optimized for edge and local deployment.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.165,
+          "output_token": 0.165,
+          "cache_read_cost": 0.017
+        },
+        "providers": [
+          "mistral"
+        ],
+        "context_size": 256000,
+        "max_output_tokens": 256000,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Vision"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "tools"
+        ],
+        "model_series": [
+          "ministral-8b"
+        ]
+      },
+      {
+        "id": "ministral-3b-2512",
+        "object": "model",
+        "created": 1764762482,
+        "owned_by": "Mistral AI",
+        "description": "Ministral 3 3B is a compact, efficient multimodal model with strong language, vision capabilities, and ideal for custom fine-tuning.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.11,
+          "output_token": 0.11,
+          "cache_read_cost": 0.011
+        },
+        "providers": [
+          "mistral"
+        ],
+        "context_size": 256000,
+        "max_output_tokens": 256000,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Vision"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "tools"
+        ],
+        "model_series": [
+          "ministral-3b"
+        ]
+      },
+      {
+        "id": "ministral-14b-2512",
+        "object": "model",
+        "created": 1764761882,
+        "owned_by": "Mistral AI",
+        "description": "Ministral 3 14B is a frontier-level 14B multimodal model optimized for local deployment, delivering state-of-the-art text and vision reasoning with a 256K context window and strong agentic capabilities.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.22,
+          "output_token": 0.22,
+          "cache_read_cost": 0.022
+        },
+        "providers": [
+          "mistral"
+        ],
+        "context_size": 256000,
+        "max_output_tokens": 256000,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Vision"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "tools"
+        ],
+        "model_series": [
+          "ministral-14b"
+        ]
+      },
+      {
+        "id": "gpt-oss-120b",
+        "object": "model",
+        "created": 1754393882,
+        "owned_by": "OpenAI",
+        "description": "GPT Oss 120b is a 120B parameter Mixture-of-Experts model by OpenAI, built for advanced reasoning, agentic tasks, and flexible developer use under Apache 2.0.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.08,
+          "output_token": 0.4
+        },
+        "providers": [
+          "scaleway",
+          "nebius",
+          "ionos",
+          "ovh",
+          "infercom",
+          "aki"
+        ],
+        "context_size": 131000,
+        "max_output_tokens": 131000,
+        "tags": [
+          "Instruct",
+          "Reasoning",
+          "Tools"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "gpt-oss-120b"
+        ]
+      },
+      {
+        "id": "qwen3-30b-a3b-instruct-2507",
+        "object": "model",
+        "created": 1753702682,
+        "owned_by": "Alibaba Cloud",
+        "description": "Qwen3-30B-A3B-Instruct-2507 is an advanced Mixture-of-Experts model optimized for reasoning, coding, and multilingual instruction following.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.089,
+          "output_token": 0.268
+        },
+        "providers": [
+          "nebius"
+        ],
+        "context_size": 262000,
+        "max_output_tokens": 262000,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Reasoning"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "qwen-3-30b"
+        ]
+      },
+      {
+        "id": "gpt-oss-20b",
+        "object": "model",
+        "created": 1752838682,
+        "owned_by": "OpenAI",
+        "description": "GPT Oss 20B is an open-weight Mixture-of-Experts model from OpenAI, optimized for low-latency inference and local deployment.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.04,
+          "output_token": 0.15
+        },
+        "providers": [
+          "ovh"
+        ],
+        "context_size": 131000,
+        "max_output_tokens": 131000,
+        "tags": [
+          "Instruct",
+          "Reasoning",
+          "Tools"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "gpt-oss-20b"
+        ]
+      },
+      {
+        "id": "mistral-small-3.2-24b-instruct-2506",
+        "object": "model",
+        "created": 1748252162,
+        "owned_by": "Mistral AI",
+        "description": "Mistral-Small-3.2-24B-Instruct-2506 is a 24B parameter instruction-tuned model with enhanced long-context support (128k) and state-of-the-art vision understanding.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.09,
+          "output_token": 0.28
+        },
+        "providers": [
+          "ovh",
+          "scaleway"
+        ],
+        "context_size": 128000,
+        "max_output_tokens": 128000,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Vision"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "tools"
+        ],
+        "model_series": [
+          "mistral-small"
+        ]
+      },
+      {
+        "id": "qwen3-235b-a22b-instruct-2507",
+        "object": "model",
+        "created": 1745840282,
+        "owned_by": "Alibaba Cloud",
+        "description": "Qwen3-235B-A22B-Instruct-2507 is a large non-thinking mode model with major improvements in reasoning, instruction following, knowledge coverage, and long-context understanding up to 256K tokens.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.179,
+          "output_token": 0.537
+        },
+        "providers": [
+          "scaleway",
+          "nebius"
+        ],
+        "context_size": 262000,
+        "max_output_tokens": 262000,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Reasoning"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "qwen-3-235b"
+        ]
+      },
+      {
+        "id": "qwen3-coder-30b-a3b-instruct",
+        "object": "model",
+        "created": 1745840282,
+        "owned_by": "Alibaba Cloud",
+        "description": "Qwen3 Coder 30b a3b Instruct is a 30.5B parameter open-source Mixture-of-Experts model specialized for coding, tool use, and complex multi-step programming workflows.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.2,
+          "output_token": 0.8
+        },
+        "providers": [
+          "scaleway"
+        ],
+        "context_size": 128000,
+        "max_output_tokens": 32000,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Reasoning"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "qwen-3-coder-30b"
+        ]
+      },
+      {
+        "id": "mistral-small-2503",
+        "object": "model",
+        "created": 1742482730,
+        "owned_by": "Mistral AI",
+        "description": "Combines advanced text and vision capabilities with 24 billion parameters, supporting multilingual tasks and long contexts up to 131k tokens, making it versatile for various applications without sacrificing performance.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.1,
+          "output_token": 0.3
+        },
+        "providers": [
+          "ionos"
+        ],
+        "context_size": 128000,
+        "max_output_tokens": 128000,
+        "tags": [
+          "Instruct",
+          "Vision",
+          "Tools"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "tools"
+        ],
+        "model_series": [
+          "mistral-small"
+        ]
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "object": "model",
+        "created": 1741779482,
+        "owned_by": "Google",
+        "description": "Gemma 3 is a family of lightweight, multimodal models from Google, supporting text and image inputs, multilingual capabilities, and a 131K context window.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.089,
+          "output_token": 0.268
+        },
+        "providers": [
+          "nebius"
+        ],
+        "context_size": 131000,
+        "max_output_tokens": 110000,
+        "tags": [
+          "Instruct",
+          "Vision",
+          "Tools",
+          "Reasoning"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning"
+        ],
+        "model_series": [
+          "gemma-3-27b"
+        ]
+      },
+      {
+        "id": "qwen2.5-vl-72b-instruct",
+        "object": "model",
+        "created": 1737977882,
+        "owned_by": "Alibaba Cloud",
+        "description": "Qwen2.5-VL is a powerful vision-language model with advanced capabilities in visual understanding, long video reasoning, and structured output generation.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.91,
+          "output_token": 0.91
+        },
+        "providers": [
+          "ovh"
+        ],
+        "context_size": 32000,
+        "max_output_tokens": 32000,
+        "tags": [
+          "Instruct",
+          "Vision",
+          "Reasoning"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning"
+        ],
+        "model_series": [
+          "qwen-2-vl-72b"
+        ]
+      },
+      {
+        "id": "codestral-2508",
+        "object": "model",
+        "created": 1736768282,
+        "owned_by": "Mistral AI",
+        "description": "Codestral-2508 is a cutting-edge coding model optimized for low-latency, high-frequency tasks like FIM, code correction, and test generation.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.33,
+          "output_token": 0.99,
+          "cache_read_cost": 0.033
+        },
+        "providers": [
+          "mistral"
+        ],
+        "context_size": 256000,
+        "max_output_tokens": 256000,
+        "tags": [
+          "Instruct",
+          "Tools"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "tools"
+        ],
+        "model_series": [
+          "codestral"
+        ]
+      },
+      {
+        "id": "llama-3.3-70b-instruct",
+        "object": "model",
+        "created": 1733830682,
+        "owned_by": "Meta",
+        "description": "With 70 billion parameters, this cutting-edge multilingual model excels in generating high-quality, safe, and helpful text across eight languages, making it stand out from other chat models.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.65,
+          "output_token": 0.65
+        },
+        "providers": [
+          "scaleway",
+          "ovh",
+          "ionos"
+        ],
+        "context_size": 131000,
+        "max_output_tokens": 131000,
+        "tags": [
+          "Instruct",
+          "Tools",
+          "Reasoning"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "llama-3-70b"
+        ]
+      },
+      {
+        "id": "pixtral-12b-2409",
+        "object": "model",
+        "created": 1731176378,
+        "owned_by": "Mistral AI",
+        "description": "Pixtral 2409 12B is a state-of-the-art multimodal model with 12B parameters and a 400M vision encoder, natively trained on interleaved text and image data. It excels in tasks spanning vision-language reasoning, instruction following, and pure text understanding, making it highly effective for real-world multimodal applications.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.2,
+          "output_token": 0.2
+        },
+        "providers": [
+          "scaleway"
+        ],
+        "context_size": 128000,
+        "max_output_tokens": 4096,
+        "tags": [
+          "Instruct",
+          "Vision",
+          "Reasoning"
+        ],
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "reasoning",
+          "tools"
+        ],
+        "model_series": [
+          "pixtral-12b"
+        ]
+      },
+      {
+        "id": "hermes-4-405b",
+        "object": "model",
+        "created": 1723549082,
+        "owned_by": "NousResearch",
+        "description": "Hermes 4 405B is a frontier hybrid-mode reasoning model built on Llama 3.1, optimized for advanced logic, math, coding, and structured output generation.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.894,
+          "output_token": 2.683
+        },
+        "providers": [
+          "nebius"
+        ],
+        "context_size": 128000,
+        "max_output_tokens": 128000,
+        "tags": [
+          "Instruct",
+          "Tools"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "tools"
+        ],
+        "model_series": [
+          "hermes-4-405b"
+        ]
+      },
+      {
+        "id": "mistral-nemo-instruct-2407",
+        "object": "model",
+        "created": 1723020793,
+        "owned_by": "Mistral AI",
+        "description": "A 12B parameter, instruct-tuned language model by Mistral AI and NVIDIA, designed for advanced instruction following, multi-turn conversations, and generating text and code across multiple languages.",
+        "pricing": {
+          "currency": "EUR",
+          "input_token": 0.13,
+          "output_token": 0.13
+        },
+        "providers": [
+          "ovh",
+          "ionos"
+        ],
+        "context_size": 128000,
+        "max_output_tokens": 128000,
+        "tags": [
+          "Instruct",
+          "Tools"
+        ],
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "supported_features": [
+          "json_mode",
+          "tools"
+        ],
+        "model_series": [
+          "mistral-nemo"
+        ]
+      }
+    ]
+  },
+  "response_headers": {},
+  "response_header_names": [
+    "access-control-expose-headers",
+    "connection",
+    "content-length",
+    "content-security-policy",
+    "content-type",
+    "date",
+    "x-content-type-options",
+    "x-frame-options"
+  ],
+  "duration_ms": 100,
+  "note": "ok"
+}

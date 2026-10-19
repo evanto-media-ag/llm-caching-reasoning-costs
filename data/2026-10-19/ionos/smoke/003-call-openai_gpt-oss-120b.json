@@ -1,0 +1,70 @@
+{
+  "ts": "2026-10-19T07:56:25+00:00",
+  "target": "ionos",
+  "model": "openai/gpt-oss-120b",
+  "measurement": "smoke",
+  "step": "call",
+  "run_id": null,
+  "url": "https://openai.inference.de-txl.ionos.com/v1/chat/completions",
+  "request_body": {
+    "model": "openai/gpt-oss-120b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a test."
+      },
+      {
+        "role": "user",
+        "content": "Reply with the single word OK."
+      }
+    ],
+    "max_tokens": 32
+  },
+  "status": 200,
+  "response_body": {
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "",
+          "reasoning": "The user wants reply with single word \"OK\". The system says we should comply. There's no policy violation. So just respond \"OK\".",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1792396585,
+    "id": "chatcmpl-d0b6e96f-95fb-9e93-8fd0-a5da8f4ec8b6",
+    "model": "openai/gpt-oss-120b",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 32,
+      "completion_tokens_details": {
+        "reasoning_tokens": 28
+      },
+      "prompt_tokens": 86,
+      "total_tokens": 118
+    }
+  },
+  "response_headers": {
+    "x-ratelimit-limit-requests": "5",
+    "x-ratelimit-remaining-requests": "4",
+    "x-ratelimit-reset-requests": "200ms",
+    "x-request-id": "ccfe6d019bebb3a302bf0f33cec84972"
+  },
+  "response_header_names": [
+    "connection",
+    "content-length",
+    "content-type",
+    "date",
+    "x-gateway-version",
+    "x-ratelimit-limit-requests",
+    "x-ratelimit-remaining-requests",
+    "x-ratelimit-reset-requests",
+    "x-request-id",
+    "x-trace-id"
+  ],
+  "duration_ms": 288,
+  "note": "ok"
+}

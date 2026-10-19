@@ -1,0 +1,53 @@
+{
+  "ts": "2026-10-19T07:56:40+00:00",
+  "target": "openrouter",
+  "model": "anthropic/claude-sonnet-5",
+  "measurement": "smoke",
+  "step": "call",
+  "run_id": null,
+  "url": "https://openrouter.ai/api/v1/chat/completions",
+  "request_body": {
+    "model": "anthropic/claude-sonnet-5",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a test."
+      },
+      {
+        "role": "user",
+        "content": "Reply with the single word OK."
+      }
+    ],
+    "max_tokens": 32
+  },
+  "status": 402,
+  "response_body": {
+    "error": {
+      "message": "Insufficient credits. Add more using https://openrouter.ai/settings/credits",
+      "code": 402,
+      "metadata": {
+        "limit_source": "openrouter_credits",
+        "remedy_hint": "Add credits at https://openrouter.ai/settings/credits, or lower max_tokens / prompt size to fit your remaining balance."
+      }
+    }
+  },
+  "response_headers": {},
+  "response_header_names": [
+    "access-control-allow-origin",
+    "access-control-expose-headers",
+    "cf-ray",
+    "connection",
+    "content-type",
+    "date",
+    "permissions-policy",
+    "referrer-policy",
+    "server",
+    "server-timing",
+    "set-cookie",
+    "transfer-encoding",
+    "x-content-type-options",
+    "x-generation-id"
+  ],
+  "duration_ms": 194,
+  "note": "http 402"
+}

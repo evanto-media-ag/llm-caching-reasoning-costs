@@ -1,14 +1,14 @@
 {
-  "anthropic": {"style": "anthropic", "base_url": "https://api.anthropic.com/v1", "key_name": "anthropic", "models": [], "extras": {}},
-  "openai-responses": {"style": "openai-responses", "base_url": "https://api.openai.com/v1", "key_name": "openai", "models": [], "extras": {}},
-  "openai-chat": {"style": "openai-chat", "base_url": "https://api.openai.com/v1", "key_name": "openai", "models": [], "extras": {"_max_tokens_field": "max_completion_tokens"}},
-  "xai": {"style": "openai-responses", "base_url": "https://api.x.ai/v1", "key_name": "xai", "models": [], "extras": {}},
-  "gemini": {"style": "gemini", "base_url": "https://generativelanguage.googleapis.com/v1beta", "key_name": "gemini", "models": [], "extras": {}},
-  "mistral": {"style": "openai-chat", "base_url": "https://api.mistral.ai/v1", "key_name": "mistral", "models": [], "extras": {}},
-  "ionos": {"style": "openai-chat", "base_url": "https://openai.inference.de-txl.ionos.com/v1", "key_name": "ionos", "models": [], "extras": {}},
-  "cortecs-sovereign": {"style": "openai-chat", "base_url": "https://api.cortecs.ai/v1", "key_name": "cortecs-sovereign", "models": [], "extras": {}},
-  "cortecs-residency": {"style": "openai-chat", "base_url": "https://api.cortecs.ai/v1", "key_name": "cortecs-residency", "models": [], "extras": {}},
-  "eurouter": {"style": "openai-chat", "base_url": "https://api.eurouter.ai/api/v1", "key_name": "eurouter", "models": [], "extras": {}},
-  "requesty": {"style": "openai-chat", "base_url": "https://router.requesty.ai/v1", "key_name": "requesty", "models": [], "extras": {}},
-  "openrouter": {"style": "openai-chat", "base_url": "https://openrouter.ai/api/v1", "key_name": "openrouter", "models": [], "extras": {}}
+  "anthropic": {"style": "anthropic", "base_url": "https://api.anthropic.com/v1", "key_name": "anthropic", "models": ["claude-sonnet-5-5", "claude-haiku-5-5", "claude-sonnet-5"], "extras": {}},
+  "openai-responses": {"style": "openai-responses", "base_url": "https://api.openai.com/v1", "key_name": "openai", "models": ["gpt-6.1-sol", "gpt-5.6-luna", "gpt-5-mini"], "extras": {}},
+  "openai-chat": {"style": "openai-chat", "base_url": "https://api.openai.com/v1", "key_name": "openai", "models": ["gpt-5.6-luna", "gpt-5-mini"], "extras": {"_max_tokens_field": "max_completion_tokens"}},
+  "xai": {"style": "openai-responses", "base_url": "https://api.x.ai/v1", "key_name": "xai", "models": ["grok-4.7", "grok-4.5"], "extras": {}},
+  "gemini": {"style": "gemini", "base_url": "https://generativelanguage.googleapis.com/v1beta", "key_name": "gemini", "models": ["gemini-4-argon", "gemini-3.8-flash"], "extras": {}},
+  "mistral": {"style": "openai-chat", "base_url": "https://api.mistral.ai/v1", "key_name": "mistral", "models": ["mistral-medium-latest", "magistral-medium-latest"], "extras": {}},
+  "ionos": {"style": "openai-chat", "base_url": "https://openai.inference.de-txl.ionos.com/v1", "key_name": "ionos", "models": ["openai/gpt-oss-120b", "Qwen/Qwen3.8-27B"], "extras": {}},
+  "cortecs-sovereign": {"style": "openai-chat", "base_url": "https://api.cortecs.ai/v1", "key_name": "cortecs-sovereign", "models": ["gpt-oss-120b", "qwen3.8-27b", "deepseek-v4.1-flash"], "extras": {"_cost_unit": ["EUR", 1e-06]}},
+  "cortecs-residency": {"style": "openai-chat", "base_url": "https://api.cortecs.ai/v1", "key_name": "cortecs-residency", "models": ["claude-sonnet-5", "gpt-oss-120b"], "extras": {"_cost_unit": ["EUR", 1e-06]}},
+  "eurouter": {"style": "openai-chat", "base_url": "https://api.eurouter.ai/api/v1", "key_name": "eurouter", "models": ["claude-sonnet-5", "gpt-oss-120b", "qwen3.8-27b"], "extras": {}},
+  "requesty": {"style": "openai-chat", "base_url": "https://router.requesty.ai/v1", "key_name": "requesty", "models": ["anthropic/claude-sonnet-5", "fireworks/gpt-oss-120b"], "extras": {}},
+  "openrouter": {"style": "openai-chat", "base_url": "https://openrouter.ai/api/v1", "key_name": "openrouter", "models": ["anthropic/claude-sonnet-5", "openai/gpt-oss-120b", "qwen/qwen3.8-27b"], "extras": {}}
 }

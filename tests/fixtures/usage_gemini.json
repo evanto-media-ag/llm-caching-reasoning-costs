@@ -1,0 +1,14 @@
+{
+  "usageMetadata": {
+    "promptTokenCount": 5960,
+    "totalTokenCount": 5972,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 5960
+      }
+    ],
+    "thoughtsTokenCount": 12,
+    "serviceTier": "standard"
+  }
+}

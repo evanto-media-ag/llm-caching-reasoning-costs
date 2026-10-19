@@ -1,0 +1,14 @@
+{
+  "usage": {
+    "input_tokens": 4568,
+    "input_tokens_details": {
+      "cache_write_tokens": 4565,
+      "cached_tokens": 0
+    },
+    "output_tokens": 16,
+    "output_tokens_details": {
+      "reasoning_tokens": 16
+    },
+    "total_tokens": 4584
+  }
+}

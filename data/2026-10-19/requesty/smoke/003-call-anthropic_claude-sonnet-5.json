@@ -1,0 +1,66 @@
+{
+  "ts": "2026-10-19T07:56:39+00:00",
+  "target": "requesty",
+  "model": "anthropic/claude-sonnet-5",
+  "measurement": "smoke",
+  "step": "call",
+  "run_id": null,
+  "url": "https://router.requesty.ai/v1/chat/completions",
+  "request_body": {
+    "model": "anthropic/claude-sonnet-5",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a test."
+      },
+      {
+        "role": "user",
+        "content": "Reply with the single word OK."
+      }
+    ],
+    "max_tokens": 32
+  },
+  "status": 200,
+  "response_body": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "OK",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1792396598,
+    "id": "rqsty-cmpl-55b58d72-940d-4c9e-9ee3-65af43da1282",
+    "model": "claude-sonnet-5",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 4,
+      "prompt_tokens": 22,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "caching_token_details": {
+          "caching_5m_tokens": 0,
+          "caching_1h_tokens": 0
+        },
+        "caching_tokens": 0
+      },
+      "total_tokens": 26,
+      "cost": 8.4e-05
+    }
+  },
+  "response_headers": {},
+  "response_header_names": [
+    "connection",
+    "content-type",
+    "date",
+    "strict-transport-security",
+    "transfer-encoding",
+    "vary",
+    "x-content-type-options"
+  ],
+  "duration_ms": 625,
+  "note": "ok"
+}

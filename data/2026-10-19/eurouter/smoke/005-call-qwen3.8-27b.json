@@ -1,0 +1,120 @@
+{
+  "ts": "2026-10-19T07:56:38+00:00",
+  "target": "eurouter",
+  "model": "qwen3.8-27b",
+  "measurement": "smoke",
+  "step": "call",
+  "run_id": null,
+  "url": "https://api.eurouter.ai/api/v1/chat/completions",
+  "request_body": {
+    "model": "qwen3.8-27b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a test."
+      },
+      {
+        "role": "user",
+        "content": "Reply with the single word OK."
+      }
+    ],
+    "max_tokens": 32
+  },
+  "status": 200,
+  "response_body": {
+    "id": "chatcmpl-R6h5mnmmWGmz7UAGTCT9s5Zj",
+    "object": "chat.completion",
+    "created": 1792396598,
+    "model": "entrim/qwen3.8-27b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\n\nOK",
+          "refusal": null,
+          "reasoning": "We need to respond to user: \"Reply with the single word OK.\" Must output exactly \"OK\". Final just OK.\n",
+          "annotations": [],
+          "reasoning_content": "We need to respond to user: \"Reply with the single word OK.\" Must output exactly \"OK\". Final just OK.\n",
+          "provider_specific_fields": {
+            "refusal": null,
+            "name": null
+          }
+        },
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "logprobs": null
+      }
+    ],
+    "usage": {
+      "completion_tokens": 30,
+      "prompt_tokens": 65,
+      "total_tokens": 95,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0,
+        "image_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost": 1.85e-05,
+      "cost_currency": "USD",
+      "cost_eur": 1.6440025e-05,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 1.85e-05,
+        "upstream_inference_prompt_cost": 6.5e-06,
+        "upstream_inference_completions_cost": 1.2e-05,
+        "upstream_inference_uncached_prompt_cost": 6.5e-06,
+        "upstream_inference_cache_read_cost": 0,
+        "upstream_inference_cache_write_cost": 0
+      }
+    },
+    "provider": "entrim",
+    "service_tier": "default",
+    "system_fingerprint": null
+  },
+  "response_headers": {
+    "x-ratelimit-limit": "60",
+    "x-ratelimit-remaining": "57",
+    "x-ratelimit-reset": "1792396650",
+    "x-request-id": "f29f67ad-921c-477d-9d9f-85b104bffb18"
+  },
+  "response_header_names": [
+    "access-control-allow-origin",
+    "connection",
+    "content-length",
+    "content-security-policy",
+    "content-type",
+    "cross-origin-opener-policy",
+    "cross-origin-resource-policy",
+    "date",
+    "origin-agent-cluster",
+    "referrer-policy",
+    "server",
+    "strict-transport-security",
+    "x-content-type-options",
+    "x-dns-prefetch-control",
+    "x-download-options",
+    "x-envoy-upstream-service-time",
+    "x-frame-options",
+    "x-model-used",
+    "x-permitted-cross-domain-policies",
+    "x-provider-id",
+    "x-provider-slug",
+    "x-ratelimit-limit",
+    "x-ratelimit-remaining",
+    "x-ratelimit-reset",
+    "x-request-id",
+    "x-routing-strategy",
+    "x-xss-protection"
+  ],
+  "duration_ms": 7571,
+  "note": "ok"
+}

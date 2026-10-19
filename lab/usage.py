@@ -61,6 +61,10 @@ _PARSERS = {"anthropic": ("usage", _anthropic), "openai-responses": ("usage", _r
             "openai-chat": ("usage", _chat), "gemini": ("usageMetadata", _gemini)}
 
 
-def extract_usage(style: str, body: dict) -> Usage:
+def extract_usage(style: str, body: dict, cost_unit: tuple[str, float] | None = None) -> Usage:
+    """cost_unit overrides currency and scale of a router's `cost` field (Cortecs reports integers)."""
     field, parse = _PARSERS[style]
-    return parse(body.get(field) or {})
+    u = parse(body.get(field) or {})
+    if cost_unit and u.reported_cost is not None:
+        u.cost_currency, u.reported_cost = cost_unit[0], u.reported_cost * cost_unit[1]
+    return u
