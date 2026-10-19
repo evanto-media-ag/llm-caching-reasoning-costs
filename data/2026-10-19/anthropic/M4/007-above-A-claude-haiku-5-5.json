@@ -1,0 +1,97 @@
+{
+  "ts": "2026-10-19T08:08:41+00:00",
+  "target": "anthropic",
+  "model": "claude-haiku-5-5",
+  "measurement": "M4",
+  "step": "above-A",
+  "run_id": "530abe86",
+  "url": "https://api.anthropic.com/v1/messages",
+  "request_body": {
+    "model": "claude-haiku-5-5",
+    "max_tokens": 16,
+    "system": [
+      {
+        "type": "text",
+        "text": "[run 530abe86]\nYou are the assistant of a fictional spare-parts warehouse. The catalogue below is reference data.\nAnswer only the question after the catalogue, as briefly as possible.\n\nCATALOGUE\nItem 0001: ceramic pump, size 96 mm, stock 123 units in Hamburg, unit price 241.69 EUR.\nItem 0002: aluminium relay, size 95 mm, stock 28 units in Leipzig, unit price 71.00 EUR.\nItem 0003: copper coupling, size 41 mm, stock 450 units in Leipzig, unit price 285.40 EUR.\nItem 0004: steel bearing, size 53 mm, stock 658 units in Leipzig, unit price 118.57 EUR.\nItem 0005: steel gasket, size 55 mm, stock 865 units in Leipzig, unit price 11.70 EUR.\nItem 0006: copper pump, size 38 mm, stock 834 units in Hamburg, unit price 294.12 EUR.\nItem 0007: aluminium fuse, size 8 mm, stock 597 units in Graz, unit price 1.98 EUR.\nItem 0008: copper pump, size 114 mm, stock 334 units in Graz, unit price 297.89 EUR.\nItem 0009: aluminium coupling, size 42 mm, stock 333 units in Leipzig, unit price 312.13 EUR.\nItem 0010: copper gasket, size 67 mm, stock 480 units in Regensburg, unit price 122.95 EUR.\nItem 0011: brass filter, size 10 mm, stock 884 u",
+        "cache_control": {
+          "type": "ephemeral"
+        }
+      }
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "Reply with the single word OK."
+      }
+    ]
+  },
+  "status": 200,
+  "response_body": {
+    "model": "claude-haiku-5-5",
+    "id": "msg_011CgBFhyAGkAanJxicxgf3J",
+    "type": "message",
+    "role": "assistant",
+    "content": [
+      {
+        "type": "thinking",
+        "thinking": "",
+        "signature": "CAQS8wQKEAgSGAI4AUIIdGhpbmtpbmcSDGoTuOFR4V3X+hoLvhoMgRdUKICOqbTwQ48NIjAMkcsKUx0ad149NW7fJclelXLRmCEWDnf0uyD0ka3GNE3qZ2UzGn/X4m2ZTcYOIzYqkASWh+x4NVuhvd4wigpNRDxpdhvUNLPMLQp75SZsSAL/2/WwgooJ45URe+R7etWESVMQudM+/nUqZBBYP762PhHG0u/YchEBoTHrhrWPmjvhX8R/iXuE5tG4SG4qx8Oke4Py5yuHJuiNRUvRRQJnt13KuH6lrO6+L2y+DxDwiHPCJoAWJXy9RZm5hq5Z1v8rgtpin4Co/9SVG9tJQnvOG4CpwPZckFyrcRULhF/4R5BLzKH9vuTuI+9q+U66aPbfz1pHx36rUZkeZ1aBxjdH0M7XuC97JKQXl3i+r5QdpfdTbqOQH1ZdbTH1qK4dvDHuA8NNWjMqk/b9NFtheyqwU5Aj82ftw+lDDwbPgxd6TJBcchrj/918A6QX01/ogygFljCEKwMPfL5e0OUPXkwYJmf6gSGJbbT0B7NppKaBamhP1DopF+q1m0ETep6IQLJdVBONP+K44ovj2T9lxNFZa9Y1cpyqF3O2KG1KQR2N2nuuJmTRHeJAUbUPVFODhKbOwVUQtGDBg/EOfic4y9BJVPjp45fFGMUk6oHj9RlRxEjGGALYtP68vNX1zCCeoM8azD0TpmHYJH4/6YRD+un0AR5eZprvCM0NQQXGIYtq+bsYBc+vwj2vD201yGb3zi8cWZ9+HEiI6HKcgHrJmvXvUcuyivICrukrN19QEfL7A8IzBqD9QDy2bU381kdiELtOojkYAQ=="
+      }
+    ],
+    "container": null,
+    "stop_reason": "max_tokens",
+    "stop_sequence": null,
+    "stop_details": null,
+    "usage": {
+      "input_tokens": 16,
+      "cache_creation_input_tokens": 549,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 549,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "output_tokens": 16,
+      "output_tokens_details": {
+        "thinking_tokens": 16
+      },
+      "service_tier": "standard",
+      "inference_geo": "global",
+      "speed": "standard"
+    },
+    "diagnostics": null
+  },
+  "response_headers": {
+    "request-id": "req_011CgBFhxpSYzCx5jMoFXygc"
+  },
+  "response_header_names": [
+    "anthropic-organization-id",
+    "anthropic-ratelimit-input-tokens-limit",
+    "anthropic-ratelimit-input-tokens-remaining",
+    "anthropic-ratelimit-input-tokens-reset",
+    "anthropic-ratelimit-output-tokens-limit",
+    "anthropic-ratelimit-output-tokens-remaining",
+    "anthropic-ratelimit-output-tokens-reset",
+    "anthropic-ratelimit-requests-limit",
+    "anthropic-ratelimit-requests-remaining",
+    "anthropic-ratelimit-requests-reset",
+    "anthropic-ratelimit-tokens-limit",
+    "anthropic-ratelimit-tokens-remaining",
+    "anthropic-ratelimit-tokens-reset",
+    "anthropic-workspace-id",
+    "cf-cache-status",
+    "cf-ray",
+    "connection",
+    "content-security-policy",
+    "content-type",
+    "date",
+    "request-id",
+    "server",
+    "strict-transport-security",
+    "traceresponse",
+    "transfer-encoding",
+    "vary",
+    "x-robots-tag"
+  ],
+  "duration_ms": 622,
+  "note": "ok"
+}

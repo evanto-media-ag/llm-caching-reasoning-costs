@@ -22,5 +22,5 @@ def run(t: Target, model: str | None, ctx: Ctx) -> list[Path]:
     for m in [model] if model else t.models:
         for label, cache in variants(t):
             paths += run_sequence(ctx, t, m, "M1", [Step(f"{label}-A"), Step(f"{label}-B")], cache,
-                                  system_text=LARGE.read_text())
+                                  system_text=LARGE.read_text(), max_tokens=64)
     return paths

@@ -1,0 +1,97 @@
+{
+  "ts": "2026-10-19T08:08:40+00:00",
+  "target": "anthropic",
+  "model": "claude-haiku-5-5",
+  "measurement": "M4",
+  "step": "below-B",
+  "run_id": "3311d1a2",
+  "url": "https://api.anthropic.com/v1/messages",
+  "request_body": {
+    "model": "claude-haiku-5-5",
+    "max_tokens": 16,
+    "system": [
+      {
+        "type": "text",
+        "text": "[run 3311d1a2]\nYou are the assistant of a fictional spare-parts warehouse. The catalogue below is reference data.\nAnswer only the question after the catalogue, as briefly as possible.\n\nCATALOGUE\nItem 0001: ceramic pump, size 96 mm, stock 123 units in Hamburg, unit price 241.69 EUR.\nItem 0002: aluminium relay, size 95 mm, stock 28 units in Leipzig, unit price 71.00 EUR.\nItem 0003: copper coupling, size 41 mm, stock 450 units in Leipzig, unit price 285.40 EUR.\nItem 0004: steel bearing, size 53 mm, stock 658 units in Leipzig, unit price 118.57 EUR.\nItem 0005: steel gasket, size 55 mm, stock 865 units in Leipzig, unit price 11.70 EUR.\nItem 0006: copper pump, size 38 mm, stock 834 units in Hamburg, unit price 294.12 EUR.\nItem 0007: aluminium fuse, size 8 mm, stock 597 units in Graz, unit price 1.98 EUR.\nItem 0008: copper pump, size 114 mm, stock 334 units in Graz, unit price 297.89 EUR.\nItem 0009: aluminium coupling, ",
+        "cache_control": {
+          "type": "ephemeral"
+        }
+      }
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "Reply with the single word OK."
+      }
+    ]
+  },
+  "status": 200,
+  "response_body": {
+    "model": "claude-haiku-5-5",
+    "id": "msg_011CgBFhtzkCgyKtLocBoYX4",
+    "type": "message",
+    "role": "assistant",
+    "content": [
+      {
+        "type": "thinking",
+        "thinking": "",
+        "signature": "CAQS/AQKEAgSGAI4AUIIdGhpbmtpbmcSDK+3UuY7WHZjXQMvwBoMOVEs1l3XXsEozGU6IjBNnhMIJYgWxwhtMQFvX0+8awOYz1okejmP33evYTTCCyWOIgyWhgf2nnxRIOSINL4qmQRaaM9Mu2wf6PhOjOnkkYBrItUj5FEF8viIqTSu+nhu6ScaFmzTiNeRQD8I4SkJ0oEt1g7a8CyiMJRu62oL0cHYB4hRG1AsnggYhE59SN5LlKYYEeMjil5h9ioPk5WV9bUNYvyg2p/cO1k2QX06wHshGuB4SDgyMDGReZn6JqdawO99ahjYp/Ij6PGSz2jqN6DzWM+Q0J5IcZCdBL+gvBN/m30ffHd1G2PZ/XXBewx5KSN61TJDX1UtkMZGFdav2KpuSWTv3QakXt8/hwU/38zPC3KDa+7TonulLc2xUn7gSRIhelaBf1BrIP46OeMWExR0tN0BUF3Q/uV3rtD7DZPHxPLlWvELOm3lagVfusKQNo0rt/WW0hTo0PBT6sJtmL1eiP1u4SvXsnf50v6Ym9UW+T0m49ySA0ym16oHydlB9/I7++9kqDlPFeY3whKNp+7cqwSmrNUoTfn8IuzG+HRfb5BUJHcpNKywYnLggXAVfYKI6kfy7p5gfI/xC8tA6imnAefLRQ/0wTitTTqC6HvOkz019whvOQmhTa11bPtzd63no2tMhThLmGOuv/CnaL3gEbxkiwYxrDEQIJoDmnlEKZvg2z2c30WUEoWntBTf9456y8HyQN8IKByjtUfmf7AD9GBofvqWMOmSzXpyB9nqN360T5C6cFpN4PepmcB5v7kcChA36TltWriStr405cURbUYvBEFGMj0YAQ=="
+      }
+    ],
+    "container": null,
+    "stop_reason": "max_tokens",
+    "stop_sequence": null,
+    "stop_details": null,
+    "usage": {
+      "input_tokens": 465,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "output_tokens": 16,
+      "output_tokens_details": {
+        "thinking_tokens": 16
+      },
+      "service_tier": "standard",
+      "inference_geo": "global",
+      "speed": "standard"
+    },
+    "diagnostics": null
+  },
+  "response_headers": {
+    "request-id": "req_011CgBFhtbCF5VqzwfC1gMA7"
+  },
+  "response_header_names": [
+    "anthropic-organization-id",
+    "anthropic-ratelimit-input-tokens-limit",
+    "anthropic-ratelimit-input-tokens-remaining",
+    "anthropic-ratelimit-input-tokens-reset",
+    "anthropic-ratelimit-output-tokens-limit",
+    "anthropic-ratelimit-output-tokens-remaining",
+    "anthropic-ratelimit-output-tokens-reset",
+    "anthropic-ratelimit-requests-limit",
+    "anthropic-ratelimit-requests-remaining",
+    "anthropic-ratelimit-requests-reset",
+    "anthropic-ratelimit-tokens-limit",
+    "anthropic-ratelimit-tokens-remaining",
+    "anthropic-ratelimit-tokens-reset",
+    "anthropic-workspace-id",
+    "cf-cache-status",
+    "cf-ray",
+    "connection",
+    "content-security-policy",
+    "content-type",
+    "date",
+    "request-id",
+    "server",
+    "strict-transport-security",
+    "traceresponse",
+    "transfer-encoding",
+    "vary",
+    "x-robots-tag"
+  ],
+  "duration_ms": 985,
+  "note": "ok"
+}

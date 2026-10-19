@@ -52,6 +52,14 @@ class SequenceTest(unittest.TestCase):
         notes = [__import__("json").loads(p.read_text())["note"] for p in paths]
         self.assertEqual(notes, ["ok", "ungültig: http 429", "ok", "ok"])
 
+    def test_incomplete_without_usage_is_invalid(self):
+        empty = Response(200, {"status": "incomplete", "usage": {"input_tokens": 0, "output_tokens": 0}}, 5, {}, [])
+        replies = [empty, OK, OK, OK]
+        send = lambda *a, **k: replies.pop(0)
+        paths = run_sequence(self.ctx(send), self.t, "m", "M1", [Step("A"), Step("B")], CacheSpec(), system_text="BIG")
+        notes = [__import__("json").loads(p.read_text())["note"] for p in paths]
+        self.assertEqual(notes, ["ungültig: unvollständig ohne Usage", "ok", "ok"])
+
     def test_client_error_stops_without_retry(self):
         send = FakeSend([400])
         paths = run_sequence(self.ctx(send), self.t, "m", "M1", [Step("A"), Step("B")], CacheSpec(), system_text="BIG")

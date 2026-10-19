@@ -1,0 +1,96 @@
+{
+  "ts": "2026-10-19T08:08:34+00:00",
+  "target": "anthropic",
+  "model": "claude-sonnet-5-5",
+  "measurement": "M4",
+  "step": "below-A",
+  "run_id": "268de02f",
+  "url": "https://api.anthropic.com/v1/messages",
+  "request_body": {
+    "model": "claude-sonnet-5-5",
+    "max_tokens": 16,
+    "system": [
+      {
+        "type": "text",
+        "text": "[run 268de02f]\nYou are the assistant of a fictional spare-parts warehouse. The catalogue below is reference data.\nAnswer only the question after the catalogue, as briefly as possible.\n\nCATALOGUE\nItem 0001: ceramic pump, size 96 mm, stock 123 units in Hamburg, unit price 241.69 EUR.\nItem 0002: aluminium relay, size 95 mm, stock 28 units in Leipzig, unit price 71.00 EUR.\nItem 0003: copper coupling, size 41 mm, stock 450 units in Leipzig, unit price 285.40 EUR.\nItem 0004: steel bearing, size 53 mm, stock 658 units in Leipzig, unit price 118.57 EUR.\nItem 0005: steel gasket, size 55 mm, stock 865 units in Leipzig, unit price 11.70 EUR.\nItem 0006: copper pump, size 38 mm, stock 834 units in Hamburg, unit price 294.12 EUR.\nItem 0007: aluminium fuse, size 8 mm, stock 597 units in Graz, unit price 1.98 EUR.\nItem 0008: copper pump, size 114 mm, stock 334 units in Graz, unit price 297.89 EUR.\nItem 0009: aluminium coupling, ",
+        "cache_control": {
+          "type": "ephemeral"
+        }
+      }
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "Reply with the single word OK."
+      }
+    ]
+  },
+  "status": 200,
+  "response_body": {
+    "model": "claude-sonnet-5-5",
+    "id": "msg_011CgBFhRZ1E5jFxn2yMAwGJ",
+    "type": "message",
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "OK"
+      }
+    ],
+    "container": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "stop_details": null,
+    "usage": {
+      "input_tokens": 463,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "output_tokens": 4,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "service_tier": "standard",
+      "inference_geo": "global",
+      "speed": "standard"
+    },
+    "diagnostics": null
+  },
+  "response_headers": {
+    "request-id": "req_011CgBFhQLKXiYtCsRo5SMPs"
+  },
+  "response_header_names": [
+    "anthropic-organization-id",
+    "anthropic-ratelimit-input-tokens-limit",
+    "anthropic-ratelimit-input-tokens-remaining",
+    "anthropic-ratelimit-input-tokens-reset",
+    "anthropic-ratelimit-output-tokens-limit",
+    "anthropic-ratelimit-output-tokens-remaining",
+    "anthropic-ratelimit-output-tokens-reset",
+    "anthropic-ratelimit-requests-limit",
+    "anthropic-ratelimit-requests-remaining",
+    "anthropic-ratelimit-requests-reset",
+    "anthropic-ratelimit-tokens-limit",
+    "anthropic-ratelimit-tokens-remaining",
+    "anthropic-ratelimit-tokens-reset",
+    "anthropic-workspace-id",
+    "cf-cache-status",
+    "cf-ray",
+    "connection",
+    "content-security-policy",
+    "content-type",
+    "date",
+    "request-id",
+    "server",
+    "strict-transport-security",
+    "traceresponse",
+    "transfer-encoding",
+    "vary",
+    "x-robots-tag"
+  ],
+  "duration_ms": 1557,
+  "note": "ok"
+}

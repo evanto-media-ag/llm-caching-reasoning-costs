@@ -34,5 +34,5 @@ def run(t: Target, model: str | None, ctx: Ctx) -> list[Path]:
             continue
         for label, factor in (("below", 0.9), ("above", 1.1)):
             cut = text[: int(minimum * factor / ratio)]
-            paths += run_sequence(ctx, t, m, "M4", [Step(f"{label}-A"), Step(f"{label}-B")], cache, system_text=cut)
+            paths += run_sequence(ctx, t, m, "M4", [Step(f"{label}-A"), Step(f"{label}-B")], cache, system_text=cut, max_tokens=64)
     return paths

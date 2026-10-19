@@ -1,0 +1,149 @@
+{
+  "ts": "2026-10-19T08:08:55+00:00",
+  "target": "openai-responses",
+  "model": "gpt-5.6-luna",
+  "measurement": "M4",
+  "step": "below-A",
+  "run_id": "136abd43",
+  "url": "https://api.openai.com/v1/responses",
+  "request_body": {
+    "model": "gpt-5.6-luna",
+    "instructions": "[run 136abd43]\nYou are the assistant of a fictional spare-parts warehouse. The catalogue below is reference data.\nAnswer only the question after the catalogue, as briefly as possible.\n\nCATALOGUE\nItem 0001: ceramic pump, size 96 mm, stock 123 units in Hamburg, unit price 241.69 EUR.\nItem 0002: aluminium relay, size 95 mm, stock 28 units in Leipzig, unit price 71.00 EUR.\nItem 0003: copper coupling, size 41 mm, stock 450 units in Leipzig, unit price 285.40 EUR.\nItem 0004: steel bearing, size 53 mm, stock 658 units in Leipzig, unit price 118.57 EUR.\nItem 0005: steel gasket, size 55 mm, stock 865 units in Leipzig, unit price 11.70 EUR.\nItem 0006: copper pump, size 38 mm, stock 834 units in Hamburg, unit price 294.12 EUR.\nItem 0007: aluminium fuse, size 8 mm, stock 597 units in Graz, unit price 1.98 EUR.\nItem 0008: copper pump, size 114 mm, stock 334 units in Graz, unit price 297.89 EUR.\nItem 0009: aluminium coupling, size 42 mm, stock 333 units in Leipzig, unit price 312.13 EUR.\nItem 0010: copper gasket, size 67 mm, stock 480 units in Regensburg, unit price 122.95 EUR.\nItem 0011: brass filter, size 10 mm, stock 884 units in Leipzig, unit price 159.75 EUR.\nItem 0012: brass valve, size 79 mm, stock 787 units in Hamburg, unit price 199.93 EUR.\nItem 0013: copper relay, size 17 mm, stock 324 units in Regensburg, unit price 270.51 EUR.\nItem 0014: copper gasket, size 107 mm, stock 832 units in Basel, unit price 294.34 EUR.\nItem 0015: ceramic bearing, size 68 mm, stock 306 units in Hamburg, unit price 486.43 EUR.\nItem 0016: nylon bearing, size 44 mm, stock 645 units in Hamburg, unit price 155.90 EUR.\nItem 0017: ceramic pump, size 29 mm, stock 268 units in Basel, unit price 195.32 EUR.\nItem 0018: copper valve, size 45 mm, stock 43 units in Basel, unit price 324.40 EUR.\nItem 0019: ceramic bracket, size 23 mm, stock 723 units in Basel, unit price 47.54 EUR.\nItem 0020: nylon relay, size 62 mm, stock 211 units in Basel, unit price 470.33 EUR.\nItem 0021: brass pump, size 31 mm, stock 68 units in Regensburg, unit price 183.19 EUR.\nItem 0022: steel relay, size 108 mm, stock 313 units in Leipzig, unit price 114.19 EUR.\nItem 0023: brass fuse, size 113 mm, stock 350 units in Basel, unit price 92.24 EUR.\nItem 0024: brass bracket, size 106 mm, stock 521 units in Regensburg, unit price 418.60 EUR.\nItem 0025: steel gasket, size 82 mm, stock 661 units in Leipzig, unit price 146.96 EUR.\nItem 0026: steel valve, size 48 mm, stock 77 units in Basel, unit price 63.08 EUR.\nItem 0027: copper valve, size 18 mm, stock 443 units in Graz, unit price 342.91 EUR.\nItem 0028: copper gasket, size 11 mm, stock 572 units in Graz, unit price 279.53 EUR.\nItem 0029: ceramic pump, size 113 mm, stock 542 units in Basel, unit price 489.57 EUR.\nItem 0030: aluminium gasket, size 60 mm, stock 214 units in Leipzig, unit price 89.58 EUR.\nItem 0031: brass pump, size 74 mm, stock 716 units in Basel, unit pri",
+    "input": "Reply with the single word OK.",
+    "max_output_tokens": 16,
+    "store": false
+  },
+  "status": 200,
+  "response_body": {
+    "id": "resp_0fb991d5773323de016ad5d016c8d087d29a86f7e5e98d303e",
+    "object": "response",
+    "created_at": 1792397334,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1792397335,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": "[run 136abd43]\nYou are the assistant of a fictional spare-parts warehouse. The catalogue below is reference data.\nAnswer only the question after the catalogue, as briefly as possible.\n\nCATALOGUE\nItem 0001: ceramic pump, size 96 mm, stock 123 units in Hamburg, unit price 241.69 EUR.\nItem 0002: aluminium relay, size 95 mm, stock 28 units in Leipzig, unit price 71.00 EUR.\nItem 0003: copper coupling, size 41 mm, stock 450 units in Leipzig, unit price 285.40 EUR.\nItem 0004: steel bearing, size 53 mm, stock 658 units in Leipzig, unit price 118.57 EUR.\nItem 0005: steel gasket, size 55 mm, stock 865 units in Leipzig, unit price 11.70 EUR.\nItem 0006: copper pump, size 38 mm, stock 834 units in Hamburg, unit price 294.12 EUR.\nItem 0007: aluminium fuse, size 8 mm, stock 597 units in Graz, unit price 1.98 EUR.\nItem 0008: copper pump, size 114 mm, stock 334 units in Graz, unit price 297.89 EUR.\nItem 0009: aluminium coupling, size 42 mm, stock 333 units in Leipzig, unit price 312.13 EUR.\nItem 0010: copper gasket, size 67 mm, stock 480 units in Regensburg, unit price 122.95 EUR.\nItem 0011: brass filter, size 10 mm, stock 884 units in Leipzig, unit price 159.75 EUR.\nItem 0012: brass valve, size 79 mm, stock 787 units in Hamburg, unit price 199.93 EUR.\nItem 0013: copper relay, size 17 mm, stock 324 units in Regensburg, unit price 270.51 EUR.\nItem 0014: copper gasket, size 107 mm, stock 832 units in Basel, unit price 294.34 EUR.\nItem 0015: ceramic bearing, size 68 mm, stock 306 units in Hamburg, unit price 486.43 EUR.\nItem 0016: nylon bearing, size 44 mm, stock 645 units in Hamburg, unit price 155.90 EUR.\nItem 0017: ceramic pump, size 29 mm, stock 268 units in Basel, unit price 195.32 EUR.\nItem 0018: copper valve, size 45 mm, stock 43 units in Basel, unit price 324.40 EUR.\nItem 0019: ceramic bracket, size 23 mm, stock 723 units in Basel, unit price 47.54 EUR.\nItem 0020: nylon relay, size 62 mm, stock 211 units in Basel, unit price 470.33 EUR.\nItem 0021: brass pump, size 31 mm, stock 68 units in Regensburg, unit price 183.19 EUR.\nItem 0022: steel relay, size 108 mm, stock 313 units in Leipzig, unit price 114.19 EUR.\nItem 0023: brass fuse, size 113 mm, stock 350 units in Basel, unit price 92.24 EUR.\nItem 0024: brass bracket, size 106 mm, stock 521 units in Regensburg, unit price 418.60 EUR.\nItem 0025: steel gasket, size 82 mm, stock 661 units in Leipzig, unit price 146.96 EUR.\nItem 0026: steel valve, size 48 mm, stock 77 units in Basel, unit price 63.08 EUR.\nItem 0027: copper valve, size 18 mm, stock 443 units in Graz, unit price 342.91 EUR.\nItem 0028: copper gasket, size 11 mm, stock 572 units in Graz, unit price 279.53 EUR.\nItem 0029: ceramic pump, size 113 mm, stock 542 units in Basel, unit price 489.57 EUR.\nItem 0030: aluminium gasket, size 60 mm, stock 214 units in Leipzig, unit price 89.58 EUR.\nItem 0031: brass pump, size 74 mm, stock 716 units in Basel, unit pri",
+    "max_output_tokens": 16,
+    "max_tool_calls": null,
+    "model": "gpt-5.6-luna",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0fb991d5773323de016ad5d017875087d28bb5862fa23449e9",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "OK"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "all_turns",
+      "effort": "medium",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": false,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 927,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 5,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 932
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "response_headers": {
+    "openai-processing-ms": "865",
+    "x-ratelimit-limit-requests": "5000",
+    "x-ratelimit-limit-tokens": "2000000",
+    "x-ratelimit-remaining-requests": "4999",
+    "x-ratelimit-remaining-tokens": "2000000",
+    "x-ratelimit-reset-requests": "12ms",
+    "x-ratelimit-reset-tokens": "0s",
+    "x-request-id": "req_e6e71b2fa9e140f4b899101424161262"
+  },
+  "response_header_names": [
+    "access-control-expose-headers",
+    "alt-svc",
+    "cf-cache-status",
+    "cf-ray",
+    "connection",
+    "content-length",
+    "content-type",
+    "date",
+    "openai-organization",
+    "openai-processing-ms",
+    "openai-project",
+    "openai-version",
+    "server",
+    "set-cookie",
+    "strict-transport-security",
+    "x-content-type-options",
+    "x-ratelimit-limit-requests",
+    "x-ratelimit-limit-tokens",
+    "x-ratelimit-remaining-requests",
+    "x-ratelimit-remaining-tokens",
+    "x-ratelimit-reset-requests",
+    "x-ratelimit-reset-tokens",
+    "x-request-id"
+  ],
+  "duration_ms": 1094,
+  "note": "ok"
+}

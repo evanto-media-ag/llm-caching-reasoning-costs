@@ -31,6 +31,9 @@ def _safe(name: str) -> str:
 
 def _note(resp: Response, note: str) -> str:
     if resp.status == 200:
+        body = resp.body if isinstance(resp.body, dict) else {}
+        if body.get("status") == "incomplete" and not (body.get("usage") or {}).get("input_tokens"):
+            return "ungültig: unvollständig ohne Usage"
         return note
     if resp.status == 429 or resp.status >= 500:
         return f"ungültig: http {resp.status}"

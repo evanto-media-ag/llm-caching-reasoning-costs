@@ -1,0 +1,96 @@
+{
+  "ts": "2026-10-19T08:08:44+00:00",
+  "target": "anthropic",
+  "model": "claude-sonnet-5",
+  "measurement": "M4",
+  "step": "below-B",
+  "run_id": "7d4db87d",
+  "url": "https://api.anthropic.com/v1/messages",
+  "request_body": {
+    "model": "claude-sonnet-5",
+    "max_tokens": 16,
+    "system": [
+      {
+        "type": "text",
+        "text": "[run 7d4db87d]\nYou are the assistant of a fictional spare-parts warehouse. The catalogue below is reference data.\nAnswer only the question after the catalogue, as briefly as possible.\n\nCATALOGUE\nItem 0001: ceramic pump, size 96 mm, stock 123 units in Hamburg, unit price 241.69 EUR.\nItem 0002: aluminium relay, size 95 mm, stock 28 units in Leipzig, unit price 71.00 EUR.\nItem 0003: copper coupling, size 41 mm, stock 450 units in Leipzig, unit price 285.40 EUR.\nItem 0004: steel bearing, size 53 mm, stock 658 units in Leipzig, unit price 118.57 EUR.\nItem 0005: steel gasket, size 55 mm, stock 865 units in Leipzig, unit price 11.70 EUR.\nItem 0006: copper pump, size 38 mm, stock 834 units in Hamburg, unit price 294.12 EUR.\nItem 0007: aluminium fuse, size 8 mm, stock 597 units in Graz, unit price 1.98 EUR.\nItem 0008: copper pump, size 114 mm, stock 334 units in Graz, unit price 297.89 EUR.\nItem 0009: aluminium coupling, size 42 mm, stock 333 units in Leipzig, unit price 312.13 EUR.\nItem 0010: copper gasket, size 67 mm, stock 480 units in Regensburg, unit price 122.95 EUR.\nItem 0011: brass filter, size 10 mm, stock 884 units in Leipzig, unit price 159.75 EUR.\nItem 0012: brass valve, size 79 mm, stock 787 units in Hamburg, unit price 199.93 EUR.\nItem 0013: copper relay, size 17 mm, stock 324 units in Regensburg, unit price 270.51 EUR.\nItem 0014: copper gasket, size 107 mm, stock 832 units in Basel, unit price 294.34 EUR.\nItem 0015: ceramic bearing, size 68 mm, stock 306 units in Hamburg, unit price 486.43 EUR.\nItem 0016: nylon bearing, size 44 mm, stock 645 units in Hamburg, unit price 155.90 EUR.\nItem 0017: ceramic pump, size 29 mm, stock 268 units in Basel, unit price 195.32 EUR.\nItem 0018: copper valve, size 45 mm, stock 43 units in Basel, unit price 324.40 EUR.\nItem 0019: ceramic bracket, size 23 mm, stock 723 un",
+        "cache_control": {
+          "type": "ephemeral"
+        }
+      }
+    ],
+    "messages": [
+      {
+        "role": "user",
+        "content": "Reply with the single word OK."
+      }
+    ]
+  },
+  "status": 200,
+  "response_body": {
+    "model": "claude-sonnet-5",
+    "id": "msg_011CgBFi9si51ihyj8WUDMsr",
+    "type": "message",
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "OK"
+      }
+    ],
+    "container": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "stop_details": null,
+    "usage": {
+      "input_tokens": 922,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "output_tokens": 4,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "service_tier": "standard",
+      "inference_geo": "global",
+      "speed": "standard"
+    },
+    "diagnostics": null
+  },
+  "response_headers": {
+    "request-id": "req_011CgBFi9WsiPTeKyanqY2Cv"
+  },
+  "response_header_names": [
+    "anthropic-organization-id",
+    "anthropic-ratelimit-input-tokens-limit",
+    "anthropic-ratelimit-input-tokens-remaining",
+    "anthropic-ratelimit-input-tokens-reset",
+    "anthropic-ratelimit-output-tokens-limit",
+    "anthropic-ratelimit-output-tokens-remaining",
+    "anthropic-ratelimit-output-tokens-reset",
+    "anthropic-ratelimit-requests-limit",
+    "anthropic-ratelimit-requests-remaining",
+    "anthropic-ratelimit-requests-reset",
+    "anthropic-ratelimit-tokens-limit",
+    "anthropic-ratelimit-tokens-remaining",
+    "anthropic-ratelimit-tokens-reset",
+    "anthropic-workspace-id",
+    "cf-cache-status",
+    "cf-ray",
+    "connection",
+    "content-security-policy",
+    "content-type",
+    "date",
+    "request-id",
+    "server",
+    "strict-transport-security",
+    "traceresponse",
+    "transfer-encoding",
+    "vary",
+    "x-robots-tag"
+  ],
+  "duration_ms": 1422,
+  "note": "ok"
+}
