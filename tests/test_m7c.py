@@ -34,6 +34,18 @@ class M7cTest(unittest.TestCase):
         failing = lambda method, url, headers, body: Response(403, {"error": {"type": "permission_error"}}, 1, {}, [])
         self.assertEqual(m7c.get_all_pages("https://x.test/a", {}, failing), (None, "http 403"))
 
+    def test_get_all_pages_follows_list_cursor(self):
+        pages = [Response(200, {"object": "list", "data": [1], "has_more": True, "last_id": "proj_1"}, 1, {}, []),
+                 Response(200, {"object": "list", "data": [2], "has_more": False, "last_id": "proj_2"}, 1, {}, [])]
+        urls = []
+        fake = lambda method, url, headers, body: urls.append(url) or pages.pop(0)
+        self.assertEqual(m7c.get_all_pages("https://x.test/projects?limit=100", {}, fake), ({"data": [1, 2]}, None))
+        self.assertIn("after=proj_1", urls[1])
+
+    def test_get_all_pages_stops_when_has_more_without_cursor(self):
+        page = Response(200, {"data": [1], "has_more": True}, 1, {}, [])
+        self.assertEqual(m7c.get_all_pages("https://x.test/a", {}, lambda *a: page), (None, "has_more without cursor"))
+
     def test_usage_totals_sum_rows_per_model(self):
         rows = [{"model": "a", "num_model_requests": 1, "input_tokens": 5, "output_tokens": 1},
                 {"model": "a", "num_model_requests": 2, "input_tokens": 7, "output_tokens": 2}]

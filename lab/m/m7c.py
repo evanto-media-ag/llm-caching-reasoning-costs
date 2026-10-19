@@ -133,17 +133,25 @@ def _day(date: str) -> tuple[int, int]:
 
 
 def get_all_pages(url: str, headers: dict, send_fn=send) -> tuple[dict | None, str | None]:
-    """All pages of a paginated admin endpoint, or (None, error) — an error is never archived as "no usage"."""
-    data, next_page = [], None
+    """All pages of a paginated admin endpoint, or (None, error) — an error is never archived as "no usage".
+
+    OpenAI uses two schemes: usage/costs return `next_page` (sent back as `page`), list endpoints such as
+    projects and API keys return `last_id` (sent back as `after`)."""
+    data, cursor = [], None
     while True:
-        page_url = url if next_page is None else f"{url}{'&' if '?' in url else '?'}page={next_page}"
+        page_url = url if cursor is None else f"{url}{'&' if '?' in url else '?'}{cursor}"
         r = send_fn("GET", page_url, headers, None)
         if r.status != 200 or not isinstance(r.body, dict):
             return None, f"http {r.status}"
         data += r.body.get("data") or []
-        next_page = r.body.get("next_page") if r.body.get("has_more") else None
-        if not next_page:
+        if not r.body.get("has_more"):
             return {"data": data}, None
+        if r.body.get("next_page"):
+            cursor = f"page={r.body['next_page']}"
+        elif r.body.get("last_id"):
+            cursor = f"after={r.body['last_id']}"
+        else:
+            return None, "has_more without cursor"
 
 
 def _openai(ctx: Ctx) -> list[Path]:
