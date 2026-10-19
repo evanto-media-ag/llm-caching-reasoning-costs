@@ -46,6 +46,7 @@ class TransportTest(unittest.TestCase):
         self.assertEqual(r.status, 200)
         self.assertEqual(r.body, {"path": "/ok"})
         self.assertEqual(r.headers, {"x-request-id": "req-1"})
+        self.assertIn("set-cookie", r.header_names)
 
 
 if __name__ == "__main__":

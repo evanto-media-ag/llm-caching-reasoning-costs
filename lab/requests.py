@@ -83,3 +83,14 @@ def build_request(t: Target, model: str, *, system: str, user: str, effort: str 
         raise LookupError(f"no key for {t.key_name}")
     url, headers, body = _BUILDERS[t.style](t, model, system, user, effort, cache, max_tokens, key)
     return url, headers, {**body, **_body_extras(t)}
+
+
+def models_request(t: Target) -> tuple[str, dict[str, str]]:
+    key = load_key(t.key_name)
+    if key is None:
+        raise LookupError(f"no key for {t.key_name}")
+    if t.style == "anthropic":
+        return f"{t.base_url}/models", {"x-api-key": key, "anthropic-version": ANTHROPIC_VERSION}
+    if t.style == "gemini":
+        return f"{t.base_url}/models", {"x-goog-api-key": key}
+    return f"{t.base_url}/models", {"authorization": f"Bearer {key}"}

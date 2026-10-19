@@ -5,7 +5,7 @@ from pathlib import Path
 from lab.keys import loaded_secrets
 
 RECORD_KEYS = ("ts", "target", "model", "measurement", "step", "run_id", "url", "request_body",
-               "status", "response_body", "response_headers", "duration_ms", "note")
+               "status", "response_body", "response_headers", "response_header_names", "duration_ms", "note")
 
 
 class SecretLeakError(Exception):

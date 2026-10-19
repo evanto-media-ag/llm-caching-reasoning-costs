@@ -78,5 +78,20 @@ class RequestsTest(unittest.TestCase):
         self.assertEqual(body["messages"][0], {"role": "system", "content": "SYS"})
 
 
+class ModelsUrlTest(unittest.TestCase):
+    def setUp(self):
+        p = mock.patch.object(rq, "load_key", return_value="KEY")
+        p.start()
+        self.addCleanup(p.stop)
+
+    def test_models_request_per_style(self):
+        url, headers = rq.models_request(T("anthropic", "anthropic"))
+        self.assertEqual((url, headers["x-api-key"]), ("https://x.test/v1/models", "KEY"))
+        url, headers = rq.models_request(T("gemini", "gemini"))
+        self.assertEqual(headers, {"x-goog-api-key": "KEY"})
+        url, headers = rq.models_request(T("xai", "openai-responses"))
+        self.assertEqual(headers, {"authorization": "Bearer KEY"})
+
+
 if __name__ == "__main__":
     unittest.main()

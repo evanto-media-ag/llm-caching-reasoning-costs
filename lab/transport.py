@@ -15,6 +15,7 @@ class Response:
     body: dict | str
     duration_ms: int
     headers: dict[str, str]
+    header_names: list[str]  # names only, values dropped (shows e.g. that no cost header exists)
 
 
 def _keep(headers) -> dict[str, str]:
@@ -44,4 +45,4 @@ def send(method: str, url: str, headers: dict[str, str], body: dict | None, time
     except urllib.error.HTTPError as err:
         status, raw, hdrs = err.code, err.read(), err.headers
     duration = int((time.monotonic() - start) * 1000)
-    return Response(status, _parse(raw), duration, _keep(hdrs))
+    return Response(status, _parse(raw), duration, _keep(hdrs), sorted({n.lower() for n in hdrs.keys()}))
