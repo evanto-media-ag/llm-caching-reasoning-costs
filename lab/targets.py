@@ -5,7 +5,8 @@ from pathlib import Path
 
 KEY_NAMES = ("anthropic", "openai", "gemini", "xai", "requesty", "mistral", "eurouter", "openrouter", "ionos",
              "cortecs-sovereign", "cortecs-residency",
-             "openai-admin", "anthropic-admin", "xai-management", "cortecs-management")
+             "openai-admin", "anthropic-admin", "xai-management", "cortecs-management",
+             "xai-team-id")
 
 
 @dataclass
