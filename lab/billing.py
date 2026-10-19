@@ -33,10 +33,10 @@ def eurouter_generation(request_id: str) -> dict | None:
     return key and _get("https://api.eurouter.ai/api/v1/generation", {"authorization": f"Bearer {key}"}, {"id": request_id})
 
 
-def cortecs_logs(start: datetime.datetime, end: datetime.datetime) -> dict | None:
+def cortecs_logs(range_: str = "24h") -> dict | None:
+    """Logs of the last `range_` (Cortecs: `range` like 60m or 24h, no from/until on this endpoint)."""
     key = load_key("cortecs-management")
-    return key and _get("https://api.cortecs.ai/v1/manage/logs", {"authorization": f"Bearer {key}"},
-                        {"start": _iso(start), "end": _iso(end)})
+    return key and _get("https://api.cortecs.ai/v1/manage/logs", {"authorization": f"Bearer {key}"}, {"range": range_})
 
 
 def openai_usage(start: datetime.datetime, end: datetime.datetime, bucket: str = "1m") -> dict | None:

@@ -93,8 +93,7 @@ def run(t: Target, model: str | None, ctx: Ctx) -> list[Path]:
             if got:
                 write_json(ctx.root / "data" / ctx.date / t.name / "M7" / f"generation-{rid}.json", got)
     if t.name.startswith("cortecs"):  # M7b
-        now = datetime.datetime.now(datetime.timezone.utc)
-        got = billing.cortecs_logs(now - datetime.timedelta(hours=23), now)
+        got = billing.cortecs_logs("24h")
         if got:
             own = {json.loads(f.read_text())["response_body"].get("id")
                    for f in (ctx.root / "data" / ctx.date / t.name).glob("M[1-8]/*.json")}

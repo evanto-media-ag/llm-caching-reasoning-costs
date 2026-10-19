@@ -23,10 +23,18 @@ class BillingTest(unittest.TestCase):
         payload = {"data": {"id": "gen-1", "total_cost": 0.0042}}
         self.assertEqual(billing.normalize_reported_cost("openrouter_generation", payload), [("gen-1", 0.0042, "USD")])
 
+    def test_cortecs_logs_uses_range_parameter(self):
+        urls = []
+        fake = lambda method, url, headers, body: urls.append(url) or __import__("lab.transport", fromlist=["Response"]).Response(200, {"data": []}, 1, {}, [])
+        with mock.patch.object(billing, "load_key", return_value="KEY"), mock.patch.object(billing, "send", fake):
+            billing.cortecs_logs("24h")
+        self.assertIn("range=24h", urls[0])
+        self.assertNotIn("start=", urls[0])
+
     def test_missing_management_key_returns_none(self):
         start = datetime.datetime(2026, 10, 20, tzinfo=datetime.timezone.utc)
         with mock.patch.object(billing, "load_key", return_value=None):
-            self.assertIsNone(billing.cortecs_logs(start, start))
+            self.assertIsNone(billing.cortecs_logs())
             self.assertIsNone(billing.anthropic_usage(start, start))
             self.assertIsNone(billing.openai_costs(start, start))
             self.assertIsNone(billing.xai_usage(start, start))
