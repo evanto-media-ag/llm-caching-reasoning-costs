@@ -1,7 +1,7 @@
 import unittest
 
 from lab.cost import Price
-from lab.m.m7_cost import compare, reported_in, wait_for_buckets
+from lab.m.m7_cost import compare, own_log_entries, reported_in, wait_for_buckets
 from lab.usage import Usage
 
 
@@ -20,6 +20,15 @@ class CostReconcileTest(unittest.TestCase):
         raw = {"cost": 0.5, "cost_currency": "USD", "cost_eur": 0.43}
         self.assertEqual(reported_in("USD", raw, u), (0.5, "USD"))
         self.assertEqual(reported_in("EUR", raw, u), (0.43, "EUR"))
+
+    def test_cortecs_logs_keep_only_own_requests_and_safe_fields(self):
+        payload = {"status": 200, "body": {"data": [
+            {"request_id": "mine", "model": "claude", "user_email": "a@b.c", "key_name": "prod",
+             "attempts": [{"cost": 0.01, "provider": "google", "tokens": 9, "prompt": "secret text"}]},
+            {"request_id": "other-team", "model": "x", "attempts": []}]}}
+        self.assertEqual(own_log_entries(payload, {"mine"}),
+                         [{"request_id": "mine", "model": "claude",
+                           "attempts": [{"cost": 0.01, "provider": "google", "tokens": 9}]}])
 
     def test_m7c_waits_for_buckets(self):
         replies = [{"body": {"data": []}}, {"body": {"data": []}}, {"body": {"data": [1]}}]

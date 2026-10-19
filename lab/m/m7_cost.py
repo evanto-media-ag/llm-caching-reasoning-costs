@@ -46,6 +46,21 @@ def wait_for_buckets(fetch: Callable[[], dict | None], sleep: Callable, tries: i
     return None
 
 
+_LOG_FIELDS = ("request_id", "model")
+_ATTEMPT_FIELDS = ("cost", "provider", "model", "tokens", "status")
+
+
+def own_log_entries(payload: dict, own_ids: set[str]) -> list[dict]:
+    """Management logs cover the whole account: keep only this run's requests and non-sensitive fields."""
+    out = []
+    for e in (payload.get("body") or {}).get("data") or []:
+        if e.get("request_id") in own_ids:
+            row = {k: e[k] for k in _LOG_FIELDS if k in e}
+            row["attempts"] = [{k: a[k] for k in _ATTEMPT_FIELDS if k in a} for a in e.get("attempts") or []]
+            out.append(row)
+    return out
+
+
 def reconcile(t: Target, date: str, root: Path = Path(".")) -> Path | None:
     prices = build_prices(date, root).get(t.name, {})
     unit = tuple(t.extras["_cost_unit"]) if "_cost_unit" in t.extras else None
@@ -80,6 +95,8 @@ def run(t: Target, model: str | None, ctx: Ctx) -> list[Path]:
         now = datetime.datetime.now(datetime.timezone.utc)
         got = billing.cortecs_logs(now - datetime.timedelta(hours=23), now)
         if got:
-            write_json(ctx.root / "data" / ctx.date / t.name / "M7" / "manage-logs.json", got)
+            own = {json.loads(f.read_text())["response_body"].get("id")
+                   for f in (ctx.root / "data" / ctx.date / t.name).glob("M[1-8]/*.json")}
+            write_json(ctx.root / "data" / ctx.date / t.name / "M7" / "manage-logs.json", own_log_entries(got, own))
     path = reconcile(t, ctx.date, ctx.root)
     return paths + ([path] if path else [])

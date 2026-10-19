@@ -17,6 +17,7 @@ class _Handler(BaseHTTPRequestHandler):
             self.send_response(200)
             self.send_header("set-cookie", "a=b")
             self.send_header("x-request-id", "req-1")
+            self.send_header("x-cortecs-provider", "google")
         self.send_header("content-type", "application/json")
         self.end_headers()
         self.wfile.write(json.dumps({"path": self.path}).encode())
@@ -45,7 +46,7 @@ class TransportTest(unittest.TestCase):
         r = transport.send("POST", self.base + "/ok", {}, {"a": 1})
         self.assertEqual(r.status, 200)
         self.assertEqual(r.body, {"path": "/ok"})
-        self.assertEqual(r.headers, {"x-request-id": "req-1"})
+        self.assertEqual(r.headers, {"x-request-id": "req-1", "x-cortecs-provider": "google"})
         self.assertIn("set-cookie", r.header_names)
 
 

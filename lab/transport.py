@@ -6,7 +6,9 @@ import urllib.request
 from dataclasses import dataclass
 
 # Only these response headers are kept; everything else (cookies, ...) is dropped.
-_KEEP = ("request-id", "x-request-id", "retry-after", "openai-processing-ms")
+_KEEP = ("request-id", "x-request-id", "retry-after", "openai-processing-ms",
+         # routers name the upstream provider here (needed for cache stability, M8)
+         "x-cortecs-provider", "x-cortecs-model", "x-provider-slug", "x-provider-id", "x-model-used", "x-routing-strategy")
 
 
 @dataclass
