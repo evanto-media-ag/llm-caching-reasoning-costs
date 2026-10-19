@@ -22,7 +22,9 @@ USAGE_FIELDS = ("model", "num_model_requests", "input_tokens", "input_cached_tok
 OPENAI_TARGETS = ("openai-responses", "openai-chat")
 
 
-def own_usage_rows(payload: dict, key_id: str) -> list[dict]:
+def own_usage_rows(payload: dict, key_id: str | None) -> list[dict]:
+    if not key_id:  # an unmatched key must never fall back to rows without a key id
+        return []
     return [{k: r[k] for k in USAGE_FIELDS if k in r}
             for b in payload.get("data") or [] for r in b.get("results") or [] if r.get("api_key_id") == key_id]
 
@@ -116,9 +118,12 @@ def _xai(ctx: Ctx) -> list[Path]:
                                  "groupBy": ["description"], "filters": []}}
     r = send("POST", f"https://management-api.x.ai/v1/billing/teams/{team}/usage", {"authorization": f"Bearer {key}"}, body)
     path = ctx.root / "data" / ctx.date / "xai" / "M7" / "admin-usage.json"
-    write_json(path, {"date": ctx.date, "status": r.status, "provider_cost_by_model": xai_cost_by_model(r.body if isinstance(r.body, dict) else {}),
+    ok = r.status == 200 and isinstance(r.body, dict)
+    write_json(path, {"date": ctx.date, "status": r.status, "error": None if ok else f"http {r.status}",
+                      "provider_cost_by_model": xai_cost_by_model(r.body) if ok else None,
                       "our_reported_cost_by_model": reported_cost_totals(ctx.date, "xai", ctx.root),
-                      "note": "xAI billing is per team; the measurement key was the only xAI traffic that day"})
+                      "note": "billing is per team; compared with every call archived for the xai target that day, "
+                              "so other team traffic would show as a difference"})
     return [path]
 
 
@@ -127,40 +132,59 @@ def _day(date: str) -> tuple[int, int]:
     return int(d.timestamp()), int((d + datetime.timedelta(days=1)).timestamp())
 
 
+def get_all_pages(url: str, headers: dict, send_fn=send) -> tuple[dict | None, str | None]:
+    """All pages of a paginated admin endpoint, or (None, error) — an error is never archived as "no usage"."""
+    data, next_page = [], None
+    while True:
+        page_url = url if next_page is None else f"{url}{'&' if '?' in url else '?'}page={next_page}"
+        r = send_fn("GET", page_url, headers, None)
+        if r.status != 200 or not isinstance(r.body, dict):
+            return None, f"http {r.status}"
+        data += r.body.get("data") or []
+        next_page = r.body.get("next_page") if r.body.get("has_more") else None
+        if not next_page:
+            return {"data": data}, None
+
+
 def _openai(ctx: Ctx) -> list[Path]:
     key, mine = load_key("openai-admin"), load_key("openai")
     if not (key and mine):
         return []
     h = {"authorization": f"Bearer {key}"}
-    projects = send("GET", "https://api.openai.com/v1/organization/projects?limit=100", h, None).body.get("data", [])
+    path = ctx.root / "data" / ctx.date / "openai-responses" / "M7" / "admin-usage.json"
+    projects, err = get_all_pages("https://api.openai.com/v1/organization/projects?limit=100", h)
     key_id = None
-    for p in projects:  # match our key by its redacted value; the key itself never leaves this process
-        keys = send("GET", f"https://api.openai.com/v1/organization/projects/{p['id']}/api_keys?limit=100", h, None)
-        for k in keys.body.get("data", []):
+    for p in (projects or {}).get("data", []):  # match our key by its redacted value; the key itself never leaves this process
+        keys, kerr = get_all_pages(f"https://api.openai.com/v1/organization/projects/{p['id']}/api_keys?limit=100", h)
+        err = err or kerr
+        for k in (keys or {}).get("data", []):
             red = k.get("redacted_value", "")
             if red[:3] == mine[:3] and red[-4:] == mine[-4:]:
                 key_id = k["id"]
     start, end = _day(ctx.date)
-    usage = send("GET", f"https://api.openai.com/v1/organization/usage/completions?start_time={start}&end_time={end}"
-                 "&bucket_width=1d&group_by=api_key_id&group_by=model&limit=7", h, None)
+    usage, uerr = get_all_pages(f"https://api.openai.com/v1/organization/usage/completions?start_time={start}&end_time={end}"
+                                "&bucket_width=1d&group_by=api_key_id&group_by=model&limit=7", h)
+    costs, cerr = get_all_pages(f"https://api.openai.com/v1/organization/costs?start_time={start}&end_time={end}"
+                                "&bucket_width=1d&group_by=line_item&limit=7", h)
     ours = record_totals(ctx.date, list(OPENAI_TARGETS), ctx.root)
     models = list(ours)
+    errors = [e for e in (err, uerr, cerr) if e] + ([] if key_id else ["own key not found among project keys"])
+    if errors:  # never compare against a partial or foreign picture
+        write_json(path, {"date": ctx.date, "ours": ours, "errors": errors, "provider_usage": None, "provider_cost_by_model": None})
+        return [path]
     provider: dict = {}
-    for m, v in usage_totals(own_usage_rows(usage.body, key_id)).items():
+    for m, v in usage_totals(own_usage_rows(usage, key_id)).items():
         b = base_model(m, models)
         if b:
             provider[b] = {k: provider.get(b, {}).get(k, 0) + v.get(k, 0) for k in set(v) | set(provider.get(b, {}))}
-    costs = send("GET", f"https://api.openai.com/v1/organization/costs?start_time={start}&end_time={end}"
-                 "&bucket_width=1d&group_by=line_item&limit=7", h, None)
     cost_rows = [{"line_item": r.get("line_item"), "amount": r.get("amount"), "quantity": r.get("quantity")}
-                 for b in costs.body.get("data", []) for r in b.get("results", [])
+                 for b in costs.get("data", []) for r in b.get("results", [])
                  if base_model((r.get("line_item") or "").split(",")[0], models)]
-    path = ctx.root / "data" / ctx.date / "openai-responses" / "M7" / "admin-usage.json"
-    write_json(path, {"date": ctx.date, "key_id_matched": key_id is not None, "ours": ours, "provider_usage": provider,
+    write_json(path, {"date": ctx.date, "key_id_matched": True, "ours": ours, "provider_usage": provider,
                       "provider_costs_by_line_item": cost_rows,
                       "provider_cost_by_model": provider_cost_by_model(cost_rows, models),
                       "our_cost_by_model": our_cost_by_model(ours, build_prices(ctx.date, ctx.root).get("openai-responses", {})),
-                      "note": "costs are per project, not per key"})
+                      "note": "usage is per key; costs are per project, so other traffic in the project would show as a difference"})
     return [path]
 
 

@@ -5,6 +5,7 @@ import unittest
 from pathlib import Path
 
 from lab.m import m7c
+from lab.transport import Response
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -18,6 +19,20 @@ class M7cTest(unittest.TestCase):
         rows = m7c.own_usage_rows(payload, "key_me")
         self.assertEqual(rows, [{"model": "gpt-5-mini", "num_model_requests": 2, "input_tokens": 10,
                                  "input_cached_tokens": 4, "input_cache_write_tokens": 0, "output_tokens": 3}])
+
+    def test_unmatched_key_returns_no_rows(self):
+        payload = {"data": [{"results": [{"api_key_id": None, "model": "gpt-5-mini", "input_tokens": 99}]}]}
+        self.assertEqual(m7c.own_usage_rows(payload, None), [])
+
+    def test_get_all_pages_follows_next_page_and_reports_errors(self):
+        pages = [Response(200, {"data": [1], "has_more": True, "next_page": "p2"}, 1, {}, []),
+                 Response(200, {"data": [2], "has_more": False}, 1, {}, [])]
+        urls = []
+        fake = lambda method, url, headers, body: urls.append(url) or pages.pop(0)
+        self.assertEqual(m7c.get_all_pages("https://x.test/a?b=1", {}, fake), ({"data": [1, 2]}, None))
+        self.assertIn("page=p2", urls[1])
+        failing = lambda method, url, headers, body: Response(403, {"error": {"type": "permission_error"}}, 1, {}, [])
+        self.assertEqual(m7c.get_all_pages("https://x.test/a", {}, failing), (None, "http 403"))
 
     def test_usage_totals_sum_rows_per_model(self):
         rows = [{"model": "a", "num_model_requests": 1, "input_tokens": 5, "output_tokens": 1},

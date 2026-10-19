@@ -1,6 +1,7 @@
 {
   "date": "2026-10-19",
   "status": 200,
+  "error": null,
   "provider_cost_by_model": {
     "grok-4.5": 0.0623844,
     "grok-4.7": 0.099076
@@ -9,5 +10,5 @@
     "grok-4.7": 0.099076,
     "grok-4.5": 0.0623844
   },
-  "note": "xAI billing is per team; the measurement key was the only xAI traffic that day"
+  "note": "billing is per team; compared with every call archived for the xai target that day, so other team traffic would show as a difference"
 }
