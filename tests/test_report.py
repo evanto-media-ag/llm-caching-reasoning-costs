@@ -54,6 +54,15 @@ class ReportTest(unittest.TestCase):
         row = next(l for l in build_tables("2026-10-20", self.root)["matrix.md"].splitlines() if l.startswith("| xai "))
         self.assertIn("| 1–2/2 |", row)
 
+    def test_m5_keeps_other_values_after_a_429(self):
+        self.put(1, rec("gemini", "m", "M5", "effort-none", status=400, note="abgelehnt: http 400", run_id="r"))
+        self.put(2, rec("gemini", "m", "M5", "effort-low", status=429, note="ungültig: http 429", run_id="r"))
+        self.put(3, rec("gemini", "m", "M5", "effort-low", run_id="r"))
+        effort = build_tables("2026-10-20", self.root)["effort.md"]
+        row = next(l for l in effort.splitlines() if l.startswith("| gemini | m |"))
+        self.assertIn("✗ 400", row)
+        self.assertIn("✓", row)
+
     def test_stale_ok_note_is_reclassified(self):
         empty = {"status": "incomplete", "usage": {"input_tokens": 0, "output_tokens": 0}}
         r = rec("openai-responses", "m", "M1", "key-A", run_id="x")

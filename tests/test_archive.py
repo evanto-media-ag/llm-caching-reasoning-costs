@@ -48,6 +48,14 @@ class ArchiveTest(unittest.TestCase):
         with self.assertRaises(archive.SecretLeakError):
             archive.write_json(self.root / "x.json", {"k": "sk-test-123"})
 
+    def test_check_secrets_scans_every_file_but_git(self):
+        (self.root / "docs").mkdir()
+        doc = self.root / "docs" / "design.md"
+        doc.write_text("key sk-test-123")
+        (self.root / ".git").mkdir()
+        (self.root / ".git" / "x").write_text("sk-test-123")
+        self.assertEqual(archive.check_secrets(self.root), [doc])
+
     def test_run_dir_layout(self):
         self.assertEqual(archive.run_dir("2026-10-20", "xai", "M1", root=self.root),
                          self.root / "data" / "2026-10-20" / "xai" / "M1")

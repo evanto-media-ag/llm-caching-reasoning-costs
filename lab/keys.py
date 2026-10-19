@@ -1,4 +1,5 @@
 """Load API keys from ~/.llm-keys/<name>. Values are never printed or logged."""
+import hashlib
 import os
 from pathlib import Path
 
@@ -15,10 +16,16 @@ class ForbiddenKeyError(Exception):
     pass
 
 
+def _digest(path: Path) -> str:
+    return hashlib.sha256(path.read_text().strip().encode()).hexdigest()
+
+
 def _check(path: Path) -> None:
-    if not _FORBIDDEN.exists():
+    if not _FORBIDDEN.is_file():
         return
-    if path.resolve() == _FORBIDDEN.resolve() or path.read_text().strip() == _FORBIDDEN.read_text().strip():
+    # Read only to compare; the value joins the redaction set so it can never be archived either.
+    _loaded.add(_FORBIDDEN.read_text().strip())
+    if path.resolve() == _FORBIDDEN.resolve() or (path.is_file() and _digest(path) == _digest(_FORBIDDEN)):
         raise ForbiddenKeyError(f"{path.name} is the production Managed-AI key")
 
 

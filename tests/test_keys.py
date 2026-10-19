@@ -13,6 +13,10 @@ class KeysTest(unittest.TestCase):
         self.dir = Path(self.tmp.name)
         self.patch = mock.patch.object(keys, "KEY_DIR", self.dir)
         self.patch.start()
+        # never touch the real production key in tests
+        self.forbidden = mock.patch.object(keys, "_FORBIDDEN", self.dir / "no-production-key")
+        self.forbidden.start()
+        self.addCleanup(self.forbidden.stop)
         keys._loaded.clear()
         self.env = mock.patch.dict(os.environ, {}, clear=False)
         self.env.start()
@@ -48,6 +52,7 @@ class KeysTest(unittest.TestCase):
             self.assertEqual(keys.load_key("cortecs-residency"), "OTHER")
             (self.dir / "cortecs-sovereign").write_text("MEASURE")
             self.assertEqual(keys.load_key("cortecs-sovereign"), "MEASURE")
+            self.assertIn("PROD", keys.loaded_secrets())  # read for the comparison -> must be redacted too
             (self.dir / "evil").symlink_to(prod)
             with self.assertRaises(keys.ForbiddenKeyError):
                 keys.load_key("evil")

@@ -50,5 +50,16 @@ class TransportTest(unittest.TestCase):
         self.assertIn("set-cookie", r.header_names)
 
 
+class NetworkErrorTest(unittest.TestCase):
+    def test_connection_refused_is_a_response(self):
+        import socket
+        sock = socket.socket()
+        sock.bind(("127.0.0.1", 0))
+        port = sock.getsockname()[1]
+        sock.close()
+        r = transport.send("POST", f"http://127.0.0.1:{port}/x", {}, {"a": 1}, timeout_s=5)
+        self.assertEqual(r.status, 599)
+
+
 if __name__ == "__main__":
     unittest.main()

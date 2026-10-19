@@ -12,6 +12,7 @@ from lab.transport import Response
 from lab.usage import Usage, extract_usage
 
 MEASUREMENTS = ("M1", "M2", "M3", "M4", "M5", "M6", "M8")
+SEQUENCES = ("M1", "M2", "M3", "M4", "M8")
 DASH = "—"
 
 
@@ -28,9 +29,12 @@ def _load(date: str, root: Path) -> tuple[list[dict], int]:
                 note = r["note"] if r["note"].startswith("ungültig") else note  # drift notes are stored only
                 usage = extract_usage(t.style, r["response_body"], unit) if r["status"] == 200 else None
                 records.append({**r, "note": note, "usage": usage, "path": f.relative_to(root).as_posix()})
-    bad_runs = {(r["target"], r["model"], r["measurement"], r["run_id"]) for r in records if r["note"].startswith("ungültig")}
-    valid = [r for r in records if (r["target"], r["model"], r["measurement"], r["run_id"]) not in bad_runs]
-    return valid, len(bad_runs)
+    # Cache sequences are only valid as a whole; M5/M6 calls are independent, so only the bad call goes.
+    invalid = [r for r in records if r["note"].startswith("ungültig")]
+    bad_runs = {(r["target"], r["model"], r["measurement"], r["run_id"]) for r in invalid if r["measurement"] in SEQUENCES}
+    valid = [r for r in records if not r["note"].startswith("ungültig")
+             and (r["target"], r["model"], r["measurement"], r["run_id"]) not in bad_runs]
+    return valid, len(bad_runs) + sum(1 for r in invalid if r["measurement"] not in SEQUENCES)
 
 
 def _pairs(records: list[dict], measurement: str) -> dict:

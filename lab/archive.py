@@ -31,12 +31,15 @@ def write_record(path: Path, record: dict) -> None:
     path.write_text(text + "\n")
 
 
+_SKIP = {".git", ".superpowers", "__pycache__"}
+
+
 def check_secrets(root: Path = Path(".")) -> list[Path]:
+    """Every file that would be published (the repo goes public), not only the data folders."""
     hits = []
-    for folder in ("data", "prices", "tables"):
-        for file in sorted((root / folder).rglob("*")):
-            if file.is_file() and _leaks(file.read_text(errors="replace")):
-                hits.append(file)
+    for file in sorted(root.rglob("*")):
+        if file.is_file() and not _SKIP & set(file.relative_to(root).parts) and _leaks(file.read_text(errors="replace")):
+            hits.append(file)
     return hits
 
 

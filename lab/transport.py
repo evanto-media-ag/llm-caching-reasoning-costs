@@ -1,4 +1,5 @@
 """Plain HTTP via urllib. HTTP errors come back as a Response, never as an exception."""
+import http.client
 import json
 import time
 import urllib.error
@@ -46,5 +47,8 @@ def send(method: str, url: str, headers: dict[str, str], body: dict | None, time
             status, raw, hdrs = resp.status, resp.read(), resp.headers
     except urllib.error.HTTPError as err:
         status, raw, hdrs = err.code, err.read(), err.headers
+    except (urllib.error.URLError, OSError, http.client.HTTPException) as err:
+        # timeouts, refused or dropped connections: a result to archive (599 -> invalid run), not a crash
+        return Response(599, f"{type(err).__name__}: {err}", int((time.monotonic() - start) * 1000), {}, [])
     duration = int((time.monotonic() - start) * 1000)
     return Response(status, _parse(raw), duration, _keep(hdrs), sorted({n.lower() for n in hdrs.keys()}))
