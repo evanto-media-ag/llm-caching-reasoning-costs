@@ -46,7 +46,7 @@ python3 run.py m1 --date 2026-10-20
 | M8 | Cache-Stabilität über Router (5 Aufrufe, mit/ohne cache_control) |
 | M9 | Listenpreise per API vs. Preisseiten vs. Kataloge |
 
-Messdatum: 19.10.2026 (OpenRouter folgt mit eigenem Datum).
+Messdatum: 19.10.2026 (alle Ziele, einschließlich OpenRouter).
 
 ## Lizenzen
 
