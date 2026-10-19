@@ -22,7 +22,9 @@ class RoutersTest(unittest.TestCase):
             now = [0.0]
             sleep = lambda s: now.__setitem__(0, now[0] + s)
             m8_routers.run(t, None, Ctx(date="2026-10-20", send=send, sleep=sleep, clock=lambda: now[0], root=Path(d)))
-        self.assertEqual(len(bodies), 10)
+        self.assertEqual(len(bodies), 15)
+        self.assertEqual(bodies[10]["requesty"], {"auto_cache": True})
+        self.assertIsInstance(bodies[10]["messages"][0]["content"], str)  # auto_cache alone, no cache_control
         self.assertEqual(bodies[0]["requesty"], {"auto_cache": True})
         self.assertIn("cache_control", bodies[0]["messages"][0]["content"][0])
         self.assertNotIn("requesty", bodies[5])

@@ -37,6 +37,10 @@ def run(t: Target, model: str | None, ctx: Ctx) -> list[Path]:
                          system_text=text, max_tokens=64)
     paths += run_sequence(ctx, t, m, "M8", [replace(s, name=f"plain-{s.name}") for s in steps], CacheSpec(),
                           system_text=text, max_tokens=64)
+    if t.name == "requesty":  # does auto_cache alone place the breakpoints?
+        auto = replace(t, extras={**t.extras, "requesty": {"auto_cache": True}})
+        paths += run_sequence(ctx, auto, m, "M8", [replace(s, name=f"autocache-{s.name}") for s in steps], CacheSpec(),
+                              system_text=text, max_tokens=64)
     if t.name == "openrouter":  # stickiness without provider.order, only a session id
         paths += run_sequence(ctx, t, m, "M8", [replace(s, name=f"session-{s.name}") for s in steps],
                               CacheSpec("explicit", "1h", key="RUN"), system_text=text, max_tokens=64)
