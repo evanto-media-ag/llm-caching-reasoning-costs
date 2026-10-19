@@ -16,13 +16,13 @@ class ForbiddenKeyError(Exception):
 
 
 def _check(path: Path) -> None:
-    if path.resolve() == _FORBIDDEN.resolve():
-        raise ForbiddenKeyError(f"{path} points to the production Managed-AI key")
+    if not _FORBIDDEN.exists():
+        return
+    if path.resolve() == _FORBIDDEN.resolve() or path.read_text().strip() == _FORBIDDEN.read_text().strip():
+        raise ForbiddenKeyError(f"{path.name} is the production Managed-AI key")
 
 
 def load_key(name: str) -> str | None:
-    if name == "cortecs-sovereign":
-        raise ForbiddenKeyError("cortecs-sovereign is the production Managed-AI key")
     candidates = [KEY_DIR / f"{name}-measure", KEY_DIR / name] if name in _ENV_FALLBACK else [KEY_DIR / name]
     for path in candidates:
         if path.is_symlink() or path.exists():

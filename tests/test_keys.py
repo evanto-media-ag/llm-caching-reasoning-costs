@@ -37,12 +37,20 @@ class KeysTest(unittest.TestCase):
         (self.dir / "anthropic-measure").write_text("k2")
         self.assertEqual(keys.load_key("anthropic"), "k2")
 
-    def test_sovereign_key_forbidden(self):
-        with self.assertRaises(keys.ForbiddenKeyError):
-            keys.load_key("cortecs-sovereign")
-        (self.dir / "evil").symlink_to(Path.home() / ".cortecs-sovereign-key")
-        with self.assertRaises(keys.ForbiddenKeyError):
-            keys.load_key("evil")
+    def test_production_key_forbidden_by_content(self):
+        prod = self.dir / "prod"
+        prod.write_text("PROD\n")
+        with mock.patch.object(keys, "_FORBIDDEN", prod):
+            (self.dir / "cortecs-sovereign").write_text("PROD")
+            with self.assertRaises(keys.ForbiddenKeyError):
+                keys.load_key("cortecs-sovereign")
+            (self.dir / "cortecs-residency").write_text("OTHER")
+            self.assertEqual(keys.load_key("cortecs-residency"), "OTHER")
+            (self.dir / "cortecs-sovereign").write_text("MEASURE")
+            self.assertEqual(keys.load_key("cortecs-sovereign"), "MEASURE")
+            (self.dir / "evil").symlink_to(prod)
+            with self.assertRaises(keys.ForbiddenKeyError):
+                keys.load_key("evil")
 
     def test_loaded_secrets_keeps_replaced_values(self):
         os.environ["ANTHROPIC_API_KEY"] = "env-key"

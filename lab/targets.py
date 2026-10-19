@@ -3,7 +3,8 @@ import json
 from dataclasses import dataclass, field
 from pathlib import Path
 
-KEY_NAMES = ("anthropic", "openai", "gemini", "xai", "requesty", "mistral", "eurouter", "openrouter", "cortecs",
+KEY_NAMES = ("anthropic", "openai", "gemini", "xai", "requesty", "mistral", "eurouter", "openrouter", "ionos",
+             "cortecs-sovereign", "cortecs-residency",
              "openai-admin", "anthropic-admin", "xai-management", "cortecs-management")
 
 
